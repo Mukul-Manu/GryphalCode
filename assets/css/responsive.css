@@ -1,0 +1,40 @@
+/* Responsive Utility CSS for GryphalCode */
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .section__heading--title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .mt-70 {
+    margin-top: 40px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  .section__heading--title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .pl-20 {
+    padding-left: 0 !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,48 @@
+/**
+ * GryphalCode Dynamic SEO Engine
+ * This script automatically rotates and updates page keywords "day by day"
+ * based on a pool of high-value industry terms and trending topics.
+ */
+(function () {
+  const DAILY_KEYWORD_POOL = [
+    ["Generative AI", "Future Tech", "Custom LLM"],
+    ["Cloud Native", "Kubernetes", "AWS Migration"],
+    ["Digital Transformation", "Enterprise UX", "Product Strategy"],
+    ["WhatsApp API", "Chatbot Automation", "Customer Engagement"],
+    ["SaaS Development", "MVP Builder", "Startup Tech Partner"],
+    ["Cybersecurity", "GDPR Compliance", "Data Protection"],
+    ["DevOps", "CI/CD Pipelines", "Site Reliability"],
+    ["React Native", "Cross-Platform Mobile", "Progressive Web Apps"],
+    ["API Integration", "Business Automation", "Microservices"],
+    ["Machine Learning", "Data Analytics", "Predictive Modeling"],
+  ];
+
+  function updateKeywords() {
+    const metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) return;
+
+    const currentKeywords = metaKeywords.getAttribute("content") || "";
+    const today = new Date();
+    // Day of the year or Month + Day to select index
+    const dayOfYear = Math.floor(
+      (today - new Date(today.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24),
+    );
+    const index = dayOfYear % DAILY_KEYWORD_POOL.length;
+
+    const dailyTrending = DAILY_KEYWORD_POOL[index].join(", ");
+
+    // Append trending keywords if not already present
+    if (!currentKeywords.includes(dailyTrending)) {
+      const newKeywords = `${dailyTrending}, ${currentKeywords}`;
+      metaKeywords.setAttribute("content", newKeywords);
+      // console.log("GryphalCode SEO: Daily keywords updated.");
+    }
+  }
+
+  // Run on load
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", updateKeywords);
+  } else {
+    updateKeywords();
+  }
+})();
