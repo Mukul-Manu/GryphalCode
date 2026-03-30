@@ -23,7 +23,7 @@ $meta_keywords = "Food Delivery Application, GryphalCode Food Delivery Applicati
   <title>
     Food Delivery App Development | GryphalCode
   </title>
-  <link href="https://gryphalcode.com/service-details/food-delivery-application.php" rel="canonical">
+  <link href="https://gryphalcode.com/service-details/food-delivery-application" rel="canonical">
   <link href="../assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon">
   <!-- Performance & Scale Metrics -->
   <meta
@@ -39,7 +39,7 @@ $meta_keywords = "Food Delivery Application, GryphalCode Food Delivery Applicati
   <meta content="11.0168, 76.9558" name="ICBM" />
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />
-  <meta content="https://gryphalcode.com/service-details/food-delivery-application.php" property="og:url" />
+  <meta content="https://gryphalcode.com/service-details/food-delivery-application" property="og:url" />
   <meta content="Food Delivery App Development | GryphalCode" property="og:title" />
   <meta
     content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality."
@@ -109,7 +109,7 @@ $meta_keywords = "Food Delivery Application, GryphalCode Food Delivery Applicati
   "@type": "Service",
   "name": "Food Delivery App Development | GryphalCode",
   "description": "GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/service-details/food-delivery-application.php",
+  "url": "https://gryphalcode.com/service-details/food-delivery-application",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -256,7 +256,7 @@ $meta_keywords = "Food Delivery Application, GryphalCode Food Delivery Applicati
             <div class="breadcrumb__nav">
               <ul>
                 <li>
-                  <a href="../index.php">
+                  <a href="../index">
                     Home
                   </a>
                 </li>
@@ -346,7 +346,7 @@ $meta_keywords = "Food Delivery Application, GryphalCode Food Delivery Applicati
                 </ul>
               </div>
             </div>
-            <a class="site-btn" href="../contact.php">
+            <a class="site-btn" href="../contact">
               Launch My App
             </a>
           </div>

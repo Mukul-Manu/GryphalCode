@@ -177,10 +177,10 @@ $meta_keywords = "Thank You, GryphalCode Thank You, Thank, You, IT company, soft
      In the meantime, explore what we've built for companies like yours.
     </p>
     <div class="btn-group">
-     <a class="site-btn" href="portfolio.php">
+     <a class="site-btn" href="portfolio">
       View Our Work
      </a>
-     <a class="site-btn" href="index.php" style="background: transparent; border: 2px solid rgba(255,255,255,0.2); color: #fff;">
+     <a class="site-btn" href="index" style="background: transparent; border: 2px solid rgba(255,255,255,0.2); color: #fff;">
       Back to
                     Home
      </a>

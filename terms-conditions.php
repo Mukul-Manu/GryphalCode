@@ -24,7 +24,7 @@ $meta_keywords = "Terms Conditions, GryphalCode Terms Conditions, Terms, Conditi
    <title>
     Terms &amp; Conditions | Clear &amp; Transparent Business Agreements - GryphalCode
    </title>
-   <link href="https://gryphalcode.com/terms-conditions.php" rel="canonical">
+   <link href="https://gryphalcode.com/terms-conditions" rel="canonical">
     <link href="assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon"/>
     <!-- Performance & Scale Metrics -->
     <meta content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality." name="description">
@@ -38,7 +38,7 @@ $meta_keywords = "Terms Conditions, GryphalCode Terms Conditions, Terms, Conditi
        <meta content="11.0168, 76.9558" name="ICBM"/>
        <!-- Open Graph / Social Transparency -->
        <meta content="website" property="og:type"/>
-       <meta content="https://gryphalcode.com/terms-conditions.php" property="og:url"/>
+       <meta content="https://gryphalcode.com/terms-conditions" property="og:url"/>
        <meta content="Terms &amp; Conditions | Clear &amp; Transparent Business Agreements - GryphalCode" property="og:title"/>
        <meta content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality." property="og:description"/>
        <meta content="https://gryphalcode.com/assets/images/logo/logo.webp" property="og:image"/>
@@ -92,7 +92,7 @@ $meta_keywords = "Terms Conditions, GryphalCode Terms Conditions, Terms, Conditi
   "@type": "WebPage",
   "name": "Terms & Conditions | Clear & Transparent Business Agreements - GryphalCode",
   "description": "GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/terms-conditions.php",
+  "url": "https://gryphalcode.com/terms-conditions",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -237,7 +237,7 @@ $meta_keywords = "Terms Conditions, GryphalCode Terms Conditions, Terms, Conditi
        <div class="breadcrumb__nav">
         <ul>
          <li>
-          <a href="index.php">
+          <a href="index">
            Home
           </a>
          </li>

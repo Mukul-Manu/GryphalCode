@@ -23,7 +23,7 @@ $meta_keywords = "Gdpr Security Overhaul, GryphalCode Gdpr Security Overhaul, Gd
    <title>
     Case Study: GDPR Compliance &amp; Security Overhaul | GryphalCode Portfolio
    </title>
-   <link href="https://gryphalcode.com/case-studies/gdpr-security-overhaul.php" rel="canonical">
+   <link href="https://gryphalcode.com/case-studies/gdpr-security-overhaul" rel="canonical">
     <meta content="Full security audit and GDPR remediation for a fintech, achieving SOC 2 Type II certification in 4 months." name="description">
      <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
      <link href="../assets/css/font-awesome.min.css" rel="stylesheet"/>
@@ -48,7 +48,7 @@ $meta_keywords = "Gdpr Security Overhaul, GryphalCode Gdpr Security Overhaul, Gd
   <meta content="Coimbatore, Tamil Nadu, India - Serving All States Nationwide" name="geo.placename"/>
   <meta content="11.0168, 76.9558" name="ICBM"/>
   <meta content="website" property="og:type"/>
-  <meta content="https://gryphalcode.com/case-studies/gdpr-security-overhaul.php" property="og:url"/>
+  <meta content="https://gryphalcode.com/case-studies/gdpr-security-overhaul" property="og:url"/>
   <meta content="Case Study: GDPR Compliance &amp; Security Overhaul | GryphalCode Portfolio" property="og:title"/>
   <meta content="Full security audit and GDPR remediation for a fintech, achieving SOC 2 Type II certification in 4 months." property="og:description"/>
   <meta content="https://gryphalcode.com/assets/images/logo/logo.webp" property="og:image"/>
@@ -63,7 +63,7 @@ $meta_keywords = "Gdpr Security Overhaul, GryphalCode Gdpr Security Overhaul, Gd
   "@type": "CaseStudy",
   "name": "Case Study: GDPR Compliance & Security Overhaul | GryphalCode Portfolio",
   "description": "Full security audit and GDPR remediation for a fintech, achieving SOC 2 Type II certification in 4 months.",
-  "url": "https://gryphalcode.com/case-studies/gdpr-security-overhaul.php",
+  "url": "https://gryphalcode.com/case-studies/gdpr-security-overhaul",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -222,7 +222,7 @@ $meta_keywords = "Gdpr Security Overhaul, GryphalCode Gdpr Security Overhaul, Gd
           </span>
          </li>
          <li>
-          <a href="../index.php">
+          <a href="../index">
            Home
           </a>
          </li>
@@ -230,7 +230,7 @@ $meta_keywords = "Gdpr Security Overhaul, GryphalCode Gdpr Security Overhaul, Gd
           |
          </li>
          <li>
-          <a href="../case-studies.php">
+          <a href="../case-studies">
            case studies
           </a>
          </li>
@@ -364,7 +364,7 @@ $meta_keywords = "Gdpr Security Overhaul, GryphalCode Gdpr Security Overhaul, Gd
          Protect your brand and your customers with our enterprise-grade security
                                 auditing and remediation.
         </p>
-        <a class="site-btn" href="../contact.php">
+        <a class="site-btn" href="../contact">
          Get a Quote
         </a>
        </div>

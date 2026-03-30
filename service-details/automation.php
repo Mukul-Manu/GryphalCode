@@ -23,7 +23,7 @@ $meta_keywords = "Automation, GryphalCode Automation, Automation, IT company, so
   <title>
     DevOps &amp; Automation Services | GryphalCode
   </title>
-  <link href="https://gryphalcode.com/service-details/automation.php" rel="canonical">
+  <link href="https://gryphalcode.com/service-details/automation" rel="canonical">
   <link href="../assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon">
   <!-- Performance & Scale Metrics -->
   <meta
@@ -39,7 +39,7 @@ $meta_keywords = "Automation, GryphalCode Automation, Automation, IT company, so
   <meta content="11.0168, 76.9558" name="ICBM" />
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />
-  <meta content="https://gryphalcode.com/service-details/automation.php" property="og:url" />
+  <meta content="https://gryphalcode.com/service-details/automation" property="og:url" />
   <meta content="DevOps &amp; Automation Services | GryphalCode" property="og:title" />
   <meta
     content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality."
@@ -109,7 +109,7 @@ $meta_keywords = "Automation, GryphalCode Automation, Automation, IT company, so
   "@type": "Service",
   "name": "DevOps & Automation Services | GryphalCode",
   "description": "GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/service-details/automation.php",
+  "url": "https://gryphalcode.com/service-details/automation",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -258,7 +258,7 @@ $meta_keywords = "Automation, GryphalCode Automation, Automation, IT company, so
             <div class="breadcrumb__nav">
               <ul>
                 <li>
-                  <a href="../index.php">
+                  <a href="../index">
                     Home
                   </a>
                 </li>
@@ -350,7 +350,7 @@ $meta_keywords = "Automation, GryphalCode Automation, Automation, IT company, so
                 </ul>
               </div>
             </div>
-            <a class="site-btn" href="../contact.php">
+            <a class="site-btn" href="../contact">
               Optimize Your Operations
             </a>
           </div>

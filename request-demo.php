@@ -23,7 +23,7 @@ $meta_keywords = "Request Demo, GryphalCode Request Demo, Request, Demo, IT comp
   <title>
    Request a Demo | See GryphalCode Innovation in Action
   </title>
-  <link href="https://gryphalcode.com/request-demo.php" rel="canonical">
+  <link href="https://gryphalcode.com/request-demo" rel="canonical">
    <link href="assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon">
     <!-- Performance & Scale Metrics -->
     <meta content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality." name="description">
@@ -37,7 +37,7 @@ $meta_keywords = "Request Demo, GryphalCode Request Demo, Request, Demo, IT comp
        <meta content="11.0168, 76.9558" name="ICBM"/>
        <!-- Open Graph / Social Transparency -->
        <meta content="website" property="og:type"/>
-       <meta content="https://gryphalcode.com/request-demo.php" property="og:url"/>
+       <meta content="https://gryphalcode.com/request-demo" property="og:url"/>
        <meta content="Request a Demo | See GryphalCode Innovation in Action" property="og:title"/>
        <meta content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality." property="og:description"/>
        <meta content="https://gryphalcode.com/assets/images/logo/logo.webp" property="og:image"/>
@@ -91,7 +91,7 @@ $meta_keywords = "Request Demo, GryphalCode Request Demo, Request, Demo, IT comp
   "@type": "WebPage",
   "name": "Request a Demo | See GryphalCode Innovation in Action",
   "description": "GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/request-demo.php",
+  "url": "https://gryphalcode.com/request-demo",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -238,7 +238,7 @@ $meta_keywords = "Request Demo, GryphalCode Request Demo, Request, Demo, IT comp
        <div class="breadcrumb__nav">
         <ul>
          <li>
-          <a href="index.php">
+          <a href="index">
            Home
           </a>
          </li>
@@ -348,7 +348,7 @@ $meta_keywords = "Request Demo, GryphalCode Request Demo, Request, Demo, IT comp
      Schedule a consultation with our experts to explore custom AI,
         automation, or software development solutions for your business.
     </p>
-    <a class="site-btn transparent mt-3" href="support.php">
+    <a class="site-btn transparent mt-3" href="support">
      Back to Support
     </a>
    </div>

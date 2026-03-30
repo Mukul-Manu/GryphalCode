@@ -23,7 +23,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
   <title>
     Why Choose GryphalCode | Your Trusted Technology Partner
   </title>
-  <link href="https://gryphalcode.com/why-choose.php" rel="canonical" />
+  <link href="https://gryphalcode.com/why-choose" rel="canonical" />
   <link href="assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon" />
   <!-- Performance & Scale Metrics -->
   <meta
@@ -39,7 +39,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
   <meta content="11.0168, 76.9558" name="ICBM" />
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />
-  <meta content="https://gryphalcode.com/why-choose.php" property="og:url" />
+  <meta content="https://gryphalcode.com/why-choose" property="og:url" />
   <meta content="Why Choose GryphalCode | Your Trusted Technology Partner" property="og:title" />
   <meta
     content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality."
@@ -104,7 +104,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
   "@type": "WebPage",
   "name": "Why Choose GryphalCode | Your Trusted Technology Partner",
   "description": "GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/why-choose.php",
+  "url": "https://gryphalcode.com/why-choose",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -254,7 +254,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
             <div class="breadcrumb__nav">
               <ul>
                 <li>
-                  <a href="index.php">
+                  <a href="index">
                     Home
                   </a>
                 </li>
@@ -536,7 +536,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
             From startups to global enterprises, we help ambitious teams turn
             bold ideas into impactful, scalable software solutions.
           </p>
-          <a class="site-btn" href="contact.php">
+          <a class="site-btn" href="contact">
             Let's Collaborate
             <span>
               +
@@ -567,7 +567,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
                     <li><a href="#0"><i class="fal fa-calendar-alt"></i> 24th Oct 2025</a></li>
                     <li><a href="#0"><i class="fal fa-user"></i> By Admin</a></li>
                   </ul>
-                  <h4 class="title"><a href="news-details.php">How AI Automation is Transforming Business
+                  <h4 class="title"><a href="news-details">How AI Automation is Transforming Business
                       Operations</a></h4>
                 </div>
               </div>
@@ -580,7 +580,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
                     <li><a href="#0"><i class="fal fa-calendar-alt"></i> 12th Oct 2025</a></li>
                     <li><a href="#0"><i class="fal fa-user"></i> By Admin</a></li>
                   </ul>
-                  <h4 class="title"><a href="news-details.php">Cloud & DevOps Solutions that Drive Modern
+                  <h4 class="title"><a href="news-details">Cloud & DevOps Solutions that Drive Modern
                       Innovation</a></h4>
                 </div>
               </div>
@@ -597,7 +597,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
                 <li><a href="#0"><i class="fal fa-calendar-alt"></i> 05th Oct 2025</a></li>
                 <li><a href="#0"><i class="fal fa-user"></i> By Admin</a></li>
               </ul>
-              <h4 class="title"><a href="news-details.php">GryphalCode Expands AI & Cloud Division to Support Global
+              <h4 class="title"><a href="news-details">GryphalCode Expands AI & Cloud Division to Support Global
                   Clients</a></h4>
             </div>
           </div>

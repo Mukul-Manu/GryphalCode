@@ -23,7 +23,7 @@ $meta_keywords = "About, GryphalCode About, About, IT company, software developm
   <title>
     About GryphalCode | AI &amp; Software Engineering Experts
   </title>
-  <link href="https://gryphalcode.com/about.php" rel="canonical" />
+  <link href="https://gryphalcode.com/about" rel="canonical" />
   <link href="assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon" />
   <!-- Performance & Scale Metrics -->
   <meta
@@ -39,7 +39,7 @@ $meta_keywords = "About, GryphalCode About, About, IT company, software developm
   <meta content="11.0168, 76.9558" name="ICBM" />
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />
-  <meta content="https://gryphalcode.com/about.php" property="og:url" />
+  <meta content="https://gryphalcode.com/about" property="og:url" />
   <meta content="About GryphalCode | AI &amp; Software Engineering Experts" property="og:title" />
   <meta
     content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality."
@@ -104,7 +104,7 @@ $meta_keywords = "About, GryphalCode About, About, IT company, software developm
   "@type": "WebPage",
   "name": "About GryphalCode | AI & Software Engineering Experts",
   "description": "GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/about.php",
+  "url": "https://gryphalcode.com/about",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -258,7 +258,7 @@ $meta_keywords = "About, GryphalCode About, About, IT company, software developm
                   </span>
                 </li>
                 <li>
-                  <a href="index.php">
+                  <a href="index">
                     Home
                   </a>
                 </li>

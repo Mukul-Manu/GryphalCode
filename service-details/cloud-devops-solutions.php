@@ -23,7 +23,7 @@ $meta_keywords = "Cloud Devops Solutions, GryphalCode Cloud Devops Solutions, Cl
   <title>
     Cloud &amp; DevOps Solutions | GryphalCode
   </title>
-  <link href="https://gryphalcode.com/service-details/cloud-devops-solutions.php" rel="canonical">
+  <link href="https://gryphalcode.com/service-details/cloud-devops-solutions" rel="canonical">
   <link href="../assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon">
   <!-- Performance & Scale Metrics -->
   <meta
@@ -39,7 +39,7 @@ $meta_keywords = "Cloud Devops Solutions, GryphalCode Cloud Devops Solutions, Cl
   <meta content="11.0168, 76.9558" name="ICBM" />
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />
-  <meta content="https://gryphalcode.com/service-details/cloud-devops-solutions.php" property="og:url" />
+  <meta content="https://gryphalcode.com/service-details/cloud-devops-solutions" property="og:url" />
   <meta content="Cloud &amp; DevOps Solutions | GryphalCode" property="og:title" />
   <meta
     content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality."
@@ -109,7 +109,7 @@ $meta_keywords = "Cloud Devops Solutions, GryphalCode Cloud Devops Solutions, Cl
   "@type": "Service",
   "name": "Cloud & DevOps Solutions | GryphalCode",
   "description": "GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/service-details/cloud-devops-solutions.php",
+  "url": "https://gryphalcode.com/service-details/cloud-devops-solutions",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -256,7 +256,7 @@ $meta_keywords = "Cloud Devops Solutions, GryphalCode Cloud Devops Solutions, Cl
             <div class="breadcrumb__nav">
               <ul>
                 <li>
-                  <a href="../index.php">
+                  <a href="../index">
                     Home
                   </a>
                 </li>
@@ -346,7 +346,7 @@ $meta_keywords = "Cloud Devops Solutions, GryphalCode Cloud Devops Solutions, Cl
                 </ul>
               </div>
             </div>
-            <a class="site-btn" href="../contact.php">
+            <a class="site-btn" href="../contact">
               Migrate to Cloud
             </a>
           </div>

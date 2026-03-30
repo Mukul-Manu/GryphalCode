@@ -23,7 +23,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
   <title>
     Our Services | Custom AI, Cloud &amp; Mobile App Development
   </title>
-  <link href="https://gryphalcode.com/services.php" rel="canonical" />
+  <link href="https://gryphalcode.com/services" rel="canonical" />
   <link href="assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon" />
   <!-- Performance & Scale Metrics -->
   <meta
@@ -39,7 +39,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
   <meta content="11.0168, 76.9558" name="ICBM" />
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />
-  <meta content="https://gryphalcode.com/services.php" property="og:url" />
+  <meta content="https://gryphalcode.com/services" property="og:url" />
   <meta content="Our Services | Custom AI, Cloud &amp; Mobile App Development" property="og:title" />
   <meta
     content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality."
@@ -104,7 +104,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
   "@type": "WebPage",
   "name": "Our Services | Custom AI, Cloud & Mobile App Development",
   "description": "GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/services.php",
+  "url": "https://gryphalcode.com/services",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -253,7 +253,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
             <div class="breadcrumb__nav">
               <ul>
                 <li>
-                  <a href="index.php">
+                  <a href="index">
                     Home
                   </a>
                 </li>
@@ -293,7 +293,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
                 business needs.
               </p>
             </div>
-            <a class="inline-btn mt-15" href="service-details/custom-software-development.php">
+            <a class="inline-btn mt-15" href="service-details/custom-software-development">
               Read More
             </a>
           </div>
@@ -314,7 +314,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
                 insights.
               </p>
             </div>
-            <a class="inline-btn mt-15" href="service-details/ai-machine-learning-solutions.php">
+            <a class="inline-btn mt-15" href="service-details/ai-machine-learning-solutions">
               Read More
             </a>
           </div>
@@ -334,7 +334,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
                 Cloud Migration, Kubernetes Orchestration, and Automated CI/CD pipelines for secure, rapid delivery.
               </p>
             </div>
-            <a class="inline-btn mt-15" href="service-details/cloud-devops-solutions.php">
+            <a class="inline-btn mt-15" href="service-details/cloud-devops-solutions">
               Read More
             </a>
           </div>
@@ -354,7 +354,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
                 Secure API development and workflow automation to connect systems and improve efficiency.
               </p>
             </div>
-            <a class="inline-btn mt-15" href="service-details/api-integration-automation.php">
+            <a class="inline-btn mt-15" href="service-details/api-integration-automation">
               Read More
             </a>
           </div>
@@ -374,7 +374,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
                 Automate customer support and engagement with AI Chatbots and verified WhatsApp Business solutions.
               </p>
             </div>
-            <a class="inline-btn mt-15" href="service-details/whatsapp-business-solutions.php">
+            <a class="inline-btn mt-15" href="service-details/whatsapp-business-solutions">
               Read More
             </a>
           </div>
@@ -522,7 +522,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
           </div>
         </div>
         <div class="col-xl-6 text-right">
-          <a class="site-btn mt-95" href="contact.php">
+          <a class="site-btn mt-95" href="contact">
             Get Started Now
           </a>
         </div>

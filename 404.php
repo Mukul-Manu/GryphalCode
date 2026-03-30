@@ -23,7 +23,7 @@ $meta_keywords = "404, GryphalCode 404, 404, IT company, software development, A
   <title>
    Page Not Found | GryphalCode
   </title>
-  <link href="https://gryphalcode.com/404.php" rel="canonical">
+  <link href="https://gryphalcode.com/404" rel="canonical">
    <link href="assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon">
     <!-- Performance & Scale Metrics -->
     <meta content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality." name="description">
@@ -37,7 +37,7 @@ $meta_keywords = "404, GryphalCode 404, 404, IT company, software development, A
        <meta content="11.0168, 76.9558" name="ICBM"/>
        <!-- Open Graph / Social Transparency -->
        <meta content="website" property="og:type"/>
-       <meta content="https://gryphalcode.com/404.php" property="og:url"/>
+       <meta content="https://gryphalcode.com/404" property="og:url"/>
        <meta content="Page Not Found | GryphalCode" property="og:title"/>
        <meta content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality." property="og:description"/>
        <meta content="https://gryphalcode.com/assets/images/logo/logo.webp" property="og:image"/>
@@ -91,7 +91,7 @@ $meta_keywords = "404, GryphalCode 404, 404, IT company, software development, A
   "@type": "WebPage",
   "name": "Page Not Found | GryphalCode",
   "description": "GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/404.php",
+  "url": "https://gryphalcode.com/404",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -236,7 +236,7 @@ $meta_keywords = "404, GryphalCode 404, 404, IT company, software development, A
        <div class="breadcrumb__nav">
         <ul>
          <li>
-          <a href="index.php">
+          <a href="index">
            Home
           </a>
          </li>
@@ -271,7 +271,7 @@ $meta_keywords = "404, GryphalCode 404, 404, IT company, software development, A
         The page you are looking for might have been removed, had its name changed, or
                             is temporarily unavailable.
        </p>
-       <a class="site-btn" href="index.php">
+       <a class="site-btn" href="index">
         Back to Home
        </a>
       </div>

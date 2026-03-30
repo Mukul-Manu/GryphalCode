@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Ensure we don't rewrite if the request is an actual directory or file
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Append .php internally if the request works with it
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Optional: Externally redirect explicit .php requests to the clean URL (SEO Friendly)
+# Warning: This can cause issues in local subfolders if not careful, but works well in production root.
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteRule ^ %1 [R=301,L]
+</IfModule>

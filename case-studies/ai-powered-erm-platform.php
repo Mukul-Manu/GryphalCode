@@ -23,7 +23,7 @@ $meta_keywords = "Ai Powered Erm Platform, GryphalCode Ai Powered Erm Platform, 
    <title>
     Case Study: AI-Powered ERM Platform | GryphalCode Portfolio
    </title>
-   <link href="https://gryphalcode.com/case-studies/ai-powered-erm-platform.php" rel="canonical">
+   <link href="https://gryphalcode.com/case-studies/ai-powered-erm-platform" rel="canonical">
     <meta content="Enterprise risk management system with real-time AI anomaly detection, reducing false positives by 73%." name="description">
      <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
      <link href="../assets/css/font-awesome.min.css" rel="stylesheet"/>
@@ -48,7 +48,7 @@ $meta_keywords = "Ai Powered Erm Platform, GryphalCode Ai Powered Erm Platform, 
   <meta content="Coimbatore, Tamil Nadu, India - Serving All States Nationwide" name="geo.placename"/>
   <meta content="11.0168, 76.9558" name="ICBM"/>
   <meta content="website" property="og:type"/>
-  <meta content="https://gryphalcode.com/case-studies/ai-powered-erm-platform.php" property="og:url"/>
+  <meta content="https://gryphalcode.com/case-studies/ai-powered-erm-platform" property="og:url"/>
   <meta content="Case Study: AI-Powered ERM Platform | GryphalCode Portfolio" property="og:title"/>
   <meta content="Enterprise risk management system with real-time AI anomaly detection, reducing false positives by 73%." property="og:description"/>
   <meta content="https://gryphalcode.com/assets/images/logo/logo.webp" property="og:image"/>
@@ -63,7 +63,7 @@ $meta_keywords = "Ai Powered Erm Platform, GryphalCode Ai Powered Erm Platform, 
   "@type": "CaseStudy",
   "name": "Case Study: AI-Powered ERM Platform | GryphalCode Portfolio",
   "description": "Enterprise risk management system with real-time AI anomaly detection, reducing false positives by 73%.",
-  "url": "https://gryphalcode.com/case-studies/ai-powered-erm-platform.php",
+  "url": "https://gryphalcode.com/case-studies/ai-powered-erm-platform",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -222,7 +222,7 @@ $meta_keywords = "Ai Powered Erm Platform, GryphalCode Ai Powered Erm Platform, 
           </span>
          </li>
          <li>
-          <a href="../index.php">
+          <a href="../index">
            Home
           </a>
          </li>
@@ -230,7 +230,7 @@ $meta_keywords = "Ai Powered Erm Platform, GryphalCode Ai Powered Erm Platform, 
           |
          </li>
          <li>
-          <a href="../case-studies.php">
+          <a href="../case-studies">
            case studies
           </a>
          </li>
@@ -365,7 +365,7 @@ $meta_keywords = "Ai Powered Erm Platform, GryphalCode Ai Powered Erm Platform, 
         <p class="mb-20">
          Let's discuss how we can transform your business with custom AI solutions.
         </p>
-        <a class="site-btn" href="../contact.php">
+        <a class="site-btn" href="../contact">
          Get a Quote
         </a>
        </div>

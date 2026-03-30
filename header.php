@@ -30,7 +30,7 @@
       <div class="row">
         <div class="col-xl-2 col-lg-2 col-md-4 col-6 my-auto">
           <div class="header__logo">
-            <a href="<?= $base_url ?>/index.php">
+            <a href="<?= $base_url ?>/index">
               <img src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="GryphalCode Logo" />
             </a>
           </div>
@@ -40,31 +40,31 @@
             <nav id="mobile-menu">
               <ul>
                 <li>
-                  <a href="<?= $base_url ?>/index.php">Home </a>
+                  <a href="<?= $base_url ?>/index">Home </a>
                 </li>
-                <li><a href="<?= $base_url ?>/about.php">About</a></li>
-               <li><a href="<?= $base_url ?>/case-studies.php">Case Studies</a></li>
+                <li><a href="<?= $base_url ?>/about">About</a></li>
+               <li><a href="<?= $base_url ?>/case-studies">Case Studies</a></li>
                 <li>
-                  <a href="<?= $base_url ?>/services.php">Services <span>+</span></a>
+                  <a href="<?= $base_url ?>/services">Services <span>+</span></a>
                   <ul class="sub-menu">
                     
                     <li>
-                      <a href="<?= $base_url ?>/service-details/custom-software-development.php">Custom Software</a>
+                      <a href="<?= $base_url ?>/service-details/custom-software-development">Custom Software</a>
                     </li>
                     <li>
-                      <a href="<?= $base_url ?>/service-details/ai-machine-learning-solutions.php">AI &amp; ML</a>
+                      <a href="<?= $base_url ?>/service-details/ai-machine-learning-solutions">AI &amp; ML</a>
                     </li>
                     <li>
-                      <a href="<?= $base_url ?>/service-details/cloud-devops-solutions.php">Cloud &amp; DevOps</a>
+                      <a href="<?= $base_url ?>/service-details/cloud-devops-solutions">Cloud &amp; DevOps</a>
                     </li>
                     <li>
-                      <a href="<?= $base_url ?>/service-details/api-integration-automation.php">API &amp; Automation</a>
+                      <a href="<?= $base_url ?>/service-details/api-integration-automation">API &amp; Automation</a>
                     </li>
                     <li>
-                      <a href="<?= $base_url ?>/service-details/whatsapp-business-solutions.php">WhatsApp Business API</a>
+                      <a href="<?= $base_url ?>/service-details/whatsapp-business-solutions">WhatsApp Business API</a>
                     </li>
                     <li>
-                      <a href="<?= $base_url ?>/service-details/food-delivery-application.php">Food Delivery App</a>
+                      <a href="<?= $base_url ?>/service-details/food-delivery-application">Food Delivery App</a>
                     </li>
                   </ul>
                 </li>
@@ -72,15 +72,15 @@
                 <li>
                   <a href="javascript:void(0)">Pages <span>+</span></a>
                   <ul class="sub-menu">
-                    <li><a href="<?= $base_url ?>/faq.php">Faq</a></li>
-                    <li><a href="<?= $base_url ?>/careers.php">Careers</a></li>
+                    <li><a href="<?= $base_url ?>/faq">Faq</a></li>
+                    <li><a href="<?= $base_url ?>/careers">Careers</a></li>
                     
-                    <li><a href="<?= $base_url ?>/why-choose.php">Why Choose</a></li>
+                    <li><a href="<?= $base_url ?>/why-choose">Why Choose</a></li>
                     
                   </ul>
                 </li>
                 
-                <li><a href="<?= $base_url ?>/contact.php">Contact</a></li>
+                <li><a href="<?= $base_url ?>/contact">Contact</a></li>
               </ul>
             </nav>
             <div class="mobile-menu"></div>
@@ -88,7 +88,7 @@
         </div>
         <div class="col-xl-3 col-lg-3 col-md-8 my-auto d-none d-xl-block d-lg-block">
           <div class="navarea__right">
-            <a href="<?= $base_url ?>/contact.php" class="site-btn">Get A Quote </a>
+            <a href="<?= $base_url ?>/contact" class="site-btn">Get A Quote </a>
             <button class="search-trigger">
               <i class="fal fa-search"></i>
             </button>

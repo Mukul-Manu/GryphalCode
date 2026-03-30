@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-12 text-center">
-        <a href="<?= $base_url ?>/index.php" class="site-logo mb-20">
+        <a href="<?= $base_url ?>/index" class="site-logo mb-20">
           <img src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="Logo" />
         </a>
         <div class="footer__social mb-50">
@@ -65,37 +65,37 @@
           <div class="footer__link-list">
             <ul>
               <li>
-                <a href="<?= $base_url ?>/service-details/custom-software-development.php">
+                <a href="<?= $base_url ?>/service-details/custom-software-development">
                   <i class="fal fa-code"></i>
                   <span>Custom Software Development</span>
                 </a>
               </li>
               <li>
-                <a href="<?= $base_url ?>/service-details/ai-machine-learning-solutions.php">
+                <a href="<?= $base_url ?>/service-details/ai-machine-learning-solutions">
                   <i class="fal fa-brain"></i>
                   <span>AI &amp; Machine Learning Solutions</span>
                 </a>
               </li>
               <li>
-                <a href="<?= $base_url ?>/service-details/cloud-devops-solutions.php">
+                <a href="<?= $base_url ?>/service-details/cloud-devops-solutions">
                   <i class="fal fa-cloud"></i>
                   <span>Cloud &amp; DevOps Solutions</span>
                 </a>
               </li>
               <li>
-                <a href="<?= $base_url ?>/service-details/api-integration-automation.php">
+                <a href="<?= $base_url ?>/service-details/api-integration-automation">
                   <i class="fal fa-link"></i>
                   <span>API Integration &amp; Automation</span>
                 </a>
               </li>
               <li>
-                <a href="<?= $base_url ?>/service-details/whatsapp-business-solutions.php">
+                <a href="<?= $base_url ?>/service-details/whatsapp-business-solutions">
                   <i class="fal fa-comment-alt"></i>
                   <span>WhatsApp Business API</span>
                 </a>
               </li>
               <li>
-                <a href="<?= $base_url ?>/service-details/food-delivery-application.php">
+                <a href="<?= $base_url ?>/service-details/food-delivery-application">
                   <i class="fal fa-utensils"></i>
                   <span>Food Delivery App</span>
                 </a>
@@ -112,31 +112,31 @@
           <div class="footer__link-list">
             <ul>
               <li>
-                <a href="<?= $base_url ?>/about.php">
+                <a href="<?= $base_url ?>/about">
                   <i class="fal fa-info-circle"></i>
                   <span>About Us</span>
                 </a>
               </li>
               <li>
-                <a href="<?= $base_url ?>/case-studies.php">
+                <a href="<?= $base_url ?>/case-studies">
                   <i class="fal fa-file-alt"></i>
                   <span>Case Studies</span>
                 </a>
               </li>
               <li>
-                <a href="<?= $base_url ?>/careers.php">
+                <a href="<?= $base_url ?>/careers">
                   <i class="fal fa-user-tie"></i>
                   <span>Careers</span>
                 </a>
               </li>
               <li>
-                <a href="<?= $base_url ?>/privacy-policy.php">
+                <a href="<?= $base_url ?>/privacy-policy">
                   <i class="fal fa-user-secret"></i>
                   <span>Privacy Policy</span>
                 </a>
               </li>
               <li>
-                <a href="<?= $base_url ?>/terms-conditions.php">
+                <a href="<?= $base_url ?>/terms-conditions">
                   <i class="fal fa-file-signature"></i>
                   <span>Terms & Conditions</span>
                 </a>
@@ -153,25 +153,25 @@
           <div class="footer__link-list">
             <ul>
               <li>
-                <a href="<?= $base_url ?>/support.php">
+                <a href="<?= $base_url ?>/support">
                   <i class="fal fa-headset"></i>
                   <span>Customer Support</span>
                 </a>
               </li>
               <li>
-                <a href="<?= $base_url ?>/faq.php">
+                <a href="<?= $base_url ?>/faq">
                   <i class="fal fa-question-circle"></i>
                   <span>Help &amp; FAQ</span>
                 </a>
               </li>
               <li>
-                <a href="<?= $base_url ?>/contact.php">
+                <a href="<?= $base_url ?>/contact">
                   <i class="fal fa-envelope-open-text"></i>
                   <span>Contact Us</span>
                 </a>
               </li>
               <li>
-                <a href="<?= $base_url ?>/request-demo.php">
+                <a href="<?= $base_url ?>/request-demo">
                   <i class="fal fa-laptop-code"></i>
                   <span>Request a Demo</span>
                 </a>

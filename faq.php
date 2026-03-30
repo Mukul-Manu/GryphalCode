@@ -23,7 +23,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   <title>
    GryphalCode FAQ | Expert Answers to Your Technology Questions
   </title>
-  <link href="https://gryphalcode.com/faq.php" rel="canonical">
+  <link href="https://gryphalcode.com/faq" rel="canonical">
    <link href="assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon">
     <!-- Performance & Scale Metrics -->
     <meta content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality." name="description">
@@ -37,7 +37,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <meta content="11.0168, 76.9558" name="ICBM"/>
        <!-- Open Graph / Social Transparency -->
        <meta content="website" property="og:type"/>
-       <meta content="https://gryphalcode.com/faq.php" property="og:url"/>
+       <meta content="https://gryphalcode.com/faq" property="og:url"/>
        <meta content="GryphalCode FAQ | Expert Answers to Your Technology Questions" property="og:title"/>
        <meta content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality." property="og:description"/>
        <meta content="https://gryphalcode.com/assets/images/logo/logo.webp" property="og:image"/>
@@ -91,7 +91,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   "@type": "WebPage",
   "name": "GryphalCode FAQ | Expert Answers to Your Technology Questions",
   "description": "GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/faq.php",
+  "url": "https://gryphalcode.com/faq",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -242,7 +242,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
           </span>
          </li>
          <li>
-          <a href="/index.php">
+          <a href="/index">
            Home
           </a>
          </li>
@@ -855,7 +855,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
       <div class="faq-wrap pt-45 pb-45 mt-40">
        <p>
         Still have questions?
-        <a class="inline-btn" href="contact.php">
+        <a class="inline-btn" href="contact">
          <i class="fal fa-comments">
          </i>
          <span>
@@ -897,7 +897,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
       </div>
      </div>
      <div class="col-xl-6 text-xl-end text-center">
-      <a class="site-btn mt-95" href="contact.php">
+      <a class="site-btn mt-95" href="contact">
        Start Your Project
        <span>
         +

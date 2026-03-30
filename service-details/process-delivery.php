@@ -23,7 +23,7 @@ $meta_keywords = "Process Delivery, GryphalCode Process Delivery, Process, Deliv
   <title>
     Project Delivery Services | GryphalCode
   </title>
-  <link href="https://gryphalcode.com/service-details/process-delivery.php" rel="canonical">
+  <link href="https://gryphalcode.com/service-details/process-delivery" rel="canonical">
   <link href="../assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon">
   <!-- Performance & Scale Metrics -->
   <meta
@@ -39,7 +39,7 @@ $meta_keywords = "Process Delivery, GryphalCode Process Delivery, Process, Deliv
   <meta content="11.0168, 76.9558" name="ICBM" />
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />
-  <meta content="https://gryphalcode.com/service-details/process-delivery.php" property="og:url" />
+  <meta content="https://gryphalcode.com/service-details/process-delivery" property="og:url" />
   <meta content="Project Delivery Services | GryphalCode" property="og:title" />
   <meta
     content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality."
@@ -109,7 +109,7 @@ $meta_keywords = "Process Delivery, GryphalCode Process Delivery, Process, Deliv
   "@type": "Service",
   "name": "Project Delivery Services | GryphalCode",
   "description": "GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/service-details/process-delivery.php",
+  "url": "https://gryphalcode.com/service-details/process-delivery",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -258,7 +258,7 @@ $meta_keywords = "Process Delivery, GryphalCode Process Delivery, Process, Deliv
             <div class="breadcrumb__nav">
               <ul>
                 <li>
-                  <a href="../index.php">
+                  <a href="../index">
                     Home
                   </a>
                 </li>
@@ -351,7 +351,7 @@ $meta_keywords = "Process Delivery, GryphalCode Process Delivery, Process, Deliv
                 </ul>
               </div>
             </div>
-            <a class="site-btn" href="../contact.php">
+            <a class="site-btn" href="../contact">
               Start Your Project
             </a>
           </div>

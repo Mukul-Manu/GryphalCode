@@ -23,7 +23,7 @@ $meta_keywords = "Security, GryphalCode Security, Security, IT company, software
   <title>
     Cybersecurity Solutions | GryphalCode
   </title>
-  <link href="https://gryphalcode.com/service-details/security.php" rel="canonical">
+  <link href="https://gryphalcode.com/service-details/security" rel="canonical">
   <link href="../assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon">
   <!-- Performance & Scale Metrics -->
   <meta
@@ -39,7 +39,7 @@ $meta_keywords = "Security, GryphalCode Security, Security, IT company, software
   <meta content="11.0168, 76.9558" name="ICBM" />
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />
-  <meta content="https://gryphalcode.com/service-details/security.php" property="og:url" />
+  <meta content="https://gryphalcode.com/service-details/security" property="og:url" />
   <meta content="Cybersecurity Solutions | GryphalCode" property="og:title" />
   <meta
     content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality."
@@ -109,7 +109,7 @@ $meta_keywords = "Security, GryphalCode Security, Security, IT company, software
   "@type": "Service",
   "name": "Cybersecurity Solutions | GryphalCode",
   "description": "GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/service-details/security.php",
+  "url": "https://gryphalcode.com/service-details/security",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -258,7 +258,7 @@ $meta_keywords = "Security, GryphalCode Security, Security, IT company, software
             <div class="breadcrumb__nav">
               <ul>
                 <li>
-                  <a href="../index.php">
+                  <a href="../index">
                     Home
                   </a>
                 </li>
@@ -350,7 +350,7 @@ $meta_keywords = "Security, GryphalCode Security, Security, IT company, software
                 </ul>
               </div>
             </div>
-            <a class="site-btn" href="../contact.php">
+            <a class="site-btn" href="../contact">
               Secure Your Assets
             </a>
           </div>

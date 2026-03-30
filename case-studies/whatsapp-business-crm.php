@@ -23,7 +23,7 @@ $meta_keywords = "Whatsapp Business Crm, GryphalCode Whatsapp Business Crm, What
    <title>
     Case Study: WhatsApp Business CRM for Retail | GryphalCode Portfolio
    </title>
-   <link href="https://gryphalcode.com/case-studies/whatsapp-business-crm.php" rel="canonical">
+   <link href="https://gryphalcode.com/case-studies/whatsapp-business-crm" rel="canonical">
     <meta content="Unified WhatsApp CRM for a 200-outlet retail chain, boosting customer re-engagement by 4.2x." name="description">
      <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
      <link href="../assets/css/font-awesome.min.css" rel="stylesheet"/>
@@ -48,7 +48,7 @@ $meta_keywords = "Whatsapp Business Crm, GryphalCode Whatsapp Business Crm, What
   <meta content="Coimbatore, Tamil Nadu, India - Serving All States Nationwide" name="geo.placename"/>
   <meta content="11.0168, 76.9558" name="ICBM"/>
   <meta content="website" property="og:type"/>
-  <meta content="https://gryphalcode.com/case-studies/whatsapp-business-crm.php" property="og:url"/>
+  <meta content="https://gryphalcode.com/case-studies/whatsapp-business-crm" property="og:url"/>
   <meta content="Case Study: WhatsApp Business CRM for Retail | GryphalCode Portfolio" property="og:title"/>
   <meta content="Unified WhatsApp CRM for a 200-outlet retail chain, boosting customer re-engagement by 4.2x." property="og:description"/>
   <meta content="https://gryphalcode.com/assets/images/logo/logo.webp" property="og:image"/>
@@ -63,7 +63,7 @@ $meta_keywords = "Whatsapp Business Crm, GryphalCode Whatsapp Business Crm, What
   "@type": "CaseStudy",
   "name": "Case Study: WhatsApp Business CRM for Retail | GryphalCode Portfolio",
   "description": "Unified WhatsApp CRM for a 200-outlet retail chain, boosting customer re-engagement by 4.2x.",
-  "url": "https://gryphalcode.com/case-studies/whatsapp-business-crm.php",
+  "url": "https://gryphalcode.com/case-studies/whatsapp-business-crm",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -222,7 +222,7 @@ $meta_keywords = "Whatsapp Business Crm, GryphalCode Whatsapp Business Crm, What
           </span>
          </li>
          <li>
-          <a href="../index.php">
+          <a href="../index">
            Home
           </a>
          </li>
@@ -230,7 +230,7 @@ $meta_keywords = "Whatsapp Business Crm, GryphalCode Whatsapp Business Crm, What
           |
          </li>
          <li>
-          <a href="../case-studies.php">
+          <a href="../case-studies">
            case studies
           </a>
          </li>
@@ -362,7 +362,7 @@ $meta_keywords = "Whatsapp Business Crm, GryphalCode Whatsapp Business Crm, What
          Connect with your customers where they already are. Let's build your
                                 WhatsApp strategy.
         </p>
-        <a class="site-btn" href="../contact.php">
+        <a class="site-btn" href="../contact">
          Get a Quote
         </a>
        </div>

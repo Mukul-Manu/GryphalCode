@@ -23,7 +23,7 @@ $meta_keywords = "Careers, GryphalCode Careers, Careers, IT company, software de
         <title>
                 Careers at GryphalCode | Join the Elite 1% of Global Tech Talent
         </title>
-        <link href="https://gryphalcode.com/careers.php" rel="canonical" />
+        <link href="https://gryphalcode.com/careers" rel="canonical" />
         <link href="assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon" />
         <!-- Performance & Scale Metrics -->
         <meta content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality."
@@ -38,7 +38,7 @@ $meta_keywords = "Careers, GryphalCode Careers, Careers, IT company, software de
         <meta content="11.0168, 76.9558" name="ICBM" />
         <!-- Open Graph / Social Transparency -->
         <meta content="website" property="og:type" />
-        <meta content="https://gryphalcode.com/careers.php" property="og:url" />
+        <meta content="https://gryphalcode.com/careers" property="og:url" />
         <meta content="Careers at GryphalCode | Join the Elite 1% of Global Tech Talent" property="og:title" />
         <meta content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality."
                 property="og:description" />
@@ -100,7 +100,7 @@ $meta_keywords = "Careers, GryphalCode Careers, Careers, IT company, software de
   "@type": "WebPage",
   "name": "Careers at GryphalCode | Join the Elite 1% of Global Tech Talent",
   "description": "GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/careers.php",
+  "url": "https://gryphalcode.com/careers",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -249,7 +249,7 @@ $meta_keywords = "Careers, GryphalCode Careers, Careers, IT company, software de
                                                 <div class="breadcrumb__nav">
                                                         <ul>
                                                                 <li>
-                                                                        <a href="index.php">
+                                                                        <a href="index">
                                                                                 Home
                                                                         </a>
                                                                 </li>
@@ -285,7 +285,7 @@ $meta_keywords = "Careers, GryphalCode Careers, Careers, IT company, software de
                                                                         src="assets/images/bg/careers-bg-2.webp" / loading="lazy">
                                                         </div>
                                                 </div>
-                                                <a class="site-btn" href="index.php">
+                                                <a class="site-btn" href="index">
                                                         GryphalCode
                                                 </a>
                                         </div>

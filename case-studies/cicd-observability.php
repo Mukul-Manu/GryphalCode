@@ -23,7 +23,7 @@ $meta_keywords = "Cicd Observability, GryphalCode Cicd Observability, Cicd, Obse
    <title>
     Case Study: CI/CD &amp; Observability for SaaS | GryphalCode Portfolio
    </title>
-   <link href="https://gryphalcode.com/case-studies/cicd-observability.php" rel="canonical">
+   <link href="https://gryphalcode.com/case-studies/cicd-observability" rel="canonical">
     <meta content="Implemented full GitOps with Kubernetes, cutting deployment failures by 89% and release cycles from 2wk → 1day." name="description">
      <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
      <link href="../assets/css/font-awesome.min.css" rel="stylesheet"/>
@@ -48,7 +48,7 @@ $meta_keywords = "Cicd Observability, GryphalCode Cicd Observability, Cicd, Obse
   <meta content="Coimbatore, Tamil Nadu, India - Serving All States Nationwide" name="geo.placename"/>
   <meta content="11.0168, 76.9558" name="ICBM"/>
   <meta content="website" property="og:type"/>
-  <meta content="https://gryphalcode.com/case-studies/cicd-observability.php" property="og:url"/>
+  <meta content="https://gryphalcode.com/case-studies/cicd-observability" property="og:url"/>
   <meta content="Case Study: CI/CD &amp; Observability for SaaS | GryphalCode Portfolio" property="og:title"/>
   <meta content="Implemented full GitOps with Kubernetes, cutting deployment failures by 89% and release cycles from 2wk → 1day." property="og:description"/>
   <meta content="https://gryphalcode.com/assets/images/logo/logo.webp" property="og:image"/>
@@ -63,7 +63,7 @@ $meta_keywords = "Cicd Observability, GryphalCode Cicd Observability, Cicd, Obse
   "@type": "CaseStudy",
   "name": "Case Study: CI/CD & Observability for SaaS | GryphalCode Portfolio",
   "description": "Implemented full GitOps with Kubernetes, cutting deployment failures by 89% and release cycles from 2wk \u2192 1day.",
-  "url": "https://gryphalcode.com/case-studies/cicd-observability.php",
+  "url": "https://gryphalcode.com/case-studies/cicd-observability",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -222,7 +222,7 @@ $meta_keywords = "Cicd Observability, GryphalCode Cicd Observability, Cicd, Obse
           </span>
          </li>
          <li>
-          <a href="../index.php">
+          <a href="../index">
            Home
           </a>
          </li>
@@ -230,7 +230,7 @@ $meta_keywords = "Cicd Observability, GryphalCode Cicd Observability, Cicd, Obse
           |
          </li>
          <li>
-          <a href="../case-studies.php">
+          <a href="../case-studies">
            case studies
           </a>
          </li>
@@ -363,7 +363,7 @@ $meta_keywords = "Cicd Observability, GryphalCode Cicd Observability, Cicd, Obse
          Stop worrying about manual deployments. Let's automate your path to
                                 production.
         </p>
-        <a class="site-btn" href="../contact.php">
+        <a class="site-btn" href="../contact">
          Get a Quote
         </a>
        </div>

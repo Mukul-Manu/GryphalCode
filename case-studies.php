@@ -23,7 +23,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
   <title>
     Case Studies | Real-World AI &amp; Software Success Stories — GryphalCode
   </title>
-  <link href="https://gryphalcode.com/case-studies.php" rel="canonical" />
+  <link href="https://gryphalcode.com/case-studies" rel="canonical" />
   <link href="assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon" />
   <!-- Performance & Scale Metrics -->
   <meta
@@ -39,7 +39,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
   <meta content="11.0168, 76.9558" name="ICBM" />
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />
-  <meta content="https://gryphalcode.com/case-studies.php" property="og:url" />
+  <meta content="https://gryphalcode.com/case-studies" property="og:url" />
   <meta content="Case Studies | Real-World AI &amp; Software Success Stories — GryphalCode" property="og:title" />
   <meta
     content="Explore GryphalCode's real-world case studies showcasing AI integration, custom software, and cloud solutions that transformed businesses."
@@ -104,7 +104,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
   "@type": "WebPage",
   "name": "Case Studies | Real-World AI & Software Success Stories \u2014 GryphalCode",
   "description": "Explore GryphalCode's real-world case studies showcasing AI integration, custom software, and cloud solutions that transformed businesses.",
-  "url": "https://gryphalcode.com/case-studies.php",
+  "url": "https://gryphalcode.com/case-studies",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -256,7 +256,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
                   </span>
                 </li>
                 <li>
-                  <a href="index.php">
+                  <a href="index">
                     Home
                   </a>
                 </li>
@@ -311,7 +311,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
         <div class="col-xl-4 col-lg-6 mt-30">
           <div class="premium-case-card">
             <div class="case-card__img">
-              <a href="case-studies/ai-powered-erm-platform.php">
+              <a href="case-studies/ai-powered-erm-platform">
                 <img alt="AI-Powered ERM Platform Case Study" src="assets/images/service-previews/ai-ml.webp" / loading="lazy">
               </a>
             </div>
@@ -344,7 +344,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
                   </div>
                 </div>
               </div>
-              <a class="premium-btn" href="case-studies/ai-powered-erm-platform.php">
+              <a class="premium-btn" href="case-studies/ai-powered-erm-platform">
                 Read Case Study
                 <i class="fal fa-arrow-right">
                 </i>
@@ -356,7 +356,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
         <div class="col-xl-4 col-lg-6 mt-30">
           <div class="premium-case-card">
             <div class="case-card__img">
-              <a href="case-studies/food-delivery-platform.php">
+              <a href="case-studies/food-delivery-platform">
                 <img alt="Food Delivery Platform Case Study" src="assets/images/service-previews/food-delivery.webp" / loading="lazy">
               </a>
             </div>
@@ -389,7 +389,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
                   </div>
                 </div>
               </div>
-              <a class="premium-btn" href="case-studies/food-delivery-platform.php">
+              <a class="premium-btn" href="case-studies/food-delivery-platform">
                 Read Case Study
                 <i class="fal fa-arrow-right">
                 </i>
@@ -401,7 +401,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
         <div class="col-xl-4 col-lg-6 mt-30">
           <div class="premium-case-card">
             <div class="case-card__img">
-              <a href="case-studies/whatsapp-business-crm.php">
+              <a href="case-studies/whatsapp-business-crm">
                 <img alt="WhatsApp CRM Case Study" src="assets/images/service-previews/whatsapp-business.webp" / loading="lazy">
               </a>
             </div>
@@ -434,7 +434,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
                   </div>
                 </div>
               </div>
-              <a class="premium-btn" href="case-studies/whatsapp-business-crm.php">
+              <a class="premium-btn" href="case-studies/whatsapp-business-crm">
                 Read Case Study
                 <i class="fal fa-arrow-right">
                 </i>
@@ -446,7 +446,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
         <div class="col-xl-4 col-lg-6 mt-30">
           <div class="premium-case-card">
             <div class="case-card__img">
-              <a href="case-studies/cloud-migration.php">
+              <a href="case-studies/cloud-migration">
                 <img alt="Cloud Migration Case Study" src="assets/images/service-previews/cloud-devops.webp" / loading="lazy">
               </a>
             </div>
@@ -479,7 +479,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
                   </div>
                 </div>
               </div>
-              <a class="premium-btn" href="case-studies/cloud-migration.php">
+              <a class="premium-btn" href="case-studies/cloud-migration">
                 Read Case Study
                 <i class="fal fa-arrow-right">
                 </i>
@@ -491,7 +491,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
         <div class="col-xl-4 col-lg-6 mt-30">
           <div class="premium-case-card">
             <div class="case-card__img">
-              <a href="case-studies/gdpr-security-overhaul.php">
+              <a href="case-studies/gdpr-security-overhaul">
                 <img alt="Security Audit Case Study" src="assets/images/service-previews/security.webp" / loading="lazy">
               </a>
             </div>
@@ -524,7 +524,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
                   </div>
                 </div>
               </div>
-              <a class="premium-btn" href="case-studies/gdpr-security-overhaul.php">
+              <a class="premium-btn" href="case-studies/gdpr-security-overhaul">
                 Read Case Study
                 <i class="fal fa-arrow-right">
                 </i>
@@ -536,7 +536,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
         <div class="col-xl-4 col-lg-6 mt-30">
           <div class="premium-case-card">
             <div class="case-card__img">
-              <a href="case-studies/cicd-observability.php">
+              <a href="case-studies/cicd-observability">
                 <img alt="Automation Case Study" src="assets/images/service-previews/automation.webp" / loading="lazy">
               </a>
             </div>
@@ -569,7 +569,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
                   </div>
                 </div>
               </div>
-              <a class="premium-btn" href="case-studies/cicd-observability.php">
+              <a class="premium-btn" href="case-studies/cicd-observability">
                 Read Case Study
                 <i class="fal fa-arrow-right">
                 </i>
@@ -585,7 +585,7 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
             Want to see your project become the next success
             story?
           </p>
-          <a class="site-btn" href="contact.php">
+          <a class="site-btn" href="contact">
             Start Your Project →
           </a>
         </div>

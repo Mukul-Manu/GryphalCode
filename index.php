@@ -57,7 +57,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
 <noscript><link rel="stylesheet" href="assets/css/style.css?v=3"></noscript>
         <link rel="preload" href="assets/css/responsive.css?v=3" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="assets/css/responsive.css?v=3"></noscript>
-        <link href="https://gryphalcode.com/index.php" rel="canonical" />
+        <link href="https://gryphalcode.com/index" rel="canonical" />
         <link href="assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon" />
         <!-- Google tag (gtag.js) -->
         <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3J6X1HS36W">
@@ -88,7 +88,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
   "@type": "ProfessionalService",
   "name": "GryphalCode | Enterprise AI & Software Innovation",
   "description": "Empowering businesses with precision-engineered AI integration, custom software, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/index.php",
+  "url": "https://gryphalcode.com/index",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -108,7 +108,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
         <!-- Open Graph Tags -->
         <meta property="og:title" content="GryphalCode | Enterprise AI &amp; Software Innovation" />
         <meta property="og:description" content="Empowering businesses with precision-engineered AI integration, custom software, and scalable cloud solutions. Transform your digital vision into reality." />
-        <meta property="og:url" content="https://gryphalcode.com/index.php" />
+        <meta property="og:url" content="https://gryphalcode.com/index" />
         <meta property="og:image" content="https://gryphalcode.com/assets/images/logo/og-image.webp" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="GryphalCode" />
@@ -268,10 +268,10 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 We build for scale, security, and speed.
                                                         </p>
                                                         <div class="buttons mt-35">
-                                                                <a class="site-btn" href="contact.php">
+                                                                <a class="site-btn" href="contact">
                                                                         Get In Touch
                                                                 </a>
-                                                                <a class="site-btn transparent" href="about.php">
+                                                                <a class="site-btn transparent" href="about">
                                                                         Learn More
                                                                 </a>
                                                         </div>
@@ -366,7 +366,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                 <div class="content">
                                                         <h2 class="title mb-15">
                                                                 <a
-                                                                        href="service-details/custom-software-development.php">
+                                                                        href="service-details/custom-software-development">
                                                                         Custom Web &amp; Mobile Apps
                                                                 </a>
                                                         </h2>
@@ -413,7 +413,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                 </div>
                                                 <div class="content">
                                                         <h2 class="title mb-15">
-                                                                <a href="service-details/cloud-devops-solutions.php">
+                                                                <a href="service-details/cloud-devops-solutions">
                                                                         Cloud &amp; DevOps
                                                                 </a>
                                                         </h2>
@@ -459,7 +459,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                 <div class="content">
                                                         <h2 class="title mb-15">
                                                                 <a
-                                                                        href="service-details/whatsapp-business-solutions.php">
+                                                                        href="service-details/whatsapp-business-solutions">
                                                                         WhatsApp Business API
                                                                 </a>
                                                         </h2>
@@ -827,7 +827,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 with business KPIs.
                                                         </p>
                                                         <a class="inline-btn"
-                                                                href="service-details/process-delivery.php">
+                                                                href="service-details/process-delivery">
                                                                 Read More
                                                         </a>
                                                 </div>
@@ -866,7 +866,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 Security and compliance baked into the development
                                                                 lifecycle.
                                                         </p>
-                                                        <a class="inline-btn" href="service-details/security.php">
+                                                        <a class="inline-btn" href="service-details/security">
                                                                 Read More
                                                         </a>
                                                 </div>
@@ -906,7 +906,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 software
                                                                 healthy and cost-effective.
                                                         </p>
-                                                        <a class="inline-btn" href="service-details/automation.php">
+                                                        <a class="inline-btn" href="service-details/automation">
                                                                 Read More
                                                         </a>
                                                 </div>
@@ -991,7 +991,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 </ul>
                                                         </div>
                                                 </div>
-                                                <a class="site-btn" href="contact.php">
+                                                <a class="site-btn" href="contact">
                                                         Start Your Transformation
                                                         <span>
                                                         </span>

@@ -24,7 +24,7 @@ $meta_keywords = "Privacy Policy, GryphalCode Privacy Policy, Privacy, Policy, I
    <title>
     Privacy Policy | Your Data Security is Our Top Priority - GryphalCode
    </title>
-   <link href="https://gryphalcode.com/privacy-policy.php" rel="canonical">
+   <link href="https://gryphalcode.com/privacy-policy" rel="canonical">
     <!-- Performance & Scale Metrics -->
     <meta content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality." name="description">
      <meta name="keywords" content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />
@@ -37,7 +37,7 @@ $meta_keywords = "Privacy Policy, GryphalCode Privacy Policy, Privacy, Policy, I
        <meta content="11.0168, 76.9558" name="ICBM"/>
        <!-- Open Graph / Social Transparency -->
        <meta content="website" property="og:type"/>
-       <meta content="https://gryphalcode.com/privacy-policy.php" property="og:url"/>
+       <meta content="https://gryphalcode.com/privacy-policy" property="og:url"/>
        <meta content="Privacy Policy | Your Data Security is Our Top Priority - GryphalCode" property="og:title"/>
        <meta content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality." property="og:description"/>
        <meta content="https://gryphalcode.com/assets/images/logo/logo.webp" property="og:image"/>
@@ -91,7 +91,7 @@ $meta_keywords = "Privacy Policy, GryphalCode Privacy Policy, Privacy, Policy, I
   "@type": "WebPage",
   "name": "Privacy Policy | Your Data Security is Our Top Priority - GryphalCode",
   "description": "GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/privacy-policy.php",
+  "url": "https://gryphalcode.com/privacy-policy",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -237,7 +237,7 @@ $meta_keywords = "Privacy Policy, GryphalCode Privacy Policy, Privacy, Policy, I
        <div class="breadcrumb__nav">
         <ul>
          <li>
-          <a href="index.php">
+          <a href="index">
            Home
           </a>
          </li>

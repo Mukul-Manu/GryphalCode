@@ -23,7 +23,7 @@ $meta_keywords = "Support, GryphalCode Support, Support, IT company, software de
   <title>
    Customer Support &amp; Support | 24/7 Technical Assistance - GryphalCode
   </title>
-  <link href="https://gryphalcode.com/support.php" rel="canonical">
+  <link href="https://gryphalcode.com/support" rel="canonical">
    <link href="assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon">
     <!-- Performance & Scale Metrics -->
     <meta content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality." name="description">
@@ -37,7 +37,7 @@ $meta_keywords = "Support, GryphalCode Support, Support, IT company, software de
        <meta content="11.0168, 76.9558" name="ICBM"/>
        <!-- Open Graph / Social Transparency -->
        <meta content="website" property="og:type"/>
-       <meta content="https://gryphalcode.com/support.php" property="og:url"/>
+       <meta content="https://gryphalcode.com/support" property="og:url"/>
        <meta content="Customer Support &amp; Support | 24/7 Technical Assistance - GryphalCode" property="og:title"/>
        <meta content="GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality." property="og:description"/>
        <meta content="https://gryphalcode.com/assets/images/logo/logo.webp" property="og:image"/>
@@ -91,7 +91,7 @@ $meta_keywords = "Support, GryphalCode Support, Support, IT company, software de
   "@type": "WebPage",
   "name": "Customer Support & Support | 24/7 Technical Assistance - GryphalCode",
   "description": "GryphalCode | Enterprise-grade AI integration, custom software engineering, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/support.php",
+  "url": "https://gryphalcode.com/support",
   "provider": {
     "@type": "Organization",
     "name": "GryphalCode",
@@ -237,7 +237,7 @@ $meta_keywords = "Support, GryphalCode Support, Support, IT company, software de
        <div class="breadcrumb__nav">
         <ul>
          <li>
-          <a href="index.php">
+          <a href="index">
            Home
           </a>
          </li>
@@ -309,10 +309,10 @@ $meta_keywords = "Support, GryphalCode Support, Support, IT company, software de
      </div>
     </div>
     <div class="mt-5">
-     <a class="site-btn" href="contact.php">
+     <a class="site-btn" href="contact">
       Contact Support
      </a>
-     <a class="site-btn transparent ms-2" href="request-demo.php">
+     <a class="site-btn transparent ms-2" href="request-demo">
       Request a Demo
      </a>
     </div>
