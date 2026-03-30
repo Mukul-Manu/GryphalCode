@@ -2,13 +2,13 @@
   "name": "GryphalCode | Enterprise AI & Software Innovation",
   "short_name": "GryphalCode",
   "description": "Empowering businesses with precision-engineered AI integration, custom software, and scalable cloud solutions.",
-  "start_url": "/index.html",
+  "start_url": "/index.php",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#086ad8",
   "icons": [
     {
-      "src": "/assets/images/logo/favicon.png",
+      "src": "/assets/images/logo/favicon.webp",
       "sizes": "192x192",
       "type": "image/png"
     }
