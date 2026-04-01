@@ -1,5 +1,36 @@
 /* Responsive Utility CSS for GryphalCode */
 
+/* Skip-nav focus visibility */
+.skip-nav:focus {
+  position: fixed !important;
+  left: 10px !important;
+  top: 10px !important;
+  width: auto !important;
+  height: auto !important;
+  overflow: visible !important;
+  padding: 12px 24px;
+  background: #086AD8;
+  color: #fff;
+  font-size: 16px;
+  z-index: 100000;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Screen-reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -37,5 +68,113 @@
     width: 100%;
     padding: 0 15px;
   }
-  
+
+  /* Mobile Progress Bars Fix */
+  .skill__box { 
+    position: relative !important; 
+    margin-bottom: 40px !important; 
+    display: block !important;
   }
+  .skill__box .title { 
+    max-width: 75% !important; 
+    line-height: 1.4 !important; 
+    white-space: normal !important; 
+    word-wrap: break-word !important; 
+    margin-bottom: 20px !important;
+    display: block !important;
+  }
+  .skill__box .progress { 
+    position: static !important; 
+    overflow: visible !important; 
+  }
+  .skill__box .progress-bar { 
+    position: static !important; 
+  }
+  .skill__box .progress-bar span { 
+    position: absolute !important; 
+    right: 0 !important; 
+    top: 0 !important;
+    font-weight: bold !important;
+  }
+
+  /* Prevent Horizontal Scroll */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Container Bounds */
+  .container {
+    width: 100% !important;
+    max-width: 100vw !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    overflow-x: hidden !important;
+    margin: 0 auto !important;
+  }
+
+  /* Fluid Images */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  /* Text Wrapping */
+  h1, h2, h3, h4, h5, h6, p, a, span, .title, .section__heading--title {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+  }
+
+  /* About Box UI Repair */
+  .about__box {
+    margin-left: 0 !important;
+    padding: 15px !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  .about__box p {
+    margin-bottom: 20px !important;
+  }
+
+  /* Site Button Fix */
+  .site-btn {
+    white-space: normal !important;
+    height: auto !important;
+    line-height: 1.5 !important;
+    padding: 12px 20px !important;
+    display: inline-block !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  /* WhatsApp Float */
+  .whatsapp-float {
+    width: 45px !important;
+    height: 45px !important;
+    bottom: 15px !important;
+    right: 15px !important;
+    padding: 8px !important;
+    z-index: 9999 !important;
+  }
+  .whatsapp-float svg {
+    width: 25px !important;
+    height: 25px !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Row Negative Margins Fix */
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  [class*="col-"] {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    width: 100% !important;
+  }
+}

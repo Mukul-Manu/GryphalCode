@@ -1,21 +1,17 @@
-<footer class="site-footer bg_img pt-100" data-background="<?= $base_url ?>/assets/images/pattern/footer-pattern.png">
+<footer class="site-footer bg_img pt-100" data-background="<?= $base_url ?>/assets/images/pattern/footer-pattern.webp">
   <div class="container">
     <div class="row">
       <div class="col-xl-12 text-center">
         <a href="<?= $base_url ?>/index" class="site-logo mb-20">
-          <img src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="Logo" />
+          <img src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="Logo" width="180" height="50" />
         </a>
-        <div class="footer__social mb-50">
-          <a href="https://www.facebook.com/profile.php?id=61570214392615" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin: 0 10px; font-size: 24px; color: #fff;"><i class="fa fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/gryphal_code/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin: 0 10px; font-size: 24px; color: #fff;"><i class="fa fa-instagram"></i></a>
-        </div>
       </div>
       <div class="col-xl-12">
         <div class="footer-top mt-50 mb-80">
           <div class="footer__info">
             <div class="footer__info--item d-flex align-items-center">
               <div class="icon mr-20">
-                <img src="<?= $base_url ?>/assets/images/icons/footer-info-icon-1.png" alt="Phone Icon" / loading="lazy">
+                <img src="<?= $base_url ?>/assets/images/icons/footer-info-icon-1.webp" alt="Phone Icon" loading="lazy" width="24" height="24" />
               </div>
               <div class="content">
                 <h4 class="title">Phone Number</h4>
@@ -25,7 +21,7 @@
 
             <div class="footer__info--item d-flex align-items-center">
               <div class="icon mr-20">
-                <img src="<?= $base_url ?>/assets/images/icons/footer-info-icon-2.png" alt="Phone Icon" / loading="lazy">
+                <img src="<?= $base_url ?>/assets/images/icons/footer-info-icon-2.webp" alt="Email Icon" loading="lazy" width="24" height="24" />
               </div>
               <div class="content">
                 <h4 class="title">Email Address</h4>
@@ -35,7 +31,7 @@
 
             <div class="footer__info--item d-flex align-items-center">
               <div class="icon mr-20">
-                <img src="<?= $base_url ?>/assets/images/icons/footer-info-icon-3.png" alt="Location Icon" / loading="lazy">
+                <img src="<?= $base_url ?>/assets/images/icons/footer-info-icon-3.webp" alt="Location Icon" loading="lazy" width="24" height="24" />
               </div>
               <div class="content">
                 <h4 class="title">Office Address</h4>
@@ -45,7 +41,7 @@
             </div>
           </div>
 
-          <button id="scroll-top" class="site-btn transparent">
+          <button id="scroll-top" class="site-btn transparent" style="margin-left: auto;" aria-label="Scroll to top">
             <i class="fal fa-long-arrow-up"></i>
             <span>Back To Top</span>
             <i class="fal fa-long-arrow-up"></i>
@@ -188,7 +184,7 @@
     <div class="row">
       <div class="col-xl-12">
         <div class="copyright-text mt-60 text-center">
-          <p>Copyright &copy; <span>2026</span> GryphalCode. All Rights Reserved.</p>
+          <p>Copyright &copy; <span><?= date('Y') ?></span> GryphalCode. All Rights Reserved.</p>
         </div>
       </div>
     </div>
@@ -198,11 +194,11 @@
 <!-- Fullscreen search -->
 <div class="search-wrap">
   <div class="search-inner">
-    <i class="fal fa-times search-close" id="search-close"></i>
+    <button class="search-close-btn" aria-label="Close search" style="background:none;border:none;cursor:pointer;"><i class="fal fa-times search-close" id="search-close"></i></button>
     <div class="search-cell">
-      <form method="get">
+      <form method="get" action="#" role="search">
         <div class="search-field-holder">
-          <input type="search" class="main-search-input" placeholder="Search Your Keyword..." />
+          <input type="search" class="main-search-input" placeholder="Search Your Keyword..." aria-label="Search" />
         </div>
       </form>
     </div>

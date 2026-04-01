@@ -6,233 +6,88 @@ header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 ?>
 <?php $base_url = '.';
-$page_title = "Home | GryphalCode";
-$meta_desc = "GryphalCode specializes in Home services. We build secure, high-performance web and mobile software tailored for your business needs.";
+$page_title = "GryphalCode | Enterprise AI, Custom Software & Cloud DevOps Solutions";
+$meta_desc = "GryphalCode delivers precision-engineered AI integration, custom software development, and scalable cloud solutions to empower growing businesses worldwide. Serving Coimbatore, Tamil Nadu, and Kerala.";
  
 $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, software development, cloud devops, AI solutions";
 ?>
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
 
 <head>
-        <meta charset="utf-8" />
-        <link href="assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/png" />
-        <link href="assets/images/logo/favicon.webp" rel="apple-touch-icon" />
-        <meta content="ie=edge" http-equiv="x-ua-compatible" />
-        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-        <title>
-                GryphalCode | Enterprise AI &amp; Software Innovation
-        </title>
-        <meta content="Empowering businesses with precision-engineered AI integration, custom software, and scalable cloud solutions. Transform your digital vision into reality."
-                name="description">
-        <meta name="keywords" content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />
-        <meta content="https://gryphalcode.com/assets/images/logo/og-image.webp" name="twitter:image" />
-        <meta content="IN-TN" name="geo.region" />
-        <meta content="IN-TN" name="geo.region" />
-        <meta content="11.0168;76.9558" name="geo.position" />
-        <meta content="Coimbatore, Tamil Nadu, India - Serving All States Nationwide" name="geo.placename" />
-        <meta content="11.0168, 76.9558" name="ICBM" />
-        <meta content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://maxcdn.bootstrapcdn.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com https://td.doubleclick.net; connect-src 'self' https://www.google-analytics.com; frame-src 'self' https://td.doubleclick.net;"
-                http-equiv="Content-Security-Policy" />
-        <meta content="DENY" http-equiv="X-Frame-Options" />
-        <meta content="strict-origin-when-cross-origin" name="referrer" />
-        <meta content="camera=(), microphone=(), geolocation=(), interest-cohort=()" name="permissions-policy" />
-        <link rel="preload" href="assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css"></noscript>
-        <link rel="preload" href="assets/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/font-awesome.min.css"></noscript>
-        <link rel="preload" href="assets/css/jquery-ui.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/jquery-ui.min.css"></noscript>
-        <link rel="preload" href="assets/css/lightcase.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/lightcase.css"></noscript>
-        <link rel="preload" href="assets/css/meanmenu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/meanmenu.css"></noscript>
-        <link rel="preload" href="assets/css/nice-select.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/nice-select.css"></noscript>
-        <link rel="preload" href="assets/css/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/owl.carousel.min.css"></noscript>
-        <link rel="preload" href="assets/css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/animate.css"></noscript>
-        <link rel="preload" href="assets/css/style.css?v=3" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/style.css?v=3"></noscript>
-        <link rel="preload" href="assets/css/responsive.css?v=3" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/responsive.css?v=3"></noscript>
-        <link href="https://gryphalcode.com/index" rel="canonical" />
-        <link href="assets/images/logo/favicon.webp" rel="shortcut icon" type="images/x-icon" />
-        <!-- Google tag (gtag.js) -->
-        <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3J6X1HS36W">
-        </script>
-        <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag() { dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-3J6X1HS36W');
-        </script>
-        <!-- Performance: Preconnect -->
-        <link href="https://fonts.googleapis.com" rel="preconnect" />
-        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-        <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
-        <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
-        <!-- PWA Manifest -->
-        <link href="/manifest.json" rel="manifest" />
-        <meta content="#086ad8" name="theme-color" />
-        <meta content="yes" name="apple-mobile-web-app-capable" />
-        <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
-        <!-- Twitter Cards -->
-        <meta content="summary_large_image" name="twitter:card" />
-        <meta content="@GryphalCode" name="twitter:site" />
-        <meta content="https://gryphalcode.com/assets/images/logo/og-image.webp" name="twitter:image" />
-        <script type="application/ld+json">
-   {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "GryphalCode | Enterprise AI & Software Innovation",
-  "description": "Empowering businesses with precision-engineered AI integration, custom software, and scalable cloud solutions. Transform your digital vision into reality.",
-  "url": "https://gryphalcode.com/index",
-  "provider": {
-    "@type": "Organization",
-    "name": "GryphalCode",
-    "logo": "https://gryphalcode.com/assets/images/logo/logo.webp"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "12/26 LakshmiPuram, Ganapathy",
-    "addressLocality": "Coimbatore",
-    "addressRegion": "TN",
-    "postalCode": "641006",
-    "addressCountry": "IN"
-  }
-}
+  <meta charset="utf-8" />
+  <link href="assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
+  <link href="assets/images/logo/favicon.webp" rel="apple-touch-icon" />
+  <meta content="ie=edge" http-equiv="x-ua-compatible" />
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+  <title><?= $page_title ?></title>
+  <link href="https://gryphalcode.com/index" rel="canonical">
+  <meta content="<?= $meta_desc ?>" name="description" />
+  <meta name="keywords" content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />
+  
+  <!-- GEO Targeting - Service States of India -->
+  <meta content="IN-TN, IN-KL" name="geo.region" />
+  <meta content="11.0168;76.9558" name="geo.position" />
+  <meta content="Coimbatore, Tamil Nadu, Kerala, India - Serving All States Nationwide" name="geo.placename" />
+  <meta content="11.0168, 76.9558" name="ICBM" />
+  
+  <!-- Open Graph / Social Transparency -->
+  <meta content="website" property="og:type" />
+  <meta content="https://gryphalcode.com/index" property="og:url" />
+  <meta content="<?= $page_title ?>" property="og:title" />
+  <meta content="<?= $meta_desc ?>" property="og:description" />
+  <meta content="https://gryphalcode.com/assets/images/logo/logo.webp" property="og:image" />
+  <meta property="og:site_name" content="GryphalCode" />
+
+  <!-- Twitter Cards -->
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="@GryphalCode" name="twitter:site" />
+  <meta content="<?= $page_title ?>" name="twitter:title" />
+  <meta content="<?= $meta_desc ?>" name="twitter:description" />
+  <meta content="https://gryphalcode.com/assets/images/logo/og-image.webp" name="twitter:image" />
+
+  <!-- Security & Integrity -->
+  <!-- Analytics & Tracking -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3J6X1HS36W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-3J6X1HS36W');
   </script>
 
-        <!-- Open Graph Tags -->
-        <meta property="og:title" content="GryphalCode | Enterprise AI &amp; Software Innovation" />
-        <meta property="og:description" content="Empowering businesses with precision-engineered AI integration, custom software, and scalable cloud solutions. Transform your digital vision into reality." />
-        <meta property="og:url" content="https://gryphalcode.com/index" />
-        <meta property="og:image" content="https://gryphalcode.com/assets/images/logo/og-image.webp" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="GryphalCode" />
-
-  
-
-  <style>
-    /* Absolute Refactor For Mobile Progress Bars - Permanent Native Fix */
-    @media (max-width: 575px) {
-      .skill__box { 
-        position: relative !important; 
-        margin-bottom: 40px !important; 
-        display: block !important;
-      }
-      .skill__box .title { 
-        max-width: 75% !important; 
-        line-height: 1.4 !important; 
-        white-space: normal !important; 
-        word-wrap: break-word !important; 
-        margin-bottom: 20px !important;
-        display: block !important;
-      }
-      .skill__box .progress { 
-        position: static !important; 
-        overflow: visible !important; 
-      }
-      .skill__box .progress-bar { 
-        position: static !important; 
-      }
-      .skill__box .progress-bar span { 
-        position: absolute !important; 
-        right: 0 !important; 
-        top: 0 !important; /* Anchors the 95% horizontally flush with the first line of the title */
-        font-weight: bold !important;
-      }
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "<?= addslashes($page_title) ?>",
+    "description": "<?= addslashes($meta_desc) ?>",
+    "url": "https://gryphalcode.com/index",
+    "provider": {
+      "@type": "Organization",
+      "name": "GryphalCode",
+      "logo": "https://gryphalcode.com/assets/images/logo/logo.webp"
     }
-  </style>
-
-  <style id="global-mobile-fix">
-    /* GLOBAL MOBILE RESPONSIVENESS OVERRIDE */
-    @media (max-width: 575px) {
-      /* 1. Prevent Horizontal Scroll Globally */
-      html, body {
-        overflow-x: hidden !important;
-        width: 100% !important;
-        max-width: 100vw !important;
-        margin: 0 !important;
-        padding: 0 !important;
-      }
-      
-      /* 2. Container Bounds */
-      .container {
-        width: 100% !important;
-        max-width: 100vw !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-        overflow-x: hidden !important;
-        margin: 0 auto !important;
-      }
-
-      /* 3. Fluid Images */
-      img {
-        max-width: 100% !important;
-        height: auto !important;
-        object-fit: contain !important;
-      }
-
-      /* 4. Text Wrapping Assurance */
-      h1, h2, h3, h4, h5, h6, p, a, span, .title, .section__heading--title {
-        word-wrap: break-word !important;
-        overflow-wrap: break-word !important;
-        white-space: normal !important;
-      }
-
-      /* 5. About Box UI Repair */
-      .about__box {
-        margin-left: 0 !important;
-        padding: 15px !important;
-        height: auto !important;
-        overflow: visible !important;
-      }
-      .about__box p {
-        margin-bottom: 20px !important;
-      }
-
-      /* 6. Site Button Auto-Height Fix */
-      .site-btn {
-        white-space: normal !important;
-        height: auto !important;
-        line-height: 1.5 !important;
-        padding: 12px 20px !important;
-        display: inline-block !important;
-        width: 100% !important;
-        text-align: center !important;
-      }
-
-      /* 7. WhatsApp Floating Optimization for 320px Screens */
-      .whatsapp-float {
-        width: 45px !important;
-        height: 45px !important;
-        bottom: 15px !important;
-        right: 15px !important;
-        padding: 8px !important;
-        z-index: 9999 !important;
-      }
-      .whatsapp-float svg {
-        width: 25px !important;
-        height: 25px !important;
-        margin: 0 auto !important;
-      }
-      
-      /* 8. Fix Row Negative Margins causing overflow */
-      .row {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-      }
-      [class*="col-"] {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-        width: 100% !important;
-      }
-    }
-  </style>
-
+  }
+  </script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
+  <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/css/lightcase.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=3">
+  <link rel="stylesheet" href="assets/css/responsive.css?v=3">
+  <link href="/manifest.json" rel="manifest" />
+  <meta content="#086ad8" name="theme-color" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
 </head>
 
 <body>
@@ -286,7 +141,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                 data-linecap="round"
                                                                                 data-readonly="true" data-rel="75"
                                                                                 data-thickness=".10" data-width="75"
-                                                                                disabled="" type="text" value="0" / aria-label="Percentage Display">
+                                                                                disabled="" type="text" value="0"  aria-label="Percentage Display">
                                                                 </div>
                                                                 <div class="content">
                                                                         <h3 class="title">
@@ -305,7 +160,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                 data-linecap="round"
                                                                                 data-readonly="true" data-rel="80"
                                                                                 data-thickness=".10" data-width="75"
-                                                                                disabled="" type="text" value="0" / aria-label="Percentage Display">
+                                                                                disabled="" type="text" value="0"  aria-label="Percentage Display">
                                                                 </div>
                                                                 <div class="content">
                                                                         <h3 class="title">
@@ -322,7 +177,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                         </div>
                 </div>
                 <div class="banner-img">
-                        <img alt="Custom software illustration" src="assets/images/banner/banner-1.webp" />
+                        <img alt="Custom software illustration" src="assets/images/banner/banner-1.webp" width="636" height="550" />
                 </div>
         </section>
         <!-- banner area end -->
@@ -340,7 +195,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                         <span class="ml-10">
                                                                 //
                                                         </span>
-                                                </h4>
+                                                </h3>
                                                 <div class="section__heading--transparent h1">
                                                         Our Capabilities
                                                 </div>
@@ -361,7 +216,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                 <div class="thumb mb-10">
                                                         <img alt="Custom Software Development 3D Illustration"
                                                                 loading="lazy"
-                                                                src="assets/images/service-previews/custom-software.webp" />
+                                                                src="assets/images/service-previews/custom-software.webp" width="370" height="246" />
                                                 </div>
                                                 <div class="content">
                                                         <h2 class="title mb-15">
@@ -409,7 +264,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                 <div class="thumb mb-10">
                                                         <img alt="Cloud &amp; DevOps Solutions 3D Illustration"
                                                                 loading="lazy"
-                                                                src="assets/images/service-previews/cloud-devops.webp" />
+                                                                src="assets/images/service-previews/cloud-devops.webp" width="370" height="246" />
                                                 </div>
                                                 <div class="content">
                                                         <h2 class="title mb-15">
@@ -454,7 +309,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                         <div class="service__box service__box--compact">
                                                 <div class="thumb mb-10">
                                                         <img alt="WhatsApp Business API 3D Illustration" loading="lazy"
-                                                                src="assets/images/service-previews/whatsapp-business.webp" />
+                                                                src="assets/images/service-previews/whatsapp-business.webp" width="370" height="246" />
                                                 </div>
                                                 <div class="content">
                                                         <h2 class="title mb-15">
@@ -572,7 +427,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                 <div class="product-thumb">
                                                         <img alt="Logistics &amp; Supply Chain 3D Illustration"
                                                                 loading="lazy"
-                                                                src="assets/images/service-previews/automation.webp"
+                                                                src="assets/images/service-previews/automation.webp" width="370" height="246"
                                                                 class="product-thumb-img" />
                                                 </div>
                                                 <div class="product-content mt-20 text-center product-content-padding">
@@ -611,7 +466,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                         <div class="product-card" onmouseleave="this.classList.remove('active')">
                                                 <div class="product-thumb">
                                                         <img alt="WhatsApp Business CRM 3D Illustration" loading="lazy"
-                                                                src="assets/images/service-previews/api-integration.webp"
+                                                                src="assets/images/service-previews/api-integration.webp" width="370" height="246"
                                                                 class="product-thumb-img" />
                                                 </div>
                                                 <div class="product-content mt-20 text-center product-content-padding">
@@ -783,7 +638,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                         <span class="ml-10">
                                                                 //
                                                         </span>
-                                                </h4>
+                                                </h3>
                                                 <!-- <div class="section__heading--transparent h1">Why Choose Us</div> -->
                                                 <h2 class="section__heading--title">
                                                         Delivery, Reliability and Long-term value
@@ -818,7 +673,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 </div>
                                                                 <h3 class="cat-ttile">
                                                                         Reliable Delivery
-                                                                </h4>
+                                                                </h3>
                                                         </div>
                                                         <p
                                                                 class="whychoose-p-style">
@@ -859,7 +714,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 </div>
                                                                 <h3 class="cat-ttile">
                                                                         Secure by Design
-                                                                </h4>
+                                                                </h3>
                                                         </div>
                                                         <p
                                                                 class="whychoose-p-style">
@@ -898,7 +753,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 </div>
                                                                 <h3 class="cat-ttile">
                                                                         Operational Efficiency
-                                                                </h4>
+                                                                </h3>
                                                         </div>
                                                         <p
                                                                 class="whychoose-p-style">
@@ -928,7 +783,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                         //
                                                                 </span>
                                                                 Case Study
-                                                        </h4>
+                                                        </h3>
                                                         <div class="section__heading--transparent h1">
                                                                 Success Stories
                                                         </div>
@@ -1024,7 +879,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                         <div class="authore mt-25 d-flex align-items-center">
                                                                 <div class="authore--thumb mr-20">
                                                                         <img src="assets/images/others/testimonial-authore-1.webp"
-                                                                                alt="Testimonial Author Mukul - Founder" / loading="lazy">
+                                                                                alt="Testimonial Author Mukul - Founder"  loading="lazy">
                                                                 </div>
                                                                 <div class="authore--content">
                                                                         <h5 class="name">
@@ -1103,7 +958,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                         <div class="news__item mt-30">
                                                                                 <div class="thumb">
                                                                                         <img alt="Tax Advice"
-                                                                                                src="assets/images/news/news-small-2.webp" / loading="lazy">
+                                                                                                src="assets/images/news/news-small-2.webp"  loading="lazy">
                                                                                 </div>
                                                                                 <div class="content">
                                                                                         <ul class="meta">

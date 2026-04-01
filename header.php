@@ -1,4 +1,5 @@
 
+<a class="skip-nav" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:10000;padding:8px 16px;background:#086AD8;color:#fff;font-size:14px;text-decoration:none;">Skip to main content</a>
 <header class="header">
   <div class="header__top">
     <div class="container-fluid">
@@ -11,7 +12,7 @@
                   info@gryphalcode.com</a>
               </li>
               <li>
-                <a href="tel:9878768648765"><span class="icon"><i class="fal fa-phone"></i></span>
+                <a href="tel:+918072280620"><span class="icon"><i class="fal fa-phone"></i></span>
                   +91 80722-80620</a>
               </li>
             </ul>
@@ -19,8 +20,8 @@
         </div>
         <div class="col-xl-6 col-lg-5 col-md-12 text-xl-right text-lg-right text-center d-none d-lg-block">
           <div class="header__top--social" style="padding-top: 10px;">
-            <a href="https://www.facebook.com/profile.php?id=61570214392615" target="_blank" rel="noopener noreferrer" style="color:#fff; margin-left: 15px; font-size: 16px;"><i class="fa fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/gryphal_code/" target="_blank" rel="noopener noreferrer" style="color:#fff; margin-left: 15px; font-size: 16px;"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61570214392615" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="color:#fff; margin-left: 15px; font-size: 16px;"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/gryphal_code/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="color:#fff; margin-left: 15px; font-size: 16px;"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
     </div>
@@ -31,13 +32,13 @@
         <div class="col-xl-2 col-lg-2 col-md-4 col-6 my-auto">
           <div class="header__logo">
             <a href="<?= $base_url ?>/index">
-              <img src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="GryphalCode Logo" />
+              <img src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="GryphalCode Logo" width="180" height="50" />
             </a>
           </div>
         </div>
         <div class="col-xl-7 col-lg-7 col-6 my-auto">
           <div class="header__menu">
-            <nav id="mobile-menu">
+            <nav id="mobile-menu" aria-label="Main navigation">
               <ul>
                 <li>
                   <a href="<?= $base_url ?>/index">Home </a>
@@ -89,7 +90,7 @@
         <div class="col-xl-3 col-lg-3 col-md-8 my-auto d-none d-xl-block d-lg-block">
           <div class="navarea__right">
             <a href="<?= $base_url ?>/contact" class="site-btn">Get A Quote </a>
-            <button class="search-trigger">
+            <button class="search-trigger" aria-label="Open search">
               <i class="fal fa-search"></i>
             </button>
           </div>

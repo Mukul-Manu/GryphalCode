@@ -1,5 +1,5 @@
 <!--========= JS Shared Libraries =========-->
-<script defer src="<?= $base_url ?>/assets/js/jquery-2.2.4.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/jquery-2.2.4.min.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/bootstrap.min.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/jquery.meanmenu.min.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/jquery.nice-select.min.js"></script>
@@ -13,5 +13,15 @@
 <script defer src="<?= $base_url ?>/assets/js/wow.min.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/waypoint.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/seo-engine.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfpGBFn5yRPvJrvAKoGIdj1O1aO9QisgQ"></script>
 <script defer src="<?= $base_url ?>/assets/js/main.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('<?= $base_url ?>/sw.js').then(reg => {
+      console.log('SW registered:', reg);
+    }).catch(err => {
+      console.log('SW registration failed:', err);
+    });
+  });
+}
+</script>
