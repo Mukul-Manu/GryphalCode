@@ -5,7 +5,12 @@ header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 ?>
-<?php $base_url = '.';
+<?php 
+// Dynamic Base URL Detection
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
+$host = $_SERVER['HTTP_HOST'];
+$base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');?>
+<?php 
 $page_title = "Why Choose GryphalCode | Excellence in Software Engineering";
 $meta_desc = "Learn why leading businesses trust GryphalCode for their critical IT infrastructure, AI solutions, and full-stack software development needs. Serving Coimbatore, Tamil Nadu, and Kerala.";
  
@@ -16,8 +21,8 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
 
 <head>
   <meta charset="utf-8" />
-  <link href="assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
-  <link href="assets/images/logo/favicon.webp" rel="apple-touch-icon" />
+  <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
+  <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
   <meta content="ie=edge" http-equiv="x-ua-compatible" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
   <title><?= $page_title ?></title>
@@ -74,17 +79,17 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
   <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
-  <link rel="stylesheet" href="assets/css/lightcase.css">
-  <link rel="stylesheet" href="assets/css/meanmenu.css">
-  <link rel="stylesheet" href="assets/css/nice-select.css">
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=3">
-  <link rel="stylesheet" href="assets/css/responsive.css?v=3">
-  <link href="/manifest.json" rel="manifest" />
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/lightcase.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/meanmenu.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/nice-select.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/animate.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.css?v=3">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.css?v=3">
+  <link href="<?= $base_url ?>/manifest.json" rel="manifest" />
   <meta content="#086ad8" name="theme-color" />
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
@@ -97,7 +102,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
   <!-- header end -->
   <!-- breadcrumb area start -->
   <!-- breadcrumb area start -->
-  <section class="breadcrumb pt-150 pb-150 bg_img" data-background="assets/images/bg/breadcrumb-bg-1.webp"
+  <section class="breadcrumb pt-150 pb-150 bg_img" data-background="<?= $base_url ?>/assets/images/bg/breadcrumb-bg-1.webp"
     data-opacity="5" data-overlay="dark">
     <div class="container">
       <div class="row">
@@ -109,7 +114,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
             <div class="breadcrumb__nav">
               <ul>
                 <li>
-                  <a href="index">
+                  <a href="<?= $base_url ?>/index">
                     Home
                   </a>
                 </li>
@@ -228,7 +233,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
       <div class="row align-items-center">
         <div class="col-xl-6">
           <div class="about__bg about__bg--2 about__bg--3 about__bg--5">
-            <img alt="GryphalCode Team and Expertise Overview" src="assets/images/bg/about-bg-6.webp"  loading="lazy">
+            <img alt="GryphalCode Team and Expertise Overview" src="<?= $base_url ?>/assets/images/bg/about-bg-6.webp"  loading="lazy">
           </div>
         </div>
         <div class="col-xl-6">
@@ -379,7 +384,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
   </div>
   <!-- counter area end -->
   <!-- cta area start -->
-  <div class="cta__area cta__area--4 bg_img" data-background="assets/images/bg/cta-bg-4.webp" data-opacity="5"
+  <div class="cta__area cta__area--4 bg_img" data-background="<?= $base_url ?>/assets/images/bg/cta-bg-3.webp" data-opacity="5"
     data-overlay="dark">
     <div class="container">
       <div class="row justify-content-center">
@@ -391,7 +396,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
             From startups to global enterprises, we help ambitious teams turn
             bold ideas into impactful, scalable software solutions.
           </p>
-          <a class="site-btn" href="contact">
+          <a class="site-btn" href="<?= $base_url ?>/contact">
             Let's Collaborate
             <span>
               +
@@ -402,65 +407,6 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
     </div>
   </div>
   <!-- cta area end -->
-  <!-- news-feed area start -->
-  <!-- <section class="news-feed-area pt-95 pb-100">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-6">
-          <div class="newsfeedwrap newsfeedwrap--3">
-            <div class="section__heading mb-40">
-              <h3 class="section__heading--title-small"><span class="mr-10">//</span>Insights</h3>
-              <h2 class="section__heading--title">Latest From GryphalCode<span>.</span></h2>
-            </div>
-            <div class="news__items mt-none-30">
-              <div class="news__item mt-30">
-                <div class="thumb">
-                  <img src="assets/images/news/news-small-1.webp" alt="News Small 1" loading="lazy">
-                </div>
-                <div class="content">
-                  <ul class="meta">
-                    <li><a href="#0"><i class="fal fa-calendar-alt"></i> 24th Oct 2025</a></li>
-                    <li><a href="#0"><i class="fal fa-user"></i> By Admin</a></li>
-                  </ul>
-                  <h4 class="title"><a href="news-details">How AI Automation is Transforming Business
-                      Operations</a></h4>
-                </div>
-              </div>
-              <div class="news__item mt-30">
-                <div class="thumb">
-                  <img src="assets/images/news/news-small-2.webp" alt="News Small 2" loading="lazy">
-                </div>
-                <div class="content">
-                  <ul class="meta">
-                    <li><a href="#0"><i class="fal fa-calendar-alt"></i> 12th Oct 2025</a></li>
-                    <li><a href="#0"><i class="fal fa-user"></i> By Admin</a></li>
-                  </ul>
-                  <h4 class="title"><a href="news-details">Cloud & DevOps Solutions that Drive Modern
-                      Innovation</a></h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-6">
-          <div class="news__item news__item--transparent mt-30">
-            <div class="thumb" data-overlay="dark" data-opacity="6">
-              <img src="assets/images/news/news-big-2.webp" alt="News Big 2" loading="lazy">
-            </div>
-            <div class="content">
-              <ul class="meta">
-                <li><a href="#0"><i class="fal fa-calendar-alt"></i> 05th Oct 2025</a></li>
-                <li><a href="#0"><i class="fal fa-user"></i> By Admin</a></li>
-              </ul>
-              <h4 class="title"><a href="news-details">GryphalCode Expands AI & Cloud Division to Support Global
-                  Clients</a></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- news-feed area end -->
   </main>
 <?php include 'footer.php'; ?>
   <!-- All JS Scripts loaded via loader.js -->

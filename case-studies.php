@@ -21,8 +21,8 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
 
 <head>
   <meta charset="utf-8" />
-  <link href="assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
-  <link href="assets/images/logo/favicon.webp" rel="apple-touch-icon" />
+  <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
+  <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
   <meta content="ie=edge" http-equiv="x-ua-compatible" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
   <title><?= $page_title ?></title>
@@ -79,17 +79,17 @@ $meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT comp
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
   <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
-  <link rel="stylesheet" href="assets/css/lightcase.css">
-  <link rel="stylesheet" href="assets/css/meanmenu.css">
-  <link rel="stylesheet" href="assets/css/nice-select.css">
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=3">
-  <link rel="stylesheet" href="assets/css/responsive.css?v=3">
-  <link href="/manifest.json" rel="manifest" />
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/lightcase.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/meanmenu.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/nice-select.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/animate.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.css?v=3">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.css?v=3">
+  <link href="<?= $base_url ?>/manifest.json" rel="manifest" />
   <meta content="#086ad8" name="theme-color" />
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />

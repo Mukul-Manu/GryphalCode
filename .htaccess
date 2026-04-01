@@ -5,7 +5,8 @@ RewriteEngine On
 Options -Indexes
 
 # 2. Specifically route the 'case-studies' path to the root .php file to override directory listing
-RewriteRule ^case-studies/?$ case-studies.php [L]
+RewriteRule ^case-studies/$ /GryphalCode/case-studies [R=301,L]
+RewriteRule ^case-studies$ case-studies.php [L]
 
 # 3. Externally redirect any direct .php requests to the clean URL
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]

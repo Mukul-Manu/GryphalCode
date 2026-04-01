@@ -5,7 +5,12 @@ header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 ?>
-<?php $base_url = '.';
+<?php 
+// Dynamic Base URL Detection
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
+$host = $_SERVER['HTTP_HOST'];
+$base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');?>
+<?php 
 $page_title = "GryphalCode FAQs | Answers to Your Tech & Project Queries";
 $meta_desc = "Find answers to commonly asked questions about our software development process, AI capabilities, project timelines, and support services. Serving Coimbatore, Tamil Nadu, and Kerala.";
  
@@ -16,8 +21,8 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
 <html class="no-js" lang="en">
  <head>
   <meta charset="utf-8" />
-  <link href="assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
-  <link href="assets/images/logo/favicon.webp" rel="apple-touch-icon" />
+  <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
+  <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
   <meta content="ie=edge" http-equiv="x-ua-compatible" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
   <title><?= $page_title ?></title>
@@ -74,17 +79,17 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
   <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
-  <link rel="stylesheet" href="assets/css/lightcase.css">
-  <link rel="stylesheet" href="assets/css/meanmenu.css">
-  <link rel="stylesheet" href="assets/css/nice-select.css">
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=3">
-  <link rel="stylesheet" href="assets/css/responsive.css?v=3">
-  <link href="/manifest.json" rel="manifest" />
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/lightcase.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/meanmenu.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/nice-select.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/animate.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.css?v=3">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.css?v=3">
+  <link href="<?= $base_url ?>/manifest.json" rel="manifest" />
   <meta content="#086ad8" name="theme-color" />
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
@@ -94,7 +99,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   <?php include 'header.php'; ?>
 <main id="main-content">
   <!-- breadcrumb area start -->
-  <section class="breadcrumb pt-150 pb-150 bg_img" data-background="assets/images/bg/breadcrumb-bg-1.webp" data-opacity="5" data-overlay="dark">
+  <section class="breadcrumb pt-150 pb-150 bg_img" data-background="<?= $base_url ?>/assets/images/bg/breadcrumb-bg-1.webp" data-opacity="5" data-overlay="dark">
    <div class="container">
     <div class="row">
      <div class="col-xl-12">
@@ -110,7 +115,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
           </span>
          </li>
          <li>
-          <a href="/index">
+          <a href="<?= $base_url ?>/index">
            Home
           </a>
          </li>
@@ -129,14 +134,14 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   </section>
   <!-- breadcrumb area end -->
   <!-- faq-search area start -->
-  <section class="faq-search-area pt-150 pb-155 bg_img" data-background="assets/images/pattern/faq-pattern.webp">
+  <section class="faq-search-area pt-150 pb-155 bg_img" data-background="<?= $base_url ?>/assets/images/pattern/faq-pattern.webp">
    <div class="container">
     <div class="row justify-content-center">
      <div class="col-xl-8 text-center">
       <div class="faq-search-wrap">
        <div class="faq-search mb-45">
         <form action="#" method="get" role="search">
-         <input aria-label="Search FAQs" placeholder="Type your questions here" type="search"/>
+         <input aria-label="Search FAQs" id="faq-search-input" placeholder="Type your questions here" type="search"/>
          <button aria-label="Search" type="submit">
           <i class="fal fa-search">
           </i>
@@ -168,12 +173,12 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading1">
          <h5 class="mb-0 title">
-          <button aria-controls="collapse1" aria-expanded="false" class="btn btn-link collapsed" data-bs-target="#collapse1" data-bs-toggle="collapse" type="button">
+          <button aria-controls="collapse1" aria-expanded="false" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse1" type="button">
            What's included in your website design process?
           </button>
          </h5>
         </div>
-        <div class="collapse" data-bs-parent="#accordionFaq" id="collapse1">
+        <div class="collapse" data-parent="#accordionFaq" id="collapse1">
          <div class="card__body">
           <p>
            Our comprehensive website design process includes:
@@ -211,12 +216,12 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading2">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-bs-target="#collapse2" data-bs-toggle="collapse" type="button">
+          <button class="btn btn-link collapsed" data-target="#collapse2" data-toggle="collapse" type="button">
            How do you approach mobile app development?
           </button>
          </h5>
         </div>
-        <div class="collapse" data-bs-parent="#accordionFaq" id="collapse2">
+        <div class="collapse" data-parent="#accordionFaq" id="collapse2">
          <div class="card__body">
           <p>
            Our mobile app development methodology:
@@ -273,12 +278,12 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading3">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-bs-target="#collapse3" data-bs-toggle="collapse" type="button">
+          <button class="btn btn-link collapsed" data-target="#collapse3" data-toggle="collapse" type="button">
            What's the difference between CRM and ERP systems?
           </button>
          </h5>
         </div>
-        <div class="collapse" data-bs-parent="#accordionFaq" id="collapse3">
+        <div class="collapse" data-parent="#accordionFaq" id="collapse3">
          <div class="card__body">
           <div class="comparison-table table-responsive">
            <table class="table table-bordered">
@@ -335,12 +340,12 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading4">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-bs-target="#collapse4" data-bs-toggle="collapse" type="button">
+          <button class="btn btn-link collapsed" data-target="#collapse4" data-toggle="collapse" type="button">
            What deliverables do you provide for UI/UX projects?
           </button>
          </h5>
         </div>
-        <div class="collapse" data-bs-parent="#accordionFaq" id="collapse4">
+        <div class="collapse" data-parent="#accordionFaq" id="collapse4">
          <div class="card__body">
           <p>
            Our UI/UX design deliverables include:
@@ -381,12 +386,12 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading5">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-bs-target="#collapse5" data-bs-toggle="collapse" type="button">
+          <button class="btn btn-link collapsed" data-target="#collapse5" data-toggle="collapse" type="button">
            What ERP modules do you typically implement?
           </button>
          </h5>
         </div>
-        <div class="collapse" data-bs-parent="#accordionFaq" id="collapse5">
+        <div class="collapse" data-parent="#accordionFaq" id="collapse5">
          <div class="card__body">
           <ul>
            <li>
@@ -421,12 +426,12 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading6">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-bs-target="#collapse6" data-bs-toggle="collapse" type="button">
+          <button class="btn btn-link collapsed" data-target="#collapse6" data-toggle="collapse" type="button">
            What's your UI/UX design process?
           </button>
          </h5>
         </div>
-        <div class="collapse" data-bs-parent="#accordionFaq" id="collapse6">
+        <div class="collapse" data-parent="#accordionFaq" id="collapse6">
          <div class="card__body">
           <p>
            Our 6-phase design process:
@@ -484,12 +489,12 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading7">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-bs-target="#collapse7" data-bs-toggle="collapse" type="button">
+          <button class="btn btn-link collapsed" data-target="#collapse7" data-toggle="collapse" type="button">
            What's your development methodology?
           </button>
          </h5>
         </div>
-        <div class="collapse" data-bs-parent="#accordionFaq2" id="collapse7">
+        <div class="collapse" data-parent="#accordionFaq2" id="collapse7">
          <div class="card__body">
           <p>
            We use Agile Scrum with:
@@ -521,12 +526,12 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading8">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-bs-target="#collapse8" data-bs-toggle="collapse" type="button">
+          <button class="btn btn-link collapsed" data-target="#collapse8" data-toggle="collapse" type="button">
            What's the typical timeline for projects?
           </button>
          </h5>
         </div>
-        <div class="collapse" data-bs-parent="#accordionFaq2" id="collapse8">
+        <div class="collapse" data-parent="#accordionFaq2" id="collapse8">
          <div class="card__body">
           <p>
            Project durations vary by complexity:
@@ -559,12 +564,12 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading9">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-bs-target="#collapse9" data-bs-toggle="collapse" type="button">
+          <button class="btn btn-link collapsed" data-target="#collapse9" data-toggle="collapse" type="button">
            Do you provide maintenance services?
           </button>
          </h5>
         </div>
-        <div class="collapse" data-bs-parent="#accordionFaq2" id="collapse9">
+        <div class="collapse" data-parent="#accordionFaq2" id="collapse9">
          <div class="card__body">
           <p>
            Yes, we offer three support tiers:
@@ -587,12 +592,12 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading10">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-bs-target="#collapse10" data-bs-toggle="collapse" type="button">
+          <button class="btn btn-link collapsed" data-target="#collapse10" data-toggle="collapse" type="button">
            Can you integrate with our existing systems?
           </button>
          </h5>
         </div>
-        <div class="collapse" data-bs-parent="#accordionFaq2" id="collapse10">
+        <div class="collapse" data-parent="#accordionFaq2" id="collapse10">
          <div class="card__body">
           <p>
            We specialize in integrating with:
@@ -636,12 +641,12 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading11">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-bs-target="#collapse11" data-bs-toggle="collapse" type="button">
+          <button class="btn btn-link collapsed" data-target="#collapse11" data-toggle="collapse" type="button">
            What's your pricing model?
           </button>
          </h5>
         </div>
-        <div class="collapse" data-bs-parent="#accordionFaq2" id="collapse11">
+        <div class="collapse" data-parent="#accordionFaq2" id="collapse11">
          <div class="card__body">
           <p>
            We offer flexible pricing options:
@@ -681,12 +686,12 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading12">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-bs-target="#collapse12" data-bs-toggle="collapse" type="button">
+          <button class="btn btn-link collapsed" data-target="#collapse12" data-toggle="collapse" type="button">
            How do we start a project?
           </button>
          </h5>
         </div>
-        <div class="collapse" data-bs-parent="#accordionFaq2" id="collapse12">
+        <div class="collapse" data-parent="#accordionFaq2" id="collapse12">
          <div class="card__body">
           <ol>
            <li>
@@ -717,13 +722,20 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
       </div>
      </div>
     </div>
+    <!-- No Results Message -->
+    <div class="row" id="faq-no-results" style="display: none;">
+     <div class="col-xl-12 text-center mt-50 mb-50">
+      <h3 class="title">No results found for your search.</h3>
+      <p>Try searching for different keywords or contact our team for assistance.</p>
+     </div>
+    </div>
     <!-- still have questions -->
     <div class="row">
      <div class="col-xl-12 text-center">
       <div class="faq-wrap pt-45 pb-45 mt-40">
        <p>
         Still have questions?
-        <a class="inline-btn" href="contact">
+        <a class="inline-btn" href="<?= $base_url ?>/contact">
          <i class="fal fa-comments">
          </i>
          <span>
@@ -738,7 +750,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   </div>
   <!-- faq area end -->
   <!-- cta area start -->
-  <section class="cta__area cta__area--2 cta__area--3 pt-95 pb-95 bg_img text-center" data-background="../assets/images/bg/cta-bg-3.webp">
+  <section class="cta__area cta__area--2 cta__area--3 pt-95 pb-95 bg_img text-center" data-background="<?= $base_url ?>/assets/images/bg/cta-bg-3.webp">
    <div class="container">
     <div class="row align-items-center">
      <div class="col-xl-6 text-start">
@@ -765,7 +777,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
       </div>
      </div>
      <div class="col-xl-6 text-xl-end text-center">
-      <a class="site-btn mt-95" href="contact">
+      <a class="site-btn mt-95" href="<?= $base_url ?>/contact">
        Start Your Project
        <span>
         +
@@ -781,6 +793,51 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   <!-- All JS Scripts loaded via loader.js -->
   <?php include 'whatsapp.php'; ?>
 <?php include 'scripts.php'; ?>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('faq-search-input');
+    const faqCards = document.querySelectorAll('.faqs .card');
+    const noResults = document.getElementById('faq-no-results');
+    const faqColumns = document.querySelectorAll('.faq-area .col-xl-6');
+
+    if (searchInput) {
+        searchInput.addEventListener('input', function() {
+            const query = searchInput.value.toLowerCase().trim();
+            let totalVisible = 0;
+
+            faqCards.forEach(card => {
+                const title = card.querySelector('.title').textContent.toLowerCase();
+                const body = card.querySelector('.card__body').textContent.toLowerCase();
+
+                if (title.includes(query) || body.includes(query)) {
+                    card.style.display = '';
+                    totalVisible++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Toggle visibility of columns if they are empty
+            faqColumns.forEach(col => {
+                const visibleInCol = col.querySelectorAll('.card:not([style*="display: none"])').length;
+                col.style.display = (visibleInCol === 0 && query !== '') ? 'none' : '';
+            });
+
+            if (noResults) {
+                noResults.style.display = totalVisible === 0 ? 'block' : 'none';
+            }
+        });
+
+        // Prevent form submission reloads
+        const searchForm = searchInput.closest('form');
+        if (searchForm) {
+            searchForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+            });
+        }
+    }
+});
+</script>
   
  </body>
 </html>
