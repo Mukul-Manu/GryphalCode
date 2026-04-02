@@ -115,7 +115,7 @@ $meta_keywords = "About, GryphalCode About, About, IT company, software developm
                   </span>
                 </li>
                 <li>
-                  <a href="index">
+                  <a href="<?= $base_url ?>/">
                     Home
                   </a>
                 </li>

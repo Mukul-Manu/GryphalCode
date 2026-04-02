@@ -106,7 +106,7 @@ $meta_keywords = "Terms Conditions, GryphalCode Terms Conditions, Terms, Conditi
        <div class="breadcrumb__nav">
         <ul>
          <li>
-          <a href="index">
+          <a href="<?= $base_url ?>/">
            Home
           </a>
          </li>
@@ -151,7 +151,7 @@ $meta_keywords = "Terms Conditions, GryphalCode Terms Conditions, Terms, Conditi
        </strong>
        . By accessing or using our
             website (
-       <a href="https://gryphalcode.com" rel="noopener noreferrer" target="_blank">
+       <a href="https://gryphalcode.com/" rel="noopener noreferrer" target="_blank">
         gryphalcode.com
        </a>
        ), products, or services, you agree to comply with these

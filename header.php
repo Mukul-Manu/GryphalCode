@@ -31,7 +31,7 @@
       <div class="row">
         <div class="col-xl-2 col-lg-2 col-md-4 col-6 my-auto">
           <div class="header__logo">
-            <a href="<?= $base_url ?>/index">
+            <a href="<?= $base_url ?>">
               <img src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="GryphalCode Logo" width="180" height="50" />
             </a>
           </div>
@@ -41,7 +41,7 @@
             <nav id="mobile-menu" aria-label="Main navigation">
               <ul>
                 <li>
-                  <a href="<?= $base_url ?>/index">Home </a>
+                  <a href="<?= $base_url ?>">Home </a>
                 </li>
                 <li><a href="<?= $base_url ?>/about">About</a></li>
                <li><a href="<?= $base_url ?>/case-studies">Case Studies</a></li>

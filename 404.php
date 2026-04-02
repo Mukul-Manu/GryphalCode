@@ -106,7 +106,7 @@ $meta_keywords = "404, GryphalCode 404, 404, IT company, software development, A
        <div class="breadcrumb__nav">
         <ul>
          <li>
-          <a href="index">
+          <a href="<?= $base_url ?>/">
            Home
           </a>
          </li>
@@ -141,7 +141,7 @@ $meta_keywords = "404, GryphalCode 404, 404, IT company, software development, A
         The page you are looking for might have been removed, had its name changed, or
                             is temporarily unavailable.
        </p>
-       <a class="site-btn" href="index">
+       <a class="site-btn" href="<?= $base_url ?>">
         Back to Home
        </a>
       </div>

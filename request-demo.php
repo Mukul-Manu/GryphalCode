@@ -108,7 +108,7 @@ $meta_keywords = "Request Demo, GryphalCode Request Demo, Request, Demo, IT comp
        <div class="breadcrumb__nav">
         <ul>
          <li>
-          <a href="index">
+          <a href="<?= $base_url ?>/">
            Home
           </a>
          </li>

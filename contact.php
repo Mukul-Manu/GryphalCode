@@ -109,7 +109,7 @@ $meta_keywords = "Contact, GryphalCode Contact, Contact, IT company, software de
             <div class="breadcrumb__nav">
               <ul>
                 <li>
-                  <a href="index">
+                  <a href="<?= $base_url ?>/">
                     Home
                   </a>
                 </li>

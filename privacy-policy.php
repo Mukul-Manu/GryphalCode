@@ -107,7 +107,7 @@ $meta_keywords = "Privacy Policy, GryphalCode Privacy Policy, Privacy, Policy, I
        <div class="breadcrumb__nav">
         <ul>
          <li>
-          <a href="index">
+          <a href="<?= $base_url ?>/">
            Home
           </a>
          </li>
@@ -152,7 +152,7 @@ $meta_keywords = "Privacy Policy, GryphalCode Privacy Policy, Privacy, Policy, I
       , your privacy is our priority. This
           Privacy Policy explains how we collect, use, and protect your
           personal information when you visit our website (
-      <a href="https://gryphalcode.com">
+      <a href="https://gryphalcode.com/">
        gryphalcode.com
       </a>
       ) or use

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-12 text-center">
-        <a href="<?= $base_url ?>/index" class="site-logo mb-20">
+        <a href="<?= $base_url ?>" class="site-logo mb-20">
           <img src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="Logo" width="180" height="50" />
         </a>
       </div>

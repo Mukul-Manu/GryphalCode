@@ -21,7 +21,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
   <meta content="ie=edge" http-equiv="x-ua-compatible" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
   <title><?= $page_title ?></title>
-  <link href="https://gryphalcode.com/index" rel="canonical">
+  <link href="https://gryphalcode.com" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
   <meta name="keywords" content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />
   
@@ -33,7 +33,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
   
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />
-  <meta content="https://gryphalcode.com/index" property="og:url" />
+  <meta content="https://gryphalcode.com" property="og:url" />
   <meta content="<?= $page_title ?>" property="og:title" />
   <meta content="<?= $meta_desc ?>" property="og:description" />
   <meta content="https://gryphalcode.com/assets/images/logo/logo.webp" property="og:image" />
@@ -62,7 +62,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
     "@type": "WebPage",
     "name": "<?= addslashes($page_title) ?>",
     "description": "<?= addslashes($meta_desc) ?>",
-    "url": "https://gryphalcode.com/index",
+    "url": "https://gryphalcode.com",
     "provider": {
       "@type": "Organization",
       "name": "GryphalCode",

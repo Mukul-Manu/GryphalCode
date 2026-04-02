@@ -108,7 +108,7 @@ $meta_keywords = "Careers, GryphalCode Careers, Careers, IT company, software de
                                                 <div class="breadcrumb__nav">
                                                         <ul>
                                                                 <li>
-                                                                        <a href="index">
+                                                                        <a href="<?= $base_url ?>/">
                                                                                 Home
                                                                         </a>
                                                                 </li>
@@ -144,7 +144,7 @@ $meta_keywords = "Careers, GryphalCode Careers, Careers, IT company, software de
                                                                         src="assets/images/bg/careers-bg-2.webp"  loading="lazy">
                                                         </div>
                                                 </div>
-                                                <a class="site-btn" href="index">
+                                                <a class="site-btn" href="<?= $base_url ?>/">
                                                         GryphalCode
                                                 </a>
                                         </div>

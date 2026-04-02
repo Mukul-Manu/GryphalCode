@@ -1,6 +1,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
+# Redirect index.php and index to /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index(\.php)? [NC]
+RewriteRule ^ / [R=301,L]
+
+
 # 1. Prevent directory listing
 Options -Indexes
 

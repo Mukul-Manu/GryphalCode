@@ -112,7 +112,7 @@ $meta_keywords = "Thank You, GryphalCode Thank You, Thank, You, IT company, soft
             <h2 class="section__heading--title mb-20">We've Received Your Inquiry</h2>
             <p class="mb-40">Thank you for reaching out to GryphalCode. Our enterprise solutions team will review your request and get back to you within 24 business hours.</p>
             <div class="buttons">
-              <a href="index" class="site-btn">Back to Home</a>
+              <a href="<?= $base_url ?>" class="site-btn">Back to Home</a>
               <a href="services" class="site-btn transparent">Explore Services</a>
             </div>
           </div>
