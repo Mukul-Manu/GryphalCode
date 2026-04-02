@@ -143,7 +143,7 @@ $meta_keywords = "Request Demo, GryphalCode Request Demo, Request, Demo, IT comp
       </div>
       <div class="contact__wrap pt-95 pb-95">
        <div class="contact__form">
-        <form action="/mail.html" aria-label="Request Demo Form" id="contact-form" method="POST">
+        <form action="mail.php" aria-label="Request Demo Form" id="contact-form" method="POST">
          <div class="row mt-none-30">
           <div class="col-xl-6 mt-30">
            <div class="form__group">

@@ -11,11 +11,10 @@ $meta_desc = "Thank you for contacting GryphalCode. Our experts will review your
  
 $meta_keywords = "Thank You, GryphalCode Thank You, Thank, You, IT company, software development, AI solutions, cloud infrastructure";
 ?>
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
- <head>
-  <meta charset="utf-8" />
+<head>
+    <meta charset="utf-8" />
   <link href="assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
   <link href="assets/images/logo/favicon.webp" rel="apple-touch-icon" />
   <meta content="ie=edge" http-equiv="x-ua-compatible" />
@@ -89,7 +88,7 @@ $meta_keywords = "Thank You, GryphalCode Thank You, Thank, You, IT company, soft
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
 </head>
- <body>
+<body>
   <?php include 'header.php'; ?>
 <main id="main-content">
   <section class="thankyou-hero">
@@ -98,52 +97,29 @@ $meta_keywords = "Thank You, GryphalCode Thank You, Thank, You, IT company, soft
      <i class="fal fa-check">
      </i>
     </div>
-    <h1>
-     Thank You! ðŸŽ‰
-    </h1>
-    <p>
-     Your message has been received. Our team will review your request and reach out to you within
-     <span class="highlight">
-      24 business hours
-     </span>
-     .
-    </p>
-    <p>
-     In the meantime, explore what we've built for companies like yours.
-    </p>
-    <div class="btn-group">
-     <a class="site-btn" href="portfolio">
-      View Our Work
-     </a>
-     <a class="site-btn" href="index" style="background: transparent; border: 2px solid rgba(255,255,255,0.2); color: #fff;">
-      Back to
-                    Home
-     </a>
-    </div>
-    <p class="countdown" id="redirect-countdown">
-     Redirecting to homepage in
-     <span id="timer">
-      10
-     </span>
-     s...
-    </p>
-   </div>
   </section>
-  </main>
+
+  <section class="thank-you-area pt-100 pb-100 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-7">
+          <div class="thank-you-content">
+            <div class="icon mb-30">
+              <i class="fal fa-check-circle" style="font-size: 80px; color: #086AD8;"></i>
+            </div>
+            <h2 class="section__heading--title mb-20">We've Received Your Inquiry</h2>
+            <p class="mb-40">Thank you for reaching out to GryphalCode. Our enterprise solutions team will review your request and get back to you within 24 business hours.</p>
+            <div class="buttons">
+              <a href="index" class="site-btn">Back to Home</a>
+              <a href="services" class="site-btn transparent">Explore Services</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 <?php include 'footer.php'; ?>
-  <?php include 'whatsapp.php'; ?>
 <?php include 'scripts.php'; ?>
-  <script defer src="assets/js/jquery-2.2.4.min.js">
-  </script>
-  <script defer src="assets/js/main.js">
-  </script>
-  <script>
-   // Countdown redirect
-        var t = 10;
-        var interval = setInterval(function () {
-            t--; document.getElementById('timer').textContent = t;
-            if (t <= 0) { clearInterval(interval); window.location.href = '/index.html'; }
-        }, 1000);
-  </script>
- </body>
+</body>
 </html>

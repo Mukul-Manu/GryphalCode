@@ -134,7 +134,7 @@ $meta_keywords = "Contact, GryphalCode Contact, Contact, IT company, software de
         <div class="col-xl-10">
           <div class="contact__wrap pt-95 pb-95">
             <div class="contact__form">
-              <form action="/mail.html" aria-label="Contact Form" id="contact-form" method="POST">
+              <form action="mail.php" aria-label="Contact Form" id="contact-form" method="POST">
                 <div class="row mt-none-30">
                   <div class="col-xl-6 mt-30">
                     <div class="form__group">

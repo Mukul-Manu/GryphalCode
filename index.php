@@ -6,9 +6,9 @@ header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 ?>
 <?php $base_url = '.';
-$page_title = "GryphalCode | Enterprise AI, Custom Software & Cloud DevOps Solutions";
-$meta_desc = "GryphalCode delivers precision-engineered AI integration, custom software development, and scalable cloud solutions to empower growing businesses worldwide. Serving Coimbatore, Tamil Nadu, and Kerala.";
- 
+$page_title = "GryphalCode | #1 Enterprise AI & Custom Software Development Coimbatore";
+$meta_desc = "GryphalCode delivers precision-engineered AI integration, custom software development, and scalable cloud solutions. The preferred IT partner for businesses in Coimbatore, Tamil Nadu, and Kerala.";
+
 $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, software development, cloud devops, AI solutions";
 ?>
 <!DOCTYPE html>
@@ -256,6 +256,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                         Scalable backend &amp; APIs
                                                                 </li>
                                                         </ul>
+                                                        <a href="request-demo" class="site-btn mt-10" style="padding: 10px 20px; font-size: 14px;">Request Demo</a>
                                                 </div>
                                         </div>
                                 </div>
@@ -302,6 +303,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                         Observability &amp; cost efficiency
                                                                 </li>
                                                         </ul>
+                                                        <a href="request-demo" class="site-btn mt-10" style="padding: 10px 20px; font-size: 14px;">Request Demo</a>
                                                 </div>
                                         </div>
                                 </div>
@@ -347,6 +349,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                         Secure API Integration
                                                                 </li>
                                                         </ul>
+                                                        <a href="request-demo" class="site-btn mt-10" style="padding: 10px 20px; font-size: 14px;">Request Demo</a>
                                                 </div>
                                         </div>
                                 </div>
@@ -419,6 +422,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                         Automated Reporting
                                                                 </li>
                                                         </ul>
+                                                        <a href="request-demo" class="site-btn mt-10" style="padding: 10px 20px; font-size: 14px;">Request Demo</a>
                                                 </div>
                                         </div>
                                 </div>
@@ -459,6 +463,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                         Proof of Delivery
                                                                 </li>
                                                         </ul>
+                                                        <a href="request-demo" class="site-btn mt-10" style="padding: 10px 20px; font-size: 14px;">Request Demo</a>
                                                 </div>
                                         </div>
                                 </div>
@@ -498,6 +503,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                         Broadcast Msgs
                                                                 </li>
                                                         </ul>
+                                                        <a href="request-demo" class="site-btn mt-10" style="padding: 10px 20px; font-size: 14px;">Request Demo</a>
                                                 </div>
                                         </div>
                                 </div>

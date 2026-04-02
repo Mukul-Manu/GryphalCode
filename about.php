@@ -171,12 +171,12 @@ $meta_keywords = "About, GryphalCode About, About, IT company, software developm
               Continuous R&amp;D ensures we deliver cutting-edge solutions ahead
               of market trends
             </p>
-            <a class="site-btn" href="#">
+            <!-- <a class="site-btn" href="#">
               Read More
               <span>
                 +
               </span>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
