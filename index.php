@@ -177,7 +177,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                         </div>
                 </div>
                 <div class="banner-img">
-                        <img alt="Custom software illustration" src="assets/images/banner/banner-1.webp" width="636" height="550" />
+                        <img alt="Custom software illustration" src="assets/images/banner/banner-1.webp" width="636" height="550" fetchpriority="high" />
                 </div>
         </section>
         <!-- banner area end -->
@@ -522,7 +522,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 <div class="about__bg">
                                                                         <img alt="Team collaborating on software project"
                                                                                 loading="lazy"
-                                                                                src="assets/images/bg/about-bg-1.webp" />
+                                                                                src="assets/images/bg/about-bg-1.webp"/>
                                                                 </div>
                                                         </div>
                                                         <div class="col-xl-6 col-lg-6 mt-30">

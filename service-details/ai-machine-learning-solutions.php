@@ -21,6 +21,8 @@ $meta_keywords = "Ai Machine Learning Solutions, GryphalCode Ai Machine Learning
   <meta content="ie=edge" http-equiv="x-ua-compatible" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
   <title><?= $page_title ?></title>
+  <link rel="preload" href="../assets/images/logo/logo.webp" as="image" type="image/webp">
+  <link rel="preload" href="../assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
   <link href="https://gryphalcode.com/service-details/ai-machine-learning-solutions" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
   <meta name="keywords" content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />

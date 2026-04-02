@@ -14,7 +14,7 @@ $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');?>
 $page_title = "Case Studies | Enterprise AI & Software Success Stories";
 $meta_desc = "Discover how GryphalCode solves complex business challenges through custom AI platforms, cloud migrations, and scalable enterprise software solutions. Serving Coimbatore, Tamil Nadu, and Kerala.";
  
-$meta_keywords = "Case Studies, GryphalCode Case Studies, Case, Studies, IT company, software development, AI solutions, cloud infrastructure";
+$meta_keywords = "GryphalCode Case Studies, AI Success Stories, Software Engineering Portfolio, Cloud Migration Examples, Enterprise Digital Transformation Success";
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">

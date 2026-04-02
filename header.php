@@ -1,4 +1,4 @@
-
+<?php if (!isset($base_url)) { $base_url = '.'; } ?>
 <a class="skip-nav" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:10000;padding:8px 16px;background:#086AD8;color:#fff;font-size:14px;text-decoration:none;">Skip to main content</a>
 <header class="header">
   <div class="header__top">

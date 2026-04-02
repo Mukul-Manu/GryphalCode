@@ -25,6 +25,8 @@ $meta_keywords = "Cloud Migration, GryphalCode Cloud Migration, Cloud, Migration
   <meta content="ie=edge" http-equiv="x-ua-compatible" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
   <title><?= $page_title ?></title>
+  <link rel="preload" href="$base_url/assets/images/logo/logo.webp" as="image" type="image/webp">
+  <link rel="preload" href="$base_url/assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
   <link href="https://gryphalcode.com/case-study-details/cloud-migration" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
   <meta name="keywords" content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />

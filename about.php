@@ -21,6 +21,8 @@ $meta_keywords = "About, GryphalCode About, About, IT company, software developm
   <meta content="ie=edge" http-equiv="x-ua-compatible" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
   <title><?= $page_title ?></title>
+  <link rel="preload" href="assets/images/logo/logo.webp" as="image" type="image/webp">
+  <link rel="preload" href="assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
   <link href="https://gryphalcode.com/about" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
   <meta name="keywords" content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />
@@ -137,9 +139,9 @@ $meta_keywords = "About, GryphalCode About, About, IT company, software developm
       <div class="row">
         <div class="col-xl-6 col-lg-6">
           <div class="about__bg about__bg--4">
-            <img alt="Our Approach" data-tilt="" data-tilt-perspective="3000" src="assets/images/bg/about-bg-3.webp"  loading="lazy">
-            <img alt="Our Approach" class="f-right" data-tilt="" data-tilt-perspective="3000"
-              src="assets/images/bg/about-bg-4.webp"  loading="lazy">
+            <img alt="GryphalCode Corporate Strategy Visualization" data-tilt="" data-tilt-perspective="3000" src="assets/images/bg/about-bg-3.webp" width="370" height="450" loading="lazy">
+            <img alt="GryphalCode Team Collaboration" class="f-right" data-tilt="" data-tilt-perspective="3000"
+              src="assets/images/bg/about-bg-4.webp" loading="lazy">
           </div>
         </div>
         <div class="col-xl-6 col-lg-6 pl-20 mt-70">
@@ -352,113 +354,6 @@ $meta_keywords = "About, GryphalCode About, About, IT company, software developm
       </div>
     </div>
   </section>
-  <!-- support area end -->
-  <!-- tema area start -->
-  <!-- <section class="team-area pt-95 pb-95">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-7">
-            <div class="section__heading mb-50">
-              <h3 class="section__heading--title-small">
-                <span class="mr-10">//</span>Team
-              </h3>
-              <h2 class="section__heading--title">
-                Our Buddys Always Ready <br />
-                To Solve Your Issues<span>.</span>
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="team-carousel owl-carousel">
-              <div class="team__box">
-                <div class="thumb">
-                  <img src="assets/images/team/team-1.webp" alt="Team 1"  loading="lazy">
-                  <div class="social__icons">
-                    <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#0"><i class="fab fa-twitter"></i></a>
-                    <a href="#0"><i class="fab fa-behance"></i></a>
-                    <a href="#0"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#0"><i class="fab fa-youtube"></i></a>
-                  </div>
-                </div>
-                <div class="content">
-                  <span class="designation">Founder</span>
-                  <h4 class="name">Rosalina D. William</h4>
-                </div>
-              </div>
-              <div class="team__box">
-                <div class="thumb">
-                  <img src="assets/images/team/team-2.webp" alt="Team 2"  loading="lazy">
-                  <div class="social__icons">
-                    <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#0"><i class="fab fa-twitter"></i></a>
-                    <a href="#0"><i class="fab fa-behance"></i></a>
-                    <a href="#0"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#0"><i class="fab fa-youtube"></i></a>
-                  </div>
-                </div>
-                <div class="content">
-                  <span class="designation">CEO</span>
-                  <h4 class="name">Miranda H. Halim</h4>
-                </div>
-              </div>
-              <div class="team__box">
-                <div class="thumb">
-                  <img src="assets/images/team/team-3.webp" alt="Team 3"  loading="lazy">
-                  <div class="social__icons">
-                    <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#0"><i class="fab fa-twitter"></i></a>
-                    <a href="#0"><i class="fab fa-behance"></i></a>
-                    <a href="#0"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#0"><i class="fab fa-youtube"></i></a>
-                  </div>
-                </div>
-                <div class="content">
-                  <span class="designation">Designer</span>
-                  <h4 class="name">Alim D. Dhario</h4>
-                </div>
-              </div>
-              <div class="team__box">
-                <div class="thumb">
-                  <img src="assets/images/team/team-4.webp" alt="Team 4"  loading="lazy">
-                  <div class="social__icons">
-                    <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#0"><i class="fab fa-twitter"></i></a>
-                    <a href="#0"><i class="fab fa-behance"></i></a>
-                    <a href="#0"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#0"><i class="fab fa-youtube"></i></a>
-                  </div>
-                </div>
-                <div class="content">
-                  <span class="designation">Developer</span>
-                  <h4 class="name">Rosalina D. William</h4>
-                </div>
-              </div>
-              <div class="team__box">
-                <div class="thumb">
-                  <img src="assets/images/team/team-1.webp" alt="Team 1"  loading="lazy">
-                  <div class="social__icons">
-                    <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#0"><i class="fab fa-twitter"></i></a>
-                    <a href="#0"><i class="fab fa-behance"></i></a>
-                    <a href="#0"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#0"><i class="fab fa-youtube"></i></a>
-                  </div>
-                </div>
-                <div class="content">
-                  <span class="designation">Founder</span>
-                  <h4 class="name">Rosalina D. William</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-  <!-- tema area end -->
-  <!-- timeline area start -->
   <section class="timeline-area pt-95 pb-100 bg_img" data-background="assets/images/pattern/timeline-pattern.webp">
     <div class="container">
       <div class="row justify-content-center">

@@ -26,6 +26,8 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   <meta content="ie=edge" http-equiv="x-ua-compatible" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
   <title><?= $page_title ?></title>
+  <link rel="preload" href="<?= $base_url ?>/assets/images/logo/logo.webp" as="image" type="image/webp">
+  <link rel="preload" href="<?= $base_url ?>/assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
   <link href="https://gryphalcode.com/faq" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
   <meta name="keywords" content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />
@@ -104,9 +106,9 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
     <div class="row">
      <div class="col-xl-12">
       <div class="breadcrumb__wrap text-center text-white">
-       <h2 class="title">
+       <h1 class="title">
         Your FAQ
-       </h2>
+       </h1>
        <div class="breadcrumb__nav">
         <ul class="d-inline-flex justify-content-center align-items-center">
          <li>
@@ -216,7 +218,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading2">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-target="#collapse2" data-toggle="collapse" type="button">
+          <button aria-controls="collapse2" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapse2" data-toggle="collapse" type="button">
            How do you approach mobile app development?
           </button>
          </h5>
@@ -278,7 +280,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading3">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-target="#collapse3" data-toggle="collapse" type="button">
+          <button aria-controls="collapse3" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapse3" data-toggle="collapse" type="button">
            What's the difference between CRM and ERP systems?
           </button>
          </h5>
@@ -340,7 +342,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading4">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-target="#collapse4" data-toggle="collapse" type="button">
+          <button aria-controls="collapse4" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapse4" data-toggle="collapse" type="button">
            What deliverables do you provide for UI/UX projects?
           </button>
          </h5>
@@ -386,7 +388,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading5">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-target="#collapse5" data-toggle="collapse" type="button">
+          <button aria-controls="collapse5" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapse5" data-toggle="collapse" type="button">
            What ERP modules do you typically implement?
           </button>
          </h5>
@@ -426,7 +428,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading6">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-target="#collapse6" data-toggle="collapse" type="button">
+          <button aria-controls="collapse6" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapse6" data-toggle="collapse" type="button">
            What's your UI/UX design process?
           </button>
          </h5>
@@ -489,7 +491,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading7">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-target="#collapse7" data-toggle="collapse" type="button">
+          <button aria-controls="collapse7" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapse7" data-toggle="collapse" type="button">
            What's your development methodology?
           </button>
          </h5>
@@ -526,7 +528,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading8">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-target="#collapse8" data-toggle="collapse" type="button">
+          <button aria-controls="collapse8" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapse8" data-toggle="collapse" type="button">
            What's the typical timeline for projects?
           </button>
          </h5>
@@ -564,7 +566,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading9">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-target="#collapse9" data-toggle="collapse" type="button">
+          <button aria-controls="collapse9" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapse9" data-toggle="collapse" type="button">
            Do you provide maintenance services?
           </button>
          </h5>
@@ -592,7 +594,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading10">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-target="#collapse10" data-toggle="collapse" type="button">
+          <button aria-controls="collapse10" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapse10" data-toggle="collapse" type="button">
            Can you integrate with our existing systems?
           </button>
          </h5>
@@ -641,7 +643,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading11">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-target="#collapse11" data-toggle="collapse" type="button">
+          <button aria-controls="collapse11" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapse11" data-toggle="collapse" type="button">
            What's your pricing model?
           </button>
          </h5>
@@ -686,7 +688,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
        <div class="card">
         <div class="card__header" id="heading12">
          <h5 class="mb-0 title">
-          <button class="btn btn-link collapsed" data-target="#collapse12" data-toggle="collapse" type="button">
+          <button aria-controls="collapse12" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapse12" data-toggle="collapse" type="button">
            How do we start a project?
           </button>
          </h5>
