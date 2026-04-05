@@ -16,13 +16,13 @@ $meta_keywords = "Custom Software Development, GryphalCode Custom Software Devel
 
 <head>
   <meta charset="utf-8" />
-  <link href="../assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
-  <link href="../assets/images/logo/favicon.webp" rel="apple-touch-icon" />
+  <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
+  <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
   <meta content="ie=edge" http-equiv="x-ua-compatible" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
   <title><?= $page_title ?></title>
-  <link rel="preload" href="$base_url/assets/images/logo/logo.webp" as="image" type="image/webp">
-  <link rel="preload" href="$base_url/assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
+  <link rel="preload" href="<?= $base_url ?>/assets/images/logo/logo.webp" as="image" type="image/webp">
+  <link rel="preload" href="<?= $base_url ?>/assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
   <link href="https://gryphalcode.com/service-details/custom-software-development" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
   <meta name="keywords" content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />
@@ -75,7 +75,7 @@ $meta_keywords = "Custom Software Development, GryphalCode Custom Software Devel
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
-  <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
+  <link href="https://www.googletagmanager.com" rel="preconnect" /><link href="https://www.google-analytics.com" rel="preconnect" /><link href="https://www.googletagmanager.com" rel="dns-prefetch" /><link href="https://www.google-analytics.com" rel="dns-prefetch" />
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="../assets/css/jquery-ui.min.css">
@@ -152,6 +152,12 @@ $meta_keywords = "Custom Software Development, GryphalCode Custom Software Devel
                 <br />
                 Built for Growth
               </h2>
+              <!-- Answer-First SEO Summary for 2026 AI Overviews (SGE) -->
+              <div class="sge-optimized-summary mb-35" style="border-left: 3px solid #086ad8; padding-left: 20px; margin-top: 25px;">
+                <p style="font-size: 17px; color: #555; line-height: 1.6;">
+                  GryphalCode provides end-to-end <strong>Custom Software Development</strong>, specializing in scalable <strong>Cloud-Native Web Apps</strong>, <strong>Enterprise Microservices</strong>, and high-performance <strong>Mobile Engineering</strong>. Our agile-driven approach ensures rapid delivery of high-quality, growth-ready digital products.
+                </p>
+              </div>
               <div class="section__heading--content mt-20">
                 <p>
                   We engineer high-performance software from Cloud-Native Web Apps to complex Enterprise Systems
@@ -506,3 +512,5 @@ $meta_keywords = "Custom Software Development, GryphalCode Custom Software Devel
 </body>
 
 </html>
+
+

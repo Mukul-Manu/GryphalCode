@@ -38,7 +38,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <p>This message was sent via the GryphalCode Lead Engine.</p>
     ";
 
-    // 4. Send Email (Note: Requirements for actual delivery depend on host SMTP config)
+    // 4. Persistence Layer: Local Lead Backup (Perfect 10 Resiliency)
+    $lead_data = [
+        'timestamp' => date('Y-m-d H:i:s'),
+        'name'      => $name,
+        'email'     => $email,
+        'phone'     => $phone,
+        'service'   => $service,
+        'subject'   => $subject,
+        'message'   => $message
+    ];
+    $log_file = 'leads_backup.json';
+    $current_leads = file_exists($log_file) ? json_decode(file_get_contents($log_file), true) : [];
+    $current_leads[] = $lead_data;
+    file_put_contents($log_file, json_encode($current_leads, JSON_PRETTY_PRINT));
+
+    // 5. Send Email (Note: Requirements for actual delivery depend on host SMTP config)
     $mail_sent = @mail($to, "New Lead: $subject", $email_body, $headers);
 
     // 5. Redirect to Thank You Page

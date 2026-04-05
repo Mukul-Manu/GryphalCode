@@ -66,6 +66,38 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What's included in your website design process?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our comprehensive website design process includes discovery sessions, competitor analysis, wireframing, UI/UX design, responsive development, SEO structure implementation, QA, and deployment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you approach mobile app development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We follow a 7-step methodology: Strategy definition, UX Design, UI Design, Development (Native or Cross-platform), rigorous Testing, App Store Submission, and ongoing Maintenance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between CRM and ERP systems?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CRM (Customer Relationship Management) focuses on external customer-facing processes like sales and service. ERP (Enterprise Resource Planning) manages internal business processes like finance, HR, and manufacturing."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "<?= addslashes($page_title) ?>",
     "description": "<?= addslashes($meta_desc) ?>",
@@ -80,7 +112,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
-  <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
+  <link href="https://www.googletagmanager.com" rel="preconnect" /><link href="https://www.google-analytics.com" rel="preconnect" /><link href="https://www.googletagmanager.com" rel="dns-prefetch" /><link href="https://www.google-analytics.com" rel="dns-prefetch" />
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/jquery-ui.min.css">
@@ -843,3 +875,4 @@ document.addEventListener('DOMContentLoaded', function() {
   
  </body>
 </html>
+

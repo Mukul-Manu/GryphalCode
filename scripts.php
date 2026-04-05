@@ -14,11 +14,36 @@
 <script defer src="<?= $base_url ?>/assets/js/waypoint.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/seo-engine.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/main.js"></script>
+<!-- Microsoft Clarity Analytic -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "rj83dnd19x");
+</script>
+
+<!-- Advanced Behavioral Analytics & Event Tracking -->
+<script>
+  window.addEventListener('scroll', function() {
+    const scrollDepth = Math.round((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100);
+    if (scrollDepth % 25 === 0) {
+      gtag('event', 'scroll_depth', { 'depth': scrollDepth + '%' });
+    }
+  }, { passive: true });
+
+  document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('focusin', () => {
+      gtag('event', 'form_start', { 'form_id': form.id || 'unnamed_form' });
+    }, { once: true });
+  });
+</script>
+
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('<?= $base_url ?>/sw.js').then(reg => {
-      console.log('SW registered:', reg);
+      console.log('GryphalCode SW registered:', reg);
     }).catch(err => {
       console.log('SW registration failed:', err);
     });

@@ -80,7 +80,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
-  <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
+  <link href="https://www.googletagmanager.com" rel="preconnect" /><link href="https://www.google-analytics.com" rel="preconnect" /><link href="https://www.googletagmanager.com" rel="dns-prefetch" /><link href="https://www.google-analytics.com" rel="dns-prefetch" />
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/jquery-ui.min.css">

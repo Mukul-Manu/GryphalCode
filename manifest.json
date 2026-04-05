@@ -11,7 +11,7 @@
       "src": "assets/images/logo/logo.webp",
       "sizes": "512x512",
       "type": "image/webp",
-      "purpose": "any maskable"
+      "purpose": "maskable"
     }
   ],
   "id": "/index.php",

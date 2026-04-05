@@ -16,13 +16,13 @@ $meta_keywords = "Api Integration Automation, GryphalCode Api Integration Automa
 
 <head>
   <meta charset="utf-8" />
-  <link href="../assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
-  <link href="../assets/images/logo/favicon.webp" rel="apple-touch-icon" />
+  <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
+  <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
   <meta content="ie=edge" http-equiv="x-ua-compatible" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
   <title><?= $page_title ?></title>
-  <link rel="preload" href="$base_url/assets/images/logo/logo.webp" as="image" type="image/webp">
-  <link rel="preload" href="$base_url/assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
+  <link rel="preload" href="<?= $base_url ?>/assets/images/logo/logo.webp" as="image" type="image/webp">
+  <link rel="preload" href="<?= $base_url ?>/assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
   <link href="https://gryphalcode.com/service-details/api-integration-automation" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
   <meta name="keywords" content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />
@@ -75,7 +75,7 @@ $meta_keywords = "Api Integration Automation, GryphalCode Api Integration Automa
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
-  <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
+  <link href="https://www.googletagmanager.com" rel="preconnect" /><link href="https://www.google-analytics.com" rel="preconnect" /><link href="https://www.googletagmanager.com" rel="dns-prefetch" /><link href="https://www.google-analytics.com" rel="dns-prefetch" />
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="../assets/css/jquery-ui.min.css">
@@ -507,3 +507,5 @@ $meta_keywords = "Api Integration Automation, GryphalCode Api Integration Automa
 </body>
 
 </html>
+
+
