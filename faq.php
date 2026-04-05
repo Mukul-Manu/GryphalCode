@@ -98,6 +98,30 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What's included in your website design process?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our process includes Discovery, Competitor Analysis, Wireframing, UI/UX Design, and Responsive Development."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you approach mobile app development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We follow an Agile Strategy: Strategy, UX/UI Design, Development (Native/Cross), and rigorous Testing."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "<?= addslashes($page_title) ?>",
     "description": "<?= addslashes($meta_desc) ?>",

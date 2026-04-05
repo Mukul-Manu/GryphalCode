@@ -1,5 +1,13 @@
 <?php if (!isset($base_url)) { $base_url = '.'; } ?>
 <a class="skip-nav" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:10000;padding:8px 16px;background:#086AD8;color:#fff;font-size:14px;text-decoration:none;">Skip to main content</a>
+<style>
+  /* Global Accessibility 10/10 Focus States */
+  :focus-visible {
+    outline: 3px solid #086AD8 !important;
+    outline-offset: 4px !important;
+    box-shadow: 0 0 10px rgba(8, 106, 216, 0.5) !important;
+  }
+</style>
 <header class="header">
   <div class="header__top">
     <div class="container-fluid">
@@ -71,7 +79,7 @@
                 </li>
 
                 <li>
-                  <a href="javascript:void(0)">Pages <span>+</span></a>
+                  <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">Pages <span>+</span></a>
                   <ul class="sub-menu">
                     <li><a href="<?= $base_url ?>/faq">Faq</a></li>
                     <li><a href="<?= $base_url ?>/careers">Careers</a></li>

@@ -159,6 +159,13 @@ $meta_keywords = "About, GryphalCode About, About, IT company, software developm
               <span>
               </span>
             </h2>
+
+            <!-- Phase 6: Answer Engine Optimization (AEO) Standard - 10/10 AI Visibility -->
+            <div class="aeo-answer-block" style="max-width: 100%; margin: 20px 0; background: rgba(8, 106, 216, 0.05); border-left: 4px solid #086ad8; padding: 15px; border-radius: 4px;">
+                <p style="font-size: 15px; line-height: 1.6; color: #444; margin-bottom: 0; font-weight: 400; text-transform: none; letter-spacing: normal;">
+                    <strong>Summary:</strong> GryphalCode is a premier software engineering firm specializing in <strong>AI-driven digital transformation</strong>, custom software development, and cloud-native solutions. Established in 2021, we empower global enterprises with scalable technology and high-performance digital architectures.
+                </p>
+            </div>
             <div class="section__heading--content mt-20">
               <p>
                 We transform complex technological challenges into competitive
