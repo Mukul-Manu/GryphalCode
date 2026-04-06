@@ -21,7 +21,12 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
         <meta content="ie=edge" http-equiv="x-ua-compatible" />
         <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
         <title><?= $page_title ?></title>
+        <link rel="preload" href="assets/images/logo/logo.webp" as="image" type="image/webp">
+        <link rel="preload" href="assets/images/bg/banner-bg-1.webp" as="image" type="image/webp">
+        <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
+        <link rel="preload" href="assets/css/style.css?v=3" as="style">
         <link href="https://gryphalcode.com" rel="canonical">
+
         <meta content="<?= $meta_desc ?>" name="description" />
         <meta name="keywords"
                 content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />
@@ -60,21 +65,13 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
         <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "GryphalCode",
+    "@type": "WebPage",
+    "@id": "https://gryphalcode.com",
     "url": "https://gryphalcode.com",
-    "logo": "https://gryphalcode.com/assets/images/logo/logo.webp",
-    "sameAs": [
-      "https://www.facebook.com/profile.php?id=61570214392615",
-      "https://www.instagram.com/gryphal_code/"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+918072280620",
-      "contactType": "customer service",
-      "areaServed": "IN",
-      "availableLanguage": "en"
-    }
+    "name": "<?= addslashes($page_title) ?>",
+    "description": "<?= addslashes($meta_desc) ?>",
+    "publisher": { "@id": "https://gryphalcode.com/#organization" },
+    "mainEntity": { "@id": "https://gryphalcode.com/#organization" }
   }
   </script>
         <script type="application/ld+json">
@@ -98,51 +95,11 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
       "@type": "GeoCoordinates",
       "latitude": 11.0376,
       "longitude": 76.9949
-    }
+    },
+    "parentOrganization": { "@id": "https://gryphalcode.com/#organization" }
   }
   </script>
-        <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "GryphalCode",
-    "image": "https://gryphalcode.com/assets/images/logo/logo.webp",
-    "url": "https://gryphalcode.com",
-    "telephone": "+918072280620",
-    "priceRange": "$$$",
-    "serviceArea": [
-      { "@type": "State", "name": "Tamil Nadu" },
-      { "@type": "State", "name": "Kerala" }
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Software Engineering Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Custom Software Development"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "AI & Machine Learning"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Cloud DevOps"
-          }
-        }
-      ]
-    }
-  }
-  </script>
+
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
         <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
@@ -151,15 +108,16 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
         <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
         <link href="https://www.google-analytics.com" rel="dns-prefetch" />
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
-        <link rel="stylesheet" href="assets/css/lightcase.css">
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
-        <link rel="stylesheet" href="assets/css/nice-select.css">
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="assets/css/jquery-ui.min.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="assets/css/lightcase.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="assets/css/meanmenu.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="assets/css/nice-select.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="assets/css/animate.css" media="print" onload="this.media='all'">
         <link rel="stylesheet" href="assets/css/style.css?v=3">
         <link rel="stylesheet" href="assets/css/responsive.css?v=3">
+
         <link href="/manifest.json" rel="manifest" />
         <meta content="#086ad8" name="theme-color" />
         <meta content="yes" name="apple-mobile-web-app-capable" />
@@ -512,7 +470,9 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 <img alt="E-Commerce Management Suite 3D Illustration"
                                                                         loading="lazy"
                                                                         src="assets/images/service-previews/food-delivery.webp"
+                                                                        width="370" height="246"
                                                                         class="product-thumb-img" />
+
                                                         </div>
                                                         <div
                                                                 class="product-content mt-20 text-center product-content-padding">
@@ -657,7 +617,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                         <div class="about__bg">
                                                                                 <img alt="Team collaborating on software project"
                                                                                         loading="lazy"
-                                                                                        src="assets/images/bg/about-bg-1.webp" />
+                                                                                        src="assets/images/bg/about-bg-1.webp" width="570" height="380" />
+
                                                                         </div>
                                                                 </div>
                                                                 <div class="col-xl-6 col-lg-6 mt-30">
@@ -705,7 +666,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                                                 class="about__box--icon">
                                                                                                                 <img alt="Product &amp; Strategy Icon"
                                                                                                                         loading="lazy"
-                                                                                                                        src="assets/images/icons/about-icon-1.webp" />
+                                                                                                                        src="assets/images/icons/about-icon-1.webp" width="50" height="50" />
+
                                                                                                         </div>
                                                                                                         <div
                                                                                                                 class="about__box--content">
@@ -739,7 +701,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                                                 class="about__box--icon">
                                                                                                                 <img alt="Engineering Excellence Icon"
                                                                                                                         loading="lazy"
-                                                                                                                        src="assets/images/icons/about-icon-2.webp" />
+                                                                                                                        src="assets/images/icons/about-icon-2.webp" width="50" height="50" />
+
                                                                                                         </div>
                                                                                                         <div
                                                                                                                 class="about__box--content">
@@ -804,7 +767,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 <div class="thumb">
                                                                         <img alt="Process &amp; Delivery Management 3D Illustration"
                                                                                 loading="lazy"
-                                                                                src="assets/images/service-previews/project-delivery.webp" />
+                                                                                src="assets/images/service-previews/project-delivery.webp" width="370" height="246" />
+
                                                                 </div>
                                                                 <div class="cat">
                                                                         <div class="icon">
@@ -845,7 +809,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 <div class="thumb">
                                                                         <img alt="Security by Design 3D Illustration"
                                                                                 loading="lazy"
-                                                                                src="assets/images/service-previews/security.webp" />
+                                                                                src="assets/images/service-previews/security.webp" width="370" height="246" />
+
                                                                 </div>
                                                                 <div class="cat">
                                                                         <div class="icon">
@@ -884,7 +849,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 <div class="thumb">
                                                                         <img alt="Automation &amp; Efficiency 3D Illustration"
                                                                                 loading="lazy"
-                                                                                src="assets/images/service-previews/cloud-devops.webp" />
+                                                                                src="assets/images/service-previews/cloud-devops.webp" width="370" height="246" />
+
                                                                 </div>
                                                                 <div class="cat">
                                                                         <div class="icon">
@@ -1038,7 +1004,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                         <div class="authore--thumb mr-20">
                                                                                 <img src="assets/images/others/testimonial-authore-1.webp"
                                                                                         alt="Testimonial Author Mukul - Founder"
-                                                                                        loading="lazy">
+                                                                                        loading="lazy" width="80" height="80">
+
                                                                         </div>
                                                                         <div class="authore--content">
                                                                                 <h5 class="name">
@@ -1050,7 +1017,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                         </div>
                                                                 </div>
                                                                 <img alt="Quote" class="quote-icon" loading="lazy"
-                                                                        src="assets/images/icons/quote.webp" />
+                                                                        src="assets/images/icons/quote.webp" width="40" height="40" />
                                                         </div>
                                                 </div>
                                         </div>
@@ -1078,7 +1045,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                         <div class="thumb">
                                                                                                 <img alt="AI Integration"
                                                                                                         loading="lazy"
-                                                                                                        src="assets/images/news/news-small-1.webp" />
+                                                                                                        src="assets/images/news/news-small-1.webp" width="100" height="100" />
                                                                                         </div>
                                                                                         <div class="content">
                                                                                                 <ul class="meta">

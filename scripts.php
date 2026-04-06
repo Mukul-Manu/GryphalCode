@@ -1,5 +1,6 @@
 <!--========= JS Shared Libraries =========-->
-<script src="<?= $base_url ?>/assets/js/jquery-2.2.4.min.js"></script>
+<script defer src="<?= $base_url ?>/assets/js/jquery-2.2.4.min.js"></script>
+
 <script defer src="<?= $base_url ?>/assets/js/bootstrap.min.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/jquery.meanmenu.min.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/jquery.nice-select.min.js"></script>

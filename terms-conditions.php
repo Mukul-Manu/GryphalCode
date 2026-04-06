@@ -21,8 +21,10 @@ $meta_keywords = "Terms Conditions, GryphalCode Terms Conditions, Terms, Conditi
   <meta content="ie=edge" http-equiv="x-ua-compatible" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
   <title><?= $page_title ?></title>
-  <link rel="preload" href="assets/images/logo/logo.webp" as="image" type="image/webp">
-  <link rel="preload" href="assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
+  <link rel="preload" href="<?= $base_url ?>/assets/images/logo/logo.webp" as="image" type="image/webp">
+  <link rel="preload" href="<?= $base_url ?>/assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
+  <link rel="preload" href="<?= $base_url ?>/assets/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="<?= $base_url ?>/assets/css/style.css?v=3" as="style">
   <link href="https://gryphalcode.com/terms-conditions" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
   <meta name="keywords" content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />
@@ -76,16 +78,17 @@ $meta_keywords = "Terms Conditions, GryphalCode Terms Conditions, Terms, Conditi
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
   <link href="https://www.googletagmanager.com" rel="preconnect" /><link href="https://www.google-analytics.com" rel="preconnect" /><link href="https://www.googletagmanager.com" rel="dns-prefetch" /><link href="https://www.google-analytics.com" rel="dns-prefetch" />
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
-  <link rel="stylesheet" href="assets/css/lightcase.css">
-  <link rel="stylesheet" href="assets/css/meanmenu.css">
-  <link rel="stylesheet" href="assets/css/nice-select.css">
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=3">
-  <link rel="stylesheet" href="assets/css/responsive.css?v=3">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/font-awesome.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/jquery-ui.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/lightcase.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/meanmenu.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/nice-select.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/owl.carousel.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/animate.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.css?v=3">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.css?v=3">
+
   <link href="/manifest.json" rel="manifest" />
   <meta content="#086ad8" name="theme-color" />
   <meta content="yes" name="apple-mobile-web-app-capable" />

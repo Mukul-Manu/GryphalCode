@@ -28,7 +28,10 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   <title><?= $page_title ?></title>
   <link rel="preload" href="<?= $base_url ?>/assets/images/logo/logo.webp" as="image" type="image/webp">
   <link rel="preload" href="<?= $base_url ?>/assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
+  <link rel="preload" href="<?= $base_url ?>/assets/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="<?= $base_url ?>/assets/css/style.css?v=3" as="style">
   <link href="https://gryphalcode.com/faq" rel="canonical">
+
   <meta content="<?= $meta_desc ?>" name="description" />
   <meta name="keywords" content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />
   
@@ -67,86 +70,80 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": "https://gryphalcode.com/faq#faq",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What's included in your website design process?",
+        "name": "How does GryphalCode's website design process work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our comprehensive website design process includes discovery sessions, competitor analysis, wireframing, UI/UX design, responsive development, SEO structure implementation, QA, and deployment."
+          "text": "Our website design process is a comprehensive 8-step journey including discovery, competitor research, wireframing, UI/UX design, responsive development, SEO optimization, quality testing, and final deployment."
         }
       },
       {
         "@type": "Question",
-        "name": "How do you approach mobile app development?",
+        "name": "How does your team build mobile applications?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We follow a 7-step methodology: Strategy definition, UX Design, UI Design, Development (Native or Cross-platform), rigorous Testing, App Store Submission, and ongoing Maintenance."
+          "text": "We build mobile apps using a 7-step Agile methodology: Strategy definition, UX/UI design, development for iOS and Android, rigorous QA testing, app store submission, and ongoing maintenance."
         }
       },
       {
         "@type": "Question",
-        "name": "What's the difference between CRM and ERP systems?",
+        "name": "Can you explain the difference between CRM and ERP software?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "CRM (Customer Relationship Management) focuses on external customer-facing processes like sales and service. ERP (Enterprise Resource Planning) manages internal business processes like finance, HR, and manufacturing."
+          "text": "CRM software focuses on managing customer relationships and sales, while ERP systems manage internal business processes like finance, HR, inventory, and manufacturing operations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What software development methodology do you follow?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We follow the Agile Scrum methodology, which involves 2-week development sprints, daily standups, and regular client demos to ensure transparency and flexibility throughout the project."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I start a new project with GryphalCode?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Starting a project is simple: we begin with a free consultation, followed by a requirements workshop, a formal proposal, a project kickoff, and then we proceed into regular development sprints."
         }
       }
     ]
   }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What's included in your website design process?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our process includes Discovery, Competitor Analysis, Wireframing, UI/UX Design, and Responsive Development."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do you approach mobile app development?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We follow an Agile Strategy: Strategy, UX/UI Design, Development (Native/Cross), and rigorous Testing."
-        }
-      }
-    ]
-  }
-  </script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
+    "@id": "https://gryphalcode.com/faq",
+    "url": "https://gryphalcode.com/faq",
     "name": "<?= addslashes($page_title) ?>",
     "description": "<?= addslashes($meta_desc) ?>",
-    "url": "https://gryphalcode.com/faq",
-    "provider": {
-      "@type": "Organization",
-      "name": "GryphalCode",
-      "logo": "https://gryphalcode.com/assets/images/logo/logo.webp"
-    }
+    "publisher": { "@id": "https://gryphalcode.com/#organization" },
+    "mainEntity": { "@id": "https://gryphalcode.com/faq#faq" }
   }
   </script>
+
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
   <link href="https://www.googletagmanager.com" rel="preconnect" /><link href="https://www.google-analytics.com" rel="preconnect" /><link href="https://www.googletagmanager.com" rel="dns-prefetch" /><link href="https://www.google-analytics.com" rel="dns-prefetch" />
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/jquery-ui.min.css">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/lightcase.css">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/meanmenu.css">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/nice-select.css">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/animate.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/font-awesome.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/jquery-ui.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/lightcase.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/meanmenu.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/nice-select.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/owl.carousel.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/animate.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.css?v=3">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.css?v=3">
+
   <link href="<?= $base_url ?>/manifest.json" rel="manifest" />
   <meta content="#086ad8" name="theme-color" />
   <meta content="yes" name="apple-mobile-web-app-capable" />
@@ -232,9 +229,10 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
         <div class="card__header" id="heading1">
          <h5 class="mb-0 title">
           <button aria-controls="collapse1" aria-expanded="false" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse1" type="button">
-           What's included in your website design process?
+           How does GryphalCode's website design process work?
           </button>
          </h5>
+
         </div>
         <div class="collapse" data-parent="#accordionFaq" id="collapse1">
          <div class="card__body">
@@ -275,9 +273,10 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
         <div class="card__header" id="heading2">
          <h5 class="mb-0 title">
           <button aria-controls="collapse2" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapse2" data-toggle="collapse" type="button">
-           How do you approach mobile app development?
+           How does your team build mobile applications?
           </button>
          </h5>
+
         </div>
         <div class="collapse" data-parent="#accordionFaq" id="collapse2">
          <div class="card__body">
@@ -337,9 +336,10 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
         <div class="card__header" id="heading3">
          <h5 class="mb-0 title">
           <button aria-controls="collapse3" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapse3" data-toggle="collapse" type="button">
-           What's the difference between CRM and ERP systems?
+           Can you explain the difference between CRM and ERP software?
           </button>
          </h5>
+
         </div>
         <div class="collapse" data-parent="#accordionFaq" id="collapse3">
          <div class="card__body">
@@ -548,9 +548,10 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
         <div class="card__header" id="heading7">
          <h5 class="mb-0 title">
           <button aria-controls="collapse7" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapse7" data-toggle="collapse" type="button">
-           What's your development methodology?
+           What software development methodology do you follow?
           </button>
          </h5>
+
         </div>
         <div class="collapse" data-parent="#accordionFaq2" id="collapse7">
          <div class="card__body">
@@ -745,9 +746,10 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
         <div class="card__header" id="heading12">
          <h5 class="mb-0 title">
           <button aria-controls="collapse12" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapse12" data-toggle="collapse" type="button">
-           How do we start a project?
+           How can I start a new project with GryphalCode?
           </button>
          </h5>
+
         </div>
         <div class="collapse" data-parent="#accordionFaq2" id="collapse12">
          <div class="card__body">

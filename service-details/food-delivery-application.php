@@ -23,6 +23,8 @@ $meta_keywords = "Food Delivery Application, GryphalCode Food Delivery Applicati
   <title><?= $page_title ?></title>
   <link rel="preload" href="<?= $base_url ?>/assets/images/logo/logo.webp" as="image" type="image/webp">
   <link rel="preload" href="<?= $base_url ?>/assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
+  <link rel="preload" href="../assets/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="../assets/css/style.css?v=3" as="style">
   <link href="https://gryphalcode.com/service-details/food-delivery-application" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
   <meta name="keywords" content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />
@@ -62,28 +64,34 @@ $meta_keywords = "Food Delivery Application, GryphalCode Food Delivery Applicati
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
+    "@id": "https://gryphalcode.com/service-details/food-delivery-application",
+    "url": "https://gryphalcode.com/service-details/food-delivery-application",
     "name": "<?= addslashes($page_title) ?>",
     "description": "<?= addslashes($meta_desc) ?>",
-    "url": "https://gryphalcode.com/service-details/food-delivery-application",
-    "provider": {
-      "@type": "Organization",
-      "name": "GryphalCode",
-      "logo": "https://gryphalcode.com/assets/images/logo/logo.webp"
+    "publisher": { "@id": "https://gryphalcode.com/#organization" },
+    "mainEntity": {
+      "@type": "Service",
+      "name": "Custom Food Delivery App Development",
+      "serviceType": "Mobile & Web Engineering",
+      "provider": { "@id": "https://gryphalcode.com/#organization" },
+      "areaServed": { "@type": "Country", "name": "IN" },
+      "description": "Build a high-performance food delivery platform with real-time tracking, secure payments, and seamless vendor management systems."
     }
   }
   </script>
+
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
   <link href="https://www.googletagmanager.com" rel="preconnect" /><link href="https://www.google-analytics.com" rel="preconnect" /><link href="https://www.googletagmanager.com" rel="dns-prefetch" /><link href="https://www.google-analytics.com" rel="dns-prefetch" />
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../assets/css/jquery-ui.min.css">
-  <link rel="stylesheet" href="../assets/css/lightcase.css">
-  <link rel="stylesheet" href="../assets/css/meanmenu.css">
-  <link rel="stylesheet" href="../assets/css/nice-select.css">
-  <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="../assets/css/animate.css">
+  <link rel="stylesheet" href="../assets/css/font-awesome.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../assets/css/jquery-ui.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../assets/css/lightcase.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../assets/css/meanmenu.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../assets/css/nice-select.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../assets/css/animate.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="../assets/css/style.css?v=3">
   <link rel="stylesheet" href="../assets/css/responsive.css?v=3">
   <link href="/manifest.json" rel="manifest" />

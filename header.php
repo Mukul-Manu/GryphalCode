@@ -1,4 +1,37 @@
 <?php if (!isset($base_url)) { $base_url = '.'; } ?>
+<!-- Global Entity Schema (2026 AI-Search Readiness) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://gryphalcode.com/#organization",
+  "name": "GryphalCode",
+  "url": "https://gryphalcode.com",
+  "logo": "https://gryphalcode.com/assets/images/logo/logo.webp",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+918072280620",
+    "contactType": "customer service",
+    "areaServed": "IN",
+    "availableLanguage": "en"
+  },
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61570214392615",
+    "https://www.instagram.com/gryphal_code/"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://gryphalcode.com/#website",
+  "url": "https://gryphalcode.com",
+  "name": "GryphalCode",
+  "publisher": { "@id": "https://gryphalcode.com/#organization" }
+}
+</script>
+
 <a class="skip-nav" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:10000;padding:8px 16px;background:#086AD8;color:#fff;font-size:14px;text-decoration:none;">Skip to main content</a>
 <style>
   /* Global Accessibility 10/10 Focus States */
