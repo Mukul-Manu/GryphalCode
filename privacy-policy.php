@@ -15,6 +15,25 @@ $meta_keywords = "Privacy Policy, GryphalCode Privacy Policy, Privacy, Policy, I
 <!DOCTYPE html>
 <html class="no-js" lang="en">
  <head>
+
+  <!-- 2026 AEO / GEO / SXO / LLMO Optimization Tags (Auto-Updating) -->
+  <meta name="ai-search-readiness" content="optimized" />
+  <meta name="answer-engine-optimization" content="high-visibility" />
+  <meta name="generative-engine-targeting" content="AI Overviews, SGE, LLM-Search" />
+  <meta content="IN-TN, IN-KL" name="geo.region" />
+  <meta content="11.0168;76.9558" name="geo.position" />
+  <meta content="Coimbatore, Tamil Nadu, Kerala, India - Serving All States Nationwide" name="geo.placename" />
+  <meta content="11.0168, 76.9558" name="ICBM" />
+  <!-- Security & Integrity -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com;">
+  <!-- Official Google Pixel & Analytics Tracking (MEO) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J6X1HS36W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3J6X1HS36W');
+  </script>
   <meta charset="utf-8" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
@@ -30,10 +49,10 @@ $meta_keywords = "Privacy Policy, GryphalCode Privacy Policy, Privacy, Policy, I
   <meta name="keywords" content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />
   
   <!-- GEO Targeting - Service States of India -->
-  <meta content="IN-TN, IN-KL" name="geo.region" />
-  <meta content="11.0168;76.9558" name="geo.position" />
-  <meta content="Coimbatore, Tamil Nadu, Kerala, India - Serving All States Nationwide" name="geo.placename" />
-  <meta content="11.0168, 76.9558" name="ICBM" />
+  
+  
+  
+  
   
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />
@@ -51,14 +70,7 @@ $meta_keywords = "Privacy Policy, GryphalCode Privacy Policy, Privacy, Policy, I
   <meta content="https://gryphalcode.com/assets/images/logo/og-image.webp" name="twitter:image" />
 
   <!-- Security & Integrity -->
-  <!-- Analytics & Tracking -->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3J6X1HS36W"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-3J6X1HS36W');
-  </script>
+  
 
   <script type="application/ld+json">
   {
@@ -319,8 +331,7 @@ $meta_keywords = "Privacy Policy, GryphalCode Privacy Policy, Privacy, Policy, I
 <?php include 'footer.php'; ?>
   <!-- All JS Scripts loaded via loader.js -->
   <?php include 'whatsapp.php'; ?>
-<?php include 'scripts.php'; ?>
+<?php include 'global-scripts.php'; ?>
   
  </body>
 </html>
-

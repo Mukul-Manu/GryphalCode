@@ -21,19 +21,19 @@ $error_count = 0;
 
 foreach ($screens as $screen) {
     if (preg_match('/header|footer|scripts|whatsapp|mail/', basename($screen))) continue;
-    
+
     $content = file_get_contents($screen);
     $name = basename($screen);
-    
+
     $has_meta = preg_match('/meta.*description/', $content);
     $has_schema = preg_match('/application\/ld\+json/', $content);
     $has_gtag = preg_match('/G-3J6X1HS36W/', $content) || preg_match('/scripts\.php/', $content);
     $has_aeo = preg_match('/aeo-answer-block/', $content);
     $has_h1 = preg_match('/<h1.*?>.*?<\/h1>/', $content);
-    
+
     $status = ($has_meta && $has_schema && $has_gtag && $has_aeo && $has_h1) ? "PASS" : "FAIL";
     if ($status === "FAIL") $error_count++;
-    
+
     $audit_log .= "File: $name | Status: $status | AEO: " . ($has_aeo ? '✅' : '🏗️') . " | Schema: " . ($has_schema ? '✅' : '🏗️') . PHP_EOL;
 }
 

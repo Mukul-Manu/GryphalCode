@@ -20,7 +20,7 @@ foreach ($files as $file) {
         $name = pathinfo($file, PATHINFO_FILENAME);
         $priority = ($file === 'index.php') ? '1.0' : '0.8';
         $loc = ($file === 'index.php') ? "$base_url/" : "$base_url/$name";
-        
+
         $sitemap .= "  <url>" . PHP_EOL;
         $sitemap .= "    <loc>$loc</loc>" . PHP_EOL;
         $sitemap .= "    <lastmod>" . date('Y-m-d') . "</lastmod>" . PHP_EOL;
