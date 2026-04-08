@@ -122,7 +122,7 @@ $meta_keywords = "Gdpr Security Overhaul, GryphalCode Gdpr Security Overhaul, Gd
      <div class="col-xl-8 col-lg-8">
       <div class="project-details__content">
        <div class="thumb mb-40">
-        <img alt="Security Case Study Main Image" class="w-100 project-overview-img" src="<?= $base_url ?>/assets/images/service-previews/cyber-security.webp" loading="lazy">
+        <img alt="Security Case Study Main Image" class="w-100 project-overview-img" src="<?= $base_url ?>/assets/images/service-previews/security.webp" loading="lazy">
        </div>
        <h2 class="title mb-25">
         Project Overview

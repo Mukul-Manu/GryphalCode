@@ -122,7 +122,7 @@ $meta_keywords = "Whatsapp Business Crm, GryphalCode Whatsapp Business Crm, What
      <div class="col-xl-8 col-lg-8">
       <div class="project-details__content">
        <div class="thumb mb-40">
-        <img alt="CRM Case Study Main Image" class="w-100 project-overview-img" src="<?= $base_url ?>/assets/images/service-previews/it-consultant.webp" loading="lazy">
+        <img alt="CRM Case Study Main Image" class="w-100 project-overview-img" src="<?= $base_url ?>/assets/images/service-previews/whatsapp-business.webp" loading="lazy">
        </div>
        <h2 class="title mb-25">
         Project Overview

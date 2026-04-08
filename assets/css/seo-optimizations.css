@@ -1,0 +1,63 @@
+/* 
+ * assets/css/seo-optimizations.css
+ * Extracted inline styles to improve Text-to-HTML ratio and SEO.
+ */
+
+/* Header & Navigation */
+.skip-nav {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: 10000;
+    padding: 8px 16px;
+    background: #086AD8;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.header__top--social {
+    padding-top: 10px;
+}
+.header__top--social a {
+    color: #fff;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+/* SGE/AI Search Optimized Sections */
+.sge-optimized-summary {
+    max-width: 500px;
+    border-left: 2px solid #086ad8;
+    padding-left: 15px;
+}
+.sge-optimized-summary p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    font-family: inherit;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+/* Product & Service Cards */
+.service__box--compact a.site-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+.product-content-padding {
+    padding-bottom: 20px;
+}
+.product-details-overlay a.site-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* Common Highlighting */
+.highlight-stat {
+    color: #086ad8;
+    font-weight: 700;
+}

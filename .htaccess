@@ -28,6 +28,16 @@ RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*)$ $1.php [L]
 # 6. Custom 404 Redirection
 ErrorDocument 404 /GryphalCode/404.php
+
+# 7. Dynamic Toxic Domain Blocking (Auto-sync)
+# --- TOXIC_BLOCK_START ---
+# --- TOXIC_BLOCK_END ---
+
+# 8. Protect Systematic Files
+<FilesMatch "^(\.htaccess|\.git|\.env|config\.php|php\.ini|composer\.json)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
 </IfModule>
 
 # Security Headers

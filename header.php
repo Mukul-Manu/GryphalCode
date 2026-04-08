@@ -1,4 +1,27 @@
-<?php if (!isset($base_url)) { $base_url = '.'; } ?>
+<?php 
+/**
+ * GryphalCode Security Layer
+ * Real-time Toxic Referral Blocking
+ */
+$cacheFile = __DIR__ . '/assets/security/spam_domains.json';
+if (file_exists($cacheFile) && isset($_SERVER['HTTP_REFERER']) && !empty($_SERVER['HTTP_REFERER'])) {
+    $referer = parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST);
+    if ($referer) {
+        $spamDomains = json_decode(file_get_contents($cacheFile), true);
+        if (is_array($spamDomains)) {
+            // Check if referer domain or its parent exists in the spam list
+            foreach ($spamDomains as $spam) {
+                if (stripos($referer, $spam) !== false) {
+                    header('HTTP/1.1 403 Forbidden');
+                    die("Access Denied: Toxic Referral Detected.");
+                }
+            }
+        }
+    }
+}
+
+if (!isset($base_url)) { $base_url = '.'; } 
+?>
 <!-- Global Entity Schema (2026 AI-Search Readiness) -->
 <script type="application/ld+json">
 {
@@ -32,7 +55,8 @@
 }
 </script>
 
-<a class="skip-nav" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:10000;padding:8px 16px;background:#086AD8;color:#fff;font-size:14px;text-decoration:none;">Skip to main content</a>
+<link rel="stylesheet" href="<?= $base_url ?>/assets/css/seo-optimizations.css">
+<a class="skip-nav" href="#main-content">Skip to main content</a>
 <style>
   /* Global Accessibility 10/10 Focus States */
   :focus-visible {
@@ -60,9 +84,9 @@
           </div>
         </div>
         <div class="col-xl-6 col-lg-5 col-md-12 text-xl-right text-lg-right text-center d-none d-lg-block">
-          <div class="header__top--social" style="padding-top: 10px;">
-            <a href="https://www.facebook.com/profile.php?id=61570214392615" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="color:#fff; margin-left: 15px; font-size: 16px;"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/gryphal_code/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="color:#fff; margin-left: 15px; font-size: 16px;"><i class="fab fa-instagram"></i></a>
+          <div class="header__top--social">
+            <a href="https://www.facebook.com/profile.php?id=61570214392615" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/gryphal_code/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
     </div>
@@ -130,7 +154,7 @@
         </div>
         <div class="col-xl-3 col-lg-3 col-md-8 my-auto d-none d-xl-block d-lg-block">
           <div class="navarea__right">
-            <a href="<?= $base_url ?>/contact" class="site-btn">Get A Quote </a>
+            <a href="<?= $base_url ?>/contact" class="site-btn">Request a Custom Quote</a>
             <button class="search-trigger" aria-label="Open search">
               <i class="fal fa-search"></i>
             </button>
