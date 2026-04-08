@@ -13,7 +13,7 @@ $meta_keywords = "Ai Machine Learning Solutions, GryphalCode Ai Machine Learning
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-<?php include_once 'seo-engine.php'; ?>
+<?php include_once '../seo-engine.php'; ?>
   
   <!-- Official Google Pixel & Analytics Tracking (MEO) -->
   <script>
@@ -432,7 +432,7 @@ $meta_keywords = "Ai Machine Learning Solutions, GryphalCode Ai Machine Learning
 <?php include '../footer.php'; ?>
   <!-- All JS Scripts loaded via loader.js -->
   <?php include '../whatsapp.php'; ?>
-<?php include '../scripts.php'; ?>
+<?php include '../global-scripts.php'; ?>
   <script>
     (function () {
       const toggles = document.querySelectorAll(

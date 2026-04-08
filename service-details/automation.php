@@ -13,7 +13,7 @@ $meta_keywords = "Automation, GryphalCode Automation, Automation, IT company, so
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-<?php include_once 'seo-engine.php'; ?>
+<?php include_once '../seo-engine.php'; ?>
  
   <!-- Official Google Pixel & Analytics Tracking (MEO) -->
   <script>
@@ -280,6 +280,6 @@ $meta_keywords = "Automation, GryphalCode Automation, Automation, IT company, so
 <?php include '../footer.php'; ?>
   <!-- All JS Scripts loaded via loader.js -->
   <?php include '../whatsapp.php'; ?>
-<?php include '../scripts.php'; ?>
+<?php include '../global-scripts.php'; ?>
 </body>
 </html>

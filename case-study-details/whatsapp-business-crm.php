@@ -16,7 +16,7 @@ $meta_keywords = "Whatsapp Business Crm, GryphalCode Whatsapp Business Crm, What
 <!DOCTYPE html>
 <html class="no-js" lang="en">
  <head>
-<?php include_once 'seo-engine.php'; ?>
+<?php include_once '../seo-engine.php'; ?>
  
   <!-- Official Google Pixel & Analytics Tracking (MEO) -->
   <script>
@@ -242,6 +242,6 @@ $meta_keywords = "Whatsapp Business Crm, GryphalCode Whatsapp Business Crm, What
   </main>
 <?php include __DIR__ . '/../footer.php'; ?>
   <?php include __DIR__ . '/../whatsapp.php'; ?>
-<?php include __DIR__ . '/../scripts.php'; ?>
+<?php include __DIR__ . '/../global-scripts.php'; ?>
  </body>
 </html>

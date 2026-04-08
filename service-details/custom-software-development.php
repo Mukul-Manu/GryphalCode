@@ -13,7 +13,7 @@ $meta_keywords = "Custom Software Development, GryphalCode Custom Software Devel
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-<?php include_once 'seo-engine.php'; ?>
+<?php include_once '../seo-engine.php'; ?>
  
   <!-- Official Google Pixel & Analytics Tracking (MEO) -->
   <script>
@@ -436,7 +436,7 @@ $meta_keywords = "Custom Software Development, GryphalCode Custom Software Devel
 <?php include '../footer.php'; ?>
   <!-- All JS Scripts loaded via loader.js -->
   <?php include '../whatsapp.php'; ?>
-<?php include '../scripts.php'; ?>
+<?php include '../global-scripts.php'; ?>
   <!-- footer helpers -->
   <script>
     (function () {

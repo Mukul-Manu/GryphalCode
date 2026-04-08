@@ -16,7 +16,7 @@ $meta_keywords = "Ai Powered Erm Platform, GryphalCode Ai Powered Erm Platform, 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
  <head>
-<?php include_once 'seo-engine.php'; ?>
+<?php include_once '../seo-engine.php'; ?>
 
   <!-- Official Google Pixel & Analytics Tracking (MEO) -->
   <script>
@@ -244,6 +244,6 @@ $meta_keywords = "Ai Powered Erm Platform, GryphalCode Ai Powered Erm Platform, 
   </main>
 <?php include __DIR__ . '/../footer.php'; ?>
   <?php include __DIR__ . '/../whatsapp.php'; ?>
-<?php include __DIR__ . '/../scripts.php'; ?>
+<?php include __DIR__ . '/../global-scripts.php'; ?>
  </body>
 </html>

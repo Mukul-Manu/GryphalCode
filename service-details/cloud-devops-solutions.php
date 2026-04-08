@@ -13,7 +13,7 @@ $meta_keywords = "Cloud Devops Solutions, GryphalCode Cloud Devops Solutions, Cl
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-<?php include_once 'seo-engine.php'; ?>
+<?php include_once '../seo-engine.php'; ?>
   
   <!-- Official Google Pixel & Analytics Tracking (MEO) -->
   <script>
@@ -427,7 +427,7 @@ $meta_keywords = "Cloud Devops Solutions, GryphalCode Cloud Devops Solutions, Cl
 <?php include '../footer.php'; ?>
   <!-- All JS Scripts loaded via loader.js -->
   <?php include '../whatsapp.php'; ?>
-<?php include '../scripts.php'; ?>
+<?php include '../global-scripts.php'; ?>
   <script>
     (function () {
       const toggles = document.querySelectorAll(

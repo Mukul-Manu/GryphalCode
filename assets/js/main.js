@@ -290,15 +290,15 @@
 
   $(document).on("click", ".search-trigger", function (e) {
     e.preventDefault();
-    $searchWrap.animate({ opacity: "toggle" }, 500);
-    $(".search-trigger, #search-close").addClass("open");
+    e.stopPropagation();
+    $searchWrap.stop(true, true).fadeToggle(500);
+    $(".search-trigger, #search-close").toggleClass("open");
   });
 
   $(document).on("click", "#search-close", function (e) {
-    // Changed .search-close to #search-close based on ID usage
     e.preventDefault();
-    $searchWrap.animate({ opacity: "toggle" }, 500);
-    $(".search-trigger, #search-close").removeClass("open");
+    e.stopPropagation();
+    closeSearch();
   });
 
   function closeSearch() {
@@ -306,11 +306,16 @@
     $(".search-trigger, #search-close").removeClass("open");
   }
 
-  $(document.body).on("click", function (e) {
-    closeSearch();
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest(".search-inner, .search-trigger").length) {
+      if ($searchWrap.is(":visible")) {
+        closeSearch();
+      }
+    }
   });
 
-  $(".search-trigger, .main-search-input").on("click", function (e) {
+  // Prevent closing when clicking inside the search field
+  $(document).on("click", ".search-inner", function (e) {
     e.stopPropagation();
   });
 

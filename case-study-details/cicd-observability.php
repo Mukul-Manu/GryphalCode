@@ -16,7 +16,7 @@ $meta_keywords = "Cicd Observability, GryphalCode Cicd Observability, Cicd, Obse
 <!DOCTYPE html>
 <html class="no-js" lang="en">
  <head>
-<?php include_once 'seo-engine.php'; ?>
+<?php include_once '../seo-engine.php'; ?>
   
   <!-- Official Google Pixel & Analytics Tracking (MEO) -->
   <script>
@@ -243,6 +243,6 @@ $meta_keywords = "Cicd Observability, GryphalCode Cicd Observability, Cicd, Obse
   </main>
 <?php include __DIR__ . '/../footer.php'; ?>
   <?php include __DIR__ . '/../whatsapp.php'; ?>
-<?php include __DIR__ . '/../scripts.php'; ?>
+<?php include __DIR__ . '/../global-scripts.php'; ?>
  </body>
 </html>

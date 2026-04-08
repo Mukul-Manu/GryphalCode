@@ -13,7 +13,7 @@ $meta_keywords = "Process Delivery, GryphalCode Process Delivery, Process, Deliv
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-<?php include_once 'seo-engine.php'; ?>
+<?php include_once '../seo-engine.php'; ?>
  
   <!-- Official Google Pixel & Analytics Tracking (MEO) -->
   <script>
@@ -281,6 +281,6 @@ $meta_keywords = "Process Delivery, GryphalCode Process Delivery, Process, Deliv
 <?php include '../footer.php'; ?>
   <!-- All JS Scripts loaded via loader.js -->
   <?php include '../whatsapp.php'; ?>
-<?php include '../scripts.php'; ?>
+<?php include '../global-scripts.php'; ?>
 </body>
 </html>
