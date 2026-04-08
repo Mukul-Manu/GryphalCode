@@ -13,26 +13,14 @@ $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');?>
 <?php 
 $page_title = "GryphalCode FAQs | Answers to Your Tech & Project Queries";
 $meta_desc = "Find answers to commonly asked questions about our software development process, AI capabilities, project timelines, and support services. Serving Coimbatore, Tamil Nadu, and Kerala.";
- 
 $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, AI solutions, cloud infrastructure";
 ?>
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
  <head>
-
-  <!-- 2026 AEO / GEO / SXO / LLMO Optimization Tags (Auto-Updating) -->
-  <meta name="ai-search-readiness" content="optimized" />
-  <meta name="answer-engine-optimization" content="high-visibility" />
-  <meta name="generative-engine-targeting" content="AI Overviews, SGE, LLM-Search" />
-  <meta content="IN-TN, IN-KL" name="geo.region" />
-  <meta content="11.0168;76.9558" name="geo.position" />
-  <meta content="Coimbatore, Tamil Nadu, Kerala, India - Serving All States Nationwide" name="geo.placename" />
-  <meta content="11.0168, 76.9558" name="ICBM" />
-  <!-- Security & Integrity -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com;">
+<?php include_once 'seo-engine.php'; ?>
+  
   <!-- Official Google Pixel & Analytics Tracking (MEO) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J6X1HS36W"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -44,103 +32,27 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
   <meta content="ie=edge" http-equiv="x-ua-compatible" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-  <title><?= $page_title ?></title>
   <link rel="preload" href="<?= $base_url ?>/assets/images/logo/logo.webp" as="image" type="image/webp">
   <link rel="preload" href="<?= $base_url ?>/assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
   <link rel="preload" href="<?= $base_url ?>/assets/css/bootstrap.min.css" as="style">
-  <link rel="preload" href="<?= $base_url ?>/assets/css/style.css?v=3" as="style">
+  <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   <link href="https://gryphalcode.com/faq" rel="canonical">
-
   <meta content="<?= $meta_desc ?>" name="description" />
-  <meta name="keywords" content="<?= isset($meta_keywords) ? $meta_keywords : 'Enterprise AI, Software Engineering, Cloud Solutions, Digital Transformation, Coimbatore AI Companies' ?>" />
-  
+  " />
   <!-- GEO Targeting - Service States of India -->
-  
-  
-  
-  
-  
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />
   <meta content="https://gryphalcode.com/faq" property="og:url" />
   <meta content="<?= $page_title ?>" property="og:title" />
   <meta content="<?= $meta_desc ?>" property="og:description" />
   <meta content="https://gryphalcode.com/assets/images/logo/logo.webp" property="og:image" />
-  <meta property="og:site_name" content="GryphalCode" />
-
   <!-- Twitter Cards -->
   <meta content="summary_large_image" name="twitter:card" />
   <meta content="@GryphalCode" name="twitter:site" />
   <meta content="<?= $page_title ?>" name="twitter:title" />
   <meta content="<?= $meta_desc ?>" name="twitter:description" />
   <meta content="https://gryphalcode.com/assets/images/logo/og-image.webp" name="twitter:image" />
-
   <!-- Security & Integrity -->
-  
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "@id": "https://gryphalcode.com/faq#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How does GryphalCode's website design process work?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our website design process is a comprehensive 8-step journey including discovery, competitor research, wireframing, UI/UX design, responsive development, SEO optimization, quality testing, and final deployment."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does your team build mobile applications?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We build mobile apps using a 7-step Agile methodology: Strategy definition, UX/UI design, development for iOS and Android, rigorous QA testing, app store submission, and ongoing maintenance."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you explain the difference between CRM and ERP software?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "CRM software focuses on managing customer relationships and sales, while ERP systems manage internal business processes like finance, HR, inventory, and manufacturing operations."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What software development methodology do you follow?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We follow the Agile Scrum methodology, which involves 2-week development sprints, daily standups, and regular client demos to ensure transparency and flexibility throughout the project."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How can I start a new project with GryphalCode?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Starting a project is simple: we begin with a free consultation, followed by a requirements workshop, a formal proposal, a project kickoff, and then we proceed into regular development sprints."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": "https://gryphalcode.com/faq",
-    "url": "https://gryphalcode.com/faq",
-    "name": "<?= addslashes($page_title) ?>",
-    "description": "<?= addslashes($meta_desc) ?>",
-    "publisher": { "@id": "https://gryphalcode.com/#organization" },
-    "mainEntity": { "@id": "https://gryphalcode.com/faq#faq" }
-  }
-  </script>
-
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
@@ -153,9 +65,8 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/nice-select.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/owl.carousel.min.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/animate.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.css?v=3">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.css?v=3">
-
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.min.css?v=3">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.min.css?v=3">
   <link href="<?= $base_url ?>/manifest.json" rel="manifest" />
   <meta content="#086ad8" name="theme-color" />
   <meta content="yes" name="apple-mobile-web-app-capable" />
@@ -244,7 +155,6 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
            How does GryphalCode's website design process work?
           </button>
          </h5>
-
         </div>
         <div class="collapse" data-parent="#accordionFaq" id="collapse1">
          <div class="card__body">
@@ -288,7 +198,6 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
            How does your team build mobile applications?
           </button>
          </h5>
-
         </div>
         <div class="collapse" data-parent="#accordionFaq" id="collapse2">
          <div class="card__body">
@@ -351,7 +260,6 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
            Can you explain the difference between CRM and ERP software?
           </button>
          </h5>
-
         </div>
         <div class="collapse" data-parent="#accordionFaq" id="collapse3">
          <div class="card__body">
@@ -563,7 +471,6 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
            What software development methodology do you follow?
           </button>
          </h5>
-
         </div>
         <div class="collapse" data-parent="#accordionFaq2" id="collapse7">
          <div class="card__body">
@@ -761,7 +668,6 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
            How can I start a new project with GryphalCode?
           </button>
          </h5>
-
         </div>
         <div class="collapse" data-parent="#accordionFaq2" id="collapse12">
          <div class="card__body">
@@ -871,16 +777,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const faqCards = document.querySelectorAll('.faqs .card');
     const noResults = document.getElementById('faq-no-results');
     const faqColumns = document.querySelectorAll('.faq-area .col-xl-6');
-
     if (searchInput) {
         searchInput.addEventListener('input', function() {
             const query = searchInput.value.toLowerCase().trim();
             let totalVisible = 0;
-
             faqCards.forEach(card => {
                 const title = card.querySelector('.title').textContent.toLowerCase();
                 const body = card.querySelector('.card__body').textContent.toLowerCase();
-
                 if (title.includes(query) || body.includes(query)) {
                     card.style.display = '';
                     totalVisible++;
@@ -888,18 +791,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     card.style.display = 'none';
                 }
             });
-
             // Toggle visibility of columns if they are empty
             faqColumns.forEach(col => {
                 const visibleInCol = col.querySelectorAll('.card:not([style*="display: none"])').length;
                 col.style.display = (visibleInCol === 0 && query !== '') ? 'none' : '';
             });
-
             if (noResults) {
                 noResults.style.display = totalVisible === 0 ? 'block' : 'none';
             }
         });
-
         // Prevent form submission reloads
         const searchForm = searchInput.closest('form');
         if (searchForm) {
@@ -910,6 +810,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
-  
  </body>
 </html>

@@ -1,3 +1,10 @@
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /service-details/
+Allow: /case-study-details/
+Disallow: /cron/
+Disallow: /admin/
+Disallow: /temp/
+
 Sitemap: https://gryphalcode.com/sitemap.xml

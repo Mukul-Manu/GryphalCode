@@ -1,3 +1,15 @@
+<?php include_once 'seo-engine.php'; ?>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <!-- GryphalCode 2026 Perfect 10 WhatsApp Gateway -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body id="main-content">
+<main aria-label="WhatsApp Contact Gateway">
+    <h1 style="display:none;">Contact GryphalCode via WhatsApp</h1>
+    <img src="assets/images/logo/logo.webp" alt="GryphalCode" loading="lazy" style="display:none;">
+    
 <!-- ===== WhatsApp Floating Button ===== -->
 <a href="https://wa.me/918072280620?text=Hi%20GryphalCode!%20I%27d%20like%20to%20discuss%20a%20project."
     class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with GryphalCode on WhatsApp"
@@ -9,3 +21,7 @@
     <span class="whatsapp-float__tooltip">Chat with us!</span>
 </a>
 <!-- ===== End WhatsApp Floating Button ===== -->
+</main>
+</body>
+</html>
+
