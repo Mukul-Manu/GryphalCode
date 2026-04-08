@@ -36,7 +36,7 @@ $meta_keywords = "Ai Powered Erm Platform, GryphalCode Ai Powered Erm Platform, 
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   <link href="https://gryphalcode.com/case-study-details/ai-powered-erm-platform" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
-  " />
+  
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />
   <meta content="https://gryphalcode.com/case-study-details/ai-powered-erm-platform" property="og:url" />

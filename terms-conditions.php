@@ -34,7 +34,7 @@ $meta_keywords = "Terms Conditions, GryphalCode Terms Conditions, Terms, Conditi
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   <link href="https://gryphalcode.com/terms-conditions" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
-  " />
+
   <!-- GEO Targeting - Service States of India -->
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />

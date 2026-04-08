@@ -33,7 +33,7 @@ $meta_keywords = "Cloud Devops Solutions, GryphalCode Cloud Devops Solutions, Cl
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   <link href="https://gryphalcode.com/service-details/cloud-devops-solutions" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
-  " />
+
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />
   <meta content="https://gryphalcode.com/service-details/cloud-devops-solutions" property="og:url" />

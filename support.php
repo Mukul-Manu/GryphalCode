@@ -33,7 +33,7 @@ $meta_keywords = "Support, GryphalCode Support, Support, IT company, software de
   <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
   <link href="https://gryphalcode.com/support" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
-  " />
+
   <!-- GEO Targeting - Service States of India -->
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />

@@ -38,7 +38,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   <link href="https://gryphalcode.com/faq" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
-  " />
+
   <!-- GEO Targeting - Service States of India -->
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />

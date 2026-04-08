@@ -39,7 +39,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   <link href="https://gryphalcode.com/why-choose" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
-  " />
+
   <!-- GEO Targeting - Service States of India -->
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />

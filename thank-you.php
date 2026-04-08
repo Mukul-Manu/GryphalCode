@@ -34,7 +34,7 @@ $meta_keywords = "Thank You, GryphalCode Thank You, Thank, You, IT company, soft
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   <link href="https://gryphalcode.com/thank-you" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
-  " />
+  
   <!-- GEO Targeting - Service States of India -->
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />

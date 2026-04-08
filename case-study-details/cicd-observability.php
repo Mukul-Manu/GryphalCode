@@ -36,7 +36,7 @@ $meta_keywords = "Cicd Observability, GryphalCode Cicd Observability, Cicd, Obse
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   <link href="https://gryphalcode.com/case-study-details/cicd-observability" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
-  " />
+
   <!-- GEO Targeting - Service States of India -->
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />

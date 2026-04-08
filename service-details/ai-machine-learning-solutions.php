@@ -33,7 +33,7 @@ $meta_keywords = "Ai Machine Learning Solutions, GryphalCode Ai Machine Learning
   <link rel="preload" href="../assets/css/style.min.css?v=3" as="style">
   <link href="https://gryphalcode.com/service-details/ai-machine-learning-solutions" rel="canonical">
   <meta content="<?= $meta_desc ?>" name="description" />
-  " />
+
   <!-- GEO Targeting - Service States of India -->
   <!-- Open Graph / Social Transparency -->
   <meta content="website" property="og:type" />
