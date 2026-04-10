@@ -12,17 +12,18 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
-<?php include_once 'seo-engine.php'; ?>
-  <!-- 2026 AEO / GEO / SXO / LLMO Optimization Tags (Auto-Updating) -->
-  <!-- Security & Integrity -->
-  <!-- Official Google Pixel & Analytics Tracking (MEO) -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-3J6X1HS36W');
-  </script>
+        <?php include_once 'seo-engine.php'; ?>
+        <!-- 2026 AEO / GEO / SXO / LLMO Optimization Tags (Auto-Updating) -->
+        <!-- Security & Integrity -->
+        <!-- Official Google Pixel & Analytics Tracking (MEO) -->
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-3J6X1HS36W');
+        </script>
         <meta charset="utf-8" />
         <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
         <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
@@ -63,13 +64,14 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
         <link rel="stylesheet" href="assets/css/nice-select.min.css" media="print" onload="this.media='all'">
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css" media="print" onload="this.media='all'">
         <link rel="stylesheet" href="assets/css/animate.css" media="print" onload="this.media='all'">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style.css?v=2.0">
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link href="/manifest.json" rel="manifest" />
         <meta content="#086ad8" name="theme-color" />
         <meta content="yes" name="apple-mobile-web-app-capable" />
         <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
 </head>
+
 <body>
         <?php include 'header.php'; ?>
         <main id="main-content">
@@ -128,58 +130,136 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                         </div>
                                                 </div>
                                                 <div class="col-xl-4 col-lg-6 offset-xl-2 col-md-5 mmt-auto">
-                                                        <div class="banner__rightbox">
-                                                                <div class="banner__rightbox--item">
-                                                                        <div class="circle">
-                                                                                <input class="knob"
-                                                                                        data-bgcolor="#DEF5FF"
-                                                                                        data-fgcolor="#086AD8"
-                                                                                        data-height="75"
-                                                                                        data-linecap="round"
-                                                                                        data-readonly="true"
-                                                                                        data-rel="75"
-                                                                                        data-thickness=".10"
-                                                                                        data-width="75" disabled=""
-                                                                                        type="text" value="0"
-                                                                                        aria-label="Percentage Display">
+                                                        <div class="modern-stats-container">
+                                                                <!-- SLA-backed Delivery -->
+                                                                <div class="modern-stat-card glass-effect float-anim-1">
+                                                                        <div class="modern-stat-circle">
+                                                                                <svg class="progress-svg"
+                                                                                        viewBox="0 0 100 100" role="img"
+                                                                                        aria-label="75% Enterprise SLA-backed Delivery Success Rate">
+                                                                                        <title>Enterprise SLA-Backed
+                                                                                                Delivery</title>
+                                                                                        <!-- Definitions for gradient -->
+                                                                                        <defs>
+                                                                                                <linearGradient
+                                                                                                        id="gradientSLA"
+                                                                                                        x1="0%" y1="0%"
+                                                                                                        x2="100%"
+                                                                                                        y2="100%">
+                                                                                                        <stop offset="0%"
+                                                                                                                stop-color="#086AD8" />
+                                                                                                        <stop offset="100%"
+                                                                                                                stop-color="#4CB8FF" />
+                                                                                                </linearGradient>
+                                                                                        </defs>
+                                                                                        <circle cx="50" cy="50" r="42"
+                                                                                                class="bg-circle">
+                                                                                        </circle>
+                                                                                        <circle cx="50" cy="50" r="42"
+                                                                                                class="progress-circle"
+                                                                                                style="--percent: 75; stroke: url(#gradientSLA);">
+                                                                                        </circle>
+                                                                                </svg>
+                                                                                <div class="percent">
+                                                                                        <span class="counter"
+                                                                                                data-target="75">0</span><span>%</span>
+                                                                                </div>
                                                                         </div>
-                                                                        <div class="content">
-                                                                                <h3 class="title">
-                                                                                        SLA-backed Delivery
-                                                                                </h3>
-                                                                                <p>
-                                                                                        Reliable timelines &amp;
-                                                                                        engineering
-                                                                                        discipline
-                                                                                </p>
+                                                                        <div class="modern-stat-text">
+                                                                                <h3 class="title">Enterprise SLA-Backed
+                                                                                        Delivery</h3>
+                                                                                <p>Guaranteed project timelines and
+                                                                                        rigorous architecture standards
+                                                                                        for B2B scale.</p>
                                                                         </div>
                                                                 </div>
-                                                                <div class="banner__rightbox--item mt-110 ml-30">
-                                                                        <div class="circle">
-                                                                                <input class="knob"
-                                                                                        data-bgcolor="#DEF5FF"
-                                                                                        data-fgcolor="#086AD8"
-                                                                                        data-height="75"
-                                                                                        data-linecap="round"
-                                                                                        data-readonly="true"
-                                                                                        data-rel="80"
-                                                                                        data-thickness=".10"
-                                                                                        data-width="75" disabled=""
-                                                                                        type="text" value="0"
-                                                                                        aria-label="Percentage Display">
+
+                                                                <!-- Customer Satisfaction -->
+                                                                <div
+                                                                        class="modern-stat-card glass-effect float-anim-2 mt-30 ml-sm-30">
+                                                                        <div class="modern-stat-circle">
+                                                                                <svg class="progress-svg"
+                                                                                        viewBox="0 0 100 100" role="img"
+                                                                                        aria-label="80% Strategic B2B Partnerships and Enterprise Client Retention">
+                                                                                        <title>Enterprise Corporate
+                                                                                                Customer Success</title>
+                                                                                        <defs>
+                                                                                                <linearGradient
+                                                                                                        id="gradientCSAT"
+                                                                                                        x1="0%" y1="0%"
+                                                                                                        x2="100%"
+                                                                                                        y2="100%">
+                                                                                                        <stop offset="0%"
+                                                                                                                stop-color="#086AD8" />
+                                                                                                        <stop offset="100%"
+                                                                                                                stop-color="#12DCA2" />
+                                                                                                </linearGradient>
+                                                                                        </defs>
+                                                                                        <circle cx="50" cy="50" r="42"
+                                                                                                class="bg-circle">
+                                                                                        </circle>
+                                                                                        <circle cx="50" cy="50" r="42"
+                                                                                                class="progress-circle"
+                                                                                                style="--percent: 80; stroke: url(#gradientCSAT);">
+                                                                                        </circle>
+                                                                                </svg>
+                                                                                <div class="percent">
+                                                                                        <span class="counter"
+                                                                                                data-target="80">0</span><span>%</span>
+                                                                                </div>
                                                                         </div>
-                                                                        <div class="content">
-                                                                                <h3 class="title">
-                                                                                        Customer Satisfaction
-                                                                                </h3>
-                                                                                <p>
-                                                                                        Long-term partnerships, not
-                                                                                        transactions
-                                                                                </p>
+                                                                        <div class="modern-stat-text">
+                                                                                <h3 class="title">Strategic B2B
+                                                                                        Partnerships</h3>
+                                                                                <p>Forging long-term corporate
+                                                                                        relationships to drive
+                                                                                        sustainable digital
+                                                                                        transformation.</p>
                                                                         </div>
                                                                 </div>
                                                         </div>
                                                 </div>
+
+                                                <!-- Counter & SVG Animation Script -->
+                                                <script>
+                                                        (function () {
+                                                                const cards = document.querySelectorAll('.modern-stat-card');
+                                                                if ('IntersectionObserver' in window) {
+                                                                        const observer = new IntersectionObserver((entries) => {
+                                                                                entries.forEach(entry => {
+                                                                                        if (entry.isIntersecting) {
+                                                                                                const card = entry.target;
+                                                                                                card.setAttribute('data-animated', 'true');
+                                                                                                const counter = card.querySelector('.counter');
+                                                                                                const target = parseInt(counter.getAttribute('data-target'));
+                                                                                                let count = 0;
+                                                                                                let duration = 2000;
+                                                                                                let step = duration / target;
+                                                                                                if (!counter.classList.contains('counted')) {
+                                                                                                        counter.classList.add('counted');
+                                                                                                        let interval = setInterval(() => {
+                                                                                                                count++;
+                                                                                                                counter.innerText = count;
+                                                                                                                if (count >= target) {
+                                                                                                                        clearInterval(interval);
+                                                                                                                }
+                                                                                                        }, step);
+                                                                                                }
+                                                                                                observer.unobserve(card);
+                                                                                        }
+                                                                                });
+                                                                        }, { threshold: 0.1 });
+                                                                        cards.forEach(card => observer.observe(card));
+                                                                } else {
+                                                                        // Fallback for no intersection observer
+                                                                        cards.forEach(card => {
+                                                                                card.setAttribute('data-animated', 'true');
+                                                                                const counter = card.querySelector('.counter');
+                                                                                counter.innerText = counter.getAttribute('data-target');
+                                                                        });
+                                                                }
+                                                        })();
+                                                </script>
                                         </div>
                                 </div>
                         </div>
@@ -255,17 +335,22 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                         <i class="fal fa-check">
                                                                                         </i>
                                                                                 </span>
-                                                                                Native &amp; cross-platform mobile application development for iOS and Android.
+                                                                                Native &amp; cross-platform mobile
+                                                                                application development for iOS and
+                                                                                Android.
                                                                         </li>
                                                                         <li>
                                                                                 <span class="icon">
                                                                                         <i class="fal fa-check">
                                                                                         </i>
                                                                                 </span>
-                                                                                Scalable enterprise-grade backend architectures and secure REST/GraphQL APIs.
+                                                                                Scalable enterprise-grade backend
+                                                                                architectures and secure REST/GraphQL
+                                                                                APIs.
                                                                         </li>
                                                                 </ul>
-                                                                <a href="request-demo" class="site-btn mt-10">Request a Product Demo</a>
+                                                                <a href="request-demo" class="site-btn mt-10">Request a
+                                                                        Product Demo</a>
                                                         </div>
                                                 </div>
                                         </div>
@@ -304,17 +389,21 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                         <i class="fal fa-check">
                                                                                         </i>
                                                                                 </span>
-                                                                                Automated CI/CD pipelines and blue-green deployment strategies.
+                                                                                Automated CI/CD pipelines and blue-green
+                                                                                deployment strategies.
                                                                         </li>
                                                                         <li>
                                                                                 <span class="icon">
                                                                                         <i class="fal fa-check">
                                                                                         </i>
                                                                                 </span>
-                                                                                End-to-end cloud infrastructure observability and proactive cost optimization.
+                                                                                End-to-end cloud infrastructure
+                                                                                observability and proactive cost
+                                                                                optimization.
                                                                         </li>
                                                                 </ul>
-                                                                <a href="request-demo" class="site-btn mt-10">Request a Product Demo</a>
+                                                                <a href="request-demo" class="site-btn mt-10">Request a
+                                                                        Product Demo</a>
                                                         </div>
                                                 </div>
                                         </div>
@@ -364,7 +453,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                 Secure API Integration
                                                                         </li>
                                                                 </ul>
-                                                                <a href="request-demo" class="site-btn mt-10">Request a Product Demo</a>
+                                                                <a href="request-demo" class="site-btn mt-10">Request a
+                                                                        Product Demo</a>
                                                         </div>
                                                 </div>
                                         </div>
@@ -440,7 +530,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                 Automated Reporting
                                                                         </li>
                                                                 </ul>
-                                                                <a href="request-demo" class="site-btn mt-10">Request a Product Demo</a>
+                                                                <a href="request-demo" class="site-btn mt-10">Request a
+                                                                        Product Demo</a>
                                                         </div>
                                                 </div>
                                         </div>
@@ -484,7 +575,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                 Proof of Delivery
                                                                         </li>
                                                                 </ul>
-                                                                <a href="request-demo" class="site-btn mt-10">Request a Product Demo</a>
+                                                                <a href="request-demo" class="site-btn mt-10">Request a
+                                                                        Product Demo</a>
                                                         </div>
                                                 </div>
                                         </div>
@@ -528,7 +620,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                 Broadcast Msgs
                                                                         </li>
                                                                 </ul>
-                                                                <a href="request-demo" class="site-btn mt-10">Request a Product Demo</a>
+                                                                <a href="request-demo" class="site-btn mt-10">Request a
+                                                                        Product Demo</a>
                                                         </div>
                                                 </div>
                                         </div>
@@ -547,7 +640,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                         <div class="about__bg">
                                                                                 <img alt="Team collaborating on software project"
                                                                                         loading="lazy"
-                                                                                        src="assets/images/bg/about-bg-1.webp" width="570" height="380" />
+                                                                                        src="assets/images/bg/about-bg-1.webp"
+                                                                                        width="570" height="380" />
                                                                         </div>
                                                                 </div>
                                                                 <div class="col-xl-6 col-lg-6 mt-30">
@@ -595,7 +689,9 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                                                 class="about__box--icon">
                                                                                                                 <img alt="Product &amp; Strategy Icon"
                                                                                                                         loading="lazy"
-                                                                                                                        src="assets/images/icons/about-icon-1.webp" width="50" height="50" />
+                                                                                                                        src="assets/images/icons/about-icon-1.webp"
+                                                                                                                        width="50"
+                                                                                                                        height="50" />
                                                                                                         </div>
                                                                                                         <div
                                                                                                                 class="about__box--content">
@@ -629,7 +725,9 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                                                 class="about__box--icon">
                                                                                                                 <img alt="Engineering Excellence Icon"
                                                                                                                         loading="lazy"
-                                                                                                                        src="assets/images/icons/about-icon-2.webp" width="50" height="50" />
+                                                                                                                        src="assets/images/icons/about-icon-2.webp"
+                                                                                                                        width="50"
+                                                                                                                        height="50" />
                                                                                                         </div>
                                                                                                         <div
                                                                                                                 class="about__box--content">
@@ -694,7 +792,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 <div class="thumb">
                                                                         <img alt="Process &amp; Delivery Management 3D Illustration"
                                                                                 loading="lazy"
-                                                                                src="assets/images/service-previews/project-delivery.webp" width="370" height="246" />
+                                                                                src="assets/images/service-previews/project-delivery.webp"
+                                                                                width="370" height="246" />
                                                                 </div>
                                                                 <div class="cat">
                                                                         <div class="icon">
@@ -735,7 +834,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 <div class="thumb">
                                                                         <img alt="Security by Design 3D Illustration"
                                                                                 loading="lazy"
-                                                                                src="assets/images/service-previews/security.webp" width="370" height="246" />
+                                                                                src="assets/images/service-previews/security.webp"
+                                                                                width="370" height="246" />
                                                                 </div>
                                                                 <div class="cat">
                                                                         <div class="icon">
@@ -774,7 +874,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 <div class="thumb">
                                                                         <img alt="Automation &amp; Efficiency 3D Illustration"
                                                                                 loading="lazy"
-                                                                                src="assets/images/service-previews/cloud-devops.webp" width="370" height="246" />
+                                                                                src="assets/images/service-previews/cloud-devops.webp"
+                                                                                width="370" height="246" />
                                                                 </div>
                                                                 <div class="cat">
                                                                         <div class="icon">
@@ -928,7 +1029,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                         <div class="authore--thumb mr-20">
                                                                                 <img src="assets/images/others/testimonial-authore-1.webp"
                                                                                         alt="Testimonial Author Mukul - Founder"
-                                                                                        loading="lazy" width="80" height="80">
+                                                                                        loading="lazy" width="80"
+                                                                                        height="80">
                                                                         </div>
                                                                         <div class="authore--content">
                                                                                 <h5 class="name">
@@ -940,7 +1042,8 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                         </div>
                                                                 </div>
                                                                 <img alt="Quote" class="quote-icon" loading="lazy"
-                                                                        src="assets/images/icons/quote.webp" width="40" height="40" />
+                                                                        src="assets/images/icons/quote.webp" width="40"
+                                                                        height="40" />
                                                         </div>
                                                 </div>
                                         </div>
@@ -968,7 +1071,9 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                         <div class="thumb">
                                                                                                 <img alt="AI Integration"
                                                                                                         loading="lazy"
-                                                                                                        src="assets/images/news/news-small-1.webp" width="100" height="100" />
+                                                                                                        src="assets/images/news/news-small-1.webp"
+                                                                                                        width="100"
+                                                                                                        height="100" />
                                                                                         </div>
                                                                                         <div class="content">
                                                                                                 <ul class="meta">
@@ -1062,4 +1167,5 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
         <?php include 'whatsapp.php'; ?>
         <?php include 'global-scripts.php'; ?>
 </body>
+
 </html>

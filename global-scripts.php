@@ -1,20 +1,20 @@
 <!--========= JS Shared Libraries =========-->
-<script defer src="<?= $base_url ?>/assets/js/jquery-2.2.4.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/jquery-2.2.4.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/bootstrap.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/jquery.meanmenu.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/jquery.nice-select.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/lightcase.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/owl.carousel.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/js_jquery.knob.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/js_jquery.appear.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/tilt.jquery.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/counterup.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/circle-progress.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/wow.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/waypoint.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/seo-engine.min.js"></script>
+<script src="<?= $base_url ?>/assets/js/main.js"></script>
 
-<script defer src="<?= $base_url ?>/assets/js/bootstrap.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/jquery.meanmenu.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/jquery.nice-select.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/lightcase.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/owl.carousel.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/js_jquery.knob.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/js_jquery.appear.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/tilt.jquery.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/counterup.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/circle-progress.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/wow.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/waypoint.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/seo-engine.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/main.js"></script>
 <!-- Microsoft Clarity Analytic -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){

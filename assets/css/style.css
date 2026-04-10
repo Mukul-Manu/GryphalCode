@@ -2739,9 +2739,10 @@ input.form-control-sm {
   font-size: 24px !important;
   font-family: "Cerebri Sans", sans-serif !important;
   margin: 0px !important;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 50%;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
   width: auto !important;
   height: auto !important;
   font-weight: 500 !important;
@@ -3342,7 +3343,7 @@ input.form-control-sm {
   overflow: hidden;
 }
 .about__area--5::after {
-  background-image: url(../images/bg/about-bg-5.jpg);
+  background-image: url(../images/bg/about-bg-5.webp);
   left: 0;
   height: 100%;
   width: 40%;
@@ -9499,19 +9500,19 @@ input.form-control-sm {
   }
 }
 .banner__area {
-  background-image: url("../images/bg/banner-bg-1.jpg");
+  background-image: url("../images/bg/banner-bg-1.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .video__area {
-  background-image: url("../images/bg/video-bg.jpg");
+  background-image: url("../images/bg/video-bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .breadcrumb.bg_img {
-  background-image: url("../images/bg/breadcrumb-bg-1.jpg");
+  background-image: url("../images/bg/breadcrumb-bg-1.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10274,4 +10275,162 @@ input.form-control-sm {
   line-height: 1.7;
   min-height: 60px;
   padding: 0 10px;
+}
+
+/* Modern Stats Container - Banner Area */
+.modern-stats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.modern-stat-card {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85); /* Light glass effect */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 40px 0 rgba(8, 106, 216, 0.08);
+  padding: 20px 25px;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.modern-stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: all 0.75s ease;
+  z-index: 1;
+}
+
+.modern-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px 0 rgba(8, 106, 216, 0.15);
+  border-color: rgba(8, 106, 216, 0.3);
+}
+
+.modern-stat-card:hover::before {
+  left: 200%;
+}
+
+.modern-stat-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.progress-svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.bg-circle {
+  fill: none;
+  stroke: rgba(8, 106, 216, 0.1);
+  stroke-width: 8;
+}
+
+.progress-circle {
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 264; /* 2 * pi * r (42) = ~264 */
+  stroke-dashoffset: 264; /* Starts empty */
+  transition: stroke-dashoffset 2s cubic-bezier(0.1, 0.7, 0.1, 1) forwards;
+}
+
+.modern-stat-card[data-animated="true"] .progress-circle {
+  stroke-dashoffset: calc(264 - (264 * var(--percent)) / 100);
+}
+
+.modern-stat-circle .percent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: 700;
+  color: #001d23;
+  display: flex;
+  align-items: center;
+}
+
+.modern-stat-circle .percent span:last-child {
+  font-size: 14px;
+  margin-left: 2px;
+  color: #086ad8;
+}
+
+.modern-stat-text {
+  flex-grow: 1;
+  z-index: 2;
+}
+
+.modern-stat-text .title {
+  font-size: 20px;
+  color: #001d23;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: -0.5px;
+}
+
+.modern-stat-text p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.float-anim-1 {
+  animation: float 6s ease-in-out infinite;
+}
+
+.float-anim-2 {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 767px) {
+  .modern-stats-container {
+    margin-top: 50px;
+  }
+  .ml-sm-30 {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .ml-sm-30 {
+    margin-left: 30px;
+  }
 }
