@@ -58,11 +58,11 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/font-awesome.min.css" media="print" onload="this.media='all'">
         <link rel="stylesheet" href="assets/css/jquery-ui.min.css" media="print" onload="this.media='all'">
-        <link rel="stylesheet" href="assets/css/lightcase.css" media="print" onload="this.media='all'">
-        <link rel="stylesheet" href="assets/css/meanmenu.css" media="print" onload="this.media='all'">
-        <link rel="stylesheet" href="assets/css/nice-select.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="assets/css/lightcase.min.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="assets/css/nice-select.min.css" media="print" onload="this.media='all'">
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css" media="print" onload="this.media='all'">
-        <link rel="stylesheet" href="assets/css/animate.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="assets/css/animate.min.css" media="print" onload="this.media='all'">
         <link rel="stylesheet" href="assets/css/style.min.css?v=3">
         <link rel="stylesheet" href="assets/css/responsive.min.css?v=3">
         <link href="/manifest.json" rel="manifest" />

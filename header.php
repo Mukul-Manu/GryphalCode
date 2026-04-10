@@ -55,7 +55,7 @@ if (!isset($base_url)) { $base_url = '.'; }
 }
 </script>
 
-<link rel="stylesheet" href="<?= $base_url ?>/assets/css/seo-optimizations.css?v=20260409">
+<link rel="stylesheet" href="<?= $base_url ?>/assets/css/seo-optimizations.min.css?v=20260409">
 <a class="skip-nav" href="#main-content">Skip to main content</a>
 <style>
   /* Global Accessibility 10/10 Focus States */

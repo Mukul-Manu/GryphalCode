@@ -55,11 +55,11 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/font-awesome.min.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="assets/css/jquery-ui.min.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/css/lightcase.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/css/meanmenu.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/css/nice-select.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="assets/css/lightcase.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="assets/css/nice-select.min.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/css/animate.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="assets/css/animate.min.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="assets/css/style.min.css?v=3">
   <link rel="stylesheet" href="assets/css/responsive.min.css?v=3">
   <link href="/manifest.json" rel="manifest" />
@@ -121,8 +121,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
                 Custom Software
               </h2>
               <p>
-                Scalable Web &amp; Mobile Apps, Enterprise Microservices, and Cloud-Native solutions tailored to your
-                business needs.
+                Our custom software development services focus on building scalable web and mobile applications, enterprise-grade microservices, and robust cloud-native solutions. We leverage modern frameworks and agile methodologies to ensure your software is not only functional but also future-proof and perfectly tailored to your unique business objectives.
               </p>
             </div>
             <a class="inline-btn mt-15" href="service-details/custom-software-development">
@@ -142,8 +141,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
                 AI &amp; Machine Learning
               </h2>
               <p>
-                Generative AI, Large Language Models (LLMs), and Predictive Analytics to automate processes and unlock
-                insights.
+                Unlock the power of your data with our advanced AI and Machine Learning solutions. From implementing Generative AI and Large Language Models (LLMs) to building predictive analytics engines, we help you automate complex processes, derive actionable insights, and stay ahead in the rapidly evolving digital landscape.
               </p>
             </div>
             <a class="inline-btn mt-15" href="service-details/ai-machine-learning-solutions">
@@ -163,7 +161,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
                 Cloud &amp; DevOps
               </h2>
               <p>
-                Cloud Migration, Kubernetes Orchestration, and Automated CI/CD pipelines for secure, rapid delivery.
+                Accelerate your delivery cycles and enhance infrastructure reliability with our expert Cloud and DevOps services. We specialize in seamless cloud migrations, advanced Kubernetes orchestration, and the implementation of fully automated CI/CD pipelines, ensuring your systems are secure, scalable, and highly available.
               </p>
             </div>
             <a class="inline-btn mt-15" href="service-details/cloud-devops-solutions">
@@ -183,7 +181,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
                 API &amp; Automation
               </h2>
               <p>
-                Secure API development and workflow automation to connect systems and improve efficiency.
+                 Bridge the gap between your systems with our secure API development and workflow automation expertise. We design and implement robust integrations that connect disparate platforms, streamline internal operations, and eliminate manual bottlenecks, significantly improving your team's overall productivity and efficiency.
               </p>
             </div>
             <a class="inline-btn mt-15" href="service-details/api-integration-automation">
@@ -203,7 +201,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
                 WhatsApp Business API
               </h2>
               <p>
-                Automate customer support and engagement with AI Chatbots and verified WhatsApp Business solutions.
+                Transform customer engagement with our verified WhatsApp Business API solutions. We build intelligent AI-powered chatbots and automated messaging workflows that allow you to provide real-time support, manage high-volume inquiries, and drive meaningful conversions directly within the world's most popular messaging app.
               </p>
             </div>
             <a class="inline-btn mt-15" href="service-details/whatsapp-business-solutions">
