@@ -94,15 +94,15 @@ if (!isset($base_url)) { $base_url = '.'; }
   </div>
   <div class="navarea">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-xl-2 col-lg-2 col-md-4 col-6">
+      <div class="row align-items-center">
+        <div class="col-xl-2 col-lg-2 col-md-4 col-6 d-flex align-items-center">
           <div class="header__logo">
             <a href="<?= $base_url ?>">
               <img src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="GryphalCode Logo" width="140" height="38" style="max-width: 100%; height: auto; display: block;" />
             </a>
           </div>
         </div>
-        <div class="col-xl-7 col-lg-7 col-6">
+        <div class="col-xl-7 col-lg-7 col-6 d-flex align-items-center justify-content-end">
           <div class="header__menu text-right">
             <nav id="mobile-menu" aria-label="Main navigation">
               <ul>
