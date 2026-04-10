@@ -161,7 +161,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                         </circle>
                                                                                 </svg>
                                                                                 <div class="percent">
-                                                                                        <span class="counter"
+                                                                                        <span class="modern-counter"
                                                                                                 data-target="75">0</span><span>%</span>
                                                                                 </div>
                                                                         </div>
@@ -204,7 +204,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                         </circle>
                                                                                 </svg>
                                                                                 <div class="percent">
-                                                                                        <span class="counter"
+                                                                                        <span class="modern-counter"
                                                                                                 data-target="80">0</span><span>%</span>
                                                                                 </div>
                                                                         </div>
@@ -230,7 +230,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                                         if (entry.isIntersecting) {
                                                                                                 const card = entry.target;
                                                                                                 card.setAttribute('data-animated', 'true');
-                                                                                                const counter = card.querySelector('.counter');
+                                                                                                const counter = card.querySelector('.modern-counter');
                                                                                                 const target = parseInt(counter.getAttribute('data-target'));
                                                                                                 let count = 0;
                                                                                                 let duration = 2000;
@@ -254,7 +254,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                         // Fallback for no intersection observer
                                                                         cards.forEach(card => {
                                                                                 card.setAttribute('data-animated', 'true');
-                                                                                const counter = card.querySelector('.counter');
+                                                                                const counter = card.querySelector('.modern-counter');
                                                                                 counter.innerText = counter.getAttribute('data-target');
                                                                         });
                                                                 }
