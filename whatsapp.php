@@ -11,7 +11,7 @@
     <img src="assets/images/logo/logo.webp" alt="GryphalCode" loading="lazy" style="display:none;">
     
 <!-- ===== WhatsApp Floating Button ===== -->
-<a href="https://wa.me/918072280620?text=Hi%20GryphalCode!%20I%27d%20like%20to%20discuss%20a%20project."
+<a rel="nofollow" href="https://wa.me/918072280620?text=Hi%20GryphalCode!%20I%27d%20like%20to%20discuss%20a%20project."
     class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with GryphalCode on WhatsApp"
     title="Chat on WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#fff" viewBox="0 0 16 16">

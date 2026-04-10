@@ -55,8 +55,8 @@ if (!isset($base_url)) { $base_url = '.'; }
 }
 </script>
 
-<link rel="stylesheet" href="<?= $base_url ?>/assets/css/seo-optimizations.min.css?v=20260409">
-<a class="skip-nav" href="#main-content">Skip to main content</a>
+<link rel="stylesheet" href="<?= $base_url ?>/assets/css/seo-optimizations.css?v=20260409">
+<a class="skip-nav" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:10000;padding:8px 16px;background:#086AD8;color:#fff;font-size:14px;text-decoration:none;">Skip to main content</a>
 <style>
   /* Global Accessibility 10/10 Focus States */
   :focus-visible {
@@ -84,25 +84,26 @@ if (!isset($base_url)) { $base_url = '.'; }
           </div>
         </div>
         <div class="col-xl-6 col-lg-5 col-md-12 text-xl-right text-lg-right text-center d-none d-lg-block">
-          <div class="header__top--social">
-            <a href="https://www.facebook.com/profile.php?id=61570214392615" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/gryphal_code/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <div class="header__top--social" style="padding-top: 10px;">
+            <a href="https://www.facebook.com/profile.php?id=61570214392615" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="color:#fff; margin-left: 15px; font-size: 16px;"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/gryphal_code/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="color:#fff; margin-left: 15px; font-size: 16px;"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
+      </div>
     </div>
   </div>
   <div class="navarea">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xl-2 col-lg-2 col-md-4 col-6 my-auto">
+        <div class="col-xl-2 col-lg-2 col-md-4 col-6">
           <div class="header__logo">
             <a href="<?= $base_url ?>">
-              <img src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="GryphalCode Logo" width="180" height="50" />
+              <img src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="GryphalCode Logo" width="140" height="38" style="max-width: 100%; height: auto; display: block;" />
             </a>
           </div>
         </div>
-        <div class="col-xl-7 col-lg-7 col-6 my-auto">
-          <div class="header__menu">
+        <div class="col-xl-7 col-lg-7 col-6">
+          <div class="header__menu text-right">
             <nav id="mobile-menu" aria-label="Main navigation">
               <ul>
                 <li>
@@ -136,7 +137,7 @@ if (!isset($base_url)) { $base_url = '.'; }
                 </li>
 
                 <li>
-                  <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">Pages <span>+</span></a>
+                  <a href="javascript:void(0)">Pages <span>+</span></a>
                   <ul class="sub-menu">
                     <li><a href="<?= $base_url ?>/faq">Faq</a></li>
                     <li><a href="<?= $base_url ?>/careers">Careers</a></li>
@@ -154,7 +155,7 @@ if (!isset($base_url)) { $base_url = '.'; }
         </div>
         <div class="col-xl-3 col-lg-3 col-md-8 my-auto d-none d-xl-block d-lg-block">
           <div class="navarea__right">
-            <a href="<?= $base_url ?>/contact" class="site-btn">Request a Custom Quote</a>
+            <a href="<?= $base_url ?>/contact" class="site-btn">Get A Quote </a>
             <button class="search-trigger" aria-label="Open search">
               <i class="fal fa-search"></i>
             </button>

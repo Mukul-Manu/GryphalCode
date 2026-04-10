@@ -14,7 +14,7 @@
 <script defer src="<?= $base_url ?>/assets/js/wow.min.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/waypoint.min.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/seo-engine.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/main.min.js"></script>
+<script defer src="<?= $base_url ?>/assets/js/main.js"></script>
 <!-- Microsoft Clarity Analytic -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
