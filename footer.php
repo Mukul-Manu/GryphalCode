@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-xl-12 text-center">
         <a href="<?= $base_url ?>" class="site-logo mb-20">
-          <img src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="Logo" width="180" height="50" />
+          <img alt="GryphalCode Image" src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="Logo" width="180" height="50" />
         </a>
       </div>
       <div class="col-xl-12">
@@ -11,7 +11,7 @@
           <div class="footer__info">
             <div class="footer__info--item d-flex align-items-center">
               <div class="icon mr-20">
-                <img src="<?= $base_url ?>/assets/images/icons/footer-info-icon-1.webp" alt="Phone Icon" loading="lazy" width="24" height="24" />
+                <img alt="GryphalCode Image" src="<?= $base_url ?>/assets/images/icons/footer-info-icon-1.webp" alt="Phone Icon" loading="lazy" width="24" height="24" />
               </div>
               <div class="content">
                 <h4 class="title">Phone Number</h4>
@@ -21,7 +21,7 @@
 
             <div class="footer__info--item d-flex align-items-center">
               <div class="icon mr-20">
-                <img src="<?= $base_url ?>/assets/images/icons/footer-info-icon-2.webp" alt="Email Icon" loading="lazy" width="24" height="24" />
+                <img alt="GryphalCode Image" src="<?= $base_url ?>/assets/images/icons/footer-info-icon-2.webp" alt="Email Icon" loading="lazy" width="24" height="24" />
               </div>
               <div class="content">
                 <h4 class="title">Email Address</h4>
@@ -31,7 +31,7 @@
 
             <div class="footer__info--item d-flex align-items-center">
               <div class="icon mr-20">
-                <img src="<?= $base_url ?>/assets/images/icons/footer-info-icon-3.webp" alt="Location Icon" loading="lazy" width="24" height="24" />
+                <img alt="GryphalCode Image" src="<?= $base_url ?>/assets/images/icons/footer-info-icon-3.webp" alt="Location Icon" loading="lazy" width="24" height="24" />
               </div>
               <div class="content">
                 <h4 class="title">Office Address</h4>

@@ -23,8 +23,8 @@ $keywords = array_slice($keywords, 0, 15);
 $keywordsString = htmlspecialchars(implode(', ', $keywords), ENT_QUOTES);
 
 // Build dynamic title and description
-$pageTitle = "GryphalCode - Innovating the Future of Tech";
-$description = "Leading the 2026 tech revolution with " . implode(', ', array_slice($trends, 0, 4)) . ". Expert solutions in AI, Cloud, and Software Development.";
+$pageTitle = isset($page_title) ? $page_title : "GryphalCode - Innovating the Future of Tech";
+$description = isset($meta_desc) ? $meta_desc : ("Leading the 2026 tech revolution with " . implode(', ', array_slice($trends, 0, 4)) . ". Expert solutions in AI, Cloud, and Software Development.");
 $description = htmlspecialchars($description, ENT_QUOTES);
 
 // canonical URL
@@ -150,6 +150,7 @@ foreach ($schemas as $s) {
 
 // Build the head block
 $headBlock = "<!-- 2026 SEO/AEO/AIO Engine (Hardened with Rich Snippets) -->\n";
+$headBlock .= "<title>{$pageTitle}</title>\n";
 $headBlock .= "<link rel=\"canonical\" href=\"{$canonicalUrl}\" />\n";
 $headBlock .= "<meta name=\"keywords\" content=\"{$keywordsString}\" />\n";
 $headBlock .= "<meta name=\"description\" content=\"{$description}\" />\n";
@@ -178,7 +179,15 @@ $headBlock .= "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n
 $headBlock .= "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n";
 $headBlock .= "<!-- GA4 Optimized -->\n";
 $headBlock .= "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-3J6X1HS36W\"></script>\n";
-$headBlock .= "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3J6X1HS36W');</script>\n";
+$headBlock .= "<script>\n";
+$headBlock .= "  window.dataLayer = window.dataLayer || [];\n";
+$headBlock .= "  function gtag(){dataLayer.push(arguments);}\n";
+$headBlock .= "  gtag('js', new Date());\n";
+$headBlock .= "  gtag('config', 'G-3J6X1HS36W', {\n";
+$headBlock .= "    'allow_enhanced_conversions': true,\n";
+$headBlock .= "    'restricted_data_processing': true\n";
+$headBlock .= "  });\n";
+$headBlock .= "</script>\n";
 $headBlock .= $schemaHtml;
 
 echo $headBlock;

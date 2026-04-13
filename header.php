@@ -98,7 +98,7 @@ if (!isset($base_url)) { $base_url = '.'; }
         <div class="col-xl-2 col-lg-2 col-md-4 col-6 d-flex align-items-center">
           <div class="header__logo">
             <a href="<?= $base_url ?>">
-              <img src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="GryphalCode Logo" width="140" height="38" style="max-width: 100%; height: auto; display: block;" />
+              <img alt="GryphalCode Image" src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="GryphalCode Logo" width="140" height="38" style="max-width: 100%; height: auto; display: block;" />
             </a>
           </div>
         </div>

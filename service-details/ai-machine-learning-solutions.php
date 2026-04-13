@@ -16,12 +16,7 @@ $meta_keywords = "Ai Machine Learning Solutions, GryphalCode Ai Machine Learning
 <?php include_once '../seo-engine.php'; ?>
   
   <!-- Official Google Pixel & Analytics Tracking (MEO) -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-3J6X1HS36W');
-  </script>
+  
   <meta charset="utf-8" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
@@ -31,22 +26,17 @@ $meta_keywords = "Ai Machine Learning Solutions, GryphalCode Ai Machine Learning
   <link rel="preload" href="../assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
   <link rel="preload" href="../assets/css/bootstrap.min.css" as="style">
   <link rel="preload" href="../assets/css/style.min.css?v=3" as="style">
-  <link href="https://gryphalcode.com/service-details/ai-machine-learning-solutions" rel="canonical">
+  
   <meta content="<?= $meta_desc ?>" name="description" />
 
   <!-- GEO Targeting - Service States of India -->
-  <!-- Open Graph / Social Transparency -->
-  <meta content="website" property="og:type" />
-  <meta content="https://gryphalcode.com/service-details/ai-machine-learning-solutions" property="og:url" />
+
   <meta content="<?= $page_title ?>" property="og:title" />
   <meta content="<?= $meta_desc ?>" property="og:description" />
-  <meta content="https://gryphalcode.com/assets/images/logo/logo.webp" property="og:image" />
-  <!-- Twitter Cards -->
-  <meta content="summary_large_image" name="twitter:card" />
-  <meta content="@GryphalCode" name="twitter:site" />
+
   <meta content="<?= $page_title ?>" name="twitter:title" />
   <meta content="<?= $meta_desc ?>" name="twitter:description" />
-  <meta content="https://gryphalcode.com/assets/images/logo/og-image.webp" name="twitter:image" />
+  
   <!-- Security & Integrity -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />

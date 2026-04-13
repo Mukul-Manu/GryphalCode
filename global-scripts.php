@@ -26,21 +26,15 @@
 
 <!-- Advanced Behavioral Analytics & Event Tracking -->
 <script>
-  // Google Ads conversion tracking for Phase 6 (AEO & Pixel)
   window.gtag = window.gtag || function() { window.dataLayer.push(arguments); };
-  gtag('js', new Date());
-  // Enhanced Conversions (2026 Privacy Standard)
-  gtag('config', 'G-3J6X1HS36W', {
-    'allow_enhanced_conversions': true,
-    'restricted_data_processing': true
-  });
-  // Google Ads Base Segment (placeholder for AW-ID if provided)
-  // gtag('config', 'AW-XXXXXXX'); 
 
+  let scrollMarks = [25, 50, 75, 100];
   window.addEventListener('scroll', function() {
     const scrollDepth = Math.round((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100);
-    if (scrollDepth % 25 === 0) {
-      gtag('event', 'scroll_depth', { 'depth': scrollDepth + '%' });
+    
+    if (scrollMarks.length > 0 && scrollDepth >= scrollMarks[0]) {
+      const milestone = scrollMarks.shift();
+      gtag('event', 'scroll_depth', { 'depth': milestone + '%' });
     }
   }, { passive: true });
 
