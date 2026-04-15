@@ -5,10 +5,10 @@
  * Collapses whitespace and removes comments from JS/CSS.
  */
 
-define('SYNC_KEY', 'GryphalSecurity2026');
 $is_browser = (php_sapi_name() !== 'cli');
+$syncKey = getenv('GRYPHAL_CRON_SYNC_KEY') ?: '';
 
-if ($is_browser && ($_GET['key'] ?? '') !== SYNC_KEY) {
+if ($is_browser && (empty($syncKey) || !hash_equals($syncKey, (string)($_GET['key'] ?? '')))) {
     header('HTTP/1.1 403 Forbidden');
     die("Access Denied.");
 }

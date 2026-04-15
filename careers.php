@@ -14,9 +14,7 @@ $meta_keywords = "Careers, GryphalCode Careers, Careers, IT company, software de
 <html class="no-js" lang="en">
 <head>
 <?php include_once 'seo-engine.php'; ?>
-  
-  <!-- Official Google Pixel & Analytics Tracking (MEO) -->
-  
+
   <meta charset="utf-8" />
   <link href="assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
   <link href="assets/images/logo/favicon.webp" rel="apple-touch-icon" />
@@ -26,17 +24,6 @@ $meta_keywords = "Careers, GryphalCode Careers, Careers, IT company, software de
   <link rel="preload" href="assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
   <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
   
-  <meta content="<?= $meta_desc ?>" name="description" />
-
-  <!-- GEO Targeting - Service States of India -->
-
-  <meta content="<?= $page_title ?>" property="og:title" />
-  <meta content="<?= $meta_desc ?>" property="og:description" />
-
-  <meta content="<?= $page_title ?>" name="twitter:title" />
-  <meta content="<?= $meta_desc ?>" name="twitter:description" />
-  
-  <!-- Security & Integrity -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />

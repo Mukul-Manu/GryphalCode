@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "enterprise-generative-ai-integration",
+    "title": "Enterprise Generative AI",
+    "excerpt": "Discover the scalable architecture patterns required to embed LLMs safely behind legacy firewalls.",
+    "category": "Machine Learning",
+    "author": "Mridhul",
+    "date": "2026-04-15",
+    "image": "blog_ai_integration.png"
+  },
+  {
+    "slug": "zero-trust-cloud-security",
+    "title": "Zero-Trust Cloud Mesh",
+    "excerpt": "A technical blueprint for enforcing identity-first perimeter security to defend against automated hacks.",
+    "category": "Cybersecurity",
+    "author": "Gowtham",
+    "date": "2026-04-13",
+    "image": "blog_cloud_security.png"
+  },
+  {
+    "slug": "next-gen-devops-automation",
+    "title": "Next-Gen DevOps",
+    "excerpt": "Why Kubernetes and Terraform are no longer enough, and how AI-driven testing compresses release lifecycles.",
+    "category": "Cloud / DevOps",
+    "author": "Karthi",
+    "date": "2026-04-10",
+    "image": "blog_devops_automation.png"
+  },
+  {
+    "slug": "enterprise-ai-roadmap-2026",
+    "title": "Enterprise AI Roadmap 2026",
+    "excerpt": "A practical rollout model for production AI adoption with governance and measurable outcomes.",
+    "category": "AI Strategy",
+    "author": "Rohith",
+    "date": "2026-04-14",
+    "image": "blog_ai_integration.png"
+  },
+  {
+    "slug": "ai-copilot-rollout-framework",
+    "title": "AI Copilot Rollout Framework",
+    "excerpt": "How product teams launch copilots safely with guardrails, analytics, and adoption workflows.",
+    "category": "AI Delivery",
+    "author": "Hari",
+    "date": "2026-04-12",
+    "image": "blog_ai_integration.png"
+  },
+  {
+    "slug": "cloud-cost-optimization-model",
+    "title": "Cloud Cost Optimization Model",
+    "excerpt": "FinOps-aligned framework for reducing cloud waste without hurting reliability.",
+    "category": "Cloud",
+    "author": "Mridhul",
+    "date": "2026-04-11",
+    "image": "blog_cloud_security.png"
+  },
+  {
+    "slug": "technical-seo-for-ai-overviews",
+    "title": "Technical SEO for AI Overviews",
+    "excerpt": "Entity-first optimization playbook for Google AI Overviews and LLM search.",
+    "category": "SEO / AI Search",
+    "author": "Gowtham",
+    "date": "2026-04-09",
+    "image": "blog_devops_automation.png"
+  },
+  {
+    "slug": "conversion-tracking-for-b2b-websites",
+    "title": "Conversion Tracking for B2B Websites",
+    "excerpt": "Build clean lead attribution with event taxonomy, UTM persistence, and funnel metrics.",
+    "category": "Growth Engineering",
+    "author": "Karthi",
+    "date": "2026-04-08",
+    "image": "blog_cloud_security.png"
+  },
+  {
+    "slug": "security-hardening-sprint-plan",
+    "title": "Security Hardening Sprint Plan",
+    "excerpt": "A two-week security sprint approach for rapid risk reduction and platform hardening.",
+    "category": "Cybersecurity",
+    "author": "Rohith",
+    "date": "2026-04-07",
+    "image": "blog_cloud_security.png"
+  },
+  {
+    "slug": "llm-ready-content-architecture",
+    "title": "LLM-Ready Content Architecture",
+    "excerpt": "How to structure content so AI systems retrieve and cite your brand accurately.",
+    "category": "LLM Optimization",
+    "author": "Hari",
+    "date": "2026-04-06",
+    "image": "blog_devops_automation.png"
+  }
+]

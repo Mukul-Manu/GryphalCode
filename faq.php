@@ -19,9 +19,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
 <html class="no-js" lang="en">
  <head>
 <?php include_once 'seo-engine.php'; ?>
-  
-  <!-- Official Google Pixel & Analytics Tracking (MEO) -->
-  
+
   <meta charset="utf-8" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
@@ -32,17 +30,6 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   <link rel="preload" href="<?= $base_url ?>/assets/css/bootstrap.min.css" as="style">
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   
-  <meta content="<?= $meta_desc ?>" name="description" />
-
-  <!-- GEO Targeting - Service States of India -->
-
-  <meta content="<?= $page_title ?>" property="og:title" />
-  <meta content="<?= $meta_desc ?>" property="og:description" />
-
-  <meta content="<?= $page_title ?>" name="twitter:title" />
-  <meta content="<?= $meta_desc ?>" name="twitter:description" />
-  
-  <!-- Security & Integrity -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
@@ -761,7 +748,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
   <!-- All JS Scripts loaded via loader.js -->
   <?php include 'whatsapp.php'; ?>
 <?php include 'global-scripts.php'; ?>
-<script>
+<script nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('faq-search-input');
     const faqCards = document.querySelectorAll('.faqs .card');

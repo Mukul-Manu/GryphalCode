@@ -14,10 +14,7 @@ $meta_keywords = "Thank You, GryphalCode Thank You, Thank, You, IT company, soft
 <html class="no-js" lang="en">
 <head>
 <?php include_once 'seo-engine.php'; ?>
-  <!-- 2026 AEO / GEO / SXO / LLMO Optimization Tags (Auto-Updating) -->
-  <!-- Security & Integrity -->
-  <!-- Official Google Pixel & Analytics Tracking (MEO) -->
-  
+
     <meta charset="utf-8" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
@@ -28,17 +25,6 @@ $meta_keywords = "Thank You, GryphalCode Thank You, Thank, You, IT company, soft
   <link rel="preload" href="<?= $base_url ?>/assets/css/bootstrap.min.css" as="style">
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   
-  <meta content="<?= $meta_desc ?>" name="description" />
-  
-  <!-- GEO Targeting - Service States of India -->
-
-  <meta content="<?= $page_title ?>" property="og:title" />
-  <meta content="<?= $meta_desc ?>" property="og:description" />
-
-  <meta content="<?= $page_title ?>" name="twitter:title" />
-  <meta content="<?= $meta_desc ?>" name="twitter:description" />
-  
-  <!-- Security & Integrity -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
@@ -89,6 +75,18 @@ $meta_keywords = "Thank You, GryphalCode Thank You, Thank, You, IT company, soft
   </section>
 </main>
 <?php include 'footer.php'; ?>
+<?php include 'whatsapp.php'; ?>
 <?php include 'global-scripts.php'; ?>
+<script nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'lead_thank_you_view' });
+  if (typeof gtag === 'function') {
+    gtag('event', 'generate_lead', {
+      event_category: 'lead',
+      event_label: 'thank_you_page',
+      value: 1
+    });
+  }
+</script>
 </body>
 </html>

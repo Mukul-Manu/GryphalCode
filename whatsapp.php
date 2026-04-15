@@ -1,4 +1,3 @@
-<?php include_once 'seo-engine.php'; ?>
 <!-- ===== WhatsApp Floating Button ===== -->
 <a rel="nofollow" href="https://wa.me/918072280620?text=Hi%20GryphalCode!%20I%27d%20like%20to%20discuss%20a%20project."
     class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with GryphalCode on WhatsApp"

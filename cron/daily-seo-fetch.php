@@ -12,10 +12,9 @@ if ($is_browser) {
     echo '<style>body { background: #0b1120; color: #38bdf8; font-family: monospace; padding: 20px; line-height: 1.5; } .console { background: #020617; border: 1px solid #1e293b; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); } h1 { color: #f8fafc; font-size: 1.2rem; margin-bottom: 20px; border-bottom: 1px solid #1e293b; padding-bottom: 10px; } .log-entry { margin-bottom: 5px; } .status-success { color: #4ade80; }</style></head><body><main id="main-content"><div class="console"><h1>GryphalCode SEO Sync Console</h1>';
 }
 
-// Secret key for security
-define('SYNC_KEY', 'GryphalSecurity2026');
+$syncKey = getenv('GRYPHAL_CRON_SYNC_KEY') ?: '';
 
-if (($_GET['key'] ?? '') !== SYNC_KEY && php_sapi_name() !== 'cli') {
+if (php_sapi_name() !== 'cli' && (empty($syncKey) || !hash_equals($syncKey, (string)($_GET['key'] ?? '')))) {
     header('HTTP/1.1 403 Forbidden');
     die("Access Denied: Please provide the security key.");
 }

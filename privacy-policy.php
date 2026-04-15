@@ -14,10 +14,7 @@ $meta_keywords = "Privacy Policy, GryphalCode Privacy Policy, Privacy, Policy, I
 <html class="no-js" lang="en">
  <head>
 <?php include_once 'seo-engine.php'; ?>
-  <!-- 2026 AEO / GEO / SXO / LLMO Optimization Tags (Auto-Updating) -->
-  <!-- Security & Integrity -->
-  <!-- Official Google Pixel & Analytics Tracking (MEO) -->
-  
+
   <meta charset="utf-8" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
@@ -28,17 +25,6 @@ $meta_keywords = "Privacy Policy, GryphalCode Privacy Policy, Privacy, Policy, I
   <link rel="preload" href="<?= $base_url ?>/assets/css/bootstrap.min.css" as="style">
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   
-  <meta content="<?= $meta_desc ?>" name="description" />
-
-  <!-- GEO Targeting - Service States of India -->
-
-  <meta content="<?= $page_title ?>" property="og:title" />
-  <meta content="<?= $meta_desc ?>" property="og:description" />
-
-  <meta content="<?= $page_title ?>" name="twitter:title" />
-  <meta content="<?= $meta_desc ?>" name="twitter:description" />
-  
-  <!-- Security & Integrity -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
@@ -97,9 +83,9 @@ $meta_keywords = "Privacy Policy, GryphalCode Privacy Policy, Privacy, Policy, I
   <div class="policy-shell">
    <article aria-labelledby="policy-title" class="policy-card" role="main">
     <div class="policy-header">
-     <h1 id="policy-title">
+     <h2 id="policy-title">
       Privacy Policy
-     </h1>
+     </h2>
      <div class="policy-meta">
       Effective Date:
       <strong>

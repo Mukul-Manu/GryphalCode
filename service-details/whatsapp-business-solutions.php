@@ -27,17 +27,6 @@ $meta_keywords = "Whatsapp Business Solutions, GryphalCode Whatsapp Business Sol
   <link rel="preload" href="<?= $base_url ?>/assets/css/bootstrap.min.css" as="style">
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   
-  <meta content="<?= $meta_desc ?>" name="description" />
-  
-  <!-- GEO Targeting - Service States of India -->
-
-  <meta content="<?= $page_title ?>" property="og:title" />
-  <meta content="<?= $meta_desc ?>" property="og:description" />
-
-  <meta content="<?= $page_title ?>" name="twitter:title" />
-  <meta content="<?= $meta_desc ?>" name="twitter:description" />
-  
-  <!-- Security & Integrity -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
@@ -421,7 +410,7 @@ $meta_keywords = "Whatsapp Business Solutions, GryphalCode Whatsapp Business Sol
   <!-- All JS Scripts loaded via loader.js -->
   <?php include '../whatsapp.php'; ?>
 <?php include '../global-scripts.php'; ?>
-  <script>
+  <script nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">
     (function () {
       const toggles = document.querySelectorAll(
         ".widget-collapsible .collapsible-toggle"

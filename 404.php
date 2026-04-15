@@ -14,9 +14,7 @@ $meta_keywords = "404, GryphalCode 404, 404, IT company, software development, A
 <html class="no-js" lang="en">
  <head>
 <?php include_once 'seo-engine.php'; ?>
-  
-  <!-- Official Google Pixel & Analytics Tracking (MEO) -->
-  
+
   <meta charset="utf-8" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
@@ -27,17 +25,6 @@ $meta_keywords = "404, GryphalCode 404, 404, IT company, software development, A
   <link rel="preload" href="<?= $base_url ?>/assets/css/bootstrap.min.css" as="style">
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   
-  <meta content="<?= $meta_desc ?>" name="description" />
-  
-  <!-- GEO Targeting - Service States of India -->
-
-  <meta content="<?= $page_title ?>" property="og:title" />
-  <meta content="<?= $meta_desc ?>" property="og:description" />
-
-  <meta content="<?= $page_title ?>" name="twitter:title" />
-  <meta content="<?= $meta_desc ?>" name="twitter:description" />
-  
-  <!-- Security & Integrity -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
@@ -97,9 +84,9 @@ $meta_keywords = "404, GryphalCode 404, 404, IT company, software development, A
     <div class="row justify-content-center">
      <div class="col-xl-8">
       <div class="error-content">
-       <h1 style="font-size: 150px; font-weight: 900; color: #086AD8; line-height: 1;">
+       <h2 style="font-size: 150px; font-weight: 900; color: #086AD8; line-height: 1;">
         404
-       </h1>
+       </h2>
        <h2 class="mt-40 mb-30">
         Page Not Found
        </h2>

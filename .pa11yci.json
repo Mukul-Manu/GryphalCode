@@ -1,0 +1,14 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "timeout": 30000,
+    "wait": 1000
+  },
+  "urls": [
+    "http://127.0.0.1:8080/",
+    "http://127.0.0.1:8080/services",
+    "http://127.0.0.1:8080/contact",
+    "http://127.0.0.1:8080/blog",
+    "http://127.0.0.1:8080/why-choose"
+  ]
+}

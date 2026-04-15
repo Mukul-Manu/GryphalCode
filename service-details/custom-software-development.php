@@ -14,9 +14,7 @@ $meta_keywords = "Custom Software Development, GryphalCode Custom Software Devel
 <html class="no-js" lang="en">
 <head>
 <?php include_once '../seo-engine.php'; ?>
- 
-  <!-- Official Google Pixel & Analytics Tracking (MEO) -->
-  
+
   <meta charset="utf-8" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
@@ -27,17 +25,6 @@ $meta_keywords = "Custom Software Development, GryphalCode Custom Software Devel
   <link rel="preload" href="../assets/css/bootstrap.min.css" as="style">
   <link rel="preload" href="../assets/css/style.min.css?v=3" as="style">
   
-  <meta content="<?= $meta_desc ?>" name="description" />
-
-  <!-- GEO Targeting - Service States of India -->
-
-  <meta content="<?= $page_title ?>" property="og:title" />
-  <meta content="<?= $meta_desc ?>" property="og:description" />
-
-  <meta content="<?= $page_title ?>" name="twitter:title" />
-  <meta content="<?= $meta_desc ?>" name="twitter:description" />
-  
-  <!-- Security & Integrity -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
@@ -428,7 +415,7 @@ $meta_keywords = "Custom Software Development, GryphalCode Custom Software Devel
   <?php include '../whatsapp.php'; ?>
 <?php include '../global-scripts.php'; ?>
   <!-- footer helpers -->
-  <script>
+  <script nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">
     (function () {
       const toggles = document.querySelectorAll(
         ".widget-collapsible .collapsible-toggle"

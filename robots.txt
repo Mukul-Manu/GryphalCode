@@ -6,5 +6,17 @@ Allow: /case-study-details/
 Disallow: /cron/
 Disallow: /admin/
 Disallow: /temp/
+Disallow: /daily-seo-fetch.php
+Disallow: /integrity-audit.php
+Disallow: /lead-sync.php
+Disallow: /link-guardian.php
+Disallow: /minify-assets.php
+Disallow: /sitemap-generator.php
+Disallow: /toxic-sync.php
+Disallow: /link-audit.php
+Disallow: /mail.php
+Disallow: /generate_deep_audit.php
+Disallow: /apply_seo_fixes.php
 
 Sitemap: https://gryphalcode.com/sitemap.xml
+Sitemap: https://gryphalcode.com/news-sitemap.xml

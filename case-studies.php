@@ -19,9 +19,7 @@ $meta_keywords = "GryphalCode Case Studies, AI Success Stories, Software Enginee
 <html class="no-js" lang="en">
 <head>
 <?php include_once 'seo-engine.php'; ?>
-  
-  <!-- Official Google Pixel & Analytics Tracking (MEO) -->
-  
+
   <meta charset="utf-8" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
@@ -32,17 +30,6 @@ $meta_keywords = "GryphalCode Case Studies, AI Success Stories, Software Enginee
   <link rel="preload" href="<?= $base_url ?>/assets/css/bootstrap.min.css" as="style">
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   
-  <meta content="<?= $meta_desc ?>" name="description" />
-
-  <!-- GEO Targeting - Service States of India -->
-
-  <meta content="<?= $page_title ?>" property="og:title" />
-  <meta content="<?= $meta_desc ?>" property="og:description" />
-
-  <meta content="<?= $page_title ?>" name="twitter:title" />
-  <meta content="<?= $meta_desc ?>" name="twitter:description" />
-  
-  <!-- Security & Integrity -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
@@ -139,7 +126,7 @@ $meta_keywords = "GryphalCode Case Studies, AI Success Stories, Software Enginee
           <div class="premium-case-card">
             <div class="case-card__img">
               <a href="<?= $base_url ?>/case-study-details/ai-powered-erm-platform">
-                <img alt="AI-Powered ERM Platform Case Study" src="<?= $base_url ?>/assets/images/service-previews/ai-ml.webp"  loading="lazy">
+                <img loading="lazy" alt="AI-Powered ERM Platform Case Study" src="<?= $base_url ?>/assets/images/service-previews/ai-ml.webp"  loading="lazy">
               </a>
             </div>
             <div class="premium-case-card__body">
@@ -184,7 +171,7 @@ $meta_keywords = "GryphalCode Case Studies, AI Success Stories, Software Enginee
           <div class="premium-case-card">
             <div class="case-card__img">
               <a href="<?= $base_url ?>/case-study-details/food-delivery-platform">
-                <img alt="Food Delivery Platform Case Study" src="<?= $base_url ?>/assets/images/service-previews/food-delivery.webp"  loading="lazy">
+                <img loading="lazy" alt="Food Delivery Platform Case Study" src="<?= $base_url ?>/assets/images/service-previews/food-delivery.webp"  loading="lazy">
               </a>
             </div>
             <div class="premium-case-card__body">
@@ -229,7 +216,7 @@ $meta_keywords = "GryphalCode Case Studies, AI Success Stories, Software Enginee
           <div class="premium-case-card">
             <div class="case-card__img">
               <a href="<?= $base_url ?>/case-study-details/whatsapp-business-crm">
-                <img alt="WhatsApp CRM Case Study" src="<?= $base_url ?>/assets/images/service-previews/whatsapp-business.webp"  loading="lazy">
+                <img loading="lazy" alt="WhatsApp CRM Case Study" src="<?= $base_url ?>/assets/images/service-previews/whatsapp-business.webp"  loading="lazy">
               </a>
             </div>
             <div class="premium-case-card__body">
@@ -274,7 +261,7 @@ $meta_keywords = "GryphalCode Case Studies, AI Success Stories, Software Enginee
           <div class="premium-case-card">
             <div class="case-card__img">
               <a href="<?= $base_url ?>/case-study-details/cloud-migration">
-                <img alt="Cloud Migration Case Study" src="<?= $base_url ?>/assets/images/service-previews/cloud-devops.webp"  loading="lazy">
+                <img loading="lazy" alt="Cloud Migration Case Study" src="<?= $base_url ?>/assets/images/service-previews/cloud-devops.webp"  loading="lazy">
               </a>
             </div>
             <div class="premium-case-card__body">
@@ -319,7 +306,7 @@ $meta_keywords = "GryphalCode Case Studies, AI Success Stories, Software Enginee
           <div class="premium-case-card">
             <div class="case-card__img">
               <a href="<?= $base_url ?>/case-study-details/gdpr-security-overhaul">
-                <img alt="Security Audit Case Study" src="<?= $base_url ?>/assets/images/service-previews/security.webp"  loading="lazy">
+                <img loading="lazy" alt="Security Audit Case Study" src="<?= $base_url ?>/assets/images/service-previews/security.webp"  loading="lazy">
               </a>
             </div>
             <div class="premium-case-card__body">
@@ -364,7 +351,7 @@ $meta_keywords = "GryphalCode Case Studies, AI Success Stories, Software Enginee
           <div class="premium-case-card">
             <div class="case-card__img">
               <a href="<?= $base_url ?>/case-study-details/cicd-observability">
-                <img alt="Automation Case Study" src="<?= $base_url ?>/assets/images/service-previews/automation.webp"  loading="lazy">
+                <img loading="lazy" alt="Automation Case Study" src="<?= $base_url ?>/assets/images/service-previews/automation.webp"  loading="lazy">
               </a>
             </div>
             <div class="premium-case-card__body">

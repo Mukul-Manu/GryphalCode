@@ -5,6 +5,12 @@
  */
 
 $is_browser = (php_sapi_name() !== 'cli');
+$syncKey = getenv('GRYPHAL_CRON_SYNC_KEY') ?: '';
+
+if ($is_browser && (empty($syncKey) || !hash_equals($syncKey, (string)($_GET['key'] ?? '')))) {
+    header('HTTP/1.1 403 Forbidden');
+    die("Access Denied.");
+}
 
 if ($is_browser) {
     include_once __DIR__ . '/../seo-engine.php';
@@ -14,8 +20,6 @@ if ($is_browser) {
 
 $base_url = "https://gryphalcode.com";
 $root_dir = realpath(__DIR__ . '/..');
-$exclude_dirs = ['assets', 'cron', 'vendor', '.git', '.vscode'];
-$exclude_files = ['header.php', 'footer.php', 'scripts.php', 'whatsapp.php', 'mail.php'];
 
 function logger($msg) {
     global $is_browser;
@@ -28,60 +32,105 @@ function logger($msg) {
 
 $sitemap = '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL;
 $sitemap .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . PHP_EOL;
-
-// 1. Add Core Landing Pages
-$files = scandir($root_dir);
 $count = 0;
-foreach ($files as $file) {
-    if (pathinfo($file, PATHINFO_EXTENSION) === 'php' && !in_array($file, $exclude_files)) {
-        $name = pathinfo($file, PATHINFO_FILENAME);
-        $priority = ($file === 'index.php') ? '1.0' : '0.8';
-        $loc = ($file === 'index.php') ? "$base_url/" : "$base_url/$name";
 
-        $sitemap .= "  <url>" . PHP_EOL;
-        $sitemap .= "    <loc>$loc</loc>" . PHP_EOL;
-        $sitemap .= "    <lastmod>" . date('Y-m-d') . "</lastmod>" . PHP_EOL;
-        $sitemap .= "    <changefreq>daily</changefreq>" . PHP_EOL;
-        $sitemap .= "    <priority>$priority</priority>" . PHP_EOL;
-        $sitemap .= "  </url>" . PHP_EOL;
-        $count++;
-    }
+$rootPages = [
+    '/' => ['changefreq' => 'daily', 'priority' => '1.0'],
+    '/about' => ['changefreq' => 'daily', 'priority' => '0.8'],
+    '/services' => ['changefreq' => 'daily', 'priority' => '0.8'],
+    '/case-studies' => ['changefreq' => 'daily', 'priority' => '0.8'],
+    '/blog' => ['changefreq' => 'daily', 'priority' => '0.8'],
+    '/contact' => ['changefreq' => 'daily', 'priority' => '0.8'],
+    '/request-demo' => ['changefreq' => 'daily', 'priority' => '0.8'],
+    '/support' => ['changefreq' => 'daily', 'priority' => '0.7'],
+    '/faq' => ['changefreq' => 'daily', 'priority' => '0.7'],
+    '/careers' => ['changefreq' => 'weekly', 'priority' => '0.6'],
+    '/why-choose' => ['changefreq' => 'weekly', 'priority' => '0.7'],
+    '/privacy-policy' => ['changefreq' => 'monthly', 'priority' => '0.4'],
+    '/terms-conditions' => ['changefreq' => 'monthly', 'priority' => '0.4'],
+    '/editorial-policy' => ['changefreq' => 'monthly', 'priority' => '0.5'],
+    '/brand-knowledge' => ['changefreq' => 'weekly', 'priority' => '0.7'],
+    '/author-mukul' => ['changefreq' => 'monthly', 'priority' => '0.6'],
+    '/site-map' => ['changefreq' => 'weekly', 'priority' => '0.6'],
+    '/services-india' => ['changefreq' => 'weekly', 'priority' => '0.8'],
+    '/services-uae' => ['changefreq' => 'weekly', 'priority' => '0.8'],
+    '/services-uk' => ['changefreq' => 'weekly', 'priority' => '0.8'],
+    '/services-usa' => ['changefreq' => 'weekly', 'priority' => '0.8'],
+];
+
+$serviceSlugs = [
+    'custom-software-development',
+    'ai-machine-learning-solutions',
+    'cloud-devops-solutions',
+    'api-integration-automation',
+    'automation',
+    'process-delivery',
+    'security',
+    'whatsapp-business-solutions',
+    'food-delivery-application'
+];
+
+$caseStudySlugs = [
+    'ai-powered-erm-platform',
+    'cicd-observability',
+    'cloud-migration',
+    'food-delivery-platform',
+    'gdpr-security-overhaul',
+    'whatsapp-business-crm'
+];
+
+$blogSlugs = [
+    'enterprise-generative-ai-integration',
+    'zero-trust-cloud-security',
+    'next-gen-devops-automation',
+    'enterprise-ai-roadmap-2026',
+    'ai-copilot-rollout-framework',
+    'cloud-cost-optimization-model',
+    'technical-seo-for-ai-overviews',
+    'conversion-tracking-for-b2b-websites',
+    'security-hardening-sprint-plan',
+    'llm-ready-content-architecture'
+];
+
+foreach ($rootPages as $path => $meta) {
+    $loc = ($path === '/') ? "$base_url/" : "$base_url$path";
+    $sitemap .= "  <url>" . PHP_EOL;
+    $sitemap .= "    <loc>$loc</loc>" . PHP_EOL;
+    $sitemap .= "    <lastmod>" . date('Y-m-d') . "</lastmod>" . PHP_EOL;
+    $sitemap .= "    <changefreq>{$meta['changefreq']}</changefreq>" . PHP_EOL;
+    $sitemap .= "    <priority>{$meta['priority']}</priority>" . PHP_EOL;
+    $sitemap .= "  </url>" . PHP_EOL;
+    $count++;
 }
 
-// 2. Add Service Detail Screens
-$service_dir = "$root_dir/service-details";
-if (is_dir($service_dir)) {
-    $service_files = scandir($service_dir);
-    foreach ($service_files as $file) {
-        if (pathinfo($file, PATHINFO_EXTENSION) === 'php') {
-            $name = pathinfo($file, PATHINFO_FILENAME);
-            $sitemap .= "  <url>" . PHP_EOL;
-            $sitemap .= "    <loc>$base_url/service-details/$name</loc>" . PHP_EOL;
-            $sitemap .= "    <lastmod>" . date('Y-m-d') . "</lastmod>" . PHP_EOL;
-            $sitemap .= "    <changefreq>weekly</changefreq>" . PHP_EOL;
-            $sitemap .= "    <priority>0.7</priority>" . PHP_EOL;
-            $sitemap .= "  </url>" . PHP_EOL;
-            $count++;
-        }
-    }
+foreach ($serviceSlugs as $slug) {
+    $sitemap .= "  <url>" . PHP_EOL;
+    $sitemap .= "    <loc>$base_url/service-details/$slug</loc>" . PHP_EOL;
+    $sitemap .= "    <lastmod>" . date('Y-m-d') . "</lastmod>" . PHP_EOL;
+    $sitemap .= "    <changefreq>weekly</changefreq>" . PHP_EOL;
+    $sitemap .= "    <priority>0.7</priority>" . PHP_EOL;
+    $sitemap .= "  </url>" . PHP_EOL;
+    $count++;
 }
 
-// 3. Add Case Study Details
-$case_dir = "$root_dir/case-study-details";
-if (is_dir($case_dir)) {
-    $case_files = scandir($case_dir);
-    foreach ($case_files as $file) {
-        if (pathinfo($file, PATHINFO_EXTENSION) === 'php') {
-            $name = pathinfo($file, PATHINFO_FILENAME);
-            $sitemap .= "  <url>" . PHP_EOL;
-            $sitemap .= "    <loc>$base_url/case-study-details/$name</loc>" . PHP_EOL;
-            $sitemap .= "    <lastmod>" . date('Y-m-d') . "</lastmod>" . PHP_EOL;
-            $sitemap .= "    <changefreq>monthly</changefreq>" . PHP_EOL;
-            $sitemap .= "    <priority>0.6</priority>" . PHP_EOL;
-            $sitemap .= "  </url>" . PHP_EOL;
-            $count++;
-        }
-    }
+foreach ($caseStudySlugs as $slug) {
+    $sitemap .= "  <url>" . PHP_EOL;
+    $sitemap .= "    <loc>$base_url/case-study-details/$slug</loc>" . PHP_EOL;
+    $sitemap .= "    <lastmod>" . date('Y-m-d') . "</lastmod>" . PHP_EOL;
+    $sitemap .= "    <changefreq>monthly</changefreq>" . PHP_EOL;
+    $sitemap .= "    <priority>0.6</priority>" . PHP_EOL;
+    $sitemap .= "  </url>" . PHP_EOL;
+    $count++;
+}
+
+foreach ($blogSlugs as $slug) {
+    $sitemap .= "  <url>" . PHP_EOL;
+    $sitemap .= "    <loc>$base_url/blog-details/$slug</loc>" . PHP_EOL;
+    $sitemap .= "    <lastmod>" . date('Y-m-d') . "</lastmod>" . PHP_EOL;
+    $sitemap .= "    <changefreq>weekly</changefreq>" . PHP_EOL;
+    $sitemap .= "    <priority>0.7</priority>" . PHP_EOL;
+    $sitemap .= "  </url>" . PHP_EOL;
+    $count++;
 }
 
 $sitemap .= '</urlset>';
@@ -90,6 +139,30 @@ if (file_put_contents("$root_dir/sitemap.xml", $sitemap)) {
     logger("Success: Sitemap updated with $count URLs.");
 } else {
     logger("Error: Failed to write sitemap.xml");
+}
+
+// 4. Generate Google News Sitemap (NEO Compliance)
+$newsSitemap = '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL;
+$newsSitemap .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">' . PHP_EOL;
+
+// NEO feed from known blog detail pages
+foreach ($blogSlugs as $slug) {
+    $newsSitemap .= "  <url>" . PHP_EOL;
+    $newsSitemap .= "    <loc>$base_url/blog-details/$slug</loc>" . PHP_EOL;
+    $newsSitemap .= "    <news:news>" . PHP_EOL;
+    $newsSitemap .= "      <news:publication>" . PHP_EOL;
+    $newsSitemap .= "        <news:name>GryphalCode</news:name>" . PHP_EOL;
+    $newsSitemap .= "        <news:language>en</news:language>" . PHP_EOL;
+    $newsSitemap .= "      </news:publication>" . PHP_EOL;
+    $newsSitemap .= "      <news:publication_date>" . date('c') . "</news:publication_date>" . PHP_EOL;
+    $newsSitemap .= "      <news:title>GryphalCode Insight: " . ucwords(str_replace('-', ' ', $slug)) . "</news:title>" . PHP_EOL;
+    $newsSitemap .= "    </news:news>" . PHP_EOL;
+    $newsSitemap .= "  </url>" . PHP_EOL;
+}
+$newsSitemap .= '</urlset>';
+
+if (file_put_contents("$root_dir/news-sitemap.xml", $newsSitemap)) {
+    logger("Success: News Sitemap (NEO) generated.");
 }
 
 if ($is_browser) {

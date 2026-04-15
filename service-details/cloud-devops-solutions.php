@@ -27,14 +27,6 @@ $meta_keywords = "Cloud Devops Solutions, GryphalCode Cloud Devops Solutions, Cl
   <link rel="preload" href="<?= $base_url ?>/assets/css/bootstrap.min.css" as="style">
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   
-  <meta content="<?= $meta_desc ?>" name="description" />
-
-  <meta content="<?= $page_title ?>" property="og:title" />
-  <meta content="<?= $meta_desc ?>" property="og:description" />
-
-  <meta content="<?= $page_title ?>" name="twitter:title" />
-  <meta content="<?= $meta_desc ?>" name="twitter:description" />
-  
   <!-- Security & Integrity -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -417,7 +409,7 @@ $meta_keywords = "Cloud Devops Solutions, GryphalCode Cloud Devops Solutions, Cl
   <!-- All JS Scripts loaded via loader.js -->
   <?php include '../whatsapp.php'; ?>
 <?php include '../global-scripts.php'; ?>
-  <script>
+  <script nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">
     (function () {
       const toggles = document.querySelectorAll(
         ".widget-collapsible .collapsible-toggle"

@@ -40,10 +40,39 @@
     });
   }
 
-  // active mobile-menu
+  // disable legacy mobile-menu
+  /*
   jQuery("#mobile-menu").meanmenu({
     meanScreenWidth: "991",
     meanMenuContainer: ".mobile-menu",
+  });
+  */
+
+  // Gryphal Premium Mobile Nav Logic
+  // Hamburger toggle (event delegation for reliability)
+  $(document).on('click', '.gryphal-nav-toggle', function(e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+    $('.gryphal-mobile-nav').toggleClass('active');
+    $('body, html').toggleClass('gryphal-nav-open');
+  });
+
+  // Submenu dropdown toggle (the + box)
+  $(document).on('click', '.gryphal-mobile-nav .dropdown-toggle-btn', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var $li = $(this).closest('li.has-dropdown');
+    $li.toggleClass('open');
+    // Swap + / −
+    $(this).text($li.hasClass('open') ? '−' : '+');
+  });
+
+  // Close button (X circle) inside mobile nav
+  $(document).on('click', '.mobile-nav-close', function(e) {
+    e.preventDefault();
+    $('.gryphal-nav-toggle').removeClass('active');
+    $('.gryphal-mobile-nav').removeClass('active');
+    $('body, html').removeClass('gryphal-nav-open');
   });
 
   // testimonial carousel

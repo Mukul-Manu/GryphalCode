@@ -4,6 +4,12 @@ header('X-XSS-Protection: 1; mode=block');
 header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
+if (session_status() !== PHP_SESSION_ACTIVE) {
+  session_start();
+}
+if (empty($_SESSION['csrf_token'])) {
+  $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
 ?>
 <?php $base_url = '.';
 $page_title = "Contact GryphalCode | Get a Quote for Your Tech Project";
@@ -14,9 +20,7 @@ $meta_keywords = "Contact, GryphalCode Contact, Contact, IT company, software de
 <html class="no-js" lang="en">
 <head>
 <?php include_once 'seo-engine.php'; ?>
-  
-  <!-- Official Google Pixel & Analytics Tracking (MEO) -->
-  
+
   <meta charset="utf-8" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
@@ -26,17 +30,6 @@ $meta_keywords = "Contact, GryphalCode Contact, Contact, IT company, software de
   <link rel="preload" href="assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
   <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
   
-  <meta content="<?= $meta_desc ?>" name="description" />
-
-  <!-- GEO Targeting - Service States of India -->
-
-  <meta content="<?= $page_title ?>" property="og:title" />
-  <meta content="<?= $meta_desc ?>" property="og:description" />
-
-  <meta content="<?= $page_title ?>" name="twitter:title" />
-  <meta content="<?= $meta_desc ?>" name="twitter:description" />
-  
-  <!-- Security & Integrity -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
@@ -101,52 +94,72 @@ $meta_keywords = "Contact, GryphalCode Contact, Contact, IT company, software de
           <div class="contact__wrap pt-95 pb-95">
             <div class="contact__form">
               <form action="mail.php" aria-label="Contact Form" data-agent-action="submit-contact-inquiry" id="contact-form" method="POST">
+                <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['csrf_token'], ENT_QUOTES) ?>" />
+                <input type="text" name="company_website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;" aria-hidden="true" />
                 <div class="row mt-none-30">
                   <div class="col-xl-6 mt-30">
                     <div class="form__group">
                       <label for="name">
+                        Full Name
                         <i class="fal fa-user">
                         </i>
                       </label>
-                      <input id="name" name="name" placeholder="Enter your full name" required="" type="text" />
+                      <input id="name" name="name" required="" type="text" />
                     </div>
                   </div>
                   <div class="col-xl-6 mt-30">
                     <div class="form__group">
                       <label for="email">
+                        Email Address
                         <i class="fal fa-envelope">
                         </i>
                       </label>
-                      <input id="email" name="email" placeholder="Enter email address" required="" type="email" />
+                      <input id="email" name="email" required="" type="email" />
                     </div>
                   </div>
                   <div class="col-xl-6 mt-30">
                     <div class="form__group">
                       <label for="tel">
+                        Phone Number
                         <i class="fal fa-phone">
                         </i>
                       </label>
-                      <input id="tel" name="phone" pattern="[0-9+\-\s]+" placeholder="Add phone number" required=""
+                      <input id="tel" name="phone" pattern="[0-9+\-\s]+" required=""
                         type="tel" />
                     </div>
                   </div>
                   <div class="col-xl-6 mt-30">
                     <div class="form__group">
                       <label for="subject">
+                        Subject
                         <i class="fal fa-book">
                         </i>
                       </label>
-                      <input id="subject" name="subject" placeholder="Enter your subject" required="" type="text" />
+                      <input id="subject" name="subject" required="" type="text" />
                     </div>
                   </div>
                   <div class="col-xl-12 mt-30">
                     <div class="form__group">
                       <label for="message">
+                        Message
                         <i class="fal fa-pen">
                         </i>
                       </label>
-                      <textarea id="message" name="message" placeholder="Enter your message" required=""
+                      <textarea id="message" name="message" required=""
                         rows="5"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-xl-12 mt-20">
+                    <div class="form__group d-flex justify-content-center">
+                      <div style="max-width: fit-content; text-align: left;">
+                        <label for="privacy_consent" style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer; position: relative;">
+                          <input id="privacy_consent" name="privacy_consent" required type="checkbox" value="1" style="width: 18px; height: 18px; margin: 0; margin-top: 3px; flex-shrink: 0;" />
+                          <span style="color: rgba(255,255,255,0.8); font-size: 14px; line-height: 1.5;">
+                            I agree to the processing of my information as per the 
+                            <a href="<?= $base_url ?>/privacy-policy" style="color: #086AD8; text-decoration: underline; font-weight: 500;">Privacy Policy</a>.
+                          </span>
+                        </label>
+                      </div>
                     </div>
                   </div>
                   <div class="col-xl-12 mt-30 text-center">
@@ -179,7 +192,7 @@ $meta_keywords = "Contact, GryphalCode Contact, Contact, IT company, software de
               </span>
             </div>
             <div class="content">
-              <h1 class="title">
+              <h2 class="title">
                 Office Address
               </h2>
               <p>

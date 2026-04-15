@@ -85,6 +85,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -94,6 +95,7 @@ body {
   font-weight: 400;
   position: relative;
   line-height: 26px;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;

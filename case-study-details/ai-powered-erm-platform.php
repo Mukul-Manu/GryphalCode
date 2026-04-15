@@ -30,14 +30,6 @@ $meta_keywords = "Ai Powered Erm Platform, GryphalCode Ai Powered Erm Platform, 
   <link rel="preload" href="<?= $base_url ?>/assets/css/bootstrap.min.css" as="style">
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   
-  <meta content="<?= $meta_desc ?>" name="description" />
-
-  <meta content="<?= $page_title ?>" property="og:title" />
-  <meta content="<?= $meta_desc ?>" property="og:description" />
-
-  <meta content="<?= $page_title ?>" name="twitter:title" />
-  <meta content="<?= $meta_desc ?>" name="twitter:description" />
-  
   <!-- Security & Integrity -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -110,7 +102,7 @@ $meta_keywords = "Ai Powered Erm Platform, GryphalCode Ai Powered Erm Platform, 
      <div class="col-xl-8 col-lg-8">
       <div class="project-details__content">
        <div class="thumb mb-40">
-        <img alt="ERM Case Study Main Image" class="w-100 project-overview-img" src="<?= $base_url ?>/assets/images/service-previews/ai-ml.webp" loading="lazy">
+        <img loading="lazy" alt="ERM Case Study Main Image" class="w-100 project-overview-img" src="<?= $base_url ?>/assets/images/service-previews/ai-ml.webp" loading="lazy">
        </div>
        <h2 class="title mb-25">
         Project Overview

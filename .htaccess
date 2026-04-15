@@ -1,6 +1,12 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
+# Force HTTPS on production hosts (skip localhost/dev)
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:\d+)?$ [NC]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 # Redirect index.php and index to /
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index(\.php)? [NC]
 RewriteRule ^ / [R=301,L]
@@ -9,8 +15,8 @@ RewriteRule ^ / [R=301,L]
 # 1. Prevent directory listing
 Options -Indexes
 
-# 2. Specifically route the 'case-studies' path to the root .php file to override directory listing
-RewriteRule ^case-studies/$ /GryphalCode/case-studies [R=301,L]
+# 2. Normalize case-studies URL to canonical path
+RewriteRule ^case-studies/$ /case-studies [R=301,L]
 RewriteRule ^case-studies$ case-studies.php [L]
 
 # 3. Externally redirect any direct .php requests to the clean URL
@@ -47,8 +53,8 @@ ErrorDocument 404 /GryphalCode/404.php
   Header set X-XSS-Protection "1; mode=block"
   Header set Referrer-Policy "strict-origin-when-cross-origin"
   Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
-  Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
-  Header set Content-Security-Policy "default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com https://c.bing.com https://clr-gj-6.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://maxcdn.bootstrapcdn.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://*.clarity.ms https://c.bing.com; frame-src 'self' https://www.google.com https://td.doubleclick.net;"
+  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload" "expr=%{HTTPS} == 'on'"
+  # CSP is delivered dynamically by seo-engine.php with per-request nonce.
 </IfModule>
 
 # GZIP & Brotli Compression

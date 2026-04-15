@@ -4,18 +4,72 @@
  * Processes contact form submissions and sends notifications.
  */
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (session_status() !== PHP_SESSION_ACTIVE) {
+        session_start();
+    }
+
+    // 0. Bot/abuse controls: CSRF + honeypot + basic rate limit
+    $csrfToken = $_POST['csrf_token'] ?? '';
+    if (empty($_SESSION['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $csrfToken)) {
+        header("Location: contact.php?status=error&msg=invalid_token");
+        exit;
+    }
+
+    if (!empty($_POST['company_website'])) {
+        header("Location: contact.php?status=error&msg=spam_detected");
+        exit;
+    }
+    if (empty($_POST['privacy_consent']) || $_POST['privacy_consent'] !== '1') {
+        header("Location: contact.php?status=error&msg=consent_required");
+        exit;
+    }
+
+    $clientIp = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+    $rateFile = __DIR__ . '/tmp/mail-rate-limit.json';
+    $rateData = file_exists($rateFile) ? json_decode((string) file_get_contents($rateFile), true) : [];
+    $now = time();
+    $windowSeconds = 3600;
+    $maxAttempts = 5;
+    $bucket = array_values(array_filter($rateData[$clientIp] ?? [], static function ($ts) use ($now, $windowSeconds) {
+        return ($now - (int) $ts) < $windowSeconds;
+    }));
+    if (count($bucket) >= $maxAttempts) {
+        header("Location: contact.php?status=error&msg=rate_limited");
+        exit;
+    }
+    $bucket[] = $now;
+    $rateData[$clientIp] = $bucket;
+    file_put_contents($rateFile, json_encode($rateData, JSON_PRETTY_PRINT));
+
     // 1. Sanitize Inputs
-    $name    = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+    $nameRaw = trim((string) ($_POST['name'] ?? ''));
+    $phoneRaw = trim((string) ($_POST['phone'] ?? ''));
+    $companyRaw = trim((string) ($_POST['company'] ?? ''));
+    $subjectRaw = trim((string) ($_POST['subject'] ?? ''));
+    $serviceRaw = trim((string) ($_POST['service'] ?? ''));
+    $messageRaw = trim((string) ($_POST['message'] ?? ''));
+    $utmSource = trim((string) ($_POST['utm_source'] ?? ''));
+    $utmMedium = trim((string) ($_POST['utm_medium'] ?? ''));
+    $utmCampaign = trim((string) ($_POST['utm_campaign'] ?? ''));
+    $utmTerm = trim((string) ($_POST['utm_term'] ?? ''));
+    $utmContent = trim((string) ($_POST['utm_content'] ?? ''));
+    $landingPage = trim((string) ($_POST['landing_page'] ?? ''));
+
+    $name = strip_tags($nameRaw);
     $email   = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-    $phone   = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
-    $company = filter_input(INPUT_POST, 'company', FILTER_SANITIZE_STRING);
-    $subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING);
-    $service = filter_input(INPUT_POST, 'service', FILTER_SANITIZE_STRING);
-    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+    $phone = strip_tags($phoneRaw);
+    $company = strip_tags($companyRaw);
+    $subject = strip_tags($subjectRaw);
+    $service = strip_tags($serviceRaw);
+    $message = strip_tags($messageRaw);
 
     // 2. Validate Required Fields
     if (!$name || !$email || !$message) {
         header("Location: contact.php?status=error&msg=missing_fields");
+        exit;
+    }
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        header("Location: contact.php?status=error&msg=invalid_email");
         exit;
     }
 
@@ -39,6 +93,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($company) $email_body .= "<p><strong>Company:</strong> {$company}</p>";
     if ($service) $email_body .= "<p><strong>Service:</strong> {$service}</p>";
     if ($subject) $email_body .= "<p><strong>Subject:</strong> {$subject}</p>";
+    if ($landingPage) $email_body .= "<p><strong>Landing Page:</strong> {$landingPage}</p>";
+    if ($utmSource || $utmMedium || $utmCampaign) {
+        $email_body .= "<p><strong>Attribution:</strong> " . htmlspecialchars("source={$utmSource}, medium={$utmMedium}, campaign={$utmCampaign}, term={$utmTerm}, content={$utmContent}", ENT_QUOTES) . "</p>";
+    }
 
     $email_body .= "
     <p><strong>Message:</strong><br/>".nl2br($message)."</p>
@@ -55,7 +113,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         'company'   => $company,
         'service'   => $service,
         'subject'   => $subject,
-        'message'   => $message
+        'message'   => $message,
+        'landing_page' => $landingPage,
+        'utm_source' => $utmSource,
+        'utm_medium' => $utmMedium,
+        'utm_campaign' => $utmCampaign,
+        'utm_term' => $utmTerm,
+        'utm_content' => $utmContent
     ];
 
     $log_file = 'leads_backup.json';
@@ -68,8 +132,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // 5. Redirect to Thank You Page
     if ($mail_sent) {
+        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
         header("Location: thank-you.php");
     } else {
+        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
         header("Location: thank-you.php?note=local_backup_saved");
     }
     exit;
@@ -92,7 +158,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p>Redirecting to secure gateway...</p>
         <img src="assets/images/logo/logo.webp" alt="GryphalCode Logo" loading="lazy" width="200" style="display:none;">
         <a href="contact" style="display:none;">Return to Contact</a>
-        <script>setTimeout(() => { window.location.href = 'contact'; }, 2000);</script>
+        <script nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">setTimeout(() => { window.location.href = 'contact'; }, 2000);</script>
     </main>
 </body>
 </html>

@@ -19,10 +19,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
 <html class="no-js" lang="en">
 <head>
 <?php include_once 'seo-engine.php'; ?>
-  <!-- 2026 AEO / GEO / SXO / LLMO Optimization Tags (Auto-Updating) -->
-  <!-- Security & Integrity -->
-  <!-- Official Google Pixel & Analytics Tracking (MEO) -->
-  
+
   <meta charset="utf-8" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
@@ -33,17 +30,6 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
   <link rel="preload" href="<?= $base_url ?>/assets/css/bootstrap.min.css" as="style">
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
   
-  <meta content="<?= $meta_desc ?>" name="description" />
-
-  <!-- GEO Targeting - Service States of India -->
-
-  <meta content="<?= $page_title ?>" property="og:title" />
-  <meta content="<?= $meta_desc ?>" property="og:description" />
-
-  <meta content="<?= $page_title ?>" name="twitter:title" />
-  <meta content="<?= $meta_desc ?>" name="twitter:description" />
-  
-  <!-- Security & Integrity -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
@@ -201,7 +187,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
       <div class="row align-items-center">
         <div class="col-xl-6">
           <div class="about__bg about__bg--2 about__bg--3 about__bg--5">
-            <img alt="GryphalCode Team and Expertise Overview" src="<?= $base_url ?>/assets/images/bg/about-bg-6.webp"  loading="lazy">
+            <img loading="lazy" alt="GryphalCode Team and Expertise Overview" src="<?= $base_url ?>/assets/images/bg/about-bg-6.webp"  loading="lazy">
           </div>
         </div>
         <div class="col-xl-6">

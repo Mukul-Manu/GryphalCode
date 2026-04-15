@@ -15,10 +15,6 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
 
 <head>
         <?php include_once 'seo-engine.php'; ?>
-        <!-- 2026 AEO / GEO / SXO / LLMO Optimization Tags (Auto-Updating) -->
-        <!-- Security & Integrity -->
-        <!-- Official Google Pixel & Analytics Tracking (MEO) -->
-        
         <meta charset="utf-8" />
         <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
         <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
@@ -27,18 +23,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
         <link rel="preload" href="assets/images/logo/logo.webp" as="image" type="image/webp">
         <link rel="preload" href="assets/images/bg/banner-bg-1.webp" as="image" type="image/webp">
         <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
-        
-        <meta content="<?= $meta_desc ?>" name="description" />
 
-        <!-- GEO Targeting - Service States of India -->
-
-        <meta content="<?= $page_title ?>" property="og:title" />
-        <meta content="<?= $meta_desc ?>" property="og:description" />
-
-        <meta content="<?= $page_title ?>" name="twitter:title" />
-        <meta content="<?= $meta_desc ?>" name="twitter:description" />
-        
-        <!-- Security & Integrity -->
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
         <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
@@ -211,45 +196,46 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                 </div>
 
                                                 <!-- Counter & SVG Animation Script -->
-                                                <script>
-                                                        (function () {
-                                                                const cards = document.querySelectorAll('.modern-stat-card');
-                                                                if ('IntersectionObserver' in window) {
-                                                                        const observer = new IntersectionObserver((entries) => {
-                                                                                entries.forEach(entry => {
-                                                                                        if (entry.isIntersecting) {
-                                                                                                const card = entry.target;
-                                                                                                card.setAttribute('data-animated', 'true');
-                                                                                                const counter = card.querySelector('.modern-counter');
-                                                                                                const target = parseInt(counter.getAttribute('data-target'));
-                                                                                                let count = 0;
-                                                                                                let duration = 2000;
-                                                                                                let step = duration / target;
-                                                                                                if (!counter.classList.contains('counted')) {
-                                                                                                        counter.classList.add('counted');
-                                                                                                        let interval = setInterval(() => {
-                                                                                                                count++;
-                                                                                                                counter.innerText = count;
-                                                                                                                if (count >= target) {
-                                                                                                                        clearInterval(interval);
-                                                                                                                }
-                                                                                                        }, step);
+                                                <script
+                                                        nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">
+                                                                (function () {
+                                                                        const cards = document.querySelectorAll('.modern-stat-card');
+                                                                        if ('IntersectionObserver' in window) {
+                                                                                const observer = new IntersectionObserver((entries) => {
+                                                                                        entries.forEach(entry => {
+                                                                                                if (entry.isIntersecting) {
+                                                                                                        const card = entry.target;
+                                                                                                        card.setAttribute('data-animated', 'true');
+                                                                                                        const counter = card.querySelector('.modern-counter');
+                                                                                                        const target = parseInt(counter.getAttribute('data-target'));
+                                                                                                        let count = 0;
+                                                                                                        let duration = 2000;
+                                                                                                        let step = duration / target;
+                                                                                                        if (!counter.classList.contains('counted')) {
+                                                                                                                counter.classList.add('counted');
+                                                                                                                let interval = setInterval(() => {
+                                                                                                                        count++;
+                                                                                                                        counter.innerText = count;
+                                                                                                                        if (count >= target) {
+                                                                                                                                clearInterval(interval);
+                                                                                                                        }
+                                                                                                                }, step);
+                                                                                                        }
+                                                                                                        observer.unobserve(card);
                                                                                                 }
-                                                                                                observer.unobserve(card);
-                                                                                        }
+                                                                                        });
+                                                                                }, { threshold: 0.1 });
+                                                                                cards.forEach(card => observer.observe(card));
+                                                                        } else {
+                                                                                // Fallback for no intersection observer
+                                                                                cards.forEach(card => {
+                                                                                        card.setAttribute('data-animated', 'true');
+                                                                                        const counter = card.querySelector('.modern-counter');
+                                                                                        counter.innerText = counter.getAttribute('data-target');
                                                                                 });
-                                                                        }, { threshold: 0.1 });
-                                                                        cards.forEach(card => observer.observe(card));
-                                                                } else {
-                                                                        // Fallback for no intersection observer
-                                                                        cards.forEach(card => {
-                                                                                card.setAttribute('data-animated', 'true');
-                                                                                const counter = card.querySelector('.modern-counter');
-                                                                                counter.innerText = counter.getAttribute('data-target');
-                                                                        });
-                                                                }
-                                                        })();
-                                                </script>
+                                                                        }
+                                                                })();
+                                                        </script>
                                         </div>
                                 </div>
                         </div>
@@ -993,6 +979,191 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                         </div>
                 </section>
                 <!-- video section area end -->
+
+                <!-- AI Readiness Quiz Area Start -->
+                <section class="ai-quiz-area pt-100 pb-100"
+                        style="background: #ffffff; position: relative; overflow: hidden; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+                        <div class="container">
+                                <div class="row justify-content-center">
+                                        <div class="col-xl-8 text-center">
+                                                <div class="section__heading mb-50">
+                                                        <h3 class="section__heading--title-small"
+                                                                style="color: #086AD8;">
+                                                                <span class="mr-10">//</span> Interactive <span
+                                                                        class="ml-10">//</span>
+                                                        </h3>
+                                                        <h2 class="title h1" style="color: #050a12;">Is Your Business
+                                                                Ready for AI? <span>.</span></h2>
+                                                        <p class="mt-20" style="color: #666;">Answer 4 quick questions
+                                                                to get your custom AI Adoption Score and a recommended
+                                                                roadmap.</p>
+                                                </div>
+
+                                                <div id="ai-quiz-container" class="p-5"
+                                                        style="border-radius: 20px; border: 1px solid #eee; background: #f8f9fa;">
+                                                        <div id="quiz-step-1" class="quiz-step">
+                                                                <h4 class="mb-30" style="color: #050a12;">1. How much of
+                                                                        your data is currently structured and
+                                                                        accessible?</h4>
+                                                                <div class="d-flex flex-column gap-3">
+                                                                        <button class="site-btn transparent quiz-opt w-100 mb-2"
+                                                                                onclick="nextQuizStep(2, 10)">Highly
+                                                                                fragmented (spread across
+                                                                                files/emails)</button>
+                                                                        <button class="site-btn transparent quiz-opt w-100 mb-2"
+                                                                                onclick="nextQuizStep(2, 20)">Partially
+                                                                                centralized in databases</button>
+                                                                        <button class="site-btn transparent quiz-opt w-100 mb-2"
+                                                                                onclick="nextQuizStep(2, 30)">Centralized
+                                                                                Cloud Data Warehouse
+                                                                                (Snowflake/BigQuery)</button>
+                                                                </div>
+                                                        </div>
+
+                                                        <div id="quiz-step-2" class="quiz-step" style="display:none;">
+                                                                <h4 class="mb-30" style="color: #050a12;">2. Do you have
+                                                                        automated customer engagement workflows
+                                                                        (Chatbots/CRMs)?</h4>
+                                                                <div class="d-flex flex-column gap-3">
+                                                                        <button class="site-btn transparent quiz-opt w-100 mb-2"
+                                                                                onclick="nextQuizStep(3, 5)">No
+                                                                                automation, purely manual</button>
+                                                                        <button class="site-btn transparent quiz-opt w-100 mb-2"
+                                                                                onclick="nextQuizStep(3, 15)">Basic
+                                                                                automation (Email
+                                                                                triggers/Auto-replies)</button>
+                                                                        <button class="site-btn transparent quiz-opt w-100 mb-2"
+                                                                                onclick="nextQuizStep(3, 25)">Advanced
+                                                                                AI Chatbots or automated
+                                                                                workflows</button>
+                                                                </div>
+                                                        </div>
+
+                                                        <div id="quiz-step-3" class="quiz-step" style="display:none;">
+                                                                <h4 class="mb-30" style="color: #050a12;">3. What is
+                                                                        your primary goal for AI adoption?</h4>
+                                                                <div class="d-flex flex-column gap-3">
+                                                                        <button class="site-btn transparent quiz-opt w-100 mb-2"
+                                                                                onclick="nextQuizStep(4, 20)">Cost
+                                                                                reduction & efficiency</button>
+                                                                        <button class="site-btn transparent quiz-opt w-100 mb-2"
+                                                                                onclick="nextQuizStep(4, 25)">Product
+                                                                                innovation & new features</button>
+                                                                        <button class="site-btn transparent quiz-opt w-100 mb-2"
+                                                                                onclick="nextQuizStep(4, 15)">Customer
+                                                                                support enhancement</button>
+                                                                </div>
+                                                        </div>
+
+                                                        <div id="quiz-step-4" class="quiz-step" style="display:none;">
+                                                                <h4 class="mb-30" style="color: #050a12;">4. How quickly
+                                                                        do you need to see ROI from AI?</h4>
+                                                                <div class="d-flex flex-column gap-3">
+                                                                        <button class="site-btn transparent quiz-opt w-100 mb-2"
+                                                                                onclick="finalizeQuiz(10)">Urgent (Under
+                                                                                3 months)</button>
+                                                                        <button class="site-btn transparent quiz-opt w-100 mb-2"
+                                                                                onclick="finalizeQuiz(20)">Standard
+                                                                                (6-12 months)</button>
+                                                                        <button class="site-btn transparent quiz-opt w-100 mb-2"
+                                                                                onclick="finalizeQuiz(15)">Strategic
+                                                                                (Long-term growth)</button>
+                                                                </div>
+                                                        </div>
+
+                                                        <div id="quiz-result" class="quiz-step" style="display:none;">
+                                                                <div class="result-circle mb-30"
+                                                                        style="width: 120px; height: 120px; border: 4px solid #086AD8; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                                                        <span id="ai-score" class="h2 mb-0"
+                                                                                style="color: #086AD8;">0%</span>
+                                                                </div>
+                                                                <h3 id="result-title" class="mb-20"
+                                                                        style="color: #050a12;">Your AI Readiness Score
+                                                                </h3>
+                                                                <p id="result-desc" class="mb-30" style="color: #666;">
+                                                                        Based on your answers, your business has a
+                                                                        strong foundation for AI integration.</p>
+                                                                <div class="buttons">
+                                                                        <a href="request-demo" class="site-btn">Get
+                                                                                Detailed Roadmap</a>
+                                                                        <button onclick="resetQuiz()"
+                                                                                class="site-btn transparent"
+                                                                                style="color: #050a12; border-color: #ddd;">Restart
+                                                                                Quiz</button>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <style>
+                                .quiz-opt {
+                                        display: flex !important;
+                                        align-items: center !important;
+                                        justify-content: center !important;
+                                        min-height: 80px !important;
+                                        background: #fff !important;
+                                        border: 1px solid #ddd !important;
+                                        transition: all 0.3s ease;
+                                        text-align: center !important;
+                                        padding: 15px 25px !important;
+                                        font-size: 16px !important;
+                                        color: #050a12 !important;
+                                        line-height: 1.4 !important;
+                                }
+
+                                .quiz-opt:hover {
+                                        background: #f0f7ff !important;
+                                        border-color: #086AD8 !important;
+                                        transform: translateY(-5px);
+                                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+                                        color: #086AD8 !important;
+                                }
+                        </style>
+
+                        <script nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">
+                                let totalScore = 0;
+                                function nextQuizStep(step, score) {
+                                        totalScore += score;
+                                        document.querySelectorAll('.quiz-step').forEach(el => el.style.display = 'none');
+                                        document.getElementById('quiz-step-' + step).style.display = 'block';
+                                }
+                                function finalizeQuiz(score) {
+                                        totalScore += score;
+                                        document.querySelectorAll('.quiz-step').forEach(el => el.style.display = 'none');
+                                        const resultDiv = document.getElementById('quiz-result');
+                                        resultDiv.style.display = 'block';
+
+                                        const finalPercent = Math.min(totalScore, 100);
+                                        document.getElementById('ai-score').innerText = finalPercent + '%';
+
+                                        let title = "Exploration Phase";
+                                        let desc = "You\'re in the early stages! We recommend starting with a data discovery workshop.";
+
+                                        if (finalPercent > 40 && finalPercent <= 70) {
+                                                title = "AI Foundation Ready";
+                                                desc = "You have good building blocks! It\'s time to implement a pilot project in automation.";
+                                        } else if (finalPercent > 70) {
+                                                title = "Elite AI Readiness";
+                                                desc = "Your infrastructure is prime for Generative AI and advanced machine learning models.";
+                                        }
+
+                                        document.getElementById('result-title').innerText = title;
+                                        document.getElementById('result-desc').innerText = desc;
+
+                                        if (typeof gtag === 'function') {
+                                                gtag('event', 'quiz_completed', { 'score': finalPercent });
+                                        }
+                                }
+                                function resetQuiz() {
+                                        totalScore = 0;
+                                        document.querySelectorAll('.quiz-step').forEach(el => el.style.display = 'none');
+                                        document.getElementById('quiz-step-1').style.display = 'block';
+                                }
+                        </script>
+                </section>
+                <!-- AI Readiness Quiz Area End -->
                 <!-- news-feed area start -->
                 <section class="news-feed-area grey-bg pt-100 pb-100">
                         <div class="container">
