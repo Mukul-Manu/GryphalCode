@@ -23,9 +23,6 @@ $meta_desc = "Build a high-performance food delivery platform with real-time tra
 $meta_keywords = "Food Delivery Application, GryphalCode Food Delivery Application, Food, Delivery, Application, IT company, software development, AI solutions, cloud infrastructure";
 ?>
 
-
-
-
   <?php include '../header.php'; ?>
 <main id="main-content">
   <!-- breadcrumb area start -->

@@ -6,7 +6,7 @@ $files = glob($detailsDir . '/*.php');
 foreach ($files as $file) {
     $slug = basename($file, '.php');
     $content = file_get_contents($file);
-    
+
     // Find the matching blog in JSON
     $author = 'Mukul';
     $date = date('F j, Y');

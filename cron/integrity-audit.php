@@ -15,7 +15,8 @@ if ($is_browser) {
 $root_dir = realpath(__DIR__ . '/..');
 $report_file = "$root_dir/cron/audit_report.txt";
 
-function logger($msg, $class = '') {
+function logger($msg, $class = '')
+{
     global $is_browser;
     if ($is_browser) {
         $cleanMsg = htmlspecialchars($msg);
@@ -35,7 +36,8 @@ logger("Audit Started: " . date('Y-m-d H:i:s'));
 $error_count = 0;
 foreach ($screens as $screen) {
     $filename = basename($screen);
-    if (preg_match('/header|footer|scripts|whatsapp|mail/', $filename)) continue;
+    if (preg_match('/header|footer|scripts|whatsapp|mail/', $filename))
+        continue;
 
     $content = file_get_contents($screen);
     $has_meta = preg_match('/meta.*description/is', $content) || preg_match('/\$meta_desc/is', $content);
@@ -44,7 +46,8 @@ foreach ($screens as $screen) {
     $has_h1 = preg_match('/<h1.*?>.*?<\/h1>/is', $content) || (basename($screen) === 'seo-engine.php');
 
     $status = (($has_meta || $is_engine) && ($has_schema || $is_engine) && $has_h1) ? "PASS" : "FAIL";
-    if ($status === "FAIL") $error_count++;
+    if ($status === "FAIL")
+        $error_count++;
 
     $class = ($status === "PASS") ? "status-pass" : "status-fail";
     logger("File: $filename | Status: $status", $class);

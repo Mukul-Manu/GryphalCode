@@ -11,31 +11,35 @@ $meta_keywords = "software development india, ai development india, cloud migrat
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
-<?php include_once 'seo-engine.php'; ?>
+  <?php include_once 'seo-engine.php'; ?>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.min.css?v=3">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.min.css?v=3">
 </head>
+
 <body>
-<?php include 'header.php'; ?>
-<main id="main-content">
-  <section class="pt-120 pb-100">
-    <div class="container">
-      <h1 class="mb-20">India-Focused AI, Cloud, and Software Engineering Services</h1>
-      <p class="mb-20">We work with Indian companies to launch and scale digital products through strong engineering, predictable delivery, and measurable ROI.</p>
-      <ul class="mb-30">
-        <li>Custom software for startups and enterprise modernization</li>
-        <li>AI integration and automation for operational efficiency</li>
-        <li>Cloud and DevOps workflows for reliable release velocity</li>
-      </ul>
-      <a href="<?= $base_url ?>/request-demo" class="site-btn">Book an India Strategy Call</a>
-    </div>
-  </section>
-</main>
-<?php include 'footer.php'; ?>
-<?php include 'whatsapp.php'; ?>
-<?php include 'global-scripts.php'; ?>
+  <?php include 'header.php'; ?>
+  <main id="main-content">
+    <section class="pt-120 pb-100">
+      <div class="container">
+        <h1 class="mb-20">India-Focused AI, Cloud, and Software Engineering Services</h1>
+        <p class="mb-20">We work with Indian companies to launch and scale digital products through strong engineering,
+          predictable delivery, and measurable ROI.</p>
+        <ul class="mb-30">
+          <li>Custom software for startups and enterprise modernization</li>
+          <li>AI integration and automation for operational efficiency</li>
+          <li>Cloud and DevOps workflows for reliable release velocity</li>
+        </ul>
+        <a href="<?= $base_url ?>/request-demo" class="site-btn">Book an India Strategy Call</a>
+      </div>
+    </section>
+  </main>
+  <?php include 'footer.php'; ?>
+  <?php include 'whatsapp.php'; ?>
+  <?php include 'global-scripts.php'; ?>
 </body>
+
 </html>

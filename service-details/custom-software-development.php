@@ -23,9 +23,6 @@ $meta_desc = "GryphalCode builds scalable, cloud-native applications tailored to
 $meta_keywords = "Custom Software Development, GryphalCode Custom Software Development, Custom, Software, Development, IT company, software development, AI solutions, cloud infrastructure";
 ?>
 
-
-
-
   <?php include '../header.php'; ?>
 <main id="main-content">
   <!-- breadcrumb area start -->

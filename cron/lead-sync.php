@@ -16,7 +16,8 @@ $root_dir = realpath(__DIR__ . '/..');
 $leads_file = "$root_dir/leads_backup.json";
 $perf_log = "$root_dir/cron/perf_log.txt";
 
-function logger($msg) {
+function logger($msg)
+{
     global $is_browser;
     if ($is_browser) {
         $cleanMsg = htmlspecialchars($msg);
@@ -27,7 +28,7 @@ function logger($msg) {
 
 // 1. Log Site Performance (Simulated CWV Check)
 $start_time = microtime(true);
-$content = @file_get_contents("http://localhost/GryphalCode/"); 
+$content = @file_get_contents("http://localhost/GryphalCode/");
 $end_time = microtime(true);
 $load_time = round(($end_time - $start_time) * 1000, 2);
 

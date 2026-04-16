@@ -14,7 +14,7 @@ if ($is_browser) {
 
 $syncKey = getenv('GRYPHAL_CRON_SYNC_KEY') ?: '';
 
-if (php_sapi_name() !== 'cli' && (empty($syncKey) || !hash_equals($syncKey, (string)($_GET['key'] ?? '')))) {
+if (php_sapi_name() !== 'cli' && (empty($syncKey) || !hash_equals($syncKey, (string) ($_GET['key'] ?? '')))) {
     header('HTTP/1.1 403 Forbidden');
     die("Access Denied: Please provide the security key.");
 }
@@ -22,7 +22,8 @@ if (php_sapi_name() !== 'cli' && (empty($syncKey) || !hash_equals($syncKey, (str
 $logFile = __DIR__ . '/../assets/seo/seo_fetch.log';
 $dataFile = __DIR__ . '/../assets/seo/daily_data.json';
 
-function logger($msg) {
+function logger($msg)
+{
     global $logFile, $is_browser;
     $timestamp = date('[Y-m-d H:i:s] ');
     file_put_contents($logFile, $timestamp . $msg . "\n", FILE_APPEND);
@@ -45,11 +46,11 @@ $data = [
 $trendsUrl = "https://trends.google.com/trends/api/dailytrends?hl=en-US&tz=-480&geo=US&ns=15";
 
 // Set a browser-like User-Agent to avoid being blocked
-$options =  [
+$options = [
     'http' => [
         'method' => "GET",
         'header' => "Accept-language: en\r\n" .
-                    "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\r\n"
+            "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\r\n"
     ]
 ];
 $context = stream_context_create($options);

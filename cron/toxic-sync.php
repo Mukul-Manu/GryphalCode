@@ -8,7 +8,7 @@
 $is_browser = (php_sapi_name() !== 'cli');
 $syncKey = getenv('GRYPHAL_CRON_SYNC_KEY') ?: '';
 
-if ($is_browser && (empty($syncKey) || !hash_equals($syncKey, (string)($_GET['key'] ?? '')))) {
+if ($is_browser && (empty($syncKey) || !hash_equals($syncKey, (string) ($_GET['key'] ?? '')))) {
     header('HTTP/1.1 403 Forbidden');
     die("Access Denied.");
 }
@@ -36,7 +36,7 @@ if ($rawList) {
     $domains = explode("\n", $rawList);
     $domains = array_map('trim', $domains);
     $domains = array_filter($domains); // Remove empty lines
-    
+
     // Save as JSON for fast PHP loading
     if (file_put_contents($cacheFile, json_encode(array_values($domains)))) {
         echo "Successfully synced " . count($domains) . " domains.\n";
@@ -48,4 +48,5 @@ if ($rawList) {
     echo "ERROR: Failed to fetch data from source.\n";
 }
 
-if ($is_browser) echo "</pre>";
+if ($is_browser)
+    echo "</pre>";

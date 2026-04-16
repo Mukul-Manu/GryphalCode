@@ -18,8 +18,9 @@ $meta_keywords = "Request Demo, GryphalCode Request Demo, Request, Demo, IT comp
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
- <head>
-<?php include_once 'seo-engine.php'; ?>
+
+<head>
+  <?php include_once 'seo-engine.php'; ?>
 
   <meta charset="utf-8" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
@@ -29,11 +30,14 @@ $meta_keywords = "Request Demo, GryphalCode Request Demo, Request, Demo, IT comp
   <link rel="preload" href="assets/images/logo/logo.webp" as="image" type="image/webp">
   <link rel="preload" href="assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
   <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
-  
+
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
-  <link href="https://www.googletagmanager.com" rel="preconnect" /><link href="https://www.google-analytics.com" rel="preconnect" /><link href="https://www.googletagmanager.com" rel="dns-prefetch" /><link href="https://www.google-analytics.com" rel="dns-prefetch" />
+  <link href="https://www.googletagmanager.com" rel="preconnect" />
+  <link href="https://www.google-analytics.com" rel="preconnect" />
+  <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
+  <link href="https://www.google-analytics.com" rel="dns-prefetch" />
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/font-awesome.min.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="assets/css/jquery-ui.min.css" media="print" onload="this.media='all'">
@@ -49,162 +53,173 @@ $meta_keywords = "Request Demo, GryphalCode Request Demo, Request, Demo, IT comp
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
 </head>
- <body>
+
+<body>
   <!-- header start -->
   <?php include 'header.php'; ?>
-<main id="main-content">
-  <!-- header end -->
-  <!-- breadcrumb area start -->
-  <section class="breadcrumb pt-150 pb-150 bg_img" data-background="assets/images/bg/breadcrumb-bg-1.webp" data-opacity="5" data-overlay="dark">
-   <div class="container">
-    <div class="row">
-     <div class="col-xl-12">
-      <div class="breadcrumb__wrap text-center">
-       <h1 class="title">
-        Request a Demo
-       </h1>
-       <div class="breadcrumb__nav">
-        <ul>
-         <li>
-          <a href="<?= $base_url ?>/">
-           Home
-          </a>
-         </li>
-         <li>
-          <span>
-           |
-          </span>
-         </li>
-         <li>
-          Request Demo
-         </li>
-        </ul>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- breadcrumb area end -->
-  <!-- contact area start -->
-  <section class="contact__area pt-100 pb-100">
-   <div class="container">
-    <div class="row justify-content-center">
-     <div class="col-xl-10">
-      <div class="text-center mb-50">
-       <h2 class="fw-bold mb-3 text-dark">
-        Experience the Power of Innovation
-       </h2>
-       <p class="lead text-muted">
-        Our product specialists will walk you through tailored solutions
-              designed to scale your operations, optimize performance, and
-              transform your business digitally.
-       </p>
-      </div>
-      <div class="contact__wrap pt-95 pb-95">
-       <div class="contact__form">
-        <form action="mail.php" aria-label="Request Demo Form" data-agent-action="submit-demo-request" id="contact-form" method="POST">
-         <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['csrf_token'], ENT_QUOTES) ?>" />
-         <input type="text" name="company_website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;" aria-hidden="true" />
-         <div class="row mt-none-30">
-          <div class="col-xl-6 mt-30">
-           <div class="form__group">
-            <label for="name">
-             Full Name
-             <i class="fal fa-user">
-             </i>
-            </label>
-            <input id="name" name="name" required="" type="text"/>
-           </div>
-          </div>
-          <div class="col-xl-6 mt-30">
-           <div class="form__group">
-            <label for="email">
-             Email Address
-             <i class="fal fa-envelope">
-             </i>
-            </label>
-            <input id="email" name="email" required="" type="email"/>
-           </div>
-          </div>
-          <div class="col-xl-6 mt-30">
-           <div class="form__group">
-            <label for="company">
-             Company
-             <i class="fal fa-building">
-             </i>
-            </label>
-            <input id="company" name="company" type="text"/>
-           </div>
-          </div>
-          <div class="col-xl-6 mt-30">
-           <div class="form__group">
-            <label for="tel">
-             Phone Number
-             <i class="fal fa-phone">
-             </i>
-            </label>
-            <input id="tel" name="phone" pattern="[0-9+\-\s]+" required="" type="tel"/>
-           </div>
-          </div>
-          <div class="col-xl-12 mt-30">
-           <div class="form__group">
-            <label for="message">
-             Message
-             <i class="fal fa-pen">
-             </i>
-            </label>
-            <textarea id="message" name="message" required="" rows="5"></textarea>
-           </div>
-          </div>
-          <div class="col-xl-12 mt-20">
-           <div class="form__group d-flex justify-content-center">
-            <div style="max-width: fit-content; text-align: left;">
-             <label for="privacy_consent" style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer; position: relative;">
-              <input id="privacy_consent" name="privacy_consent" required="" type="checkbox" value="1" style="width: 18px; height: 18px; margin: 0; margin-top: 3px; flex-shrink: 0;"/>
-              <span style="color: #666; font-size: 14px; line-height: 1.5;">
-               I agree to the processing of my information as per the 
-               <a href="<?= $base_url ?>/privacy-policy" style="color: #086AD8; text-decoration: underline; font-weight: 500;">Privacy Policy</a>.
-              </span>
-             </label>
+  <main id="main-content">
+    <!-- header end -->
+    <!-- breadcrumb area start -->
+    <section class="breadcrumb pt-150 pb-150 bg_img" data-background="assets/images/bg/breadcrumb-bg-1.webp"
+      data-opacity="5" data-overlay="dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="breadcrumb__wrap text-center">
+              <h1 class="title">
+                Request a Demo
+              </h1>
+              <div class="breadcrumb__nav">
+                <ul>
+                  <li>
+                    <a href="<?= $base_url ?>/">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <span>
+                      |
+                    </span>
+                  </li>
+                  <li>
+                    Request Demo
+                  </li>
+                </ul>
+              </div>
             </div>
-           </div>
           </div>
-          <div class="col-xl-12 mt-30 text-center">
-           <button class="site-btn" data-agent-label="Submit Demo Booking" type="submit">
-            Book Your Demo
-           </button>
-           <p class="ajax-response mt-15 text-white">
-           </p>
-          </div>
-         </div>
-        </form>
-       </div>
-       <!-- /.contact__form -->
+        </div>
       </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- contact area end -->
-  <section class="cta__area bg_img pt-80 pb-80 text-white text-center" data-background="assets/images/pattern/cta-bg.webp" data-opacity="7" data-overlay="dark">
-   <div class="container">
-    <h3 class="fw-bold mb-3">
-     Let's Build the Future Together
-    </h3>
-    <p>
-     Schedule a consultation with our experts to explore custom AI,
-        automation, or software development solutions for your business.
-    </p>
-    <a class="site-btn transparent mt-3" href="support">
-     Back to Support
-    </a>
-   </div>
-  </section>
+    </section>
+    <!-- breadcrumb area end -->
+    <!-- contact area start -->
+    <section class="contact__area pt-100 pb-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <div class="text-center mb-50">
+              <h2 class="fw-bold mb-3 text-dark">
+                Experience the Power of Innovation
+              </h2>
+              <p class="lead text-muted">
+                Our product specialists will walk you through tailored solutions
+                designed to scale your operations, optimize performance, and
+                transform your business digitally.
+              </p>
+            </div>
+            <div class="contact__wrap pt-95 pb-95">
+              <div class="contact__form">
+                <form action="mail.php" aria-label="Request Demo Form" data-agent-action="submit-demo-request"
+                  id="contact-form" method="POST">
+                  <input type="hidden" name="csrf_token"
+                    value="<?= htmlspecialchars($_SESSION['csrf_token'], ENT_QUOTES) ?>" />
+                  <input type="text" name="company_website" tabindex="-1" autocomplete="off"
+                    style="position:absolute;left:-9999px;" aria-hidden="true" />
+                  <div class="row mt-none-30">
+                    <div class="col-xl-6 mt-30">
+                      <div class="form__group">
+                        <label for="name">
+                          Full Name
+                          <i class="fal fa-user">
+                          </i>
+                        </label>
+                        <input id="name" name="name" required="" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-xl-6 mt-30">
+                      <div class="form__group">
+                        <label for="email">
+                          Email Address
+                          <i class="fal fa-envelope">
+                          </i>
+                        </label>
+                        <input id="email" name="email" required="" type="email" />
+                      </div>
+                    </div>
+                    <div class="col-xl-6 mt-30">
+                      <div class="form__group">
+                        <label for="company">
+                          Company
+                          <i class="fal fa-building">
+                          </i>
+                        </label>
+                        <input id="company" name="company" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-xl-6 mt-30">
+                      <div class="form__group">
+                        <label for="tel">
+                          Phone Number
+                          <i class="fal fa-phone">
+                          </i>
+                        </label>
+                        <input id="tel" name="phone" pattern="[0-9+\-\s]+" required="" type="tel" />
+                      </div>
+                    </div>
+                    <div class="col-xl-12 mt-30">
+                      <div class="form__group">
+                        <label for="message">
+                          Message
+                          <i class="fal fa-pen">
+                          </i>
+                        </label>
+                        <textarea id="message" name="message" required="" rows="5"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-xl-12 mt-20">
+                      <div class="form__group d-flex justify-content-center">
+                        <div style="max-width: fit-content; text-align: left;">
+                          <label for="privacy_consent"
+                            style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer; position: relative;">
+                            <input id="privacy_consent" name="privacy_consent" required="" type="checkbox" value="1"
+                              style="width: 18px; height: 18px; margin: 0; margin-top: 3px; flex-shrink: 0;" />
+                            <span style="color: #666; font-size: 14px; line-height: 1.5;">
+                              I agree to the processing of my information as per the
+                              <a href="<?= $base_url ?>/privacy-policy"
+                                style="color: #086AD8; text-decoration: underline; font-weight: 500;">Privacy
+                                Policy</a>.
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-12 mt-30 text-center">
+                      <button class="site-btn" data-agent-label="Submit Demo Booking" type="submit">
+                        Book Your Demo
+                      </button>
+                      <p class="ajax-response mt-15 text-white">
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- /.contact__form -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact area end -->
+    <section class="cta__area bg_img pt-80 pb-80 text-white text-center"
+      data-background="assets/images/pattern/cta-bg.webp" data-opacity="7" data-overlay="dark">
+      <div class="container">
+        <h3 class="fw-bold mb-3">
+          Let's Build the Future Together
+        </h3>
+        <p>
+          Schedule a consultation with our experts to explore custom AI,
+          automation, or software development solutions for your business.
+        </p>
+        <a class="site-btn transparent mt-3" href="support">
+          Back to Support
+        </a>
+      </div>
+    </section>
   </main>
-<?php include 'footer.php'; ?>
+  <?php include 'footer.php'; ?>
   <!-- All JS Scripts loaded via loader.js -->
   <?php include 'whatsapp.php'; ?>
-<?php include 'global-scripts.php'; ?>
- </body>
+  <?php include 'global-scripts.php'; ?>
+</body>
+
 </html>

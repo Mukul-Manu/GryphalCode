@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $landingPage = trim((string) ($_POST['landing_page'] ?? ''));
 
     $name = strip_tags($nameRaw);
-    $email   = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
     $phone = strip_tags($phoneRaw);
     $company = strip_tags($companyRaw);
     $subject = strip_tags($subjectRaw);
@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // 3. Prepare Email
-    $to      = "info@gryphalcode.com";
+    $to = "info@gryphalcode.com";
     $headers = "From: webmaster@gryphalcode.com\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
@@ -90,16 +90,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <p><strong>Phone:</strong> {$phone}</p>
     ";
 
-    if ($company) $email_body .= "<p><strong>Company:</strong> {$company}</p>";
-    if ($service) $email_body .= "<p><strong>Service:</strong> {$service}</p>";
-    if ($subject) $email_body .= "<p><strong>Subject:</strong> {$subject}</p>";
-    if ($landingPage) $email_body .= "<p><strong>Landing Page:</strong> {$landingPage}</p>";
+    if ($company)
+        $email_body .= "<p><strong>Company:</strong> {$company}</p>";
+    if ($service)
+        $email_body .= "<p><strong>Service:</strong> {$service}</p>";
+    if ($subject)
+        $email_body .= "<p><strong>Subject:</strong> {$subject}</p>";
+    if ($landingPage)
+        $email_body .= "<p><strong>Landing Page:</strong> {$landingPage}</p>";
     if ($utmSource || $utmMedium || $utmCampaign) {
         $email_body .= "<p><strong>Attribution:</strong> " . htmlspecialchars("source={$utmSource}, medium={$utmMedium}, campaign={$utmCampaign}, term={$utmTerm}, content={$utmContent}", ENT_QUOTES) . "</p>";
     }
 
     $email_body .= "
-    <p><strong>Message:</strong><br/>".nl2br($message)."</p>
+    <p><strong>Message:</strong><br/>" . nl2br($message) . "</p>
     <hr/>
     <p>This message was sent via the GryphalCode Lead Engine (Hardened 2026).</p>
     ";
@@ -107,13 +111,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 4. Persistence Layer: Local Lead Backup (Perfect 10 Resiliency)
     $lead_data = [
         'timestamp' => date('Y-m-d H:i:s'),
-        'name'      => $name,
-        'email'     => $email,
-        'phone'     => $phone,
-        'company'   => $company,
-        'service'   => $service,
-        'subject'   => $subject,
-        'message'   => $message,
+        'name' => $name,
+        'email' => $email,
+        'phone' => $phone,
+        'company' => $company,
+        'service' => $service,
+        'subject' => $subject,
+        'message' => $message,
         'landing_page' => $landingPage,
         'utm_source' => $utmSource,
         'utm_medium' => $utmMedium,
@@ -142,27 +146,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     // Audit Compliance for GET requests
     include_once 'seo-engine.php';
-?>
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-<head>
-    <style>
-        body { font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; background: #f4f7f6; }
-        .loader { text-align: center; color: #086AD8; }
-    </style>
-    <link rel="stylesheet" href="assets/css/style.min.css">
-</head>
-<body id="main-content">
-    <main class="loader" aria-label="Lead Processing Engine">
-        <h1 class="title">GryphalCode Lead Processor</h1>
-        <p>Redirecting to secure gateway...</p>
-        <img src="assets/images/logo/logo.webp" alt="GryphalCode Logo" loading="lazy" width="200" style="display:none;">
-        <a href="contact" style="display:none;">Return to Contact</a>
-        <script nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">setTimeout(() => { window.location.href = 'contact'; }, 2000);</script>
-    </main>
-</body>
-</html>
-<?php
+    ?>
+    <!DOCTYPE html>
+    <html class="no-js" lang="en">
+
+    <head>
+        <style>
+            body {
+                font-family: sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                background: #f4f7f6;
+            }
+
+            .loader {
+                text-align: center;
+                color: #086AD8;
+            }
+        </style>
+        <link rel="stylesheet" href="assets/css/style.min.css">
+    </head>
+
+    <body id="main-content">
+        <main class="loader" aria-label="Lead Processing Engine">
+            <h1 class="title">GryphalCode Lead Processor</h1>
+            <p>Redirecting to secure gateway...</p>
+            <img src="assets/images/logo/logo.webp" alt="GryphalCode Logo" loading="lazy" width="200" style="display:none;">
+            <a href="contact" style="display:none;">Return to Contact</a>
+            <script
+                nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">setTimeout(() => { window.location.href = 'contact'; }, 2000);</script>
+        </main>
+    </body>
+
+    </html>
+    <?php
     exit;
 }
 ?>

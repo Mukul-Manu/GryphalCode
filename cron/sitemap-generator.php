@@ -7,7 +7,7 @@
 $is_browser = (php_sapi_name() !== 'cli');
 $syncKey = getenv('GRYPHAL_CRON_SYNC_KEY') ?: '';
 
-if ($is_browser && (empty($syncKey) || !hash_equals($syncKey, (string)($_GET['key'] ?? '')))) {
+if ($is_browser && (empty($syncKey) || !hash_equals($syncKey, (string) ($_GET['key'] ?? '')))) {
     header('HTTP/1.1 403 Forbidden');
     die("Access Denied.");
 }
@@ -21,7 +21,8 @@ if ($is_browser) {
 $base_url = "https://gryphalcode.com";
 $root_dir = realpath(__DIR__ . '/..');
 
-function logger($msg) {
+function logger($msg)
+{
     global $is_browser;
     if ($is_browser) {
         $cleanMsg = htmlspecialchars($msg);

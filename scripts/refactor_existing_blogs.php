@@ -7,10 +7,12 @@
 $blogsJsonPath = __DIR__ . '/../data/blogs.json';
 $detailsDir = __DIR__ . '/../blog-details';
 
-if (!file_exists($blogsJsonPath)) die("blogs.json not found.\n");
+if (!file_exists($blogsJsonPath))
+    die("blogs.json not found.\n");
 
 $blogs = json_decode(file_get_contents($blogsJsonPath), true);
-if (!is_array($blogs)) die("Invalid blogs.json.\n");
+if (!is_array($blogs))
+    die("Invalid blogs.json.\n");
 
 // Force update all blogs for visual and SEO parity
 foreach ($blogs as &$post) {
@@ -24,9 +26,12 @@ foreach ($blogs as &$post) {
     $image_3 = $post['image_3'] ?? 'assets/images/blog/blog_cloud_security.png';
 
     // Ensure path consistency
-    if (strpos($image, '/') === false) $image = 'assets/images/blog/' . $image;
-    if (strpos($image_2, '/') === false) $image_2 = 'assets/images/blog/' . $image_2;
-    if (strpos($image_3, '/') === false) $image_3 = 'assets/images/blog/' . $image_3;
+    if (strpos($image, '/') === false)
+        $image = 'assets/images/blog/' . $image;
+    if (strpos($image_2, '/') === false)
+        $image_2 = 'assets/images/blog/' . $image_2;
+    if (strpos($image_3, '/') === false)
+        $image_3 = 'assets/images/blog/' . $image_3;
 
     $template = <<<HTML
 <?php

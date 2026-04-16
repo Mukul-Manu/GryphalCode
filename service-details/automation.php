@@ -23,9 +23,6 @@ $meta_desc = "Streamline your workflows with custom RPA solutions, AI-driven tri
 $meta_keywords = "Automation, GryphalCode Automation, Automation, IT company, software development, AI solutions, cloud infrastructure";
 ?>
 
-
-
-
   <!-- header start -->
   <?php include '../header.php'; ?>
 <main id="main-content">

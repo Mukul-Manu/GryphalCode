@@ -12,8 +12,9 @@ $meta_keywords = "Support, GryphalCode Support, Support, IT company, software de
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
- <head>
-<?php include_once 'seo-engine.php'; ?>
+
+<head>
+  <?php include_once 'seo-engine.php'; ?>
 
   <meta charset="utf-8" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
@@ -23,11 +24,14 @@ $meta_keywords = "Support, GryphalCode Support, Support, IT company, software de
   <link rel="preload" href="assets/images/logo/logo.webp" as="image" type="image/webp">
   <link rel="preload" href="assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
   <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
-  
+
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
-  <link href="https://www.googletagmanager.com" rel="preconnect" /><link href="https://www.google-analytics.com" rel="preconnect" /><link href="https://www.googletagmanager.com" rel="dns-prefetch" /><link href="https://www.google-analytics.com" rel="dns-prefetch" />
+  <link href="https://www.googletagmanager.com" rel="preconnect" />
+  <link href="https://www.google-analytics.com" rel="preconnect" />
+  <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
+  <link href="https://www.google-analytics.com" rel="dns-prefetch" />
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/font-awesome.min.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="assets/css/jquery-ui.min.css" media="print" onload="this.media='all'">
@@ -43,104 +47,106 @@ $meta_keywords = "Support, GryphalCode Support, Support, IT company, software de
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
 </head>
- <body>
+
+<body>
   <!-- Header  -->
   <?php include 'header.php'; ?>
-<main id="main-content">
-  <!-- Breadcrumb -->
-  <section class="breadcrumb pt-150 pb-150 bg_img" data-background="assets/images/bg/breadcrumb-bg-1.webp" data-opacity="5" data-overlay="dark">
-   <div class="container">
-    <div class="row">
-     <div class="col-xl-12">
-      <div class="breadcrumb__wrap text-center">
-       <h1 class="title">
-        Customer Support
-       </h1>
-       <div class="breadcrumb__nav">
-        <ul>
-         <li>
-          <a href="<?= $base_url ?>/">
-           Home
+  <main id="main-content">
+    <!-- Breadcrumb -->
+    <section class="breadcrumb pt-150 pb-150 bg_img" data-background="assets/images/bg/breadcrumb-bg-1.webp"
+      data-opacity="5" data-overlay="dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="breadcrumb__wrap text-center">
+              <h1 class="title">
+                Customer Support
+              </h1>
+              <div class="breadcrumb__nav">
+                <ul>
+                  <li>
+                    <a href="<?= $base_url ?>/">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <span>
+                      |
+                    </span>
+                  </li>
+                  <li>
+                    Customer Support
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main content -->
+    <section class="pt-100 pb-100">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">
+          Your Success is Our Priority
+        </h2>
+        <p class="lead mb-5">
+          GryphalCode dedicated support team ensures smooth performance, quick
+          troubleshooting, and proactive system monitoring for your business
+          software and IT operations.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-4">
+              <i class="fal fa-clock fa-3x text-primary mb-3">
+              </i>
+              <h5>
+                24/7 Technical Assistance
+              </h5>
+              <p>
+                Access live chat and ticket-based support anytime, anywhere for
+                your mission-critical applications.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-4">
+              <i class="fal fa-user-tie fa-3x text-primary mb-3">
+              </i>
+              <h5>
+                Dedicated Account Manager
+              </h5>
+              <p>
+                Get a single point of contact who understands your projects,
+                goals, and SLA commitments.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-4">
+              <i class="fal fa-shield-check fa-3x text-primary mb-3">
+              </i>
+              <h5>
+                Security &amp; Reliability
+              </h5>
+              <p>
+                Enterprise-grade monitoring and response ensure your
+                infrastructure remains protected and compliant.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5">
+          <a class="site-btn" href="contact">
+            Contact Support
           </a>
-         </li>
-         <li>
-          <span>
-           |
-          </span>
-         </li>
-         <li>
-          Customer Support
-         </li>
-        </ul>
-       </div>
+          <a class="site-btn transparent ms-2" href="request-demo">
+            Request a Demo
+          </a>
+        </div>
       </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- Main content -->
-  <section class="pt-100 pb-100">
-   <div class="container text-center">
-    <h2 class="fw-bold mb-4">
-     Your Success is Our Priority
-    </h2>
-    <p class="lead mb-5">
-     GryphalCode dedicated support team ensures smooth performance, quick
-        troubleshooting, and proactive system monitoring for your business
-        software and IT operations.
-    </p>
-    <div class="row g-4">
-     <div class="col-md-4">
-      <div class="card h-100 border-0 shadow-sm p-4">
-       <i class="fal fa-clock fa-3x text-primary mb-3">
-       </i>
-       <h5>
-        24/7 Technical Assistance
-       </h5>
-       <p>
-        Access live chat and ticket-based support anytime, anywhere for
-              your mission-critical applications.
-       </p>
-      </div>
-     </div>
-     <div class="col-md-4">
-      <div class="card h-100 border-0 shadow-sm p-4">
-       <i class="fal fa-user-tie fa-3x text-primary mb-3">
-       </i>
-       <h5>
-        Dedicated Account Manager
-       </h5>
-       <p>
-        Get a single point of contact who understands your projects,
-              goals, and SLA commitments.
-       </p>
-      </div>
-     </div>
-     <div class="col-md-4">
-      <div class="card h-100 border-0 shadow-sm p-4">
-       <i class="fal fa-shield-check fa-3x text-primary mb-3">
-       </i>
-       <h5>
-        Security &amp; Reliability
-       </h5>
-       <p>
-        Enterprise-grade monitoring and response ensure your
-              infrastructure remains protected and compliant.
-       </p>
-      </div>
-     </div>
-    </div>
-    <div class="mt-5">
-     <a class="site-btn" href="contact">
-      Contact Support
-     </a>
-     <a class="site-btn transparent ms-2" href="request-demo">
-      Request a Demo
-     </a>
-    </div>
-   </div>
-  </section>
-  <!-- <section class="bg-light pt-80 pb-80">
+    </section>
+    <!-- <section class="bg-light pt-80 pb-80">
       <div class="container text-center">
         <h3 class="fw-bold mb-4">Trusted by 250+ Businesses Globally</h3>
         <p class="mb-5">
@@ -180,11 +186,12 @@ $meta_keywords = "Support, GryphalCode Support, Support, IT company, software de
         </div>
       </div>
     </section> -->
-  <!-- Footer will be injected here -->
+    <!-- Footer will be injected here -->
   </main>
-<?php include 'footer.php'; ?>
+  <?php include 'footer.php'; ?>
   <!-- All JS Scripts loaded via loader.js -->
   <?php include 'whatsapp.php'; ?>
-<?php include 'global-scripts.php'; ?>
- </body>
+  <?php include 'global-scripts.php'; ?>
+</body>
+
 </html>

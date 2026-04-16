@@ -23,9 +23,6 @@ $meta_desc = "Discover our proven agile delivery framework that ensures transpar
 $meta_keywords = "Process Delivery, GryphalCode Process Delivery, Process, Delivery, IT company, software development, AI solutions, cloud infrastructure";
 ?>
 
-
-
-
   <!-- header start -->
   <?php include '../header.php'; ?>
 <main id="main-content">

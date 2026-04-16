@@ -1,6 +1,5 @@
 <?php
 
-// Set CSRF token if session is already started elsewhere
 if (session_status() === PHP_SESSION_ACTIVE && empty($_SESSION['csrf_token'])) {
   $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
@@ -15,7 +14,6 @@ if (file_exists($cacheFile) && isset($_SERVER['HTTP_REFERER']) && !empty($_SERVE
   if ($referer) {
     $spamDomains = json_decode(file_get_contents($cacheFile), true);
     if (is_array($spamDomains)) {
-      // Check if referer domain or its parent exists in the spam list
       foreach ($spamDomains as $spam) {
         if (stripos($referer, $spam) !== false) {
           header('HTTP/1.1 403 Forbidden');

@@ -42,17 +42,9 @@ $meta_keywords = "html sitemap gryphalcode, all pages";
               <li><a href="<?= $base_url ?>/faq">FAQ</a></li>
               <li><a href="<?= $base_url ?>/careers">Careers</a></li>
               <li><a href="<?= $base_url ?>/why-choose">Why Choose</a></li>
-              <li><a href="<?= $base_url ?>/brand-knowledge">Brand Knowledge</a></li>
             </ul>
           </div>
           <div class="col-lg-4">
-            <h4>Regional Pages</h4>
-            <ul>
-              <li><a href="<?= $base_url ?>/services-india">Services India</a></li>
-              <li><a href="<?= $base_url ?>/services-uae">Services UAE</a></li>
-              <li><a href="<?= $base_url ?>/services-uk">Services UK</a></li>
-              <li><a href="<?= $base_url ?>/services-usa">Services USA</a></li>
-            </ul>
             <h4 class="mt-30">Service Details</h4>
             <ul>
               <li><a href="<?= $base_url ?>/service-details/custom-software-development">Custom Software</a></li>

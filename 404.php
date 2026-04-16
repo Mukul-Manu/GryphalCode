@@ -12,8 +12,9 @@ $meta_keywords = "404, GryphalCode 404, 404, IT company, software development, A
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
- <head>
-<?php include_once 'seo-engine.php'; ?>
+
+<head>
+  <?php include_once 'seo-engine.php'; ?>
 
   <meta charset="utf-8" />
   <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
@@ -24,18 +25,23 @@ $meta_keywords = "404, GryphalCode 404, 404, IT company, software development, A
   <link rel="preload" href="<?= $base_url ?>/assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
   <link rel="preload" href="<?= $base_url ?>/assets/css/bootstrap.min.css" as="style">
   <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
-  
+
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
-  <link href="https://www.googletagmanager.com" rel="preconnect" /><link href="https://www.google-analytics.com" rel="preconnect" /><link href="https://www.googletagmanager.com" rel="dns-prefetch" /><link href="https://www.google-analytics.com" rel="dns-prefetch" />
+  <link href="https://www.googletagmanager.com" rel="preconnect" />
+  <link href="https://www.google-analytics.com" rel="preconnect" />
+  <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
+  <link href="https://www.google-analytics.com" rel="dns-prefetch" />
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/font-awesome.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/font-awesome.min.css" media="print"
+    onload="this.media='all'">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/jquery-ui.min.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/lightcase.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/meanmenu.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/nice-select.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/owl.carousel.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/owl.carousel.min.css" media="print"
+    onload="this.media='all'">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/animate.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.min.css?v=3">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.min.css?v=3">
@@ -44,67 +50,70 @@ $meta_keywords = "404, GryphalCode 404, 404, IT company, software development, A
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
 </head>
- <body>
+
+<body>
   <?php include 'header.php'; ?>
-<main id="main-content">
-  <!-- breadcrumb area start -->
-  <section class="breadcrumb pt-150 pb-150 bg_img" data-background="assets/images/bg/breadcrumb-bg-1.webp" data-opacity="5" data-overlay="dark">
-   <div class="container">
-    <div class="row">
-     <div class="col-xl-12">
-      <div class="breadcrumb__wrap text-center">
-       <h1 class="title">
-        Page Not Found
-       </h1>
-       <div class="breadcrumb__nav">
-        <ul>
-         <li>
-          <a href="<?= $base_url ?>/">
-           Home
-          </a>
-         </li>
-         <li>
-          <span>
-           |
-          </span>
-         </li>
-         <li>
-          404
-         </li>
-        </ul>
-       </div>
+  <main id="main-content">
+    <!-- breadcrumb area start -->
+    <section class="breadcrumb pt-150 pb-150 bg_img" data-background="assets/images/bg/breadcrumb-bg-1.webp"
+      data-opacity="5" data-overlay="dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="breadcrumb__wrap text-center">
+              <h1 class="title">
+                Page Not Found
+              </h1>
+              <div class="breadcrumb__nav">
+                <ul>
+                  <li>
+                    <a href="<?= $base_url ?>/">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <span>
+                      |
+                    </span>
+                  </li>
+                  <li>
+                    404
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- breadcrumb area end -->
-  <section class="error-area pt-120 pb-120 text-center">
-   <div class="container">
-    <div class="row justify-content-center">
-     <div class="col-xl-8">
-      <div class="error-content">
-       <h2 style="font-size: 150px; font-weight: 900; color: #086AD8; line-height: 1;">
-        404
-       </h2>
-       <h2 class="mt-40 mb-30">
-        Page Not Found
-       </h2>
-       <p class="mb-40">
-        The page you are looking for might have been removed, had its name changed, or
-                            is temporarily unavailable.
-       </p>
-       <a class="site-btn" href="<?= $base_url ?>">
-        Back to Home
-       </a>
+    </section>
+    <!-- breadcrumb area end -->
+    <section class="error-area pt-120 pb-120 text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <div class="error-content">
+              <h2 style="font-size: 150px; font-weight: 900; color: #086AD8; line-height: 1;">
+                404
+              </h2>
+              <h2 class="mt-40 mb-30">
+                Page Not Found
+              </h2>
+              <p class="mb-40">
+                The page you are looking for might have been removed, had its name changed, or
+                is temporarily unavailable.
+              </p>
+              <a class="site-btn" href="<?= $base_url ?>">
+                Back to Home
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-     </div>
-    </div>
-   </div>
-  </section>
+    </section>
   </main>
-<?php include 'footer.php'; ?>
+  <?php include 'footer.php'; ?>
   <?php include 'whatsapp.php'; ?>
-<?php include 'global-scripts.php'; ?>
- </body>
+  <?php include 'global-scripts.php'; ?>
+</body>
+
 </html>

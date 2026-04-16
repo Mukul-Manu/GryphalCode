@@ -14,7 +14,8 @@ $authors = ["Mridhul", "Gowtham", "Karthi", "Rohith", "Hari"];
 $categories = ["AI Strategy", "Cloud Security", "DevOps", "Machine Learning", "SEO / AI Search"];
 
 // Ensure directories exist
-if (!is_dir($detailsDir)) mkdir($detailsDir, 0755, true);
+if (!is_dir($detailsDir))
+    mkdir($detailsDir, 0755, true);
 
 // Randomize fields
 $randomAuthor = $authors[array_rand($authors)];
@@ -55,16 +56,20 @@ echo "Generating Detail Visualization...\n";
 $image3 = AiImageGenerator::generate($generatedTitle . " Architecture", $generatedSlug, '-det-seo');
 
 // Fallbacks
-if (!$mainImage) $mainImage = 'assets/images/blog/blog_devops_automation.png';
-if (!$image2) $image2 = 'assets/images/blog/blog_ai_integration.png';
-if (!$image3) $image3 = 'assets/images/blog/blog_cloud_security.png';
+if (!$mainImage)
+    $mainImage = 'assets/images/blog/blog_devops_automation.png';
+if (!$image2)
+    $image2 = 'assets/images/blog/blog_ai_integration.png';
+if (!$image3)
+    $image3 = 'assets/images/blog/blog_cloud_security.png';
 
 // 2. Step 1: Update the blogs.json manifest
 $blogs = [];
 if (file_exists($blogsJsonPath)) {
     $blogs = json_decode(file_get_contents($blogsJsonPath), true);
 }
-if (!is_array($blogs)) $blogs = [];
+if (!is_array($blogs))
+    $blogs = [];
 
 $newPostMeta = [
     "slug" => $generatedSlug,

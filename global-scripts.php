@@ -1,4 +1,6 @@
-<?php if(!isset($base_url)) { $base_url = '.'; } ?>
+<?php if (!isset($base_url)) {
+  $base_url = '.';
+} ?>
 <!--========= JS Shared Libraries =========-->
 <script defer src="<?= $base_url ?>/assets/js/jquery-2.2.4.min.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/bootstrap.min.js"></script>

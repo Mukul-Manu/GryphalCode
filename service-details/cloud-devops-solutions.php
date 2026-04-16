@@ -23,9 +23,6 @@ $meta_desc = "Optimize your infrastructure with automated CI/CD pipelines, Kuber
 $meta_keywords = "Cloud Devops Solutions, GryphalCode Cloud Devops Solutions, Cloud, Devops, Solutions, IT company, software development, AI solutions, cloud infrastructure";
 ?>
 
-
-
-
   <?php include '../header.php'; ?>
 <main id="main-content">
   <!-- breadcrumb area start -->

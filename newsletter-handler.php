@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (session_status() !== PHP_SESSION_ACTIVE) {
         session_start();
     }
-    $csrfToken = (string)($_POST['csrf_token'] ?? '');
+    $csrfToken = (string) ($_POST['csrf_token'] ?? '');
     if (empty($_SESSION['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $csrfToken)) {
         echo json_encode(['success' => false, 'message' => 'Invalid security token. Please refresh and try again.']);
         exit;
@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!is_dir(__DIR__ . '/assets/leads')) {
         mkdir(__DIR__ . '/assets/leads', 0755, true);
     }
-    
+
     $entry = date('Y-m-d H:i:s')
         . " - " . $email
         . " - IP: " . $clientIp

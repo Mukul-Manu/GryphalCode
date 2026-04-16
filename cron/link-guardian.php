@@ -8,7 +8,7 @@
 $is_browser = (php_sapi_name() !== 'cli');
 $syncKey = getenv('GRYPHAL_CRON_SYNC_KEY') ?: '';
 
-if ($is_browser && (empty($syncKey) || !hash_equals($syncKey, (string)($_GET['key'] ?? '')))) {
+if ($is_browser && (empty($syncKey) || !hash_equals($syncKey, (string) ($_GET['key'] ?? '')))) {
     header('HTTP/1.1 403 Forbidden');
     die("Access Denied.");
 }
@@ -16,21 +16,25 @@ if ($is_browser && (empty($syncKey) || !hash_equals($syncKey, (string)($_GET['ke
 // IT/Software Relevance Keywords (Allowlist heuristics)
 $relevanceKeywords = ['software', 'tech', 'code', 'dev', 'cloud', 'ai', 'data', 'it', 'engine', 'solutions', 'app', 'github', 'stackoverflow', 'microsoft', 'google', 'amazon', 'aws', 'azure'];
 
-function isRelevant($url) {
+function isRelevant($url)
+{
     $host = parse_url($url, PHP_URL_HOST);
-    if (!$host) return true; // Relative link
-    
+    if (!$host)
+        return true; // Relative link
+
     // Check hostname for keywords
     foreach ($GLOBALS['relevanceKeywords'] as $kw) {
-        if (stripos($host, $kw) !== false) return true;
+        if (stripos($host, $kw) !== false)
+            return true;
     }
-    
+
     // Check known safe domains
     $safeList = ['facebook.com', 'linkedin.com', 'instagram.com', 'twitter.com', 'x.com', 'youtube.com'];
     foreach ($safeList as $safe) {
-        if (stripos($host, $safe) !== false) return true;
+        if (stripos($host, $safe) !== false)
+            return true;
     }
-    
+
     return false;
 }
 
@@ -41,20 +45,21 @@ $screens = array_merge(
     glob("$root_dir/case-study-details/*.php")
 );
 
-if ($is_browser) echo "<h1>GryphalCode Link-Guardian</h1><pre>";
+if ($is_browser)
+    echo "<h1>GryphalCode Link-Guardian</h1><pre>";
 
 foreach ($screens as $screen) {
     $content = file_get_contents($screen);
     $original = $content;
-    
+
     // Regex to find all hrefs
     preg_match_all('/<a\b[^>]*href=["\'](http[s]?:\/\/.*?)["\'][^>]*>(.*?)<\/a>/is', $content, $matches, PREG_SET_ORDER);
-    
+
     $modified = false;
     foreach ($matches as $match) {
         $fullTag = $match[0];
         $url = $match[1];
-        
+
         if (!isRelevant($url)) {
             echo "Non-Relevant/Harmful link detected: $url in $screen\n";
             // Check if it already has nofollow
@@ -64,7 +69,7 @@ foreach ($screens as $screen) {
                 $modified = true;
                 echo " -> Action: Added rel='nofollow' (Neutered)\n";
             }
-            
+
             // If it's a known toxic/blacklisted domain, remove it entirely
             // (Assuming we check against our spam_domains.json)
             $spamFile = __DIR__ . '/../assets/security/spam_domains.json';
@@ -82,11 +87,12 @@ foreach ($screens as $screen) {
             }
         }
     }
-    
+
     if ($modified) {
         file_put_contents($screen, $content);
     }
 }
 
-if ($is_browser) echo "</pre>";
+if ($is_browser)
+    echo "</pre>";
 echo "Automatic Audit & Cleaning Complete: " . date('Y-m-d H:i:s') . "\n";
