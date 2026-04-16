@@ -279,7 +279,7 @@ if (!$isNoIndexPage && (in_array($requestPath, $faqTargetPaths, true) || $isServ
                 'name' => 'Do you provide global delivery for software and AI projects?',
                 'acceptedAnswer' => [
                     '@type' => 'Answer',
-                    'text' => 'Yes. GryphalCode supports global teams across India, UAE, UK, US, and remote-first organizations.'
+                    'text' => 'Yes. GryphalCode supports global teams across India, UAE, UK, US, Europe, and remote-first organizations.'
                 ]
             ],
             [
@@ -409,9 +409,9 @@ $headBlock .= "<meta name=\"answer-engine-optimization\" content=\"high-visibili
 $headBlock .= "<meta name=\"generative-engine-targeting\" content=\"AI Overviews, SGE, LLM-Search, OpenAI, Claude, Gemini\" />\n";
 $headBlock .= "<meta name=\"voice-search-optimization\" content=\"enabled\" />\n";
 $headBlock .= "<meta name=\"video-engine-optimization\" content=\"enabled\" />\n";
-$headBlock .= "<meta content=\"IN-TN, IN-KL\" name=\"geo.region\" />\n";
+$headBlock .= "<meta content=\"IN-TN, IN-KL, GB, DE, FR, EU\" name=\"geo.region\" />\n";
 $headBlock .= "<meta content=\"11.0168;76.9558\" name=\"geo.position\" />\n";
-$headBlock .= "<meta content=\"Coimbatore, Tamil Nadu, Kerala, India\" name=\"geo.placename\" />\n";
+$headBlock .= "<meta content=\"Coimbatore, Tamil Nadu, Kerala, India; Europe, United Kingdom\" name=\"geo.placename\" />\n";
 $headBlock .= "<meta content=\"11.0168, 76.9558\" name=\"ICBM\" />\n";
 
 // Open Graph & Twitter Card
