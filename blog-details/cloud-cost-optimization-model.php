@@ -59,7 +59,7 @@ $image_3 = $base_url . "/assets/images/blog/blog_cloud-cost-optimization-model_t
                     <div class="col-xl-6 col-lg-6 pr-55">
                         <div class="project-details__content">
                             <div class="thumb blog-hero-thumb mb-35">
-                                <img src="<?= $featured_image ?>" alt="Cloud Cost Optimization Model - Main Concept"
+                                <img alt="GryphalCode illustration" loading="lazy" src="<?= $featured_image ?>" alt="Cloud Cost Optimization Model - Main Concept"
                                     loading="lazy"
                                     style="width:100%; border-radius:16px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05);">
                             </div>
@@ -91,7 +91,7 @@ $image_3 = $base_url . "/assets/images/blog/blog_cloud-cost-optimization-model_t
                                     <div class="row mt-40">
                                         <div class="col-sm-6 mb-20">
                                             <div class="thumb gallery-thumb">
-                                                <img src="<?= $image_2 ?>"
+                                                <img alt="GryphalCode illustration" loading="lazy" src="<?= $image_2 ?>"
                                                     alt="Cloud Cost Optimization Model - Implementation Flow"
                                                     loading="lazy"
                                                     style="width:100%; border-radius:12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
@@ -99,7 +99,7 @@ $image_3 = $base_url . "/assets/images/blog/blog_cloud-cost-optimization-model_t
                                         </div>
                                         <div class="col-sm-6 mb-20">
                                             <div class="thumb gallery-thumb">
-                                                <img src="<?= $image_3 ?>"
+                                                <img alt="GryphalCode illustration" loading="lazy" src="<?= $image_3 ?>"
                                                     alt="Cloud Cost Optimization Model - Component Detail"
                                                     loading="lazy"
                                                     style="width:100%; border-radius:12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">

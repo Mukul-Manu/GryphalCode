@@ -177,7 +177,7 @@ if (!isset($GLOBALS['cspNonce'])) {
         <!-- Top: Logo + Close Button -->
         <div class="mobile-nav-header">
           <a href="<?= $base_url ?>">
-            <img src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="GryphalCode logo" width="130" height="36" />
+            <img alt="GryphalCode illustration" loading="lazy" src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="GryphalCode logo" width="130" height="36" />
           </a>
           <div class="mobile-nav-close" aria-label="Close menu">&times;</div>
         </div>
