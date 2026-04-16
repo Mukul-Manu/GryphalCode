@@ -101,6 +101,20 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* Hardened Global Mobile Nav Defaults */
+.gryphal-mobile-nav {
+  display: none !important;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+.gryphal-mobile-nav.active {
+  display: block !important;
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+}
+
 ul,
 ol {
   padding: 0;
@@ -10420,6 +10434,20 @@ input.form-control-sm {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@media (max-width: 767px) {
+  .modern-stats-container {
+    margin-top: 50px;
+  }
+  .ml-sm-30 {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .ml-sm-30 {
+    margin-left: 30px;
   }
 }
 

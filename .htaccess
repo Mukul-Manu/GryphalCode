@@ -7,30 +7,41 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
 RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:\d+)?$ [NC]
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
+# Redirect WWW to non-WWW
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
 # Redirect index.php and index to /
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index(\.php)? [NC]
 RewriteRule ^ / [R=301,L]
 
-
 # 1. Prevent directory listing
 Options -Indexes
 
-# 2. Normalize case-studies URL to canonical path
+# 2. Normalize case-studies URL
 RewriteRule ^case-studies/$ /case-studies [R=301,L]
 RewriteRule ^case-studies$ case-studies.php [L]
 
-# 3. Externally redirect any direct .php requests to the clean URL
+# 3. Externally redirect direct .php requests to clean URL (exclude common components)
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteCond %1 !^(header|footer|seo-engine|global-scripts|whatsapp|newsletter-handler|newsletter)$
 RewriteRule ^ %1 [R=301,L]
 
-# 4. Remove trailing slash from non-directory URLs (e.g., /about/ -> /about)
+# 4. Remove trailing slash
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} ^/(.*)/$
 RewriteRule ^ /%1 [R=301,L]
 
-# 5. Internally rewrite extensionless requests to .php files if they exist
+# 5. Clean URLs (Extensionless)
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# 5b. Fallback for XAMPP nested directories 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/GryphalCode/$1.php -f
 RewriteRule ^(.*)$ $1.php [L]
 # 6. Custom 404 Redirection
 ErrorDocument 404 /GryphalCode/404.php

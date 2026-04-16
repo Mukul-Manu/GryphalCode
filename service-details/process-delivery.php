@@ -1,52 +1,31 @@
 <?php
-header('X-Frame-Options: SAMEORIGIN');
-header('X-XSS-Protection: 1; mode=block');
-header('X-Content-Type-Options: nosniff');
-header('Referrer-Policy: strict-origin-when-cross-origin');
-header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
+header("X-Frame-Options: SAMEORIGIN");
+header("X-XSS-Protection: 1; mode=block");
+header("X-Content-Type-Options: nosniff");
+header("Referrer-Policy: strict-origin-when-cross-origin");
+header("Permissions-Policy: geolocation=(), microphone=(), camera=()");
+$base_url = "..";
 ?>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <?php include_once "../seo-engine.php"; ?>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+    <link rel="stylesheet" href="<?= $base_url ?>/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.css?v=3.5">
+    <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.css">
+</head>
+<body>
 <?php $base_url = '..';
 $page_title = "Agile Software Process & Delivery | GryphalCode";
 $meta_desc = "Discover our proven agile delivery framework that ensures transparent project management, rapid prototyping, and high-quality software releases. Serving Coimbatore, Tamil Nadu, and Kerala.";
 $meta_keywords = "Process Delivery, GryphalCode Process Delivery, Process, Delivery, IT company, software development, AI solutions, cloud infrastructure";
 ?>
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-<head>
-<?php include_once '../seo-engine.php'; ?>
- 
-  <!-- Official Google Pixel & Analytics Tracking (MEO) -->
-  
-  <meta charset="utf-8" />
-  <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="icon" sizes="192x192" type="image/webp" />
-  <link href="<?= $base_url ?>/assets/images/logo/favicon.webp" rel="apple-touch-icon" />
-  <meta content="ie=edge" http-equiv="x-ua-compatible" />
-  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-  <link rel="preload" href="<?= $base_url ?>/assets/images/logo/logo.webp" as="image" type="image/webp">
-  <link rel="preload" href="<?= $base_url ?>/assets/images/bg/breadcrumb-bg-1.webp" as="image" type="image/webp">
-  <link rel="preload" href="<?= $base_url ?>/assets/css/bootstrap.min.css" as="style">
-  <link rel="preload" href="<?= $base_url ?>/assets/css/style.min.css?v=3" as="style">
-  
-  <link href="https://fonts.googleapis.com" rel="preconnect" />
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-  <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
-  <link href="https://www.googletagmanager.com" rel="preconnect" /><link href="https://www.google-analytics.com" rel="preconnect" /><link href="https://www.googletagmanager.com" rel="dns-prefetch" /><link href="https://www.google-analytics.com" rel="dns-prefetch" />
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/font-awesome.min.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/jquery-ui.min.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/lightcase.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/meanmenu.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/nice-select.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/owl.carousel.min.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/animate.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.min.css?v=3">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.min.css?v=3">
-  <link href="/manifest.json" rel="manifest" />
-  <meta content="#086ad8" name="theme-color" />
-  <meta content="yes" name="apple-mobile-web-app-capable" />
-  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
-</head>
-<body>
+
+
+
+
   <!-- header start -->
   <?php include '../header.php'; ?>
 <main id="main-content">
@@ -63,19 +42,12 @@ $meta_keywords = "Process Delivery, GryphalCode Process Delivery, Process, Deliv
             </h1>
             <div class="breadcrumb__nav">
               <ul>
-                <li>
-                  <a href="../index">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <span>
-                    |
-                  </span>
-                </li>
-                <li>
-                  Process
-                </li>
+                <li><span>//</span></li>
+                <li><a href="<?= $base_url ?>/">Home</a></li>
+                <li>|</li>
+                <li><a href="<?= $base_url ?>/services">Services</a></li>
+                <li>|</li>
+                <li>Our Process</li>
               </ul>
             </div>
           </div>

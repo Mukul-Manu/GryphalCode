@@ -9,6 +9,16 @@ $cacheFile = __DIR__ . '/assets/seo/daily_data.json';
 $cache = [];
 $cspNonce = $GLOBALS['cspNonce'] ?? base64_encode(random_bytes(16));
 $GLOBALS['cspNonce'] = $cspNonce;
+
+// Robust base_url detection for site-wide stability (Handles subdirectories)
+if (!isset($base_url)) {
+    $script_path = $_SERVER['SCRIPT_NAME'];
+    // Detect folder depth relative to project root
+    $depth = substr_count(trim(str_replace('/GryphalCode/', '/', $script_path), '/'), '/');
+    $base_url = $depth > 0 ? str_repeat('../', $depth) : '.';
+    $base_url = rtrim($base_url, '/');
+}
+
 if (file_exists($cacheFile)) {
     $json = file_get_contents($cacheFile);
     $cache = json_decode($json, true);
@@ -186,27 +196,7 @@ if (strpos($_SERVER['REQUEST_URI'], 'blog-details') !== false) {
     ];
 }
 
-if ($requestPath === 'author-mukul' || $requestPath === 'author-mukul.php') {
-    $schemas[] = [
-        '@context' => 'https://schema.org',
-        '@type' => 'Person',
-        'name' => 'Mukul',
-        'jobTitle' => 'Founder and Growth Engineering Lead',
-        'worksFor' => [
-            '@type' => 'Organization',
-            'name' => 'GryphalCode',
-            'url' => 'https://gryphalcode.com'
-        ],
-        'url' => 'https://gryphalcode.com/author-mukul',
-        'knowsAbout' => [
-            'Generative AI',
-            'Cloud Architecture',
-            'DevOps Automation',
-            'Conversion Optimization',
-            'Technical SEO'
-        ]
-    ];
-}
+
 
 // 4. FAQ Schema for FAQ Page
 if ($requestPath === 'faq' || $requestPath === 'faq.php') {
@@ -389,6 +379,17 @@ foreach ($schemas as $s) {
 
 // Build the head block
 $headBlock = "<!-- 2026 SEO/AEO/AIO Engine (Hardened with Rich Snippets) -->\n";
+$headBlock .= "<meta charset=\"utf-8\" />\n";
+$headBlock .= "<meta content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" name=\"viewport\" />\n";
+$headBlock .= "<meta content=\"ie=edge\" http-equiv=\"x-ua-compatible\" />\n";
+$headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/bootstrap.min.css\">\n";
+$headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/style.min.css?v=3.1\">\n";
+$headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/responsive.min.css?v=3.1\">\n";
+$headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/seo-optimizations.css?v=20260415\">\n";
+$headBlock .= "<link rel=\"icon\" href=\"{$base_url}/assets/images/logo/favicon.webp\" sizes=\"192x192\" type=\"image/webp\" />\n";
+$headBlock .= "<link rel=\"apple-touch-icon\" href=\"{$base_url}/assets/images/logo/favicon.webp\" />\n";
+
+
 $headBlock .= "<title>{$pageTitle}</title>\n";
 $headBlock .= "<link rel=\"canonical\" href=\"{$canonicalUrl}\" />\n";
 $headBlock .= "<link rel=\"alternate\" hreflang=\"en\" href=\"{$canonicalUrl}\" />\n";
@@ -427,10 +428,11 @@ $headBlock .= "<meta name=\"twitter:description\" content=\"{$description}\" />\
 $headBlock .= "<meta name=\"twitter:image\" content=\"https://gryphalcode.com/assets/images/logo/logo.webp\" />\n";
 
 // Security & Analytics
-$headBlock .= "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self' https: data:; script-src 'self' 'nonce-{$cspNonce}' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://connect.facebook.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://trends.google.com https://news.google.com https://suggestqueries.google.com https://www.google-analytics.com https://region1.google-analytics.com https://www.clarity.ms; frame-src 'self' https://www.google.com https://www.googletagmanager.com\" />\n";
+// CSP disabled temporarily for local environment compatibility and emergency visibility restoration
+// $headBlock .= "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self' https: data: 'unsafe-inline'; script-src 'self' 'nonce-{$cspNonce}' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://connect.facebook.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://trends.google.com https://news.google.com https://suggestqueries.google.com https://www.google-analytics.com https://region1.google-analytics.com https://www.clarity.ms; frame-src 'self' https://www.google.com https://www.googletagmanager.com\" />\n";
 $headBlock .= "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n";
 $headBlock .= "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n";
-$headBlock .= "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css\">\n";
+$headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/font-awesome.min.css\">\n";
 $gaId = getenv('GRYPHAL_GA4_ID') ?: 'G-3J6X1HS36W';
 $adsId = getenv('GRYPHAL_ADS_ID') ?: '';
 $fbPixelId = getenv('GRYPHAL_FB_PIXEL_ID') ?: '';

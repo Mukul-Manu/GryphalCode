@@ -111,41 +111,8 @@
   setStickyVisibility();
   window.addEventListener('resize', setStickyVisibility);
 
-  // Engagement popup for exit-intent and idle users
-  if (!sessionStorage.getItem('gryphal_popup_shown')) {
-    const popup = document.createElement('div');
-    popup.id = 'gryphal-growth-popup';
-    popup.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.65);display:none;z-index:99999;align-items:center;justify-content:center;padding:16px;';
-    const variant = Math.random() < 0.5 ? 'A' : 'B';
-    const title = variant === 'A' ? 'Need faster growth and better conversions?' : 'Want more leads from your current traffic?';
-    const desc = variant === 'A'
-      ? 'Book a free strategy call and get a practical roadmap for traffic, leads, and sales.'
-      : 'Get a no-cost conversion review and discover quick wins for leads and sales.';
-    popup.innerHTML = '<div style="max-width:540px;width:100%;background:#fff;border-radius:12px;padding:24px;position:relative;">'
-      + '<button id="gryphal-close-popup" aria-label="Close popup" style="position:absolute;right:10px;top:10px;border:none;background:none;font-size:22px;cursor:pointer;">&times;</button>'
-      + '<h3 style="margin-bottom:10px;">' + title + '</h3>'
-      + '<p style="margin-bottom:18px;">' + desc + '</p>'
-      + '<div style="display:flex;gap:10px;flex-wrap:wrap;">'
-      + '<a href="<?= $base_url ?>/request-demo" class="site-btn" id="gryphal-popup-primary">Book Free Strategy Call</a>'
-      + '<a href="<?= $base_url ?>/contact" class="site-btn transparent" id="gryphal-popup-secondary">Talk to an Expert</a>'
-      + '</div></div>';
-    document.body.appendChild(popup);
-    gtag('event', 'growth_popup_variant', { variant });
-    const showPopup = () => {
-      popup.style.display = 'flex';
-      sessionStorage.setItem('gryphal_popup_shown', '1');
-      gtag('event', 'growth_popup_view', { page_path: window.location.pathname });
-    };
-    setTimeout(showPopup, 35000);
-    document.addEventListener('mouseout', (e) => {
-      if (e.clientY <= 0 && !sessionStorage.getItem('gryphal_popup_shown')) showPopup();
-    });
-    popup.addEventListener('click', (e) => {
-      if (e.target.id === 'gryphal-growth-popup' || e.target.id === 'gryphal-close-popup') {
-        popup.style.display = 'none';
-      }
-    });
-  }
+  setStickyVisibility();
+  window.addEventListener('resize', setStickyVisibility);
 
   // Newsletter AJAX Handler
   const newsletterForm = document.getElementById('newsletter-form');

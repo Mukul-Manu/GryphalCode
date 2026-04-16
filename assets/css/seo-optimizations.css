@@ -18,6 +18,18 @@
     font-size: 14px;
     text-decoration: none;
 }
+.skip-nav:focus {
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+}
+:focus-visible {
+    outline: 3px solid #086AD8 !important;
+    outline-offset: 4px !important;
+    box-shadow: 0 0 10px rgba(8, 106, 216, 0.5) !important;
+}
+
 .header__top--social {
     padding-top: 10px;
 }

@@ -50,7 +50,6 @@ $rootPages = [
     '/terms-conditions' => ['changefreq' => 'monthly', 'priority' => '0.4'],
     '/editorial-policy' => ['changefreq' => 'monthly', 'priority' => '0.5'],
     '/brand-knowledge' => ['changefreq' => 'weekly', 'priority' => '0.7'],
-    '/author-mukul' => ['changefreq' => 'monthly', 'priority' => '0.6'],
     '/site-map' => ['changefreq' => 'weekly', 'priority' => '0.6'],
     '/services-india' => ['changefreq' => 'weekly', 'priority' => '0.8'],
     '/services-uae' => ['changefreq' => 'weekly', 'priority' => '0.8'],
@@ -79,18 +78,9 @@ $caseStudySlugs = [
     'whatsapp-business-crm'
 ];
 
-$blogSlugs = [
-    'enterprise-generative-ai-integration',
-    'zero-trust-cloud-security',
-    'next-gen-devops-automation',
-    'enterprise-ai-roadmap-2026',
-    'ai-copilot-rollout-framework',
-    'cloud-cost-optimization-model',
-    'technical-seo-for-ai-overviews',
-    'conversion-tracking-for-b2b-websites',
-    'security-hardening-sprint-plan',
-    'llm-ready-content-architecture'
-];
+$blogsJson = json_decode(file_get_contents(__DIR__ . '/../data/blogs.json'), true);
+$blogSlugs = is_array($blogsJson) ? array_column($blogsJson, 'slug') : [];
+
 
 foreach ($rootPages as $path => $meta) {
     $loc = ($path === '/') ? "$base_url/" : "$base_url$path";

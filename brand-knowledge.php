@@ -59,7 +59,7 @@ $meta_keywords = "GryphalCode brand knowledge, GryphalCode company profile, Gryp
         <li><a href="<?= $base_url ?>/services">Service Portfolio</a></li>
         <li><a href="<?= $base_url ?>/case-studies">Case Studies</a></li>
         <li><a href="<?= $base_url ?>/editorial-policy">Editorial Policy</a></li>
-        <li><a href="<?= $base_url ?>/author-mukul">Author Profile: Mukul</a></li>
+        <li><a href="<?= $base_url ?>/site-map">HTML Sitemap: All Pages</a></li>
       </ul>
     </div>
   </section>

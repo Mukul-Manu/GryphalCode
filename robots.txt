@@ -3,6 +3,7 @@ Allow: /
 Allow: /assets/
 Allow: /service-details/
 Allow: /case-study-details/
+Allow: /blog-details/
 Disallow: /cron/
 Disallow: /admin/
 Disallow: /temp/
