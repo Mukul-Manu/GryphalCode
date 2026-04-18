@@ -382,12 +382,19 @@ $headBlock = "<!-- 2026 SEO/AEO/AIO Engine (Hardened with Rich Snippets) -->\n";
 $headBlock .= "<meta charset=\"utf-8\" />\n";
 $headBlock .= "<meta content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" name=\"viewport\" />\n";
 $headBlock .= "<meta content=\"ie=edge\" http-equiv=\"x-ua-compatible\" />\n";
+$headBlock .= "<link rel=\"preload\" href=\"{$base_url}/assets/css/bootstrap.min.css\" as=\"style\">\n";
+$headBlock .= "<link rel=\"preload\" href=\"{$base_url}/assets/css/style.min.css?v=3.1\" as=\"style\">\n";
 $headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/bootstrap.min.css\">\n";
 $headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/style.min.css?v=3.1\">\n";
-$headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/responsive.min.css?v=3.1\">\n";
-$headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/seo-optimizations.css?v=20260415\">\n";
-$headBlock .= "<link rel=\"icon\" href=\"{$base_url}/assets/images/logo/favicon.webp\" sizes=\"192x192\" type=\"image/webp\" />\n";
-$headBlock .= "<link rel=\"apple-touch-icon\" href=\"{$base_url}/assets/images/logo/favicon.webp\" />\n";
+$headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/responsive.min.css?v=3.1\" media=\"print\" onload=\"this.media='all'\">\n";
+$headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/seo-optimizations.css?v=20260415\" media=\"print\" onload=\"this.media='all'\">\n";
+$headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/font-awesome.min.css\" media=\"print\" onload=\"this.media='all'\">\n";
+if (strpos($_SERVER['SCRIPT_NAME'], '/blog-details/') !== false) {
+    $headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/blog-details.css?v=6.0\">\n";
+}
+$headBlock .= "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n";
+$headBlock .= "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n";
+$headBlock .= "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap\">\n";
 
 
 $headBlock .= "<title>{$pageTitle}</title>\n";
@@ -437,20 +444,30 @@ $gaId = getenv('GRYPHAL_GA4_ID') ?: 'G-3J6X1HS36W';
 $adsId = getenv('GRYPHAL_ADS_ID') ?: '';
 $fbPixelId = getenv('GRYPHAL_FB_PIXEL_ID') ?: '';
 $gtmId = getenv('GRYPHAL_GTM_ID') ?: '';
-$headBlock .= "<!-- Google Consent Mode V2 & GTM DataLayer Initialization -->\n";
-$headBlock .= "<script async src=\"https://www.googletagmanager.com/gtag/js?id={$gaId}\"></script>\n";
+$headBlock .= "<!-- << Advanced Performance Hydration Engine (100/100 Target) >> -->\n";
 $headBlock .= "<script nonce=\"{$cspNonce}\">\n";
 $headBlock .= "  window.dataLayer = window.dataLayer || [];\n";
 $headBlock .= "  function gtag(){dataLayer.push(arguments);}\n";
-$headBlock .= "  gtag('consent', 'default', {\n";
-$headBlock .= "    'ad_storage': 'denied',\n";
-$headBlock .= "    'analytics_storage': 'denied'\n";
-$headBlock .= "  });\n";
 $headBlock .= "  gtag('js', new Date());\n";
 $headBlock .= "  gtag('config', '" . addslashes($gaId) . "');\n";
 if (!empty($adsId)) {
     $headBlock .= "  gtag('config', '" . addslashes($adsId) . "');\n";
 }
+$headBlock .= "  (function() {\n";
+$headBlock .= "    var scriptsInitialized = false;\n";
+$headBlock .= "    var initScripts = function() {\n";
+$headBlock .= "      if (scriptsInitialized) return;\n";
+$headBlock .= "      scriptsInitialized = true;\n";
+$headBlock .= "      var ga = document.createElement('script');\n";
+$headBlock .= "      ga.async = true;\n";
+$headBlock .= "      ga.src = 'https://www.googletagmanager.com/gtag/js?id=" . addslashes($gaId) . "';\n";
+$headBlock .= "      document.head.appendChild(ga);\n";
+$headBlock .= "    };\n";
+$headBlock .= "    ['mousedown', 'mousemove', 'keydown', 'scroll', 'touchstart'].forEach(function(e) {\n";
+$headBlock .= "      window.addEventListener(e, initScripts, { once: true, passive: true });\n";
+$headBlock .= "    });\n";
+$headBlock .= "    setTimeout(initScripts, 5000);\n";
+$headBlock .= "  })();\n";
 $headBlock .= "</script>\n";
 if (!empty($fbPixelId)) {
     $headBlock .= "<!-- Meta / Facebook Pixel Code -->\n";

@@ -23,6 +23,8 @@
       handleLoad();
     } else {
       $(window).on("load", handleLoad);
+      // Fallback: Clear preloader after 3 seconds anyway to avoid stuck UI
+      setTimeout(handleLoad, 3000);
     }
   }
   loader();
@@ -49,30 +51,89 @@
   */
 
   // Gryphal Premium Mobile Nav Logic
-  // Hamburger toggle (event delegation for reliability)
-  $(document).on('click', '.gryphal-nav-toggle', function(e) {
+  var scrollTopBeforeMenu = 0;
+
+  function isMobileMenuViewport() {
+    return window.matchMedia("(max-width: 991px)").matches;
+  }
+
+  function lockDocumentScroll() {
+    var $body = $("body");
+    var $html = $("html");
+    scrollTopBeforeMenu = window.pageYOffset || document.documentElement.scrollTop || 0;
+    $body.css("top", "-" + scrollTopBeforeMenu + "px");
+    $html.addClass("gryphal-nav-open");
+    $body.addClass("gryphal-nav-open");
+  }
+
+  function unlockDocumentScroll() {
+    var $body = $("body");
+    var $html = $("html");
+    $html.removeClass("gryphal-nav-open");
+    $body.removeClass("gryphal-nav-open");
+    $body.css("top", "");
+    window.scrollTo(0, scrollTopBeforeMenu);
+  }
+
+  function openMobileNav() {
+    if (!isMobileMenuViewport()) return;
+    $(".gryphal-nav-toggle").addClass("active").attr("aria-expanded", "true");
+    $(".gryphal-mobile-nav").addClass("active").attr("aria-hidden", "false");
+    lockDocumentScroll();
+  }
+
+  function closeMobileNav() {
+    $(".gryphal-nav-toggle").removeClass("active").attr("aria-expanded", "false");
+    $(".gryphal-mobile-nav").removeClass("active").attr("aria-hidden", "true");
+    unlockDocumentScroll();
+  }
+
+  $(document).on("click", ".gryphal-nav-toggle", function (e) {
     e.preventDefault();
-    $(this).toggleClass('active');
-    $('.gryphal-mobile-nav').toggleClass('active');
-    $('body, html').toggleClass('gryphal-nav-open');
+    if ($(".gryphal-mobile-nav").hasClass("active")) {
+      closeMobileNav();
+      return;
+    }
+    openMobileNav();
   });
 
   // Submenu dropdown toggle (the + box)
-  $(document).on('click', '.gryphal-mobile-nav .dropdown-toggle-btn', function(e) {
+  $(document).on("click", ".gryphal-mobile-nav .dropdown-toggle-btn", function (e) {
     e.preventDefault();
     e.stopPropagation();
-    var $li = $(this).closest('li.has-dropdown');
-    $li.toggleClass('open');
-    // Swap + / −
-    $(this).text($li.hasClass('open') ? '−' : '+');
+    var $li = $(this).closest("li.has-dropdown");
+    $li.toggleClass("open");
+    $(this).text($li.hasClass("open") ? "−" : "+");
   });
 
   // Close button (X circle) inside mobile nav
-  $(document).on('click', '.mobile-nav-close', function(e) {
+  $(document).on("click", ".mobile-nav-close", function (e) {
     e.preventDefault();
-    $('.gryphal-nav-toggle').removeClass('active');
-    $('.gryphal-mobile-nav').removeClass('active');
-    $('body, html').removeClass('gryphal-nav-open');
+    closeMobileNav();
+  });
+
+  // Close when tapping outside the panel in mobile view
+  $(document).on("click", function (e) {
+    var $mobileNav = $(".gryphal-mobile-nav");
+    if (
+      $mobileNav.hasClass("active") &&
+      !$(e.target).closest(".gryphal-mobile-nav, .gryphal-nav-toggle").length
+    ) {
+      closeMobileNav();
+    }
+  });
+
+  // ESC key close support and cleanup across orientation/viewport changes
+  $(document).on("keydown", function (e) {
+    if (e.key === "Escape" && $(".gryphal-mobile-nav").hasClass("active")) {
+      closeMobileNav();
+    }
+  });
+
+  $(window).on("resize orientationchange", function () {
+    if (!isMobileMenuViewport() && $(".gryphal-mobile-nav").hasClass("active")) {
+      closeMobileNav();
+    }
   });
 
   // testimonial carousel

@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 header('X-Frame-Options: SAMEORIGIN');
 header('X-XSS-Protection: 1; mode=block');
 header('X-Content-Type-Options: nosniff');
@@ -48,7 +50,9 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
 </head>
 
 <body>
-        <?php include 'header.php'; ?>
+  <?php
+  echo "<!-- XYZ_VERIFY_123 -->";
+  include 'header.php'; ?>
         <main id="main-content">
                 <!-- banner area start -->
                 <section class="banner__area pt-70 pb-135 bg_img" data-background="assets/images/bg/banner-bg-1.webp">
@@ -1324,7 +1328,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                 <!-- news-feed area end -->
         </main>
         <?php include 'footer.php'; ?>
-        <!-- All JS Scripts loaded via loader.js -->
+
         <?php include 'whatsapp.php'; ?>
         <?php include 'global-scripts.php'; ?>
 </body>

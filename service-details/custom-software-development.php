@@ -8,383 +8,389 @@ $base_url = "..";
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
-    <?php include_once "../seo-engine.php"; ?>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-    <link rel="stylesheet" href="<?= $base_url ?>/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.css?v=3.5">
-    <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.css">
+  <?php include_once "../seo-engine.php"; ?>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.css?v=3.5">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.css">
 </head>
+
 <body>
-<?php $base_url = '..';
-$page_title = "Custom Software Development | Full-Stack Web & Mobile Experts";
-$meta_desc = "GryphalCode builds scalable, cloud-native applications tailored to your business needs, specializing in modern tech stacks like React, Node.js, and Python. Serving Coimbatore, Tamil Nadu, and Kerala.";
-$meta_keywords = "Custom Software Development, GryphalCode Custom Software Development, Custom, Software, Development, IT company, software development, AI solutions, cloud infrastructure";
-?>
+  <?php $base_url = '..';
+  $page_title = "Custom Software Development | Full-Stack Web & Mobile Experts";
+  $meta_desc = "GryphalCode builds scalable, cloud-native applications tailored to your business needs, specializing in modern tech stacks like React, Node.js, and Python. Serving Coimbatore, Tamil Nadu, and Kerala.";
+  $meta_keywords = "Custom Software Development, GryphalCode Custom Software Development, Custom, Software, Development, IT company, software development, AI solutions, cloud infrastructure";
+  ?>
 
   <?php include '../header.php'; ?>
-<main id="main-content">
-  <!-- breadcrumb area start -->
-  <section class="breadcrumb pt-150 pb-150 bg_img" data-background="../assets/images/bg/breadcrumb-bg-1.webp"
-    data-opacity="5" data-overlay="dark">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12">
-          <div class="breadcrumb__wrap text-center">
-            <h1 class="title">
-              Custom Software
-            </h1>
-            <div class="breadcrumb__nav">
-              <ul>
-                <li><span>//</span></li>
-                <li><a href="<?= $base_url ?>/">Home</a></li>
-                <li>|</li>
-                <li><a href="<?= $base_url ?>/services">Services</a></li>
-                <li>|</li>
-                <li>Custom Software</li>
-              </ul>
+  <main id="main-content">
+    <!-- breadcrumb area start -->
+    <section class="breadcrumb pt-150 pb-150 bg_img" data-background="../assets/images/bg/breadcrumb-bg-1.webp"
+      data-opacity="5" data-overlay="dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="breadcrumb__wrap text-center">
+              <h1 class="title">
+                Custom Software
+              </h1>
+              <div class="breadcrumb__nav">
+                <ul>
+                  <li><span>//</span></li>
+                  <li><a href="<?= $base_url ?>/">Home</a></li>
+                  <li>|</li>
+                  <li><a href="<?= $base_url ?>/services">Services</a></li>
+                  <li>|</li>
+                  <li>Custom Software</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- breadcrumb area end -->
-  <!-- main -->
-  <section class="about__area about__area--7 pt-100 pb-100">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-6 col-lg-6 pr-55">
-          <div class="service-preview-img">
-            <img alt="Custom Software Development Visualization"
-              src="../assets/images/service-previews/custom-software.webp"  loading="lazy">
+    </section>
+    <!-- breadcrumb area end -->
+    <!-- main -->
+    <section class="about__area about__area--7 pt-100 pb-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 pr-55">
+            <div class="service-preview-img">
+              <img alt="Custom Software Development Visualization"
+                src="../assets/images/service-previews/custom-software.webp" loading="lazy">
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 pl-20">
+            <div class="about__wrap about__wrap--4">
+              <div class="section__heading mb-35">
+                <h3 class="section__heading--title-small">
+                  <span class="mr-10">
+                    //
+                  </span>
+                  Custom Software
+                </h3>
+                <h2 class="section__heading--title">
+                  Scalable Architectures &amp; Microservices
+                  <br />
+                  Built for Growth
+                </h2>
+                <!-- Answer-First SEO Summary for 2026 AI Overviews (SGE) -->
+                <div class="sge-optimized-summary mb-35"
+                  style="border-left: 3px solid #086ad8; padding-left: 20px; margin-top: 25px;">
+                  <p style="font-size: 17px; color: #555; line-height: 1.6;">
+                    GryphalCode provides end-to-end <strong>Custom Software Development</strong>, specializing in
+                    scalable <strong>Cloud-Native Web Apps</strong>, <strong>Enterprise Microservices</strong>, and
+                    high-performance <strong>Mobile Engineering</strong>. Our agile-driven approach ensures rapid
+                    delivery of high-quality, growth-ready digital products.
+                  </p>
+                </div>
+                <div class="section__heading--content mt-20">
+                  <p>
+                    We engineer high-performance software from Cloud-Native Web Apps to complex Enterprise Systems
+                    designed to scale effortlessly with your business.
+                  </p>
+                </div>
+              </div>
+              <div class="row mt-none-20">
+                <div class="col-xl-6 mt-20">
+                  <ul class="service__box--lists">
+                    <li>
+                      <span class="icon">
+                        <i class="fal fa-check">
+                        </i>
+                      </span>
+                      Cloud-Native
+                      Web &amp; Mobile Apps
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <i class="fal fa-check">
+                        </i>
+                      </span>
+                      Microservices &amp; API Integration
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xl-6 mt-20">
+                  <ul class="service__box--lists">
+                    <li>
+                      <span class="icon">
+                        <i class="fal fa-check">
+                        </i>
+                      </span>
+                      System Modernization &amp; Migration
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <i class="fal fa-check">
+                        </i>
+                      </span>
+                      Support &amp; Managed Services
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a class="site-btn" href="../contact">
+                Get Started Now
+              </a>
+            </div>
           </div>
         </div>
-        <div class="col-xl-6 col-lg-6 pl-20">
-          <div class="about__wrap about__wrap--4">
-            <div class="section__heading mb-35">
+      </div>
+    </section>
+    <section class="service-area pb-95">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 text-center">
+            <div class="section__heading mb-60">
               <h3 class="section__heading--title-small">
                 <span class="mr-10">
                   //
                 </span>
-                Custom Software
+                Why Choose Us
+                <span class="ml-10">
+                  //
+                </span>
               </h3>
               <h2 class="section__heading--title">
-                Scalable Architectures &amp; Microservices
+                Software That Scales
                 <br />
-                Built for Growth
+                With Your Vision
+                <span>
+                  .
+                </span>
               </h2>
-              <!-- Answer-First SEO Summary for 2026 AI Overviews (SGE) -->
-              <div class="sge-optimized-summary mb-35" style="border-left: 3px solid #086ad8; padding-left: 20px; margin-top: 25px;">
-                <p style="font-size: 17px; color: #555; line-height: 1.6;">
-                  GryphalCode provides end-to-end <strong>Custom Software Development</strong>, specializing in scalable <strong>Cloud-Native Web Apps</strong>, <strong>Enterprise Microservices</strong>, and high-performance <strong>Mobile Engineering</strong>. Our agile-driven approach ensures rapid delivery of high-quality, growth-ready digital products.
-                </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-none-30">
+          <div class="col-xl-4 col-lg-6 mt-30">
+            <div class="service__box">
+              <div class="thumb mb-35">
+                <img alt="Web &amp; Mobile Apps Development"
+                  src="../assets/images/service-features/custom-software/feature-1.webp" loading="lazy">
               </div>
-              <div class="section__heading--content mt-20">
+              <div class="content">
+                <h2 class="title mb-15">
+                  Web &amp; Mobile Apps
+                </h2>
                 <p>
-                  We engineer high-performance software from Cloud-Native Web Apps to complex Enterprise Systems
-                  designed to scale effortlessly with your business.
+                  Performant, responsive, and intuitive applications built with React, Node.js, and React Native.
                 </p>
-              </div>
-            </div>
-            <div class="row mt-none-20">
-              <div class="col-xl-6 mt-20">
-                <ul class="service__box--lists">
+                <ul class="service__box--lists mt-45">
                   <li>
                     <span class="icon">
                       <i class="fal fa-check">
                       </i>
                     </span>
-                    Cloud-Native
-                    Web &amp; Mobile Apps
+                    Progressive Web Apps (PWA)
                   </li>
                   <li>
                     <span class="icon">
                       <i class="fal fa-check">
                       </i>
                     </span>
-                    Microservices &amp; API Integration
-                  </li>
-                </ul>
-              </div>
-              <div class="col-xl-6 mt-20">
-                <ul class="service__box--lists">
-                  <li>
-                    <span class="icon">
-                      <i class="fal fa-check">
-                      </i>
-                    </span>
-                    System Modernization &amp; Migration
+                    Cross-platform Mobile
                   </li>
                   <li>
                     <span class="icon">
                       <i class="fal fa-check">
                       </i>
                     </span>
-                    Support &amp; Managed Services
+                    Single Page Apps (SPA)
                   </li>
                 </ul>
               </div>
             </div>
-            <a class="site-btn" href="../contact">
-              Get Started Now
-            </a>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="service-area pb-95">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-7 text-center">
-          <div class="section__heading mb-60">
-            <h3 class="section__heading--title-small">
-              <span class="mr-10">
-                //
-              </span>
-              Why Choose Us
-              <span class="ml-10">
-                //
-              </span>
-            </h3>
-            <h2 class="section__heading--title">
-              Software That Scales
-              <br />
-              With Your Vision
-              <span>
-                .
-              </span>
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-none-30">
-        <div class="col-xl-4 col-lg-6 mt-30">
-          <div class="service__box">
-            <div class="thumb mb-35">
-              <img alt="Web &amp; Mobile Apps Development"
-                src="../assets/images/service-features/custom-software/feature-1.webp"  loading="lazy">
+          <div class="col-xl-4 col-lg-6 mt-30">
+            <div class="service__box">
+              <div class="thumb mb-35">
+                <img alt="Enterprise Systems Engineering"
+                  src="../assets/images/service-features/custom-software/feature-2.webp" loading="lazy">
+              </div>
+              <div class="content">
+                <h2 class="title mb-15">
+                  Enterprise Systems
+                </h2>
+                <p>
+                  Robust ERP, CRM, and internal tools designed to streamline complex business operations.
+                </p>
+                <ul class="service__box--lists mt-45">
+                  <li>
+                    <span class="icon">
+                      <i class="fal fa-check">
+                      </i>
+                    </span>
+                    Microservices Architecture
+                  </li>
+                  <li>
+                    <span class="icon">
+                      <i class="fal fa-check">
+                      </i>
+                    </span>
+                    Legacy Modernization
+                  </li>
+                  <li>
+                    <span class="icon">
+                      <i class="fal fa-check">
+                      </i>
+                    </span>
+                    Cloud-Native Solutions
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="content">
-              <h2 class="title mb-15">
-                Web &amp; Mobile Apps
+          </div>
+          <div class="col-xl-4 col-lg-6 mt-30">
+            <div class="service__box">
+              <div class="thumb mb-35">
+                <img alt="Product Engineering Solutions"
+                  src="../assets/images/service-features/custom-software/feature-3.webp" loading="lazy">
+              </div>
+              <div class="content">
+                <h2 class="title mb-15">
+                  Product Engineering
+                </h2>
+                <p>
+                  End-to-end product development from rapid prototyping to full-scale production launch.
+                </p>
+                <ul class="service__box--lists mt-45">
+                  <li>
+                    <span class="icon">
+                      <i class="fal fa-check">
+                      </i>
+                    </span>
+                    MVP Development
+                  </li>
+                  <li>
+                    <span class="icon">
+                      <i class="fal fa-check">
+                      </i>
+                    </span>
+                    UI/UX Design
+                  </li>
+                  <li>
+                    <span class="icon">
+                      <i class="fal fa-check">
+                      </i>
+                    </span>
+                    SaaS Development
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Process Section -->
+    <section class="process__area pt-100 pb-100 grey-bg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 text-center">
+            <div class="section__heading mb-60">
+              <h3 class="section__heading--title-small">
+                <span class="mr-10">
+                  //
+                </span>
+                Development Lifecycle
+                <span class="ml-10">
+                  //
+                </span>
+              </h3>
+              <h2 class="section__heading--title">
+                From Concept to
+                <br />
+                Code
+                <span>
+                  .
+                </span>
               </h2>
-              <p>
-                Performant, responsive, and intuitive applications built with React, Node.js, and React Native.
-              </p>
-              <ul class="service__box--lists mt-45">
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  Progressive Web Apps (PWA)
-                </li>
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  Cross-platform Mobile
-                </li>
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  Single Page Apps (SPA)
-                </li>
-              </ul>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-lg-6 mt-30">
-          <div class="service__box">
-            <div class="thumb mb-35">
-              <img alt="Enterprise Systems Engineering"
-                src="../assets/images/service-features/custom-software/feature-2.webp"  loading="lazy">
-            </div>
-            <div class="content">
-              <h2 class="title mb-15">
-                Enterprise Systems
-              </h2>
+        <div class="row mt-none-30">
+          <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
+            <div class="process__box text-center">
+              <div class="process__box--icon">
+                <i class="fal fa-lightbulb">
+                </i>
+                <span class="process__box--count">
+                  01
+                </span>
+              </div>
+              <h4 class="process__box--title">
+                Discovery
+              </h4>
               <p>
-                Robust ERP, CRM, and internal tools designed to streamline complex business operations.
+                Understanding your business goals and technical requirements.
               </p>
-              <ul class="service__box--lists mt-45">
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  Microservices Architecture
-                </li>
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  Legacy Modernization
-                </li>
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  Cloud-Native Solutions
-                </li>
-              </ul>
             </div>
           </div>
-        </div>
-        <div class="col-xl-4 col-lg-6 mt-30">
-          <div class="service__box">
-            <div class="thumb mb-35">
-              <img alt="Product Engineering Solutions"
-                src="../assets/images/service-features/custom-software/feature-3.webp"  loading="lazy">
-            </div>
-            <div class="content">
-              <h2 class="title mb-15">
-                Product Engineering
-              </h2>
+          <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
+            <div class="process__box text-center">
+              <div class="process__box--icon">
+                <i class="fal fa-pencil-ruler">
+                </i>
+                <span class="process__box--count">
+                  02
+                </span>
+              </div>
+              <h4 class="process__box--title">
+                Design
+              </h4>
               <p>
-                End-to-end product development from rapid prototyping to full-scale production launch.
+                Creating intuitive UI/UX and scalable system architecture.
               </p>
-              <ul class="service__box--lists mt-45">
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  MVP Development
-                </li>
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  UI/UX Design
-                </li>
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  SaaS Development
-                </li>
-              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
+            <div class="process__box text-center">
+              <div class="process__box--icon">
+                <i class="fal fa-code">
+                </i>
+                <span class="process__box--count">
+                  03
+                </span>
+              </div>
+              <h4 class="process__box--title">
+                Develop
+              </h4>
+              <p>
+                Agile development with regular sprints and feedback loops.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
+            <div class="process__box text-center">
+              <div class="process__box--icon">
+                <i class="fal fa-rocket">
+                </i>
+                <span class="process__box--count">
+                  04
+                </span>
+              </div>
+              <h4 class="process__box--title">
+                Launch
+              </h4>
+              <p>
+                Deployment, testing, and post-launch support &amp; maintenance.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Process Section -->
-  <section class="process__area pt-100 pb-100 grey-bg">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-7 text-center">
-          <div class="section__heading mb-60">
-            <h3 class="section__heading--title-small">
-              <span class="mr-10">
-                //
-              </span>
-              Development Lifecycle
-              <span class="ml-10">
-                //
-              </span>
-            </h3>
-            <h2 class="section__heading--title">
-              From Concept to
-              <br />
-              Code
-              <span>
-                .
-              </span>
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-none-30">
-        <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
-          <div class="process__box text-center">
-            <div class="process__box--icon">
-              <i class="fal fa-lightbulb">
-              </i>
-              <span class="process__box--count">
-                01
-              </span>
-            </div>
-            <h4 class="process__box--title">
-              Discovery
-            </h4>
-            <p>
-              Understanding your business goals and technical requirements.
-            </p>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
-          <div class="process__box text-center">
-            <div class="process__box--icon">
-              <i class="fal fa-pencil-ruler">
-              </i>
-              <span class="process__box--count">
-                02
-              </span>
-            </div>
-            <h4 class="process__box--title">
-              Design
-            </h4>
-            <p>
-              Creating intuitive UI/UX and scalable system architecture.
-            </p>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
-          <div class="process__box text-center">
-            <div class="process__box--icon">
-              <i class="fal fa-code">
-              </i>
-              <span class="process__box--count">
-                03
-              </span>
-            </div>
-            <h4 class="process__box--title">
-              Develop
-            </h4>
-            <p>
-              Agile development with regular sprints and feedback loops.
-            </p>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
-          <div class="process__box text-center">
-            <div class="process__box--icon">
-              <i class="fal fa-rocket">
-              </i>
-              <span class="process__box--count">
-                04
-              </span>
-            </div>
-            <h4 class="process__box--title">
-              Launch
-            </h4>
-            <p>
-              Deployment, testing, and post-launch support &amp; maintenance.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- footer (full template footer) -->
+    </section>
+    <!-- footer (full template footer) -->
   </main>
-<?php include '../footer.php'; ?>
-  <!-- All JS Scripts loaded via loader.js -->
+  <?php include '../footer.php'; ?>
+
   <?php include '../whatsapp.php'; ?>
-<?php include '../global-scripts.php'; ?>
+  <?php include '../global-scripts.php'; ?>
   <!-- footer helpers -->
   <script nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">
     (function () {
@@ -429,4 +435,5 @@ $meta_keywords = "Custom Software Development, GryphalCode Custom Software Devel
     })();
   </script>
 </body>
+
 </html>

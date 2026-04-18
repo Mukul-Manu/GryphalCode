@@ -230,7 +230,7 @@ $base_url = "..";
     <!-- footer area start -->
   </main>
   <?php include '../footer.php'; ?>
-  <!-- All JS Scripts loaded via loader.js -->
+
   <?php include '../whatsapp.php'; ?>
   <?php include '../global-scripts.php'; ?>
 </body>

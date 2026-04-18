@@ -276,7 +276,7 @@ $meta_keywords = "Privacy Policy, GryphalCode Privacy Policy, Privacy, Policy, I
           <!-- Footer include (unchanged) -->
      </main>
      <?php include 'footer.php'; ?>
-     <!-- All JS Scripts loaded via loader.js -->
+
      <?php include 'whatsapp.php'; ?>
      <?php include 'global-scripts.php'; ?>
 </body>

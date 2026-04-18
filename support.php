@@ -189,7 +189,7 @@ $meta_keywords = "Support, GryphalCode Support, Support, IT company, software de
     <!-- Footer will be injected here -->
   </main>
   <?php include 'footer.php'; ?>
-  <!-- All JS Scripts loaded via loader.js -->
+
   <?php include 'whatsapp.php'; ?>
   <?php include 'global-scripts.php'; ?>
 </body>

@@ -362,7 +362,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
     <!-- cta area end -->
   </main>
   <?php include 'footer.php'; ?>
-  <!-- All JS Scripts loaded via loader.js -->
+
   <?php include 'whatsapp.php'; ?>
   <?php include 'global-scripts.php'; ?>
 </body>

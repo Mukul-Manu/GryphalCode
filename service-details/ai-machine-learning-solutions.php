@@ -382,7 +382,7 @@ $base_url = "..";
     <!-- footer (same block) -->
   </main>
   <?php include '../footer.php'; ?>
-  <!-- All JS Scripts loaded via loader.js -->
+
   <?php include '../whatsapp.php'; ?>
   <?php include '../global-scripts.php'; ?>
   <script nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">

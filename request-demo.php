@@ -217,7 +217,7 @@ $meta_keywords = "Request Demo, GryphalCode Request Demo, Request, Demo, IT comp
     </section>
   </main>
   <?php include 'footer.php'; ?>
-  <!-- All JS Scripts loaded via loader.js -->
+
   <?php include 'whatsapp.php'; ?>
   <?php include 'global-scripts.php'; ?>
 </body>

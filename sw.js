@@ -1,41 +1,46 @@
-const CACHE_NAME = 'gryphalcode-pwa-v1';
+const CACHE_NAME = 'gryphalcode-v1';
 const ASSETS_TO_CACHE = [
   '/',
-  '/index.php',
-  '/assets/css/style.css',
-  '/assets/js/main.js',
-  '/assets/images/logo/favicon.webp',
-  '/assets/images/logo/logo.webp'
+  'index.php',
+  'about.php',
+  'services.php',
+  'contact.php',
+  'assets/css/bootstrap.min.css',
+  'assets/css/style.css',
+  'assets/css/responsive.css',
+  'assets/images/logo/logo.webp'
 ];
 
+// Install Event
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS_TO_CACHE))
+    caches.open(CACHE_NAME).then((cache) => {
+      console.log('SW: Caching App Shell');
+      return cache.addAll(ASSETS_TO_CACHE);
+    })
   );
-  self.skipWaiting();
 });
 
+// Activate Event
 self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then((keys) => Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k))))
+    caches.keys().then((keys) => {
+      return Promise.all(
+        keys.map((key) => {
+          if (key !== CACHE_NAME) {
+            return caches.delete(key);
+          }
+        })
+      );
+    })
   );
-  self.clients.claim();
 });
 
+// Fetch Event
 self.addEventListener('fetch', (event) => {
-  if (event.request.method !== 'GET') return;
   event.respondWith(
-    caches.match(event.request).then((cached) => {
-      const networked = fetch(event.request).then((res) => {
-        if (res && res.status === 200) {
-          const resCopy = res.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, resCopy));
-        }
-        return res;
-      }).catch(() => {
-        if (event.request.mode === 'navigate') return caches.match('/index.php');
-      });
-      return cached || networked;
+    caches.match(event.request).then((cachedResponse) => {
+      return cachedResponse || fetch(event.request);
     })
   );
 });

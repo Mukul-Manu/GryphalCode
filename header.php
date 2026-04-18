@@ -1,5 +1,20 @@
 <?php
-
+echo "<!-- HEADER_DEBUG_START -->";
+// Force-clear preloader fallback after 5 seconds to prevent UI lockup if JS dependencies fail
+echo "<script nonce=\"" . htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) . "\">
+  setTimeout(function() {
+    var p = document.getElementById('ctn-preloader');
+    var l = document.getElementById('loading');
+    if (p && !p.classList.contains('loaded')) {
+      p.classList.add('loaded');
+      if (l) {
+        l.style.transition = 'opacity 0.5s ease';
+        l.style.opacity = '0';
+        setTimeout(function() { l.style.display = 'none'; }, 500);
+      }
+    }
+  }, 4000);
+</script>";
 if (session_status() === PHP_SESSION_ACTIVE && empty($_SESSION['csrf_token'])) {
   $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
@@ -61,9 +76,6 @@ if (!isset($GLOBALS['cspNonce'])) {
   </div>
 </div>
 <!-- Preloader End -->
-
-<!-- Skip to main content link for accessibility -->
-<a class="skip-nav" href="#main-content">Skip to main content</a>
 
 <header class="header">
   <div class="header__top">
@@ -155,11 +167,11 @@ if (!isset($GLOBALS['cspNonce'])) {
               </ul>
             </nav>
             <!-- Custom Gryphal Mobile Trigger -->
-            <div class="gryphal-nav-toggle d-lg-none" aria-label="Toggle navigation">
+            <button type="button" class="gryphal-nav-toggle d-lg-none" aria-label="Open navigation menu" aria-controls="gryphal-mobile-nav" aria-expanded="false">
               <span></span>
               <span></span>
               <span></span>
-            </div>
+            </button>
           </div>
         </div>
         <div class="col-xl-3 col-lg-3 col-md-8 my-auto d-none d-xl-block d-lg-block">
@@ -171,7 +183,7 @@ if (!isset($GLOBALS['cspNonce'])) {
     </div>
 
     <!-- Mobile Navigation Panel (Full-screen slide-in) -->
-    <div class="gryphal-mobile-nav d-lg-none">
+    <div class="gryphal-mobile-nav d-lg-none" id="gryphal-mobile-nav" aria-hidden="true">
       <div class="gryphal-mobile-nav-inner">
 
         <!-- Top: Logo + Close Button -->
@@ -179,7 +191,7 @@ if (!isset($GLOBALS['cspNonce'])) {
           <a href="<?= $base_url ?>">
             <img alt="GryphalCode illustration" loading="lazy" src="<?= $base_url ?>/assets/images/logo/logo.webp" alt="GryphalCode logo" width="130" height="36" />
           </a>
-          <div class="mobile-nav-close" aria-label="Close menu">&times;</div>
+          <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
         </div>
 
         <!-- Menu Links -->

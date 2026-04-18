@@ -265,7 +265,7 @@ $meta_keywords = "Terms Conditions, GryphalCode Terms Conditions, Terms, Conditi
           <!-- keep footer/header includes same as before -->
      </main>
      <?php include 'footer.php'; ?>
-     <!-- All JS Scripts loaded via loader.js -->
+
      <?php include 'whatsapp.php'; ?>
      <?php include 'global-scripts.php'; ?>
 </body>

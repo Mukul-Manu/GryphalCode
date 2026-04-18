@@ -29,28 +29,28 @@ $base_url = "..";
   <main id="main-content">
     <!-- breadcrumb area start -->
     <section class="breadcrumb pt-150 pb-150 bg_img" data-background="../assets/images/bg/breadcrumb-bg-1.webp"
-    data-opacity="5" data-overlay="dark">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12">
-          <div class="breadcrumb__wrap text-center">
-            <h1 class="title">
-              API &amp; Automation
-            </h1>
-            <div class="breadcrumb__nav">
-              <ul>
-                <li><span>//</span></li>
-                <li><a href="<?= $base_url ?>/">Home</a></li>
-                <li>|</li>
-                <li><a href="<?= $base_url ?>/services">Services</a></li>
-                <li>|</li>
-                <li>API &amp; Automation</li>
-              </ul>
+      data-opacity="5" data-overlay="dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="breadcrumb__wrap text-center">
+              <h1 class="title">
+                API &amp; Automation
+              </h1>
+              <div class="breadcrumb__nav">
+                <ul>
+                  <li><span>//</span></li>
+                  <li><a href="<?= $base_url ?>/">Home</a></li>
+                  <li>|</li>
+                  <li><a href="<?= $base_url ?>/services">Services</a></li>
+                  <li>|</li>
+                  <li>API &amp; Automation</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </section>
     <!-- breadcrumb area end -->
     <!-- content -->
@@ -381,50 +381,50 @@ $base_url = "..";
     <!-- footer (same block) -->
   </main>
   <?php include '../footer.php'; ?>
-  <!-- All JS Scripts loaded via loader.js -->
+
   <?php include '../whatsapp.php'; ?>
   <?php include '../global-scripts.php'; ?>
   <script nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">
     (function () {
-         const toggles = document.querySele c torAll(
-    ".widget-collapsible .collapsible-toggle"
-  );
-    toggles.forEach((toggle) => {
-      const content = toggle.nextElementSibling;
-      const mq = window.matchMedia("(max-width: 991px)");
-      function updateInitial() {
-        if (mq.matches) {
-          content.hidden = true;
-          toggle.setAttribute("aria-expanded", "false");
-        } else {
-          content.hidden = false;
-          toggle.setAttribute("aria-expanded", "true");
+      const toggles = document.querySele c torAll(
+        ".widget-collapsible .collapsible-toggle"
+      );
+      toggles.forEach((toggle) => {
+        const content = toggle.nextElementSibling;
+        const mq = window.matchMedia("(max-width: 991px)");
+        function updateInitial() {
+          if (mq.matches) {
+            content.hidden = true;
+            toggle.setAttribute("aria-expanded", "false");
+          } else {
+            content.hidden = false;
+            toggle.setAttribute("aria-expanded", "true");
+          }
         }
-      }
-      updateInitial();
-      mq.addListener(updateInitial);
-      toggle.addEventListener("click", () => {
-        const expanded = toggle.getAttribute("aria-expanded") === "true";
-        toggle.setAttribute("aria-expanded", expanded ? "false" : "true");
-        if (content.hidden) {
-          content.hidden = false;
-          content.style.maxHeight = content.scrollHeight + "px";
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-          requestAnimationFrame(() => {
-            content.style.maxHeight = "0px";
-            setTimeout(() => (content.hidden = true), 300);
-          });
-        }
+        updateInitial();
+        mq.addListener(updateInitial);
+        toggle.addEventListener("click", () => {
+          const expanded = toggle.getAttribute("aria-expanded") === "true";
+          toggle.setAttribute("aria-expanded", expanded ? "false" : "true");
+          if (content.hidden) {
+            content.hidden = false;
+            content.style.maxHeight = content.scrollHeight + "px";
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            requestAnimationFrame(() => {
+              content.style.maxHeight = "0px";
+              setTimeout(() => (content.hidden = true), 300);
+            });
+          }
+        });
+        toggle.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            toggle.click();
+          }
+        });
       });
-      toggle.addEventListener("keydown", (e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          toggle.click();
-        }
-      });
-    });
-  }) ();
+    })();
   </script>
 </body>
 

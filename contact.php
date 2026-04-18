@@ -268,7 +268,7 @@ $meta_keywords = "Contact, GryphalCode Contact, Contact, IT company, software de
     <!-- ===== Footer Include ===== -->
   </main>
   <?php include 'footer.php'; ?>
-  <!-- All JS Scripts loaded via loader.js -->
+
   <?php include 'whatsapp.php'; ?>
   <?php include 'global-scripts.php'; ?>
 </body>

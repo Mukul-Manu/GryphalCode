@@ -168,6 +168,7 @@
 </script>
 
 <script nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">
+  /*
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('<?= $base_url ?>/sw.js').then(reg => {
@@ -177,4 +178,5 @@
       });
     });
   }
+  */
 </script>

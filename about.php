@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 header('X-Frame-Options: SAMEORIGIN');
 header('X-XSS-Protection: 1; mode=block');
 header('X-Content-Type-Options: nosniff');
@@ -463,7 +465,7 @@ $meta_keywords = "About, GryphalCode About, About, IT company, software developm
     <!-- timeline area end -->
   </main>
   <?php include 'footer.php'; ?>
-  <!-- All JS Scripts loaded via loader.js -->
+
   <?php include 'whatsapp.php'; ?>
   <?php include 'global-scripts.php'; ?>
 </body>

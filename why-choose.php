@@ -369,7 +369,7 @@ $meta_keywords = "Why Choose, GryphalCode Why Choose, Why, Choose, IT company, s
     <!-- cta area end -->
   </main>
   <?php include 'footer.php'; ?>
-  <!-- All JS Scripts loaded via loader.js -->
+
   <?php include 'whatsapp.php'; ?>
   <?php include 'global-scripts.php'; ?>
 </body>

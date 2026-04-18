@@ -781,7 +781,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
         <!-- cta area end -->
     </main>
     <?php include 'footer.php'; ?>
-    <!-- All JS Scripts loaded via loader.js -->
+
     <?php include 'whatsapp.php'; ?>
     <?php include 'global-scripts.php'; ?>
     <script nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">

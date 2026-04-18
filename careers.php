@@ -365,7 +365,7 @@ $meta_keywords = "Careers, GryphalCode Careers, Careers, IT company, software de
                 <!-- footer area start -->
         </main>
         <?php include 'footer.php'; ?>
-        <!-- All JS Scripts loaded via loader.js -->
+
         <?php include 'whatsapp.php'; ?>
         <?php include 'global-scripts.php'; ?>
 </body>

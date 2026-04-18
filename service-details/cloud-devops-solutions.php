@@ -8,375 +8,380 @@ $base_url = "..";
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
-    <?php include_once "../seo-engine.php"; ?>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-    <link rel="stylesheet" href="<?= $base_url ?>/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.css?v=3.5">
-    <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.css">
+  <?php include_once "../seo-engine.php"; ?>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.css?v=3.5">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.css">
 </head>
+
 <body>
-<?php $base_url = '..';
-$page_title = "Cloud & DevOps Solutions | Kubernetes & AWS Experts";
-$meta_desc = "Optimize your infrastructure with automated CI/CD pipelines, Kubernetes orchestration, and secure cloud migrations managed by GryphalCode experts. Serving Coimbatore, Tamil Nadu, and Kerala.";
-$meta_keywords = "Cloud Devops Solutions, GryphalCode Cloud Devops Solutions, Cloud, Devops, Solutions, IT company, software development, AI solutions, cloud infrastructure";
-?>
+  <?php $base_url = '..';
+  $page_title = "Cloud & DevOps Solutions | Kubernetes & AWS Experts";
+  $meta_desc = "Optimize your infrastructure with automated CI/CD pipelines, Kubernetes orchestration, and secure cloud migrations managed by GryphalCode experts. Serving Coimbatore, Tamil Nadu, and Kerala.";
+  $meta_keywords = "Cloud Devops Solutions, GryphalCode Cloud Devops Solutions, Cloud, Devops, Solutions, IT company, software development, AI solutions, cloud infrastructure";
+  ?>
 
   <?php include '../header.php'; ?>
-<main id="main-content">
-  <!-- breadcrumb area start -->
-  <section class="breadcrumb pt-150 pb-150 bg_img" data-background="../assets/images/bg/breadcrumb-bg-1.webp"
-    data-opacity="5" data-overlay="dark">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12">
-          <div class="breadcrumb__wrap text-center">
-            <h1 class="title">
-              Cloud &amp; DevOps
-            </h1>
-            <div class="breadcrumb__nav">
-              <ul>
-                <li><span>//</span></li>
-                <li><a href="<?= $base_url ?>/">Home</a></li>
-                <li>|</li>
-                <li><a href="<?= $base_url ?>/services">Services</a></li>
-                <li>|</li>
-                <li>Cloud &amp; DevOps</li>
-              </ul>
+  <main id="main-content">
+    <!-- breadcrumb area start -->
+    <section class="breadcrumb pt-150 pb-150 bg_img" data-background="../assets/images/bg/breadcrumb-bg-1.webp"
+      data-opacity="5" data-overlay="dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="breadcrumb__wrap text-center">
+              <h1 class="title">
+                Cloud &amp; DevOps
+              </h1>
+              <div class="breadcrumb__nav">
+                <ul>
+                  <li><span>//</span></li>
+                  <li><a href="<?= $base_url ?>/">Home</a></li>
+                  <li>|</li>
+                  <li><a href="<?= $base_url ?>/services">Services</a></li>
+                  <li>|</li>
+                  <li>Cloud &amp; DevOps</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- breadcrumb area end -->
-  <!-- content -->
-  <section class="about__area about__area--7 pt-100 pb-100">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-6 col-lg-6 pr-55">
-          <div class="service-preview-img">
-            <img alt="Cloud &amp; DevOps Solutions Visualization"
-              src="../assets/images/service-previews/cloud-devops.webp"  loading="lazy">
+    </section>
+    <!-- breadcrumb area end -->
+    <!-- content -->
+    <section class="about__area about__area--7 pt-100 pb-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 pr-55">
+            <div class="service-preview-img">
+              <img alt="Cloud &amp; DevOps Solutions Visualization"
+                src="../assets/images/service-previews/cloud-devops.webp" loading="lazy">
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 pl-20">
+            <div class="about__wrap about__wrap--4">
+              <div class="section__heading mb-35">
+                <h3 class="section__heading--title-small">
+                  <span class="mr-10">
+                    //
+                  </span>
+                  Cloud &amp; DevOps
+                </h3>
+                <h2 class="section__heading--title">
+                  Cloud-Native Infrastructure
+                  <br />
+                  &amp; Kubernetes Optimization
+                </h2>
+                <div class="section__heading--content mt-20">
+                  <p>
+                    We help you migrate, optimize, and operate resilient cloud
+                    platforms with automated delivery pipelines, Kubernetes, and
+                    Infrastructure as Code (IaC).
+                  </p>
+                </div>
+              </div>
+              <div class="row mt-none-20">
+                <div class="col-xl-6 mt-20">
+                  <ul class="service__box--lists">
+                    <li>
+                      <span class="icon">
+                        <i class="fal fa-check">
+                        </i>
+                      </span>
+                      Kubernetes &amp; Container Orchestration
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <i class="fal fa-check">
+                        </i>
+                      </span>
+                      DevSecOps &amp; CI/CD Pipelines
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xl-6 mt-20">
+                  <ul class="service__box--lists">
+                    <li>
+                      <span class="icon">
+                        <i class="fal fa-check">
+                        </i>
+                      </span>
+                      Infrastructure as Code (Terraform)
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <i class="fal fa-check">
+                        </i>
+                      </span>
+                      Monitoring &amp; Cost Optimization
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a class="site-btn" href="../contact">
+                Migrate to Cloud
+              </a>
+            </div>
           </div>
         </div>
-        <div class="col-xl-6 col-lg-6 pl-20">
-          <div class="about__wrap about__wrap--4">
-            <div class="section__heading mb-35">
+      </div>
+    </section>
+    <section class="service-area pb-95">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 text-center">
+            <div class="section__heading mb-60">
               <h3 class="section__heading--title-small">
                 <span class="mr-10">
                   //
                 </span>
-                Cloud &amp; DevOps
+                Why Choose Us
+                <span class="ml-10">
+                  //
+                </span>
               </h3>
               <h2 class="section__heading--title">
-                Cloud-Native Infrastructure
+                Scalable Infrastructure for
                 <br />
-                &amp; Kubernetes Optimization
+                Modern Apps
+                <span>
+                  .
+                </span>
               </h2>
-              <div class="section__heading--content mt-20">
+            </div>
+          </div>
+        </div>
+        <div class="row mt-none-30">
+          <div class="col-xl-4 col-lg-6 mt-30">
+            <div class="service__box">
+              <div class="thumb mb-35">
+                <img alt="3D Illustration" src="../assets/images/service-features/cloud-devops/feature-1.webp"
+                  loading="lazy">
+              </div>
+              <div class="content">
+                <h2 class="title mb-15">
+                  Resilient Cloud Architecture
+                </h2>
                 <p>
-                  We help you migrate, optimize, and operate resilient cloud
-                  platforms with automated delivery pipelines, Kubernetes, and
-                  Infrastructure as Code (IaC).
+                  Designing multi-zone, fault-tolerant infrastructure that meets
+                  availability and compliance goals.
                 </p>
-              </div>
-            </div>
-            <div class="row mt-none-20">
-              <div class="col-xl-6 mt-20">
-                <ul class="service__box--lists">
+                <ul class="service__box--lists mt-45">
                   <li>
                     <span class="icon">
                       <i class="fal fa-check">
                       </i>
                     </span>
-                    Kubernetes &amp; Container Orchestration
+                    Multi-region deployment
                   </li>
                   <li>
                     <span class="icon">
                       <i class="fal fa-check">
                       </i>
                     </span>
-                    DevSecOps &amp; CI/CD Pipelines
-                  </li>
-                </ul>
-              </div>
-              <div class="col-xl-6 mt-20">
-                <ul class="service__box--lists">
-                  <li>
-                    <span class="icon">
-                      <i class="fal fa-check">
-                      </i>
-                    </span>
-                    Infrastructure as Code (Terraform)
+                    Secure networking
                   </li>
                   <li>
                     <span class="icon">
                       <i class="fal fa-check">
                       </i>
                     </span>
-                    Monitoring &amp; Cost Optimization
+                    Auto-scaling
                   </li>
                 </ul>
               </div>
             </div>
-            <a class="site-btn" href="../contact">
-              Migrate to Cloud
-            </a>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="service-area pb-95">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-7 text-center">
-          <div class="section__heading mb-60">
-            <h3 class="section__heading--title-small">
-              <span class="mr-10">
-                //
-              </span>
-              Why Choose Us
-              <span class="ml-10">
-                //
-              </span>
-            </h3>
-            <h2 class="section__heading--title">
-              Scalable Infrastructure for
-              <br />
-              Modern Apps
-              <span>
-                .
-              </span>
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-none-30">
-        <div class="col-xl-4 col-lg-6 mt-30">
-          <div class="service__box">
-            <div class="thumb mb-35">
-              <img alt="3D Illustration" src="../assets/images/service-features/cloud-devops/feature-1.webp"  loading="lazy">
+          <div class="col-xl-4 col-lg-6 mt-30">
+            <div class="service__box">
+              <div class="thumb mb-35">
+                <img alt="3D Pipeline Illustration" src="../assets/images/service-features/cloud-devops/feature-2.webp"
+                  loading="lazy">
+              </div>
+              <div class="content">
+                <h2 class="title mb-15">
+                  Kubernetes &amp; Containers
+                </h2>
+                <p>
+                  Production-grade Kubernetes clusters managed with Helm charts, automated scaling, and self-healing.
+                </p>
+                <ul class="service__box--lists mt-45">
+                  <li>
+                    <span class="icon">
+                      <i class="fal fa-check">
+                      </i>
+                    </span>
+                    EKS / AKS / GKE
+                  </li>
+                  <li>
+                    <span class="icon">
+                      <i class="fal fa-check">
+                      </i>
+                    </span>
+                    Service Mesh
+                  </li>
+                  <li>
+                    <span class="icon">
+                      <i class="fal fa-check">
+                      </i>
+                    </span>
+                    Helm Charts
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="content">
-              <h2 class="title mb-15">
-                Resilient Cloud Architecture
+          </div>
+          <div class="col-xl-4 col-lg-6 mt-30">
+            <div class="service__box">
+              <div class="thumb mb-35">
+                <img alt="3D Security Illustration" src="../assets/images/service-features/cloud-devops/feature-3.webp"
+                  loading="lazy">
+              </div>
+              <div class="content">
+                <h2 class="title mb-15">
+                  IaC &amp; DevSecOps
+                </h2>
+                <p>
+                  Manage infrastructure as code using Terraform and embed security into every stage of the pipeline.
+                </p>
+                <ul class="service__box--lists mt-45">
+                  <li>
+                    <span class="icon">
+                      <i class="fal fa-check">
+                      </i>
+                    </span>
+                    Terraform / Ansible
+                  </li>
+                  <li>
+                    <span class="icon">
+                      <i class="fal fa-check">
+                      </i>
+                    </span>
+                    Security Scanning
+                  </li>
+                  <li>
+                    <span class="icon">
+                      <i class="fal fa-check">
+                      </i>
+                    </span>
+                    Compliance Automation
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Process Section -->
+    <section class="process__area pt-100 pb-100 grey-bg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 text-center">
+            <div class="section__heading mb-60">
+              <h3 class="section__heading--title-small">
+                <span class="mr-10">
+                  //
+                </span>
+                Implementation Process
+                <span class="ml-10">
+                  //
+                </span>
+              </h3>
+              <h2 class="section__heading--title">
+                Zero Downtime
+                <br />
+                Migration
+                <span>
+                  .
+                </span>
               </h2>
-              <p>
-                Designing multi-zone, fault-tolerant infrastructure that meets
-                availability and compliance goals.
-              </p>
-              <ul class="service__box--lists mt-45">
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  Multi-region deployment
-                </li>
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  Secure networking
-                </li>
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  Auto-scaling
-                </li>
-              </ul>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-lg-6 mt-30">
-          <div class="service__box">
-            <div class="thumb mb-35">
-              <img alt="3D Pipeline Illustration" src="../assets/images/service-features/cloud-devops/feature-2.webp"  loading="lazy">
-            </div>
-            <div class="content">
-              <h2 class="title mb-15">
-                Kubernetes &amp; Containers
-              </h2>
+        <div class="row mt-none-30">
+          <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
+            <div class="process__box text-center">
+              <div class="process__box--icon">
+                <i class="fal fa-search-dollar">
+                </i>
+                <span class="process__box--count">
+                  01
+                </span>
+              </div>
+              <h4 class="process__box--title">
+                Audit &amp; Strategy
+              </h4>
               <p>
-                Production-grade Kubernetes clusters managed with Helm charts, automated scaling, and self-healing.
+                Assessing current infrastructure and planning the cloud roadmap.
               </p>
-              <ul class="service__box--lists mt-45">
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  EKS / AKS / GKE
-                </li>
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  Service Mesh
-                </li>
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  Helm Charts
-                </li>
-              </ul>
             </div>
           </div>
-        </div>
-        <div class="col-xl-4 col-lg-6 mt-30">
-          <div class="service__box">
-            <div class="thumb mb-35">
-              <img alt="3D Security Illustration" src="../assets/images/service-features/cloud-devops/feature-3.webp"  loading="lazy">
-            </div>
-            <div class="content">
-              <h2 class="title mb-15">
-                IaC &amp; DevSecOps
-              </h2>
+          <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
+            <div class="process__box text-center">
+              <div class="process__box--icon">
+                <i class="fal fa-cloud-upload-alt">
+                </i>
+                <span class="process__box--count">
+                  02
+                </span>
+              </div>
+              <h4 class="process__box--title">
+                Migration
+              </h4>
               <p>
-                Manage infrastructure as code using Terraform and embed security into every stage of the pipeline.
+                Moving workloads to the cloud with minimal disruption.
               </p>
-              <ul class="service__box--lists mt-45">
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  Terraform / Ansible
-                </li>
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  Security Scanning
-                </li>
-                <li>
-                  <span class="icon">
-                    <i class="fal fa-check">
-                    </i>
-                  </span>
-                  Compliance Automation
-                </li>
-              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
+            <div class="process__box text-center">
+              <div class="process__box--icon">
+                <i class="fal fa-cogs">
+                </i>
+                <span class="process__box--count">
+                  03
+                </span>
+              </div>
+              <h4 class="process__box--title">
+                Automation
+              </h4>
+              <p>
+                Setting up CI/CD pipelines and Infrastructure as Code.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
+            <div class="process__box text-center">
+              <div class="process__box--icon">
+                <i class="fal fa-shield-alt">
+                </i>
+                <span class="process__box--count">
+                  04
+                </span>
+              </div>
+              <h4 class="process__box--title">
+                Monitor
+              </h4>
+              <p>
+                24/7 monitoring, security patching, and cost optimization.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Process Section -->
-  <section class="process__area pt-100 pb-100 grey-bg">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-7 text-center">
-          <div class="section__heading mb-60">
-            <h3 class="section__heading--title-small">
-              <span class="mr-10">
-                //
-              </span>
-              Implementation Process
-              <span class="ml-10">
-                //
-              </span>
-            </h3>
-            <h2 class="section__heading--title">
-              Zero Downtime
-              <br />
-              Migration
-              <span>
-                .
-              </span>
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-none-30">
-        <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
-          <div class="process__box text-center">
-            <div class="process__box--icon">
-              <i class="fal fa-search-dollar">
-              </i>
-              <span class="process__box--count">
-                01
-              </span>
-            </div>
-            <h4 class="process__box--title">
-              Audit &amp; Strategy
-            </h4>
-            <p>
-              Assessing current infrastructure and planning the cloud roadmap.
-            </p>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
-          <div class="process__box text-center">
-            <div class="process__box--icon">
-              <i class="fal fa-cloud-upload-alt">
-              </i>
-              <span class="process__box--count">
-                02
-              </span>
-            </div>
-            <h4 class="process__box--title">
-              Migration
-            </h4>
-            <p>
-              Moving workloads to the cloud with minimal disruption.
-            </p>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
-          <div class="process__box text-center">
-            <div class="process__box--icon">
-              <i class="fal fa-cogs">
-              </i>
-              <span class="process__box--count">
-                03
-              </span>
-            </div>
-            <h4 class="process__box--title">
-              Automation
-            </h4>
-            <p>
-              Setting up CI/CD pipelines and Infrastructure as Code.
-            </p>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-6 mt-30">
-          <div class="process__box text-center">
-            <div class="process__box--icon">
-              <i class="fal fa-shield-alt">
-              </i>
-              <span class="process__box--count">
-                04
-              </span>
-            </div>
-            <h4 class="process__box--title">
-              Monitor
-            </h4>
-            <p>
-              24/7 monitoring, security patching, and cost optimization.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- footer (same block) -->
+    </section>
+    <!-- footer (same block) -->
   </main>
-<?php include '../footer.php'; ?>
-  <!-- All JS Scripts loaded via loader.js -->
+  <?php include '../footer.php'; ?>
+
   <?php include '../whatsapp.php'; ?>
-<?php include '../global-scripts.php'; ?>
+  <?php include '../global-scripts.php'; ?>
   <script nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">
     (function () {
       const toggles = document.querySelectorAll(
@@ -420,4 +425,5 @@ $meta_keywords = "Cloud Devops Solutions, GryphalCode Cloud Devops Solutions, Cl
     })();
   </script>
 </body>
+
 </html>
