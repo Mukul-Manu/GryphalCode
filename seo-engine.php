@@ -383,13 +383,18 @@ $headBlock = "<!-- 2026 SEO/AEO/AIO Engine (Hardened with Rich Snippets) -->\n";
 $headBlock .= "<meta charset=\"utf-8\" />\n";
 $headBlock .= "<meta content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" name=\"viewport\" />\n";
 $headBlock .= "<meta content=\"ie=edge\" http-equiv=\"x-ua-compatible\" />\n";
-$headBlock .= "<link rel=\"preload\" href=\"{$base_url}/assets/css/bootstrap.min.css\" as=\"style\">\n";
-$headBlock .= "<link rel=\"preload\" href=\"{$base_url}/assets/css/style.min.css?v=3.1\" as=\"style\">\n";
-$headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/bootstrap.min.css\">\n";
-$headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/style.min.css?v=3.1\">\n";
-$headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/responsive.min.css?v=3.1\" media=\"print\" onload=\"this.media='all'\">\n";
+$injectCoreAssets = isset($GLOBALS['seoInjectCoreAssets']) ? (bool) $GLOBALS['seoInjectCoreAssets'] : false;
+if ($injectCoreAssets) {
+    $headBlock .= "<link rel=\"preload\" href=\"{$base_url}/assets/css/bootstrap.min.css\" as=\"style\">\n";
+    $headBlock .= "<link rel=\"preload\" href=\"{$base_url}/assets/css/style.min.css?v=3.1\" as=\"style\">\n";
+    $headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/bootstrap.min.css\">\n";
+    $headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/style.min.css?v=3.1\">\n";
+    $headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/responsive.min.css?v=3.1\" media=\"print\" onload=\"this.media='all'\">\n";
+}
 $headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/seo-optimizations.css?v=20260415\" media=\"print\" onload=\"this.media='all'\">\n";
-$headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/font-awesome.min.css\" media=\"print\" onload=\"this.media='all'\">\n";
+if ($injectCoreAssets) {
+    $headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/font-awesome.min.css\" media=\"print\" onload=\"this.media='all'\">\n";
+}
 if (strpos($_SERVER['SCRIPT_NAME'], '/blog-details/') !== false) {
     $headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/blog-details.css?v=6.0\">\n";
 }
@@ -438,9 +443,6 @@ $headBlock .= "<meta name=\"twitter:image\" content=\"https://gryphalcode.com/as
 // Security & Analytics
 // CSP disabled temporarily for local environment compatibility and emergency visibility restoration
 // $headBlock .= "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self' https: data: 'unsafe-inline'; script-src 'self' 'nonce-{$cspNonce}' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://connect.facebook.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://trends.google.com https://news.google.com https://suggestqueries.google.com https://www.google-analytics.com https://region1.google-analytics.com https://www.clarity.ms; frame-src 'self' https://www.google.com https://www.googletagmanager.com\" />\n";
-$headBlock .= "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n";
-$headBlock .= "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n";
-$headBlock .= "<link rel=\"stylesheet\" href=\"{$base_url}/assets/css/font-awesome.min.css\">\n";
 $gaId = getenv('GRYPHAL_GA4_ID') ?: 'G-3J6X1HS36W';
 $adsId = getenv('GRYPHAL_ADS_ID') ?: '';
 $fbPixelId = getenv('GRYPHAL_FB_PIXEL_ID') ?: '';

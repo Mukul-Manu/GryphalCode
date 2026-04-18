@@ -136,165 +136,177 @@
     }
   });
 
-  // testimonial carousel
-  $(".testimonials").owlCarousel({
-    items: 1,
-    loop: true,
-    smartSpeed: 800,
-    nav: false,
-    dots: true,
-    responsiveClass: true,
-  });
-
-  $(".testimonials__2").owlCarousel({
-    items: 3,
-    loop: true,
-    smartSpeed: 800,
-    nav: false,
-    dots: true,
-    responsiveClass: true,
-    center: true,
-    responsive: {
-      0: {
-        items: 1,
-        margin: 0,
-        center: false,
-      },
-      576: {
-        items: 1,
-        margin: 0,
-        center: false,
-      },
-      992: {
-        items: 2,
-        margin: 30,
-      },
-      1200: {
-        margin: 30,
-      },
-      1500: {
-        margin: 40,
-      },
-    },
-  });
-
-  $(".testimonials__3").owlCarousel({
-    items: 3,
-    loop: true,
-    smartSpeed: 800,
-    nav: false,
-    dots: true,
-    responsiveClass: true,
-    center: true,
-    responsive: {
-      0: {
-        items: 1,
-        margin: 0,
-        center: false,
-      },
-      576: {
-        items: 1,
-        margin: 0,
-        center: false,
-      },
-      992: {
-        items: 2,
-        margin: 30,
-      },
-      1500: {
-        margin: 30,
-      },
-    },
-  });
-
-  // team carousel
-  $(".team-carousel").owlCarousel({
-    items: 4,
-    loop: true,
-    smartSpeed: 800,
-    nav: true,
-    navText: [
-      "<i class='fal fa-arrow-left'></i>",
-      "<i class='fal fa-arrow-right'></i>",
-    ],
-    dots: false,
-    responsiveClass: true,
-    margin: 30,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      768: {
-        items: 2,
-      },
-      992: {
-        items: 3,
-      },
-      1200: {
-        items: 4,
-      },
-    },
-  });
-
-  // brand carousel
-  $(".brand__carousel").owlCarousel({
-    loop: true,
-    smartSpeed: 800,
-    nav: false,
-    dots: false,
-    responsiveClass: true,
-    margin: 30,
-    items: 5,
-    responsive: {
-      0: {
-        items: 1,
-        margin: 0,
-      },
-      768: {
-        items: 2,
-        margin: 0,
-      },
-      992: {
-        items: 3,
-      },
-      1200: {
-        items: 4,
-      },
-      1500: {
-        items: 5,
-      },
-    },
-  });
-
-  // bannerSlide
-  var slider = $(".bannerSlide");
-  slider.owlCarousel({
-    items: 1,
-    loop: true,
-    margin: 0,
-    smartSpeed: 800,
-    animateIn: "fadeIn",
-    animateOut: "fadeOut",
-    loop: true,
-    slideSpeed: 3000,
-    nav: true,
-    dots: false,
-    navText: [
-      "<i class='fal fa-arrow-left'></i>",
-      "<i class='fal fa-arrow-right'></i>",
-    ],
-    //autoplay: true,
-  });
-
-  slider.on("translate.owl.carousel", function () {
-    var layer = $("[data-animation]");
-    layer.each(function () {
-      var s_animation = $(this).data("animation");
-      $(this)
-        .removeClass("animated " + s_animation)
-        .css("opacity", "0");
+  if (typeof $.fn.owlCarousel !== "undefined") {
+    // testimonial carousel
+    $(".testimonials").owlCarousel({
+      items: 1,
+      loop: true,
+      smartSpeed: 800,
+      nav: false,
+      dots: true,
+      responsiveClass: true,
     });
-  });
+
+    $(".testimonials__2").owlCarousel({
+      items: 3,
+      loop: true,
+      smartSpeed: 800,
+      nav: false,
+      dots: true,
+      responsiveClass: true,
+      center: true,
+      responsive: {
+        0: {
+          items: 1,
+          margin: 0,
+          center: false,
+        },
+        576: {
+          items: 1,
+          margin: 0,
+          center: false,
+        },
+        992: {
+          items: 2,
+          margin: 30,
+        },
+        1200: {
+          margin: 30,
+        },
+        1500: {
+          margin: 40,
+        },
+      },
+    });
+
+    $(".testimonials__3").owlCarousel({
+      items: 3,
+      loop: true,
+      smartSpeed: 800,
+      nav: false,
+      dots: true,
+      responsiveClass: true,
+      center: true,
+      responsive: {
+        0: {
+          items: 1,
+          margin: 0,
+          center: false,
+        },
+        576: {
+          items: 1,
+          margin: 0,
+          center: false,
+        },
+        992: {
+          items: 2,
+          margin: 30,
+        },
+        1500: {
+          margin: 30,
+        },
+      },
+    });
+
+    // team carousel
+    $(".team-carousel").owlCarousel({
+      items: 4,
+      loop: true,
+      smartSpeed: 800,
+      nav: true,
+      navText: [
+        "<i class='fal fa-arrow-left'></i>",
+        "<i class='fal fa-arrow-right'></i>",
+      ],
+      dots: false,
+      responsiveClass: true,
+      margin: 30,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        768: {
+          items: 2,
+        },
+        992: {
+          items: 3,
+        },
+        1200: {
+          items: 4,
+        },
+      },
+    });
+
+    // brand carousel
+    $(".brand__carousel").owlCarousel({
+      loop: true,
+      smartSpeed: 800,
+      nav: false,
+      dots: false,
+      responsiveClass: true,
+      margin: 30,
+      items: 5,
+      responsive: {
+        0: {
+          items: 1,
+          margin: 0,
+        },
+        768: {
+          items: 2,
+          margin: 0,
+        },
+        992: {
+          items: 3,
+        },
+        1200: {
+          items: 4,
+        },
+        1500: {
+          items: 5,
+        },
+      },
+    });
+
+    // bannerSlide
+    var slider = $(".bannerSlide");
+    slider.owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 0,
+      smartSpeed: 800,
+      animateIn: "fadeIn",
+      animateOut: "fadeOut",
+      loop: true,
+      slideSpeed: 3000,
+      nav: true,
+      dots: false,
+      navText: [
+        "<i class='fal fa-arrow-left'></i>",
+        "<i class='fal fa-arrow-right'></i>",
+      ],
+      //autoplay: true,
+    });
+
+    slider.on("translate.owl.carousel", function () {
+      var layer = $("[data-animation]");
+      layer.each(function () {
+        var s_animation = $(this).data("animation");
+        $(this)
+          .removeClass("animated " + s_animation)
+          .css("opacity", "0");
+      });
+    });
+
+    slider.on("translated.owl.carousel", function () {
+      var layer = slider.find(".owl-item.active").find("[data-animation]");
+      layer.each(function () {
+        var s_animation = $(this).data("animation");
+        $(this)
+          .addClass("animated " + s_animation)
+          .css("opacity", "1");
+      });
+    });
+  }
 
   $("[data-delay]").each(function () {
     var animation_del = $(this).data("delay");
@@ -304,16 +316,6 @@
   $("[data-duration]").each(function () {
     var animation_dur = $(this).data("duration");
     $(this).css("animation-duration", animation_dur);
-  });
-
-  slider.on("translated.owl.carousel", function () {
-    var layer = slider.find(".owl-item.active").find("[data-animation]");
-    layer.each(function () {
-      var s_animation = $(this).data("animation");
-      $(this)
-        .addClass("animated " + s_animation)
-        .css("opacity", "1");
-    });
   });
 
   // Activate scroll to top
@@ -327,7 +329,9 @@
   });
 
   // Nice select
-  $("select").niceSelect();
+  if (typeof $.fn.niceSelect !== "undefined" && $("select").length) {
+    $("select").niceSelect();
+  }
 
   // offcanvas menu
   $(".menu-tigger").on("click", function () {
@@ -339,7 +343,7 @@
   });
 
   // circle-progress
-  if (typeof $.fn.knob != "undefined") {
+  if (typeof $.fn.knob !== "undefined" && typeof $.fn.appear !== "undefined") {
     $(".knob").each(function () {
       var $this = $(this),
         knobVal = $this.attr("data-rel");
@@ -410,10 +414,12 @@
   });
 
   // Activate lightcase
-  $("a[data-rel^=lightcase]").lightcase();
+  if (typeof $.fn.lightcase !== "undefined") {
+    $("a[data-rel^=lightcase]").lightcase();
+  }
 
   // js - tilt
-  if ($(".js-tilt").length) {
+  if (typeof $.fn.tilt !== "undefined" && $(".js-tilt").length) {
     $(".js-tilt").tilt();
   }
 
@@ -428,36 +434,42 @@
   });
 
   // Active Odometer Counter
-  $(".odometer").appear(function (e) {
-    var odo = $(".odometer");
-    odo.each(function () {
-      var countNumber = $(this).attr("data-count");
-      $(this).html(countNumber);
+  if (typeof $.fn.appear !== "undefined") {
+    $(".odometer").appear(function () {
+      var odo = $(".odometer");
+      odo.each(function () {
+        var countNumber = $(this).attr("data-count");
+        $(this).html(countNumber);
+      });
     });
-  });
+  }
 
   // Activate counter
-  $(".counter").countUp({
-    time: 1000,
-    delay: 10,
-  });
+  if (typeof $.fn.countUp !== "undefined") {
+    $(".counter").countUp({
+      time: 1000,
+      delay: 10,
+    });
+  }
 
   // postbox_gallery active
-  $(".post_gallery").owlCarousel({
-    items: 1,
-    loop: true,
-    smartSpeed: 800,
-    nav: false,
-    animateIn: "fadeIn",
-    animateOut: "fadeOut",
-    dots: false,
-    nav: true,
-    navText: [
-      "<i class='fal fa-arrow-left'></i>",
-      "<i class='fal fa-arrow-right'></i>",
-    ],
-    dots: false,
-  });
+  if (typeof $.fn.owlCarousel !== "undefined") {
+    $(".post_gallery").owlCarousel({
+      items: 1,
+      loop: true,
+      smartSpeed: 800,
+      nav: false,
+      animateIn: "fadeIn",
+      animateOut: "fadeOut",
+      dots: false,
+      nav: true,
+      navText: [
+        "<i class='fal fa-arrow-left'></i>",
+        "<i class='fal fa-arrow-right'></i>",
+      ],
+      dots: false,
+    });
+  }
 
   // map active
   function basicmap() {

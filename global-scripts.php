@@ -1,20 +1,32 @@
 <?php if (!isset($base_url)) {
   $base_url = '.';
-} ?>
+}
+$scriptName = strtolower(basename((string) ($_SERVER['SCRIPT_NAME'] ?? '')));
+$isHomePage = ($scriptName === 'index.php');
+$isWhyChoosePage = ($scriptName === 'why-choose.php');
+$needsOwl = $isHomePage;
+$needsCounterStack = ($isHomePage || $isWhyChoosePage);
+$needsWow = ($scriptName === 'services.php');
+$needsTilt = in_array($scriptName, ['index.php', 'about.php', 'services.php', 'why-choose.php'], true);
+?>
 <!--========= JS Shared Libraries =========-->
 <script defer src="<?= $base_url ?>/assets/js/jquery-2.2.4.min.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/bootstrap.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/jquery.meanmenu.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/jquery.nice-select.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/lightcase.min.js"></script>
+<?php if ($needsOwl): ?>
 <script defer src="<?= $base_url ?>/assets/js/owl.carousel.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/js_jquery.knob.min.js"></script>
+<?php endif; ?>
+<?php if ($needsCounterStack): ?>
 <script defer src="<?= $base_url ?>/assets/js/js_jquery.appear.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/tilt.jquery.min.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/counterup.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/circle-progress.min.js"></script>
-<script defer src="<?= $base_url ?>/assets/js/wow.min.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/waypoint.min.js"></script>
+<?php endif; ?>
+<?php if ($needsTilt): ?>
+<script defer src="<?= $base_url ?>/assets/js/tilt.jquery.min.js"></script>
+<?php endif; ?>
+<script defer src="<?= $base_url ?>/assets/js/circle-progress.min.js"></script>
+<?php if ($needsWow): ?>
+<script defer src="<?= $base_url ?>/assets/js/wow.min.js"></script>
+<?php endif; ?>
 <script defer src="<?= $base_url ?>/assets/js/seo-engine.min.js"></script>
 <script defer src="<?= $base_url ?>/assets/js/main.js"></script>
 
@@ -110,9 +122,6 @@
     const isMobile = window.matchMedia('(max-width: 767px)').matches;
     stickyMobileCta.style.display = isMobile ? 'block' : 'none';
   };
-  setStickyVisibility();
-  window.addEventListener('resize', setStickyVisibility);
-
   setStickyVisibility();
   window.addEventListener('resize', setStickyVisibility);
 
