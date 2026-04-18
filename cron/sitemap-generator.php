@@ -56,6 +56,7 @@ $rootPages = [
     '/services-uae' => ['changefreq' => 'weekly', 'priority' => '0.8'],
     '/services-uk' => ['changefreq' => 'weekly', 'priority' => '0.8'],
     '/services-usa' => ['changefreq' => 'weekly', 'priority' => '0.8'],
+    '/thank-you' => ['changefreq' => 'weekly', 'priority' => '0.5'],
 ];
 
 $serviceSlugs = [

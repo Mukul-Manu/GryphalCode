@@ -38,10 +38,17 @@ $meta_keywords = "html sitemap gryphalcode, all pages";
               <li><a href="<?= $base_url ?>/blog">Blog</a></li>
               <li><a href="<?= $base_url ?>/contact">Contact</a></li>
               <li><a href="<?= $base_url ?>/request-demo">Request Demo</a></li>
+              <li><a href="<?= $base_url ?>/thank-you">Thank You</a></li>
               <li><a href="<?= $base_url ?>/support">Support</a></li>
               <li><a href="<?= $base_url ?>/faq">FAQ</a></li>
               <li><a href="<?= $base_url ?>/careers">Careers</a></li>
               <li><a href="<?= $base_url ?>/why-choose">Why Choose</a></li>
+              <li><a href="<?= $base_url ?>/services-india">Services India</a></li>
+              <li><a href="<?= $base_url ?>/services-uae">Services UAE</a></li>
+              <li><a href="<?= $base_url ?>/services-uk">Services UK</a></li>
+              <li><a href="<?= $base_url ?>/services-usa">Services USA</a></li>
+              <li><a href="<?= $base_url ?>/brand-knowledge">Brand Knowledge</a></li>
+              <li><a href="<?= $base_url ?>/site-map">Site Map</a></li>
             </ul>
           </div>
           <div class="col-lg-4">
@@ -70,6 +77,8 @@ $meta_keywords = "html sitemap gryphalcode, all pages";
               <li class="mt-10"><strong>Latest Insights:</strong></li>
               <li><a href="<?= $base_url ?>/blog-details/enterprise-generative-ai-integration">Enterprise Generative
                   AI</a></li>
+              <li><a href="<?= $base_url ?>/blog-details/modern-devops-solutions-for-2026-1776313445">Modern DevOps
+                  Solutions for 2026</a></li>
               <li><a href="<?= $base_url ?>/blog-details/zero-trust-cloud-security">Zero Trust Cloud Security</a></li>
               <li><a href="<?= $base_url ?>/blog-details/next-gen-devops-automation">Next Gen DevOps Automation</a></li>
               <li><a href="<?= $base_url ?>/blog-details/enterprise-ai-roadmap-2026">Enterprise AI Roadmap 2026</a></li>

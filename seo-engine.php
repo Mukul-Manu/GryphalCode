@@ -238,18 +238,19 @@ if ($requestPath === 'blog' || $requestPath === 'blog.php') {
         '@type' => 'ItemList',
         'name' => 'Latest GryphalCode Insights',
         'itemListOrder' => 'https://schema.org/ItemListOrderDescending',
-        'numberOfItems' => 10,
+        'numberOfItems' => 11,
         'itemListElement' => [
-            ['@type' => 'ListItem', 'position' => 1, 'url' => 'https://gryphalcode.com/blog-details/enterprise-generative-ai-integration'],
-            ['@type' => 'ListItem', 'position' => 2, 'url' => 'https://gryphalcode.com/blog-details/zero-trust-cloud-security'],
-            ['@type' => 'ListItem', 'position' => 3, 'url' => 'https://gryphalcode.com/blog-details/next-gen-devops-automation'],
-            ['@type' => 'ListItem', 'position' => 4, 'url' => 'https://gryphalcode.com/blog-details/enterprise-ai-roadmap-2026'],
-            ['@type' => 'ListItem', 'position' => 5, 'url' => 'https://gryphalcode.com/blog-details/ai-copilot-rollout-framework'],
-            ['@type' => 'ListItem', 'position' => 6, 'url' => 'https://gryphalcode.com/blog-details/cloud-cost-optimization-model'],
-            ['@type' => 'ListItem', 'position' => 7, 'url' => 'https://gryphalcode.com/blog-details/technical-seo-for-ai-overviews'],
-            ['@type' => 'ListItem', 'position' => 8, 'url' => 'https://gryphalcode.com/blog-details/conversion-tracking-for-b2b-websites'],
-            ['@type' => 'ListItem', 'position' => 9, 'url' => 'https://gryphalcode.com/blog-details/security-hardening-sprint-plan'],
-            ['@type' => 'ListItem', 'position' => 10, 'url' => 'https://gryphalcode.com/blog-details/llm-ready-content-architecture']
+            ['@type' => 'ListItem', 'position' => 1, 'url' => 'https://gryphalcode.com/blog-details/modern-devops-solutions-for-2026-1776313445'],
+            ['@type' => 'ListItem', 'position' => 2, 'url' => 'https://gryphalcode.com/blog-details/enterprise-generative-ai-integration'],
+            ['@type' => 'ListItem', 'position' => 3, 'url' => 'https://gryphalcode.com/blog-details/zero-trust-cloud-security'],
+            ['@type' => 'ListItem', 'position' => 4, 'url' => 'https://gryphalcode.com/blog-details/next-gen-devops-automation'],
+            ['@type' => 'ListItem', 'position' => 5, 'url' => 'https://gryphalcode.com/blog-details/enterprise-ai-roadmap-2026'],
+            ['@type' => 'ListItem', 'position' => 6, 'url' => 'https://gryphalcode.com/blog-details/ai-copilot-rollout-framework'],
+            ['@type' => 'ListItem', 'position' => 7, 'url' => 'https://gryphalcode.com/blog-details/cloud-cost-optimization-model'],
+            ['@type' => 'ListItem', 'position' => 8, 'url' => 'https://gryphalcode.com/blog-details/technical-seo-for-ai-overviews'],
+            ['@type' => 'ListItem', 'position' => 9, 'url' => 'https://gryphalcode.com/blog-details/conversion-tracking-for-b2b-websites'],
+            ['@type' => 'ListItem', 'position' => 10, 'url' => 'https://gryphalcode.com/blog-details/security-hardening-sprint-plan'],
+            ['@type' => 'ListItem', 'position' => 11, 'url' => 'https://gryphalcode.com/blog-details/llm-ready-content-architecture']
         ]
     ];
 }
