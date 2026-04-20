@@ -20,9 +20,9 @@ $base_url = "..";
 
 <body>
   <?php $base_url = '..';
-  $page_title = "AI & Machine Learning Solutions | GryphalCode";
-  $meta_desc = "Implement cutting-edge AI models, predictive analytics, and machine learning algorithms to automate your business processes and unlock data-driven insights. Serving Coimbatore, Tamil Nadu, and Kerala.";
-  $meta_keywords = "Ai Machine Learning Solutions, GryphalCode Ai Machine Learning Solutions, Machine, Learning, Solutions, IT company, software development, AI solutions, cloud infrastructure";
+  $page_title = "Global AI Agent Integration & RAG Solutions | GryphalCode 2026";
+  $meta_desc = "Leverage Generative AI, RAG architecture, and custom AI agents for global operational excellence. Expert AI and machine learning solutions for the 2026 digital landscape.";
+  $meta_keywords = "Global AI Agent Integration, GEO strategy, RAG architecture, Generative Engine Optimization, predictive intelligence, GryphalCode AI 2026";
   ?>
 
   <?php include '../header.php'; ?>
@@ -35,7 +35,7 @@ $base_url = "..";
           <div class="col-xl-12">
             <div class="breadcrumb__wrap text-center">
               <h1 class="title">
-                AI &amp; Machine Learning
+                Global AI Agent Integration
               </h1>
               <div class="breadcrumb__nav">
                 <ul>
@@ -73,9 +73,9 @@ $base_url = "..";
                   AI &amp; ML
                 </h3>
                 <h2 class="section__heading--title">
-                  Generative AI &amp; Predictive Intelligence
+                  Generative AI Agent Integration &amp;
                   <br />
-                  That Automates &amp; Predicts
+                  Predictive GEO Intelligence
                 </h2>
                 <div class="section__heading--content mt-20">
                   <p>

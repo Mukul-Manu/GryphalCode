@@ -20,9 +20,9 @@ $base_url = "..";
 
 <body>
   <?php $base_url = '..';
-  $page_title = "Agile Software Process & Delivery | GryphalCode";
-  $meta_desc = "Discover our proven agile delivery framework that ensures transparent project management, rapid prototyping, and high-quality software releases. Serving Coimbatore, Tamil Nadu, and Kerala.";
-  $meta_keywords = "Process Delivery, GryphalCode Process Delivery, Process, Delivery, IT company, software development, AI solutions, cloud infrastructure";
+  $page_title = "Global-Scale Software Delivery Framework | GryphalCode 2026";
+  $meta_desc = "Discover our 2026 global engineering framework. Agile delivery, SRE-driven releases, and high-performance software project management for international enterprises.";
+  $meta_keywords = "Global Software Delivery, Agile Process 2026, SRE Framework, international engineering scale, GryphalCode process";
   ?>
 
   <!-- header start -->
@@ -37,7 +37,7 @@ $base_url = "..";
           <div class="col-xl-12">
             <div class="breadcrumb__wrap text-center">
               <h1 class="title">
-                Our Process
+                Global Engineering Process
               </h1>
               <div class="breadcrumb__nav">
                 <ul>

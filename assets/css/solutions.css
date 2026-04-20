@@ -1,0 +1,109 @@
+/* 
+ * SOLUTIONS.CSS 
+ * Centralized Design System for GryphalCode Industry Solution Hubs 
+ * Modern Glassmorphism & 2026 Professional Esthetics
+ */
+
+/* Glassmorphism Feature Cards */
+.glass-card {
+  background: #ffffff;
+  border: 2px solid #086ad8;
+  border-radius: 24px;
+  padding: 40px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Professional shadow by default */
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(8, 106, 216, 0.15); /* Lifted shadow on hover */
+  background: rgba(248, 250, 252, 1);
+}
+
+/* Modern Stat Pills & Labels */
+.stat-pill {
+  background: linear-gradient(135deg, #086ad8, #4cb8ff);
+  color: white;
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px rgba(8, 106, 216, 0.3);
+}
+
+/* Icon Styling */
+.glass-card i {
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover i {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(8, 106, 216, 0.5));
+}
+
+/* Strategic Efficiency Section */
+.efficiency-gap {
+  position: relative;
+  overflow: hidden;
+}
+
+.gap-analysis-list div strong {
+  color: #086ad8;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Call to Action Hubs */
+.cta-box {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url("../images/bg/breadcrumb-bg-1.webp");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  padding: 100px 60px 30px !important; /* Extra space below the button */
+  border-radius: 40px !important;
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-anim-1 {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Typography Enhancements */
+.section__heading--title-small {
+  color: #086ad8 !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section__heading--title {
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Blueprint Outer Box Container */
+.blueprint-outer-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.02);
+  margin-top: 20px;
+}

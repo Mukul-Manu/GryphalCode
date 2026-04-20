@@ -11,9 +11,9 @@ $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "
 $host = $_SERVER['HTTP_HOST'];
 $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\'); ?>
 <?php
-$page_title = "Case Studies | Enterprise AI & Software Success Stories";
-$meta_desc = "Discover how GryphalCode solves complex business challenges through custom AI platforms, cloud migrations, and scalable enterprise software solutions. Serving Coimbatore, Tamil Nadu, and Kerala.";
-$meta_keywords = "GryphalCode Case Studies, AI Success Stories, Software Engineering Portfolio, Cloud Migration Examples, Enterprise Digital Transformation Success";
+$page_title = "How Does GryphalCode Deliver Measurable ROI Through 2026 Innovation?";
+$meta_desc = "Discover how GryphalCode solves complex business challenges through AI platforms and 2026 GEO strategy. Serving Coimbatore, Tamil Nadu, Kerala, and European markets.";
+$meta_keywords = "GryphalCode Case Studies, AI ROI Coimbatore, Software Engineering Tamil Nadu, Kerala tech success, Europe digital transformation cases";
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -67,7 +67,7 @@ $meta_keywords = "GryphalCode Case Studies, AI Success Stories, Software Enginee
           <div class="col-xl-12">
             <div class="breadcrumb__wrap text-center">
               <h1 class="title">
-                Case Studies
+                How We Drive ROI
               </h1>
               <div class="breadcrumb__nav">
                 <ul>

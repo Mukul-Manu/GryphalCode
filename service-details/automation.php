@@ -20,9 +20,9 @@ $base_url = "..";
 
 <body>
   <?php $base_url = '..';
-  $page_title = "Business Process Automation & RPA | GryphalCode";
-  $meta_desc = "Streamline your workflows with custom RPA solutions, AI-driven triggers, and automated data processing to increase operational efficiency. Serving Coimbatore, Tamil Nadu, and Kerala.";
-  $meta_keywords = "Automation, GryphalCode Automation, Automation, IT company, software development, AI solutions, cloud infrastructure";
+  $page_title = "Global Enterprise Automation & RPA | GryphalCode 2026";
+  $meta_desc = "Maximize output with AI-driven process automation, RPA, and global operational excellence. Engineered for the 2026 enterprise landscape.";
+  $meta_keywords = "Global Process Automation, AI RPA 2026, Operational Excellence GEO, enterprise automation global, GryphalCode Automation 2026";
   ?>
 
   <!-- header start -->
@@ -37,7 +37,7 @@ $base_url = "..";
           <div class="col-xl-12">
             <div class="breadcrumb__wrap text-center">
               <h1 class="title">
-                Automation
+                Global Enterprise Automation
               </h1>
               <div class="breadcrumb__nav">
                 <ul>

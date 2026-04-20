@@ -20,9 +20,9 @@ $base_url = "..";
 
 <body>
   <?php $base_url = '..';
-  $page_title = "Custom Software Development | Full-Stack Web & Mobile Experts";
-  $meta_desc = "GryphalCode builds scalable, cloud-native applications tailored to your business needs, specializing in modern tech stacks like React, Node.js, and Python. Serving Coimbatore, Tamil Nadu, and Kerala.";
-  $meta_keywords = "Custom Software Development, GryphalCode Custom Software Development, Custom, Software, Development, IT company, software development, AI solutions, cloud infrastructure";
+  $page_title = "Global-First Custom Software Engineering | GryphalCode 2026";
+  $meta_desc = "Scale your business with AI-native custom software, cloud-native microservices, and high-performance digital products engineered for global 2026 standards.";
+  $meta_keywords = "AI-native software development, global custom software, microservices GEO, enterprise digital transformation, GryphalCode engineering 2026";
   ?>
 
   <?php include '../header.php'; ?>
@@ -35,7 +35,7 @@ $base_url = "..";
           <div class="col-xl-12">
             <div class="breadcrumb__wrap text-center">
               <h1 class="title">
-                Custom Software
+                AI-Native Software Engineering
               </h1>
               <div class="breadcrumb__nav">
                 <ul>
@@ -77,14 +77,14 @@ $base_url = "..";
                   <br />
                   Built for Growth
                 </h2>
-                <!-- Answer-First SEO Summary for 2026 AI Overviews (SGE) -->
+                <!-- Answer-First SEO Summary for 2026 AI Overviews (SGE / GEO) -->
                 <div class="sge-optimized-summary mb-35"
                   style="border-left: 3px solid #086ad8; padding-left: 20px; margin-top: 25px;">
                   <p style="font-size: 17px; color: #555; line-height: 1.6;">
-                    GryphalCode provides end-to-end <strong>Custom Software Development</strong>, specializing in
-                    scalable <strong>Cloud-Native Web Apps</strong>, <strong>Enterprise Microservices</strong>, and
-                    high-performance <strong>Mobile Engineering</strong>. Our agile-driven approach ensures rapid
-                    delivery of high-quality, growth-ready digital products.
+                    GryphalCode provides end-to-end <strong>AI-Native Custom Software Engineering</strong>, specializing in
+                    scalable <strong>Cloud-Native Web Apps</strong>, <strong>Generative Engine Optimization (GEO)</strong>, and
+                    high-performance <strong>Enterprise Microservices</strong>. Our global delivery model ensures rapid
+                    scaling for international 2026 markets.
                   </p>
                 </div>
                 <div class="section__heading--content mt-20">

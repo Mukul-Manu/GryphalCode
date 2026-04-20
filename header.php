@@ -133,9 +133,16 @@ if (!isset($GLOBALS['cspNonce'])) {
           </div>
         </div>
 
-        <div class="col-xl-7 col-lg-7 col-6 d-flex align-items-center justify-content-end">
-          <div class="header__menu text-right">
+        <div class="col-xl-8 col-lg-8 col-6 d-flex align-items-center justify-content-center">
+          <div class="header__menu text-center" style="width: 100%;">
             <nav id="mobile-menu" aria-label="Main navigation">
+              <style>
+                @media (min-width: 1200px) {
+                  .header__menu ul li { margin-right: 50px !important; }
+                  .header__menu ul li:last-child { margin-right: 0 !important; }
+                  .header__menu ul li a { font-size: 15px; font-weight: 500; }
+                }
+              </style>
               <ul>
                 <li><a href="<?= $base_url ?>">Home</a></li>
                 <li><a href="<?= $base_url ?>/about">About</a></li>
@@ -157,6 +164,15 @@ if (!isset($GLOBALS['cspNonce'])) {
                   </ul>
                 </li>
                 <li>
+                  <a href="javascript:void(0)">Industries <span>+</span></a>
+                  <ul class="sub-menu">
+                    <li><a href="<?= $base_url ?>/solutions-logistics">Logistics</a></li>
+                    <li><a href="<?= $base_url ?>/solutions-healthcare">Healthcare</a></li>
+                    <li><a href="<?= $base_url ?>/solutions-fintech">Fintech</a></li>
+                    <li><a href="<?= $base_url ?>/solutions-manufacturing">Manufacturing</a></li>
+                  </ul>
+                </li>
+                <li>
                   <a href="javascript:void(0)">Pages <span>+</span></a>
                   <ul class="sub-menu">
                     <li><a href="<?= $base_url ?>/faq">FAQ</a></li>
@@ -174,7 +190,7 @@ if (!isset($GLOBALS['cspNonce'])) {
             </button>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-8 my-auto d-none d-xl-block d-lg-block">
+        <div class="col-xl-2 col-lg-2 col-md-8 my-auto d-none d-xl-block d-lg-block">
           <div class="navarea__right text-right">
             <a href="<?= $base_url ?>/contact" class="site-btn">Get A Quote</a>
           </div>
@@ -193,6 +209,13 @@ if (!isset($GLOBALS['cspNonce'])) {
           </a>
           <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
         </div>
+
+        <style>
+          .contact-item { display: flex; align-items: flex-start; margin-bottom: 20px; }
+          .contact-item i { margin-right: 20px; color: #086ad8; font-size: 18px; margin-top: 5px; min-width: 20px; text-align: center; }
+          .contact-item span, .contact-item a { font-size: 15px; color: #666; line-height: 1.6; }
+          .mobile-nav-contact h4 { margin-bottom: 25px; font-weight: 700; color: #333; }
+        </style>
 
         <!-- Menu Links -->
         <nav class="mobile-main-nav">
@@ -217,6 +240,16 @@ if (!isset($GLOBALS['cspNonce'])) {
               </ul>
             </li>
             <li class="has-dropdown">
+              <a href="javascript:void(0)">Industries</a>
+              <div class="dropdown-toggle-btn">+</div>
+              <ul class="sub-menu">
+                <li><a href="<?= $base_url ?>/solutions-logistics">Logistics</a></li>
+                <li><a href="<?= $base_url ?>/solutions-healthcare">Healthcare</a></li>
+                <li><a href="<?= $base_url ?>/solutions-fintech">Fintech</a></li>
+                <li><a href="<?= $base_url ?>/solutions-manufacturing">Manufacturing</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
               <a href="javascript:void(0)">Pages</a>
               <div class="dropdown-toggle-btn">+</div>
               <ul class="sub-menu">
@@ -233,8 +266,7 @@ if (!isset($GLOBALS['cspNonce'])) {
           <h4>Contact Info</h4>
           <div class="contact-item">
             <i class="fa fa-map-marker-alt"></i>
-            <span>12/26 LakshmiPuram, Ganapathy
-              Coimbatore, Tamil Nadu - 641006</span>
+            <span> 12/26, 3rd Railway Cross, Chekkan Thottam, Ganapathy, Coimbatore, Tamil Nadu - 641006</span>
           </div>
           <div class="contact-item">
             <i class="fa fa-envelope"></i>

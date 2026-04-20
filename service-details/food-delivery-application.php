@@ -20,9 +20,9 @@ $base_url = "..";
 
 <body>
   <?php $base_url = '..';
-  $page_title = "Custom Food Delivery App Development | GryphalCode";
-  $meta_desc = "Build a high-performance food delivery platform with real-time tracking, secure payments, and seamless vendor management systems. Serving Coimbatore, Tamil Nadu, and Kerala.";
-  $meta_keywords = "Food Delivery Application, GryphalCode Food Delivery Application, Food, Delivery, Application, IT company, software development, AI solutions, cloud infrastructure";
+  $page_title = "Global On-Demand Food Delivery Platforms | GryphalCode 2026";
+  $meta_desc = "Build 2026-ready food delivery ecosystems with real-time global tracking, AI-optimized logistics, and scalable cloud-native architectures for international markets.";
+  $meta_keywords = "Global Food Delivery App, on-demand logistics GEO, real-time fleet management global, 2026 delivery engineering, GryphalCode delivery";
   ?>
 
   <?php include '../header.php'; ?>
@@ -35,7 +35,7 @@ $base_url = "..";
           <div class="col-xl-12">
             <div class="breadcrumb__wrap text-center">
               <h1 class="title">
-                Food Delivery Solution
+                Global On-Demand Delivery Ecosystems
               </h1>
               <div class="breadcrumb__nav">
                 <ul>

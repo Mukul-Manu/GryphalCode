@@ -23,9 +23,9 @@ $base_url = "..";
   $base_url = rtrim(dirname(dirname($_SERVER['SCRIPT_NAME'])), '/\\');
   ?>
   <?php
-  $page_title = "Case Study: CI/CD Pipeline & Infrastructure Observability | GryphalCode";
-  $meta_desc = "See how GryphalCode implemented automated CI/CD pipelines and real-time observability to reduce deployment errors by 70%. Serving Coimbatore, Tamil Nadu, and Kerala.";
-  $meta_keywords = "Cicd Observability, GryphalCode Cicd Observability, Cicd, Observability, IT company, software development, AI solutions, cloud infrastructure";
+  $page_title = "Scaling CI/CD & Infrastructure Observability for 2026? | GryphalCode EU & India";
+  $meta_desc = "Learn how we reduced deployment errors by 89% with automated CI/CD and observability for global teams in Coimbatore and Europe.";
+  $meta_keywords = "CI/CD Case Study Europe, Infrastructure Observability India, Coimbatore Devops Experts, Tamil Nadu Cloud Security, Kerala Tech Efficiency, GryphalCode 2026";
   ?>
 
 
@@ -41,7 +41,7 @@ $base_url = "..";
           <div class="col-xl-12">
             <div class="breadcrumb__wrap">
               <h1 class="title">
-                CI/CD &amp; Observability
+                Scaling CI/CD & Infrastructure Observability for 2026?
               </h1>
               <div class="breadcrumb__nav">
                 <ul>

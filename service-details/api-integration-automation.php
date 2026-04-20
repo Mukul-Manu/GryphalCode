@@ -20,9 +20,9 @@ $base_url = "..";
 
 <body>
   <?php $base_url = '..';
-  $page_title = "API Integration & Middleware Automation | GryphalCode";
-  $meta_desc = "Connect your software ecosystem with robust custom APIs and middleware solutions that ensure seamless data flow across platforms. Serving Coimbatore, Tamil Nadu, and Kerala.";
-  $meta_keywords = "Api Integration Automation, GryphalCode Api Integration Automation, Api, Integration, Automation, IT company, software development, AI solutions, cloud infrastructure";
+  $page_title = "Global-Scale API & Middleware Automation | GryphalCode 2026";
+  $meta_desc = "Engineer secure, high-performance API ecosystems and event-driven middleware. Global-scale integration solutions for the 2026 digital infrastructure.";
+  $meta_keywords = "Global API Integration, Event-Driven Architecture, middleware automation global, enterprise API GEO, GryphalCode API 2026";
   ?>
 
   <?php include '../header.php'; ?>
@@ -35,7 +35,7 @@ $base_url = "..";
           <div class="col-xl-12">
             <div class="breadcrumb__wrap text-center">
               <h1 class="title">
-                API &amp; Automation
+                Global API &amp; Event-Driven Integration
               </h1>
               <div class="breadcrumb__nav">
                 <ul>

@@ -11,9 +11,9 @@ $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "
 $host = $_SERVER['HTTP_HOST'];
 $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\'); ?>
 <?php
-$page_title = "Tech Insights & Engineering Blog | GryphalCode";
-$meta_desc = "Explore the latest thought leadership, engineering techniques, and IT news from GryphalCode. Discover high-demand tutorials on Generative AI, Cloud Security, and zero-trust deployments.";
-$meta_keywords = "GryphalCode Blog, AI Engineering News, Tech Insights, Enterprise Tech Blog, IT Industry News";
+$page_title = "What Are the Core 2026 Tech Trends Shaping the Global Industry?";
+$meta_desc = "Explore the GryphalCode engineering blog for insights on AI Agent integration, 2026 GEO strategy, and global software trends. Serving Coimbatore, Tamil Nadu, Kerala, and Europe.";
+$meta_keywords = "GryphalCode Blog, AI Engineering 2026, Tech Insights Coimbatore, GEO strategy blog, Tamil Nadu software blog, Europe tech news";
 $searchQuery = trim((string) ($_GET['q'] ?? ''));
 
 $jsonData = file_get_contents(__DIR__ . '/data/blogs.json');
@@ -85,7 +85,7 @@ $postsChunk = array_slice($posts, $offset, $itemsPerPage);
         <div class="row">
           <div class="col-xl-12">
             <div class="breadcrumb__wrap text-center">
-              <h1 class="title">Tech Insights & News</h1>
+              <h1 class="title">Future-Ready Tech Insights</h1>
               <div class="breadcrumb__nav">
                 <ul>
                   <li><span>//</span></li>

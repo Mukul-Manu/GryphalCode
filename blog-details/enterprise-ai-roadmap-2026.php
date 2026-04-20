@@ -5,9 +5,9 @@ header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 $base_url = rtrim(dirname(dirname($_SERVER['SCRIPT_NAME'])), '/\\');
-$page_title = "Enterprise AI Roadmap 2026 | GryphalCode Tech Insights";
-$meta_desc = "A practical rollout model for production AI adoption with governance and measurable outcomes.";
-$meta_keywords = "AI Strategy, Software Engineering, GryphalCode, 2026 Tech, SEO Strategy";
+$page_title = "The Ultimate Enterprise AI Roadmap for 2026? | GryphalCode Europe & India";
+$meta_desc = "A practical 2026 AI rollout roadmap for production-ready solutions in Coimbatore, Tamil Nadu, and the European Union. Focused on scale and ROI.";
+$meta_keywords = "Enterprise AI Roadmap India, Europe AI Software Engineering, Coimbatore Tech Authority, Tamil Nadu AI Hub, Kerala Software Scaling, GryphalCode AI 2026";
 $featured_image = $base_url . "/assets/images/blog/blog_enterprise-ai-roadmap-2026_tech.webp";
 $image_2 = $base_url . "/assets/images/blog/blog_enterprise-ai-roadmap-2026_ctx.webp";
 $image_3 = $base_url . "/assets/images/blog/blog_enterprise-ai-roadmap-2026_hero.webp";
@@ -36,7 +36,7 @@ $image_3 = $base_url . "/assets/images/blog/blog_enterprise-ai-roadmap-2026_hero
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="breadcrumb__wrap text-center">
-                            <h1 class="title">Enterprise AI Roadmap 2026</h1>
+                            <h1 class="title">The Ultimate Enterprise AI Roadmap for 2026?</h1>
                             <div class="breadcrumb__nav">
                                 <ul>
                                     <li><span>//</span></li>

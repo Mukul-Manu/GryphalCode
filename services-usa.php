@@ -5,9 +5,9 @@ header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 $base_url = '.';
-$page_title = "Software Development & AI Services in USA | GryphalCode";
-$meta_desc = "GryphalCode helps US teams ship AI, cloud, and custom software projects with fast delivery, secure architecture, and measurable business impact.";
-$meta_keywords = "software development usa, ai development usa, cloud consulting usa, gryphalcode usa";
+$page_title = "Global AI & Software Engineering Services in USA | GryphalCode 2026";
+$meta_desc = "GryphalCode provides US product teams with Generative Engine Optimization (GEO), AI agent integration, and low-latency cloud solutions for global scalability.";
+$meta_keywords = "software development usa, ai development usa, GEO services USA, generative engine optimization, cloud consulting usa, gryphalcode usa";
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -27,7 +27,7 @@ $meta_keywords = "software development usa, ai development usa, cloud consulting
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <h1 class="mb-20">Enterprise AI & Custom Software Engineering for the US market</h1>
+            <h1 class="mb-20">Global AI Agent Integration & Generative Engine Optimization for the US market</h1>
             <p class="mb-30 lead">GryphalCode partners with US-based product teams to ship resilient, scalable
               architecture with high-velocity engineering and transparent execution.</p>
 

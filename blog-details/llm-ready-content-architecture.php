@@ -5,9 +5,9 @@ header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 $base_url = rtrim(dirname(dirname($_SERVER['SCRIPT_NAME'])), '/\\');
-$page_title = "LLM-Ready Content Architecture | GryphalCode Tech Insights";
-$meta_desc = "How to structure content so AI systems retrieve and cite your brand accurately.";
-$meta_keywords = "LLM Optimization, Software Engineering, GryphalCode, 2026 Tech, SEO Strategy";
+$page_title = "How to Build LLM-Ready Content Architecture? | GryphalCode Global & India";
+$meta_desc = "Optimize your content for AI retrieval and citation with LLM-ready architectures. Essential for enterprises in Coimbatore, Tamil Nadu, and Europe.";
+$meta_keywords = "LLM Content Architecture India, AI Retrieval Europe, Coimbatore AI Optimization, Tamil Nadu Tech Insights, Kerala Digital Strategy, GryphalCode AI 2026";
 $featured_image = $base_url . "/assets/images/blog/blog_llm-ready-content-architecture_hero.webp";
 $image_2 = $base_url . "/assets/images/blog/blog_llm-ready-content-architecture_ctx.webp";
 $image_3 = $base_url . "/assets/images/blog/blog_llm-ready-content-architecture_tech.webp";
@@ -36,7 +36,7 @@ $image_3 = $base_url . "/assets/images/blog/blog_llm-ready-content-architecture_
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="breadcrumb__wrap text-center">
-                            <h1 class="title">LLM-Ready Content Architecture</h1>
+                            <h1 class="title">How to Build LLM-Ready Content Architecture?</h1>
                             <div class="breadcrumb__nav">
                                 <ul>
                                     <li><span>//</span></li>

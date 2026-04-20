@@ -11,9 +11,9 @@ $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "
 $host = $_SERVER['HTTP_HOST'];
 $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\'); ?>
 <?php
-$page_title = "GryphalCode FAQs | Answers to Your Tech & Project Queries";
-$meta_desc = "Find answers to commonly asked questions about our software development process, AI capabilities, project timelines, and support services. Serving Coimbatore, Tamil Nadu, and Kerala.";
-$meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, AI solutions, cloud infrastructure";
+$page_title = "What Do Global Enterprises Need to Know About 2026 AI Strategy?";
+$meta_desc = "Find answers to global AI integration, Generative Engine Optimization (GEO), and 2026 software engineering trends. Leading digital authority for Coimbatore, Tamil Nadu, Kerala, and Europe.";
+$meta_keywords = "GryphalCode FAQ, 2026 AI strategy faq, GEO optimization Coimbatore, Tamil Nadu tech faq, Kerala AI help, Europe software engineering faq";
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -69,7 +69,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
                     <div class="col-xl-12">
                         <div class="breadcrumb__wrap text-center text-white">
                             <h1 class="title">
-                                Your FAQ
+                                Global Strategy FAQ
                             </h1>
                             <div class="breadcrumb__nav">
                                 <ul class="d-inline-flex justify-content-center align-items-center">
@@ -142,7 +142,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
                                         <button aria-controls="collapse1" aria-expanded="false"
                                             class="btn btn-link collapsed" data-toggle="collapse"
                                             data-target="#collapse1" type="button">
-                                            How does GryphalCode's website design process work?
+                                            What is the 2026 website design process at GryphalCode?
                                         </button>
                                     </h5>
                                 </div>
@@ -187,7 +187,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
                                         <button aria-controls="collapse2" aria-expanded="false"
                                             class="btn btn-link collapsed" data-target="#collapse2"
                                             data-toggle="collapse" type="button">
-                                            How does your team build mobile applications?
+                                            How does GryphalCode engineering build mobile apps for global scale?
                                         </button>
                                     </h5>
                                 </div>
@@ -251,7 +251,7 @@ $meta_keywords = "Faq, GryphalCode Faq, Faq, IT company, software development, A
                                         <button aria-controls="collapse3" aria-expanded="false"
                                             class="btn btn-link collapsed" data-target="#collapse3"
                                             data-toggle="collapse" type="button">
-                                            Can you explain the difference between CRM and ERP software?
+                                            What are the key differences between CRM and ERP in 2026?
                                         </button>
                                     </h5>
                                 </div>

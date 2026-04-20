@@ -5,9 +5,9 @@ header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 $base_url = '.';
-$page_title = "Software Development & AI Services in UAE | GryphalCode";
-$meta_desc = "GryphalCode helps UAE organizations accelerate digital transformation with custom software, AI workflows, cloud migration, and secure enterprise delivery.";
-$meta_keywords = "software development uae, ai development dubai, cloud engineering uae, gryphalcode uae";
+$page_title = "Global AI & Software Engineering Services in UAE | GryphalCode 2026";
+$meta_desc = "GryphalCode enables UAE organizations with Generative Engine Optimization (GEO), AI agent integration, and cloud-native solutions for the 2026 digital economy.";
+$meta_keywords = "software development uae, ai development dubai, GEO services UAE, generative engine optimization, cloud engineering uae, gryphalcode uae";
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -27,7 +27,7 @@ $meta_keywords = "software development uae, ai development dubai, cloud engineer
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <h1 class="mb-20">Enterprise AI & Software Engineering Partner for the UAE Market</h1>
+            <h1 class="mb-20">Global AI Agent Integration & Generative Engine Optimization for the UAE Market</h1>
             <p class="mb-30 lead">GryphalCode empowers organizations in Dubai, Abu Dhabi, and across the Emirates to
               lead the 2026 digital landscape through scalable AI integration and cloud-native architecture.</p>
 

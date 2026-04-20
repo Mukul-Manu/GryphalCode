@@ -50,6 +50,13 @@ $meta_keywords = "html sitemap gryphalcode, all pages";
               <li><a href="<?= $base_url ?>/brand-knowledge">Brand Knowledge</a></li>
               <li><a href="<?= $base_url ?>/site-map">Site Map</a></li>
             </ul>
+            <h4 class="mt-30">Industry Solutions</h4>
+            <ul>
+              <li><a href="<?= $base_url ?>/solutions-logistics">Logistics Hub</a></li>
+              <li><a href="<?= $base_url ?>/solutions-healthcare">Healthcare Hub</a></li>
+              <li><a href="<?= $base_url ?>/solutions-fintech">Fintech Hub</a></li>
+              <li><a href="<?= $base_url ?>/solutions-manufacturing">Manufacturing Hub</a></li>
+            </ul>
           </div>
           <div class="col-lg-4">
             <h4 class="mt-30">Service Details</h4>

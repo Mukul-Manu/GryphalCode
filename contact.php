@@ -12,9 +12,9 @@ if (empty($_SESSION['csrf_token'])) {
 }
 ?>
 <?php $base_url = '.';
-$page_title = "Contact GryphalCode | Get a Quote for Your Tech Project";
-$meta_desc = "Have a project in mind? Contact the GryphalCode team today for custom software development, AI integration, or cloud consulting services. Serving Coimbatore, Tamil Nadu, and Kerala.";
-$meta_keywords = "Contact, GryphalCode Contact, Contact, IT company, software development, AI solutions, cloud infrastructure";
+$page_title = "How Can Our Global AI & Software Engineers Accelerate Your 2026 Growth?";
+$meta_desc = "Connect with GryphalCode for expert consulting on AI Agent integration, Generative Engine Optimization (GEO), and 2026 tech strategy. Serving Coimbatore, Tamil Nadu, Kerala, and European markets.";
+$meta_keywords = "Contact GryphalCode, AI consulting global, GEO strategy Coimbatore, software engineers Tamil Nadu, Kerala IT support, Europe software consulting";
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -66,7 +66,7 @@ $meta_keywords = "Contact, GryphalCode Contact, Contact, IT company, software de
           <div class="col-xl-12">
             <div class="breadcrumb__wrap text-center">
               <h1 class="title">
-                Contact Us
+                How Can We Help You Scale?
               </h1>
               <div class="breadcrumb__nav">
                 <ul>

@@ -6,9 +6,9 @@ header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 ?>
 <?php $base_url = '.';
-$page_title = "Our Services | Full-Stack Development, AI & Cloud Engineering";
-$meta_desc = "Explore our comprehensive tech services, from custom web and mobile apps to Kubernetes orchestration, WhatsApp Business API, and automated CI/CD pipelines. Serving Coimbatore, Tamil Nadu, and Kerala.";
-$meta_keywords = "Services, GryphalCode Services, Services, IT company, software development, AI solutions, cloud infrastructure";
+$page_title = "Global AI Agent & 2026 Engineering Services | GryphalCode";
+$meta_desc = "Explore our global-first AI services, including Generative Engine Optimization (GEO), AI Agent Integration, and cloud-native architecture for international scale.";
+$meta_keywords = "AI Agent services, GEO services global, Generative Engine Optimization, cloud native engineering, GryphalCode services 2026";
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -61,7 +61,7 @@ $meta_keywords = "Services, GryphalCode Services, Services, IT company, software
           <div class="col-xl-12">
             <div class="breadcrumb__wrap text-center">
               <h1 class="title">
-                Our Services
+                Global AI & GEO Services
               </h1>
               <div class="breadcrumb__nav">
                 <ul>

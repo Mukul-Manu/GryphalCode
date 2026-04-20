@@ -23,9 +23,9 @@ $base_url = "..";
   $base_url = rtrim(dirname(dirname($_SERVER['SCRIPT_NAME'])), '/\\');
   ?>
   <?php
-  $page_title = "Case Study: WhatsApp Business & CRM Integration | GryphalCode";
-  $meta_desc = "Learn how we integrated WhatsApp Business API with a custom CRM to automate lead management and improve response times by 300%. Serving Coimbatore, Tamil Nadu, and Kerala.";
-  $meta_keywords = "Whatsapp Business Crm, GryphalCode Whatsapp Business Crm, Whatsapp, Business, Crm, IT company, software development, AI solutions, cloud infrastructure";
+  $page_title = "Expert WhatsApp Business & CRM Integration for 2026 | GryphalCode Global";
+  $meta_desc = "Automate lead management with 2026 WhatsApp Business CRM integration. Scaling customer ROI for enterprises in Coimbatore, Kerala, and Europe.";
+  $meta_keywords = "WhatsApp CRM Case Study Europe, Automation India, Coimbatore Digital Strategy, Tamil Nadu Business Solutions, Kerala CRM Experts, GryphalCode 2026";
   ?>
 
 
@@ -41,7 +41,7 @@ $base_url = "..";
           <div class="col-xl-12">
             <div class="breadcrumb__wrap">
               <h1 class="title">
-                WhatsApp Business CRM
+                Expert WhatsApp Business & CRM Integration for 2026?
               </h1>
               <div class="breadcrumb__nav">
                 <ul>

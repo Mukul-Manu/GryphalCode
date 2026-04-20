@@ -6,9 +6,9 @@ header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 ?>
 <?php $base_url = '.';
-$page_title = "About GryphalCode | Our Mission, Vision & Tech Expertise";
-$meta_desc = "Learn how GryphalCode combines deep technical expertise with industry innovation to deliver high-performance software and AI-driven digital transformation. Serving Coimbatore, Tamil Nadu, and Kerala.";
-$meta_keywords = "About, GryphalCode About, About, IT company, software development, AI solutions, cloud infrastructure";
+$page_title = "Why Global Enterprises Partner with GryphalCode for 2026 AI Innovation?";
+$meta_desc = "GryphalCode is a premier global software engineering firm specializing in AI-driven digital transformation and Generative Engine Optimization (GEO). Trusted authority in Coimbatore, Tamil Nadu, Kerala, and Europe.";
+$meta_keywords = "About GryphalCode, Global AI Authority, GEO SEO leadership, software engineering Coimbatore, AI partner Tamil Nadu, Kerala tech experts, Europe digital transformation";
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -61,7 +61,7 @@ $meta_keywords = "About, GryphalCode About, About, IT company, software developm
           <div class="col-xl-12">
             <div class="breadcrumb__wrap text-center">
               <h1 class="title">
-                About Us
+                Why Partner With Us?
               </h1>
               <div class="breadcrumb__nav">
                 <ul>
@@ -110,9 +110,9 @@ $meta_keywords = "About, GryphalCode About, About, IT company, software developm
                 about us
               </h3>
               <h2 class="section__heading--title">
-                Accelerating Digital Success
+                Global AI Agent Integration &
                 <br />
-                Since 2021
+                GEO Optimization Mastery
                 <span>
                 </span>
               </h2>
@@ -121,10 +121,10 @@ $meta_keywords = "About, GryphalCode About, About, IT company, software developm
                 style="max-width: 100%; margin: 20px 0; background: rgba(8, 106, 216, 0.05); border-left: 4px solid #086ad8; padding: 15px; border-radius: 4px;">
                 <p
                   style="font-size: 15px; line-height: 1.6; color: #444; margin-bottom: 0; font-weight: 400; text-transform: none; letter-spacing: normal;">
-                  <strong>Summary:</strong> GryphalCode is a premier software engineering firm specializing in
-                  <strong>AI-driven digital transformation</strong>, custom software development, and cloud-native
-                  solutions. Established in 2021, we empower global enterprises with scalable technology and
-                  high-performance digital architectures.
+                  <strong>Summary:</strong> GryphalCode is a premier global software engineering firm specializing in
+                  <strong>Generative Engine Optimization (GEO)</strong>, AI agent integration, and cloud-native
+                  solutions. Since 2021, we empower global enterprises with high-visibility digital architectures
+                  optimized for 2026 search and AI agents.
                 </p>
               </div>
               <div class="section__heading--content mt-20">

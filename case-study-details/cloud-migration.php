@@ -25,9 +25,9 @@ $base_url = "..";
   $host = $_SERVER['HTTP_HOST'];
   $base_url = rtrim(dirname(dirname($_SERVER['SCRIPT_NAME'])), '/\\'); ?>
   <?php
-  $page_title = "Case Study: Seamless Enterprise Cloud Migration | GryphalCode";
-  $meta_desc = "A deep dive into our cloud migration strategy that reduced latency by 40% and infrastructure costs by 25% for a global enterprise client. Serving Coimbatore, Tamil Nadu, and Kerala.";
-  $meta_keywords = "Cloud Migration, GryphalCode Cloud Migration, Cloud, Migration, IT company, software development, AI solutions, cloud infrastructure";
+  $page_title = "Mastering Zero-Downtime Enterprise Cloud Migration in 2026? | GryphalCode Global";
+  $meta_desc = "A 2026 deep dive into zero-downtime cloud migration. Reducing costs by 40% for enterprises in Coimbatore, Tamil Nadu, and the European Union.";
+  $meta_keywords = "Cloud Migration Case Study Europe, Zero-Downtime India, Coimbatore Cloud Infrastructure, Tamil Nadu Software Scaling, Kerala Tech Success, GryphalCode 2026";
   ?>
 
 
@@ -45,7 +45,7 @@ $base_url = "..";
           <div class="col-xl-12">
             <div class="breadcrumb__wrap">
               <h1 class="title">
-                Zero-Downtime Migration
+                Mastering Zero-Downtime Enterprise Cloud Migration in 2026?
               </h1>
               <div class="breadcrumb__nav">
                 <ul>

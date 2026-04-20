@@ -6,9 +6,9 @@ header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 ?>
 <?php $base_url = '.';
-$page_title = "Careers | Join the Elite Tech Team at GryphalCode";
-$meta_desc = "Explore career opportunities at GryphalCode. Join a team of innovators driving digital transformation through AI, Cloud, and Software Engineering expert solutions. Serving Coimbatore, Tamil Nadu, and Kerala.";
-$meta_keywords = "Careers, GryphalCode Careers, Careers, IT company, software development, AI solutions, cloud infrastructure";
+$page_title = "Join the Global Elite Engineering Team at GryphalCode | 2026 Careers";
+$meta_desc = "Explore career opportunities at GryphalCode. Join a team of innovators driving digital transformation in Coimbatore, Tamil Nadu, Kerala, and Europe.";
+$meta_keywords = "GryphalCode Careers, AI jobs Coimbatore, software engineering Tamil Nadu, Kerala tech careers, Europe IT opportunities, 2026 developer roles";
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -61,7 +61,7 @@ $meta_keywords = "Careers, GryphalCode Careers, Careers, IT company, software de
                                         <div class="col-xl-12">
                                                 <div class="breadcrumb__wrap text-center">
                                                         <h1 class="title">
-                                                                Careers
+                                                                Build the Future With Us
                                                         </h1>
                                                         <div class="breadcrumb__nav">
                                                                 <ul>

@@ -5,9 +5,9 @@ header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 $base_url = rtrim(dirname(dirname($_SERVER['SCRIPT_NAME'])), '/\\');
-$page_title = "Conversion Tracking for B2B Websites | GryphalCode Tech Insights";
-$meta_desc = "Build clean lead attribution with event taxonomy, UTM persistence, and funnel metrics.";
-$meta_keywords = "Growth Engineering, Software Engineering, GryphalCode, 2026 Tech, SEO Strategy";
+$page_title = "Expert B2B Conversion Tracking Patterns for 2026 | GryphalCode Global";
+$meta_desc = "Build high-performance B2B conversion tracking for websites in Coimbatore, Tamil Nadu, and Europe. Optimize lead attribution for the AI search era.";
+$meta_keywords = "B2B Conversion Tracking India, Europe B2B Growth, Tamil Nadu Web Development, Kerala Digital Strategy, GryphalCode Growth 2026";
 $featured_image = $base_url . "/assets/images/blog/blog_conversion-tracking-for-b2b-websites_hero.webp";
 $image_2 = $base_url . "/assets/images/blog/blog_conversion-tracking-for-b2b-websites_ctx.webp";
 $image_3 = $base_url . "/assets/images/blog/blog_conversion-tracking-for-b2b-websites_tech.webp";
@@ -36,7 +36,7 @@ $image_3 = $base_url . "/assets/images/blog/blog_conversion-tracking-for-b2b-web
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="breadcrumb__wrap text-center">
-                            <h1 class="title">Conversion Tracking for B2B Websites</h1>
+                            <h1 class="title">Expert B2B Conversion Tracking Patterns for 2026?</h1>
                             <div class="breadcrumb__nav">
                                 <ul>
                                     <li><span>//</span></li>

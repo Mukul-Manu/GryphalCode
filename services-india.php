@@ -5,9 +5,9 @@ header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 $base_url = '.';
-$page_title = "Software Development & AI Services in India | GryphalCode";
-$meta_desc = "GryphalCode delivers enterprise software, AI systems, cloud modernization, and DevOps automation for Indian startups and enterprise teams.";
-$meta_keywords = "software development india, ai development india, cloud migration india, gryphalcode india";
+$page_title = "Global AI & Software Engineering Services in India | GryphalCode 2026";
+$meta_desc = "GryphalCode empowers Indian startups and enterprises with Generative Engine Optimization (GEO), AI agent integration, and cloud modernization for the global stage.";
+$meta_keywords = "software development india, ai development india, GEO services India, generative engine optimization, cloud migration india, gryphalcode india";
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -25,7 +25,7 @@ $meta_keywords = "software development india, ai development india, cloud migrat
   <main id="main-content">
     <section class="pt-120 pb-100">
       <div class="container">
-        <h1 class="mb-20">India-Focused AI, Cloud, and Software Engineering Services</h1>
+        <h1 class="mb-20">Global AI Agent Integration & Generative Engine Optimization for the Indian Market</h1>
         <p class="mb-20">We work with Indian companies to launch and scale digital products through strong engineering,
           predictable delivery, and measurable ROI.</p>
         <ul class="mb-30">

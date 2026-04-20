@@ -23,9 +23,9 @@ $base_url = "..";
   $base_url = rtrim(dirname(dirname($_SERVER['SCRIPT_NAME'])), '/\\');
   ?>
   <?php
-  $page_title = "Case Study: Enterprise GDPR & Security Overhaul | GryphalCode";
-  $meta_desc = "A comprehensive look at our security hardening for a fintech client, achieving 100% GDPR compliance and bank-grade data protection. Serving Coimbatore, Tamil Nadu, and Kerala.";
-  $meta_keywords = "Gdpr Security Overhaul, GryphalCode Gdpr Security Overhaul, Gdpr, Security, Overhaul, IT company, software development, AI solutions, cloud infrastructure";
+  $page_title = "Achieving 100% GDPR Compliance & Security in 2026? | GryphalCode EU Markets";
+  $meta_desc = "2026 Security overhaul case study: 100% GDPR compliance for fintech enterprises in Europe, Coimbatore, and Tamil Nadu. Proven bank-grade protection.";
+  $meta_keywords = "GDPR Compliance Case Study Europe, Cybersecurity Overhaul India, Coimbatore Tech Defense, Tamil Nadu Security Experts, Kerala Fintech Security, GryphalCode 2026";
   ?>
 
 
@@ -41,7 +41,7 @@ $base_url = "..";
           <div class="col-xl-12">
             <div class="breadcrumb__wrap">
               <h1 class="title">
-                GDPR Security Overhaul
+                Achieving 100% GDPR Compliance & Security in 2026?
               </h1>
               <div class="breadcrumb__nav">
                 <ul>

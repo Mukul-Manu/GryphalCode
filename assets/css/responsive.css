@@ -143,7 +143,6 @@
     height: 100dvh;
     height: 100svh;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
     background: #fff;
     z-index: 10000;
     transition: right 0.35s cubic-bezier(0.645, 0.045, 0.355, 1);

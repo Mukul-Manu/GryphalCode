@@ -5,9 +5,9 @@ header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 $base_url = rtrim(dirname(dirname($_SERVER['SCRIPT_NAME'])), '/\\');
-$page_title = "Technical SEO for AI Overviews | GryphalCode Tech Insights";
-$meta_desc = "Entity-first optimization playbook for Google AI Overviews and LLM search.";
-$meta_keywords = "SEO / AI Search, Software Engineering, GryphalCode, 2026 Tech, SEO Strategy";
+$page_title = "How to Optimize Technical SEO for AI Overviews? | GryphalCode Global";
+$meta_desc = "Master entity-first SEO for Google AI Overviews and LLM search. Essential 2026 playbook for brands in India (Coimbatore, Tamil Nadu) and Europe.";
+$meta_keywords = "Technical SEO for AI India, Europe AI Search Optimization, Coimbatore SEO Agency, Tamil Nadu Digital Marketing, Kerala Search Authority, GryphalCode SEO 2026";
 $featured_image = $base_url . "/assets/images/blog/blog_technical-seo-for-ai-overviews_hero.webp";
 $image_2 = $base_url . "/assets/images/blog/blog_technical-seo-for-ai-overviews_ctx.webp";
 $image_3 = $base_url . "/assets/images/blog/blog_technical-seo-for-ai-overviews_tech.webp";
@@ -36,7 +36,7 @@ $image_3 = $base_url . "/assets/images/blog/blog_technical-seo-for-ai-overviews_
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="breadcrumb__wrap text-center">
-                            <h1 class="title">Technical SEO for AI Overviews</h1>
+                            <h1 class="title">How to Optimize Technical SEO for AI Overviews?</h1>
                             <div class="breadcrumb__nav">
                                 <ul>
                                     <li><span>//</span></li>

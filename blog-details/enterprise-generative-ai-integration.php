@@ -5,9 +5,9 @@ header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 $base_url = rtrim(dirname(dirname($_SERVER['SCRIPT_NAME'])), '/\\');
-$page_title = "Enterprise Generative AI | GryphalCode Tech Insights";
-$meta_desc = "Discover the scalable architecture patterns required to embed LLMs safely behind legacy firewalls.";
-$meta_keywords = "Machine Learning, Software Engineering, GryphalCode, 2026 Tech, SEO Strategy";
+$page_title = "Mastering Enterprise Generative AI in 2026? | GryphalCode Global & India";
+$meta_desc = "Securely integrate LLMs and Generative AI for enterprises in Coimbatore, Kerala, and Europe. Scalable patterns for the 2026 AI-first landscape.";
+$meta_keywords = "Enterprise Generative AI Europe, India Generative AI Software, Tamil Nadu Tech Scaling, Kerala AI Integration, Coimbatore Engineering Hub, GryphalCode AI 2026";
 $featured_image = $base_url . "/assets/images/blog/blog_enterprise-generative-ai-integration_hero.webp";
 $image_2 = $base_url . "/assets/images/blog/blog_enterprise-generative-ai-integration_ctx.webp";
 $image_3 = $base_url . "/assets/images/blog/blog_enterprise-generative-ai-integration_tech.webp";
@@ -36,7 +36,7 @@ $image_3 = $base_url . "/assets/images/blog/blog_enterprise-generative-ai-integr
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="breadcrumb__wrap text-center">
-                            <h1 class="title">Enterprise Generative AI</h1>
+                            <h1 class="title">Mastering Enterprise Generative AI in 2026?</h1>
                             <div class="breadcrumb__nav">
                                 <ul>
                                     <li><span>//</span></li>

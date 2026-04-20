@@ -5,9 +5,9 @@ header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 $base_url = '.';
-$page_title = "Software Development & AI Services in UK | GryphalCode";
-$meta_desc = "GryphalCode supports UK businesses with enterprise AI integration, cloud engineering, and custom software delivery focused on speed, quality, and compliance.";
-$meta_keywords = "software development uk, ai development uk, cloud devops uk, gryphalcode uk";
+$page_title = "Global AI & Software Engineering Services in UK | GryphalCode 2026";
+$meta_desc = "GryphalCode empowers UK organizations with Generative Engine Optimization (GEO), Enterprise AI agents, and high-latency web app development tailored for global reach.";
+$meta_keywords = "software development uk, ai development uk, GEO services UK, generative engine optimization, cloud devops uk, gryphalcode uk";
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -27,7 +27,7 @@ $meta_keywords = "software development uk, ai development uk, cloud devops uk, g
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <h1 class="mb-20">Enterprise AI & Cloud Software Engineering for UK Organizations</h1>
+            <h1 class="mb-20">Global AI Agent Integration & Generative Engine Optimization for UK Organizations</h1>
             <p class="mb-30 lead">GryphalCode partners with UK businesses to deliver high-performance, cloud-native
               solutions that align with the competitive 2026 digital landscape.</p>
 

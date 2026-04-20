@@ -24,8 +24,15 @@ if (file_exists($cacheFile)) {
     $cache = json_decode($json, true);
 }
 
-// Fallback defaults
-$trends = $cache['trends'] ?? ['AI Solutions', 'Cloud Computing', 'Digital Transformation', 'Software Development', 'Cybersecurity'];
+// Fallback defaults for 2026 Global AI Strategy
+$trends = $cache['trends'] ?? [
+    'Generative Engine Optimization (GEO)',
+    'AI Agent Integration',
+    'Hyper-personalized Marketing',
+    'Global Software Engineering Hub',
+    'Zero-Trust Cloud Security',
+    'Core Web Vitals 2026'
+];
 $autocomplete = $cache['autocomplete'] ?? [];
 $news = $cache['news'] ?? [];
 
@@ -105,7 +112,7 @@ $schemas[] = [
     '@type' => 'WebSite',
     'name' => 'GryphalCode',
     'url' => 'https://gryphalcode.com',
-    'inLanguage' => ['en-IN', 'en-US', 'en-GB', 'en-AE'],
+    'inLanguage' => ['en-IN', 'en-US', 'en-GB', 'en-AE', 'en-CA', 'en-AU', 'en-SG', 'en-IE', 'en-NZ'],
     'potentialAction' => [
         '@type' => 'SearchAction',
         'target' => 'https://gryphalcode.com/blog?q={search_term_string}',
@@ -410,6 +417,18 @@ $headBlock .= "<link rel=\"alternate\" hreflang=\"en-in\" href=\"{$canonicalUrl}
 $headBlock .= "<link rel=\"alternate\" hreflang=\"en-us\" href=\"{$canonicalUrl}\" />\n";
 $headBlock .= "<link rel=\"alternate\" hreflang=\"en-gb\" href=\"{$canonicalUrl}\" />\n";
 $headBlock .= "<link rel=\"alternate\" hreflang=\"en-ae\" href=\"{$canonicalUrl}\" />\n";
+$headBlock .= "<link rel=\"alternate\" hreflang=\"en-de\" href=\"{$canonicalUrl}\" />\n";
+$headBlock .= "<link rel=\"alternate\" hreflang=\"de-de\" href=\"{$canonicalUrl}\" />\n";
+$headBlock .= "<link rel=\"alternate\" hreflang=\"en-fr\" href=\"{$canonicalUrl}\" />\n";
+$headBlock .= "<link rel=\"alternate\" hreflang=\"fr-fr\" href=\"{$canonicalUrl}\" />\n";
+$headBlock .= "<link rel=\"alternate\" hreflang=\"en-es\" href=\"{$canonicalUrl}\" />\n";
+$headBlock .= "<link rel=\"alternate\" hreflang=\"es-es\" href=\"{$canonicalUrl}\" />\n";
+$headBlock .= "<link rel=\"alternate\" hreflang=\"en-it\" href=\"{$canonicalUrl}\" />\n";
+$headBlock .= "<link rel=\"alternate\" hreflang=\"it-it\" href=\"{$canonicalUrl}\" />\n";
+$headBlock .= "<link rel=\"alternate\" hreflang=\"en-nl\" href=\"{$canonicalUrl}\" />\n";
+$headBlock .= "<link rel=\"alternate\" hreflang=\"nl-nl\" href=\"{$canonicalUrl}\" />\n";
+$headBlock .= "<link rel=\"alternate\" hreflang=\"en-ca\" href=\"{$canonicalUrl}\" />\n";
+$headBlock .= "<link rel=\"alternate\" hreflang=\"en-au\" href=\"{$canonicalUrl}\" />\n";
 $headBlock .= "<link rel=\"alternate\" hreflang=\"x-default\" href=\"{$canonicalUrl}\" />\n";
 $headBlock .= "<meta name=\"keywords\" content=\"" . htmlspecialchars($pageKeywords, ENT_QUOTES) . "\" />\n";
 $headBlock .= "<meta name=\"description\" content=\"{$description}\" />\n";
@@ -420,11 +439,13 @@ $headBlock .= "<meta name=\"robots\" content=\"" . ($isNoIndexPage ? 'noindex, f
 $headBlock .= "<meta name=\"ai-search-readiness\" content=\"optimized\" />\n";
 $headBlock .= "<meta name=\"answer-engine-optimization\" content=\"high-visibility\" />\n";
 $headBlock .= "<meta name=\"generative-engine-targeting\" content=\"AI Overviews, SGE, LLM-Search, OpenAI, Claude, Gemini\" />\n";
+$headBlock .= "<meta name=\"generative-engine-visibility\" content=\"high\" />\n";
+$headBlock .= "<meta name=\"ai-content-verification\" content=\"verified-human-expert\" />\n";
 $headBlock .= "<meta name=\"voice-search-optimization\" content=\"enabled\" />\n";
 $headBlock .= "<meta name=\"video-engine-optimization\" content=\"enabled\" />\n";
-$headBlock .= "<meta content=\"IN-TN, IN-KL, GB, DE, FR, EU\" name=\"geo.region\" />\n";
+$headBlock .= "<meta content=\"IN-TN, IN-KL, GB, DE, FR, ES, IT, NL, EU, US, AE, Global\" name=\"geo.region\" />\n";
 $headBlock .= "<meta content=\"11.0168;76.9558\" name=\"geo.position\" />\n";
-$headBlock .= "<meta content=\"Coimbatore, Tamil Nadu, Kerala, India; Europe, United Kingdom\" name=\"geo.placename\" />\n";
+$headBlock .= "<meta content=\"Coimbatore, Tamil Nadu, Kerala, India & Europe: Germany, France, Spain, Italy, Netherlands\" name=\"geo.placename\" />\n";
 $headBlock .= "<meta content=\"11.0168, 76.9558\" name=\"ICBM\" />\n";
 
 // Open Graph & Twitter Card

@@ -23,9 +23,9 @@ $base_url = "..";
   $base_url = rtrim(dirname(dirname($_SERVER['SCRIPT_NAME'])), '/\\');
   ?>
   <?php
-  $page_title = "Case Study: Scaling a Global Food Delivery Platform | GryphalCode";
-  $meta_desc = "See how we optimized a large-scale food delivery ecosystem to handle 10,000+ hourly orders with zero downtime and perfect sync. Serving Coimbatore, Tamil Nadu, and Kerala.";
-  $meta_keywords = "Food Delivery Platform, GryphalCode Food Delivery Platform, Food, Delivery, Platform, IT company, software development, AI solutions, cloud infrastructure";
+  $page_title = "Scaling Global Food Delivery Platforms in 2026? | GryphalCode Europe & India";
+  $meta_desc = "How we optimized a global food delivery ecosystem to handle 50k+ daily orders. Enterprise mobility for Coimbatore, Tamil Nadu, and European markets.";
+  $meta_keywords = "Food Delivery Case Study Europe, On-Demand Scaling India, Coimbatore App Development, Tamil Nadu Tech Solutions, Kerala Software Success, GryphalCode 2026";
   ?>
 
   <?php include __DIR__ . '/../header.php'; ?>
@@ -38,7 +38,7 @@ $base_url = "..";
           <div class="col-xl-12">
             <div class="breadcrumb__wrap">
               <h1 class="title">
-                Food Delivery Platform
+                Scaling Global Food Delivery Platforms in 2026?
               </h1>
               <div class="breadcrumb__nav">
                 <ul>

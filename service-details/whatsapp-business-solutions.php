@@ -20,9 +20,9 @@ $base_url = "..";
 
 <body>
   <?php $base_url = '..';
-  $page_title = "WhatsApp Business API & Chatbot Solutions | GryphalCode";
-  $meta_desc = "Scale your customer engagement with official WhatsApp Business API integration, AI-powered chatbots, and automated support workflows. Serving Coimbatore, Tamil Nadu, and Kerala.";
-  $meta_keywords = "Whatsapp Business Solutions, GryphalCode Whatsapp Business Solutions, Whatsapp, Business, Solutions, IT company, software development, AI solutions, cloud infrastructure";
+  $page_title = "Official WhatsApp Business API & AI Agents | GryphalCode 2026";
+  $meta_desc = "Scale global customer engagement with Official WhatsApp Business API and AI-powered conversational agents. High-intent engagement for 2026 markets.";
+  $meta_keywords = "WhatsApp Business API global, AI Agent WhatsApp, conversational commerce GEO, enterprise WhatsApp 2026, GryphalCode WhatsApp";
   ?>
 
   <?php include '../header.php'; ?>
@@ -35,7 +35,7 @@ $base_url = "..";
           <div class="col-xl-12">
             <div class="breadcrumb__wrap text-center">
               <h1 class="title">
-                WhatsApp Business
+                Unified WhatsApp &amp; AI Agents
               </h1>
               <div class="breadcrumb__nav">
                 <ul>

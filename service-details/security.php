@@ -20,9 +20,9 @@ $base_url = "..";
 
 <body>
   <?php $base_url = '..';
-  $page_title = "Cybersecurity & Data Privacy Solutions | GryphalCode";
-  $meta_desc = "Protect your digital assets with GryphalCode's comprehensive security audits, encryption protocols, and GDPR-compliant infrastructure hardening. Serving Coimbatore, Tamil Nadu, and Kerala.";
-  $meta_keywords = "Security, GryphalCode Security, Security, IT company, software development, AI solutions, cloud infrastructure";
+  $page_title = "International Cybersecurity & AI-Driven Defense | GryphalCode 2026";
+  $meta_desc = "Protect your global digital assets with AI-enhanced security audits, zero-trust architecture, and 2026 compliance audits for international scale.";
+  $meta_keywords = "Global Cybersecurity, AI-driven defense, Zero Trust Architecture, international security audit, GryphalCode Security 2026";
   ?>
 
   <!-- header start -->
@@ -37,7 +37,7 @@ $base_url = "..";
           <div class="col-xl-12">
             <div class="breadcrumb__wrap text-center">
               <h1 class="title">
-                Security
+                Global AI-Ready Cyber Defense
               </h1>
               <div class="breadcrumb__nav">
                 <ul>

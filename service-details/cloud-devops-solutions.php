@@ -20,9 +20,9 @@ $base_url = "..";
 
 <body>
   <?php $base_url = '..';
-  $page_title = "Cloud & DevOps Solutions | Kubernetes & AWS Experts";
-  $meta_desc = "Optimize your infrastructure with automated CI/CD pipelines, Kubernetes orchestration, and secure cloud migrations managed by GryphalCode experts. Serving Coimbatore, Tamil Nadu, and Kerala.";
-  $meta_keywords = "Cloud Devops Solutions, GryphalCode Cloud Devops Solutions, Cloud, Devops, Solutions, IT company, software development, AI solutions, cloud infrastructure";
+  $page_title = "Global Cloud-Native AI Infrastructure | GryphalCode 2026";
+  $meta_desc = "Accelerate your 2026 roadmap with automated cloud engineering, Kubernetes optimization, and global AI agent deployment hubs built on AWS, Azure, and GCP.";
+  $meta_keywords = "Cloud-native AI infrastructure, global DevOps GEO, Kubernetes optimization 2026, automated CI/CD pipelines, GryphalCode cloud 2026";
   ?>
 
   <?php include '../header.php'; ?>
@@ -35,7 +35,7 @@ $base_url = "..";
           <div class="col-xl-12">
             <div class="breadcrumb__wrap text-center">
               <h1 class="title">
-                Cloud &amp; DevOps
+                Cloud-Native AI Infrastructure
               </h1>
               <div class="breadcrumb__nav">
                 <ul>
@@ -73,9 +73,9 @@ $base_url = "..";
                   Cloud &amp; DevOps
                 </h3>
                 <h2 class="section__heading--title">
-                  Cloud-Native Infrastructure
+                  Next-Gen Cloud Engineering &amp;
                   <br />
-                  &amp; Kubernetes Optimization
+                  AI Agent Deployment Hub
                 </h2>
                 <div class="section__heading--content mt-20">
                   <p>

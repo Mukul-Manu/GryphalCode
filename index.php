@@ -6,9 +6,9 @@ header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 ?>
 <?php $base_url = '.';
-$page_title = "GryphalCode | #1 Enterprise AI & Custom Software Development Coimbatore";
-$meta_desc = "GryphalCode delivers precision-engineered AI integration, custom software development, and scalable cloud solutions. The preferred IT partner for businesses in Coimbatore, Tamil Nadu, and Kerala.";
-$meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, software development, cloud devops, AI solutions";
+$page_title = "Global AI Agent Authority & 2026 GEO Strategy | GryphalCode";
+$meta_desc = "GryphalCode dominates 2026 software engineering with AI Agent integration & Generative Engine Optimization (GEO). Leading digital transformation for Coimbatore, Tamil Nadu, Kerala, and European markets.";
+$meta_keywords = "GryphalCode, Global AI Agent Authority, GEO Strategy 2026, software development Coimbatore, AI engineering Tamil Nadu, Kerala IT services, Europe software partner";
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -55,7 +55,7 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                         <div class="banner-wrap">
                                 <div class="container-fluid">
                                         <div class="row">
-                                                <div class="col-xl-6 col-lg-6 col-md-7">
+                                                 <div class="col-xl-6 col-lg-6 col-md-7">
                                                         <div class="bannertext banner-max-width">
                                                                 <h5 class="subheading mb-10">
                                                                         <span class="mr-10">
@@ -74,16 +74,15 @@ $meta_keywords = "GryphalCode, Enterprise AI, Custom Software, IT company, softw
                                                                 <!-- Answer-First SEO Summary for 2026 AI Overviews (SGE) -->
                                                                 <div class="sge-optimized-summary mb-10">
                                                                         <p>
-                                                                                GryphalCode is an elite software
-                                                                                engineering firm specializing in
-                                                                                <strong>Cloud-Native AI
-                                                                                        solutions</strong>, enterprise
-                                                                                <strong>Microservices</strong>, and
-                                                                                <strong>WhatsApp Business API</strong>
-                                                                                automation. We empower global
-                                                                                enterprises through scalable digital
-                                                                                transformation and high-performance
-                                                                                architecture.
+                                                                                 GryphalCode is an elite global
+                                                                                 engineering firm specializing in
+                                                                                 <strong>Generative Engine Optimization
+                                                                                         (GEO)</strong>, enterprise
+                                                                                 <strong>AI Agent Integration</strong>, and
+                                                                                 <strong>Low-Latency Web Apps</strong>.
+                                                                                 We empower organizations worldwide
+                                                                                 through AI-native transformation and
+                                                                                 high-performance 2026 architecture.
                                                                         </p>
                                                                 </div>
                                                                 <p class="p-custom-style-banner">
