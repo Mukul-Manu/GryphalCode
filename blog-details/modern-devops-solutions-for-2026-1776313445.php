@@ -59,7 +59,7 @@ $image_3 = $base_url . "/assets/images/blog/blog_modern-devops-solutions-for-202
                     <div class="col-xl-6 col-lg-6 pr-55">
                         <div class="project-details__content">
                             <div class="thumb blog-hero-thumb mb-35">
-                                <img alt="GryphalCode illustration" loading="lazy" src="<?= $featured_image ?>" alt="Modern DevOps Solutions for 2026 - Main Concept"
+                                <img src="<?= $featured_image ?>" alt="Modern DevOps Solutions for 2026 - Main Concept"
                                     loading="lazy"
                                     style="width:100%; border-radius:16px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05);">
                             </div>
@@ -91,7 +91,7 @@ $image_3 = $base_url . "/assets/images/blog/blog_modern-devops-solutions-for-202
                                     <div class="row mt-40">
                                         <div class="col-sm-6 mb-20">
                                             <div class="thumb gallery-thumb">
-                                                <img alt="GryphalCode illustration" loading="lazy" src="<?= $image_2 ?>"
+                                                <img src="<?= $image_2 ?>"
                                                     alt="Modern DevOps Solutions for 2026 - Implementation Flow"
                                                     loading="lazy"
                                                     style="width:100%; border-radius:12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
@@ -99,7 +99,7 @@ $image_3 = $base_url . "/assets/images/blog/blog_modern-devops-solutions-for-202
                                         </div>
                                         <div class="col-sm-6 mb-20">
                                             <div class="thumb gallery-thumb">
-                                                <img alt="GryphalCode illustration" loading="lazy" src="<?= $image_3 ?>"
+                                                <img src="<?= $image_3 ?>"
                                                     alt="Modern DevOps Solutions for 2026 - Component Detail"
                                                     loading="lazy"
                                                     style="width:100%; border-radius:12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">

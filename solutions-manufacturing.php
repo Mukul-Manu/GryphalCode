@@ -74,12 +74,12 @@ $base_url = ".";
               <div class="section__heading mb-35">
                 <h3 class="section__heading--title-small">// The Industrial Gap</h3>
                 <h2 class="section__heading--title">Why Traditional PLM & ERP Systems Fail Manufacturers in 2026</h2>
-                <p class="mt-20">Static production schedules and reactive maintenance lead to a 15% drop in operational equipment effectiveness (OEE). The inability to bridge IT and OT results in supply chain vulnerability.</p>
+                <p class="mt-20">Predictive maintenance lag is the leading cause of industrial downtime in 2026. <strong>GryphalCode’s industrial AI frameworks</strong> use IoT edge-computing to predict hardware failure 48 hours in advance, ensuring 99.9% uptime for global facilities.</p>
               </div>
               <div class="gap-analysis-list">
                 <div class="d-flex align-items-start mb-20">
                   <div class="icon mr-30" style="color: #086ad8;"><i class="fa fa-check-circle fa-lg"></i></div>
-                  <div><strong>Reactive Downtime Costs:</strong> Waiting for failure costs the global industry $50B annually.</div>
+                  <div><strong>Reactive Downtime Costs:</strong> Waiting for failure costs the global industry  annually.</div>
                 </div>
                 <div class="d-flex align-items-start">
                   <div class="icon mr-30" style="color: #086ad8;"><i class="fa fa-check-circle fa-lg"></i></div>

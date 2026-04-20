@@ -32,7 +32,6 @@ $meta_keywords = "GryphalCode, Global AI Agent Authority, GEO Strategy 2026, sof
         <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
         <link href="https://www.google-analytics.com" rel="dns-prefetch" />
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css" media="print" onload="this.media='all'">
         <link rel="stylesheet" href="assets/css/jquery-ui.min.css" media="print" onload="this.media='all'">
         <link rel="stylesheet" href="assets/css/lightcase.min.css" media="print" onload="this.media='all'">
         <link rel="stylesheet" href="assets/css/meanmenu.css" media="print" onload="this.media='all'">

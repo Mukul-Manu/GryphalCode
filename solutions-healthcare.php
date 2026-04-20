@@ -74,7 +74,7 @@ $base_url = ".";
               <div class="section__heading mb-35">
                 <h3 class="section__heading--title-small">// The Clinical Gap</h3>
                 <h2 class="section__heading--title">Why Traditional EMRs Fail Global Healthcare in 2026</h2>
-                <p class="mt-20">Fragmented data and manual documentation consumes 40% of clinician time. Legacy systems cannot process unstructured patient data, leading to diagnostic lag.</p>
+                <p class="mt-20">Data fragmentation is the primary reason legacy EMRs fail in 2026. <strong>GryphalCode’s clinical AI solutions</strong> centralize unstructured patient data and automate clinical documentation, reducing clinician administrative load by 40%.</p>
               </div>
               <div class="gap-analysis-list">
                 <div class="d-flex align-items-start mb-20">

@@ -59,7 +59,7 @@ $image_3 = $base_url . "/assets/images/blog/blog_next-gen-devops-automation_tech
                     <div class="col-xl-6 col-lg-6 pr-55">
                         <div class="project-details__content">
                             <div class="thumb blog-hero-thumb mb-35">
-                                <img alt="GryphalCode illustration" loading="lazy" src="<?= $featured_image ?>" alt="Next-Gen DevOps - Main Concept" loading="lazy"
+                                <img src="<?= $featured_image ?>" alt="Next-Gen DevOps - Main Concept" loading="lazy"
                                     style="width:100%; border-radius:16px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05);">
                             </div>
                         </div>
@@ -90,14 +90,14 @@ $image_3 = $base_url . "/assets/images/blog/blog_next-gen-devops-automation_tech
                                     <div class="row mt-40">
                                         <div class="col-sm-6 mb-20">
                                             <div class="thumb gallery-thumb">
-                                                <img alt="GryphalCode illustration" loading="lazy" src="<?= $image_2 ?>" alt="Next-Gen DevOps - Implementation Flow"
+                                                <img src="<?= $image_2 ?>" alt="Next-Gen DevOps - Implementation Flow"
                                                     loading="lazy"
                                                     style="width:100%; border-radius:12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
                                             </div>
                                         </div>
                                         <div class="col-sm-6 mb-20">
                                             <div class="thumb gallery-thumb">
-                                                <img alt="GryphalCode illustration" loading="lazy" src="<?= $image_3 ?>" alt="Next-Gen DevOps - Component Detail"
+                                                <img src="<?= $image_3 ?>" alt="Next-Gen DevOps - Component Detail"
                                                     loading="lazy"
                                                     style="width:100%; border-radius:12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
                                             </div>

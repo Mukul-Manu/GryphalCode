@@ -177,15 +177,5 @@ $needsTilt = in_array($scriptName, ['index.php', 'about.php', 'services.php', 'w
 </script>
 
 <script nonce="<?= htmlspecialchars($GLOBALS['cspNonce'] ?? '', ENT_QUOTES) ?>">
-  /*
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('<?= $base_url ?>/sw.js').then(reg => {
-        console.log('GryphalCode SW registered:', reg);
-      }).catch(err => {
-        console.log('SW registration failed:', err);
-      });
-    });
-  }
-  */
+ 
 </script>

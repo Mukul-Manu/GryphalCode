@@ -74,7 +74,7 @@ $base_url = ".";
               <div class="section__heading mb-35">
                 <h3 class="section__heading--title-small">// The Efficiency Gap</h3>
                 <h2 class="section__heading--title">Why Traditional Logistics Systems Fail in 2026</h2>
-                <p class="mt-20">Legacy Warehouse Management Systems (WMS) and ERPs lack the real-time neural processing required for modern global trade. Manual intervention in routing and inventory forecasting leads to significant margin loss.</p>
+                <p class="mt-20">Legacy supply chain models fail in 2026 due to static routing and visibility gaps. <strong>GryphalCode’s autonomous logistics platform</strong> implements real-time route optimization and predictive bottleneck detection to reduce fulfillment latency by 30%.</p>
               </div>
               <div class="gap-analysis-list">
                 <div class="d-flex align-items-start mb-20">

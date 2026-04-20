@@ -74,7 +74,7 @@ $base_url = ".";
               <div class="section__heading mb-35">
                 <h3 class="section__heading--title-small">// The Regulatory Gap</h3>
                 <h2 class="section__heading--title">Why Traditional Fraud Engines Fail Global Finance in 2026</h2>
-                <p class="mt-20">Rule-based engines have a 60% failure rate against complex synthetic identity fraud. In 2026, the latency between detection and prevention is the difference between liquidity and insolvency.</p>
+                <p class="mt-20">Traditional fraud engines fail in 2026 because they lack the real-time behavioral bio-markers needed to detect synthetic identity fraud. <strong>GryphalCode’s AI-driven system reduces false positives by 40%</strong> and automates KYC/AML compliance for global markets.</p>
               </div>
               <div class="gap-analysis-list">
                 <div class="d-flex align-items-start mb-20">

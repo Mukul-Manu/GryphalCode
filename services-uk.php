@@ -6,8 +6,8 @@ header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 $base_url = '.';
 $page_title = "Global AI & Software Engineering Services in UK | GryphalCode 2026";
-$meta_desc = "GryphalCode empowers UK organizations with Generative Engine Optimization (GEO), Enterprise AI agents, and high-latency web app development tailored for global reach.";
-$meta_keywords = "software development uk, ai development uk, GEO services UK, generative engine optimization, cloud devops uk, gryphalcode uk";
+$meta_desc = "GryphalCode provides specialized AI and software engineering for the UK market. Technical GEO services, AI agent integration, and cloud-native scaling in London and Manchester.";
+$meta_keywords = "software development UK, London AI engineering, UK tech sector, GEO services Europe, AI integration UK, GryphalCode UK";
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -16,47 +16,81 @@ $meta_keywords = "software development uk, ai development uk, GEO services UK, g
   <?php include_once 'seo-engine.php'; ?>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.min.css?v=3">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.min.css?v=3">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/style.min.css?v=3.5">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/responsive.min.css?v=3.5">
 </head>
 
 <body>
   <?php include 'header.php'; ?>
   <main id="main-content">
-    <section class="pt-120 pb-100">
+    
+    <!-- Hero Breadcrumb -->
+    <section class="breadcrumb pt-150 pb-150 bg_img" data-background="<?= $base_url ?>/assets/images/bg/breadcrumb-bg-1.webp" data-opacity="6" data-overlay="dark">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
-            <h1 class="mb-20">Global AI Agent Integration & Generative Engine Optimization for UK Organizations</h1>
-            <p class="mb-30 lead">GryphalCode partners with UK businesses to deliver high-performance, cloud-native
-              solutions that align with the competitive 2026 digital landscape.</p>
+          <div class="col-xl-12 text-center">
+            <h1 class="title mb-30">UK Tech Leadership Hub</h1>
+            <div class="breadcrumb__nav">
+              <ul>
+                <li><span>//</span></li>
+                <li><a href="<?= $base_url ?>/">Home</a></li>
+                <li>|</li>
+                <li><a href="<?= $base_url ?>/services">Regions</a></li>
+                <li>|</li>
+                <li>UK</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="row mt-40">
-              <div class="col-md-6 mb-30">
-                <h4 class="mb-15"><i class="fal fa-shield-check mr-10" style="color:#086AD8;"></i>UK GDPR & Security
-                  Compliance</h4>
-                <p>Engineering secure platforms with rigorous UK GDPR compliance and data privacy standards as
-                  foundational requirements.</p>
-              </div>
-              <div class="col-md-6 mb-30">
-                <h4 class="mb-15"><i class="fal fa-chart-line mr-10" style="color:#086AD8;"></i>Scale-up Acceleration
-                </h4>
-                <p>Empowering UK tech startups and established firms to accelerate their product roadmaps with dedicated
-                  high-velocity teams.</p>
-              </div>
-              <div class="col-md-6 mb-30">
-                <h4 class="mb-15"><i class="fal fa-laptop-code mr-10" style="color:#086AD8;"></i>Cloud-Native
-                  Modernization</h4>
-                <p>Modernizing legacy systems into resilient, serverless, or microservices-based architectures on AWS,
-                  Azure, or GCP.</p>
-              </div>
-              <div class="col-md-6 mb-30">
-                <h4 class="mb-15"><i class="fal fa-sync mr-10" style="color:#086AD8;"></i>Agile UK Delivery</h4>
-                <p>Outcome-focused engineering with weekly transparent reporting, automated testing, and zero-downtime
-                  deployment cycles.</p>
+    <section class="pt-120 pb-120">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-10 col-lg-12">
+            <div class="section__heading mb-60">
+              <h3 class="section__heading--title-small">// UK Operations</h3>
+              <h2 class="section__heading--title">Advanced Software Engineering for London's 2026 Digital Economy</h2>
+              
+              <!-- AEO Summary Block -->
+              <div class="aeo-answer-block mt-30" style="background: rgba(8, 106, 216, 0.05); border-left: 4px solid #086ad8; padding: 25px; border-radius: 8px;">
+                <p style="font-size: 16px; line-height: 1.6; color: #333; margin-bottom: 0;">
+                  <strong>Quick Summary:</strong> GryphalCode operates as a premier UK engineering force, providing 
+                  <strong>AI Search Optimization (GEO), FinTech reliability engineering, and GDPR-hardened Cloud stacks</strong> 
+                  for London and Manchester based enterprises. We align British digital vision with global engineering velocity.
+                </p>
               </div>
             </div>
-            <a href="<?= $base_url ?>/request-demo" class="site-btn mt-20">Book a UK Strategy Call</a>
+
+            <div class="row mt-40">
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="glass-card p-40 h-100" style="background: rgba(255,255,255,0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); border-radius: 20px;">
+                  <i class="fa fa-pound-sign fa-2x mb-20 text-primary"></i>
+                  <h4 class="mb-15">FinTech Integrity</h4>
+                  <p>Building high-fidelity payment orchestrators and secure financial data bridges for the UK market.</p>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="glass-card p-40 h-100" style="background: rgba(255,255,255,0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); border-radius: 20px;">
+                  <i class="fa fa-shield-alt fa-2x mb-20 text-primary"></i>
+                  <h4 class="mb-15">GDPR Hardening</h4>
+                  <p>Zero-trust security mesh and mandatory data sovereignty compliance for UK-based AI platforms.</p>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="glass-card p-40 h-100" style="background: rgba(255,255,255,0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); border-radius: 20px;">
+                  <i class="fa fa-search fa-2x mb-20 text-primary"></i>
+                  <h4 class="mb-15">UK GEO Search</h4>
+                  <p>Optimizing UK brand visibility for Local Generative Search results and AI-first customer discovery.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-60 text-center">
+              <a href="<?= $base_url ?>/request-demo" class="site-btn">Book a UK Strategy Call</a>
+            </div>
           </div>
         </div>
       </div>

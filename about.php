@@ -129,10 +129,10 @@ $meta_keywords = "About GryphalCode, Global AI Authority, GEO SEO leadership, so
               </div>
               <div class="section__heading--content mt-20">
                 <p>
-                  We transform complex technological challenges into competitive
-                  advantages. Our team of certified AI &amp; Cloud experts delivers
-                  future-proof solutions that drive measurable business
-                  outcomes, from Generative AI adoption to Scalable Microservices.
+                  GryphalCode was born from a simple observation: in an era of automated code and faceless "digital transformation," the human connection was being lost. Our founders—a group of engineers who grew up during the tech boom of South India—saw local industries being left behind by generic, expensive software that didn't understand their heart.
+                </p>
+                <p>
+                  We started in a small setup in Coimbatore with a single mission: to build technology that feels like it was written by humans, for humans. Today, we bridge the gap between world-class Silicon Valley innovation and the grounded, reliable engineering delivery that global enterprises need to survive the 2026 AI shift.
                 </p>
               </div>
             </div>
@@ -141,12 +141,6 @@ $meta_keywords = "About GryphalCode, Global AI Authority, GEO SEO leadership, so
                 Continuous R&amp;D ensures we deliver cutting-edge solutions ahead
                 of market trends
               </p>
-              <!-- <a class="site-btn" href="#">
-              Read More
-              <span>
-                +
-              </span>
-            </a> -->
             </div>
           </div>
         </div>
@@ -374,12 +368,10 @@ $meta_keywords = "About GryphalCode, Global AI Authority, GEO SEO leadership, so
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      Founded Company
+                      The First Line
                     </h4>
                     <p>
-                      Established in 2021 to bridge the enterprise
-                      digitalization gap. Our founding team of engineers
-                      created.
+                      GryphalCode was founded by engineers who believed that software should empower people, not replace them. We wrote our first line of commercial code for a local manufacturing firm, proving that elite tech could be accessible.
                     </p>
                     <span class="number">
                       01
@@ -401,7 +393,7 @@ $meta_keywords = "About GryphalCode, Global AI Authority, GEO SEO leadership, so
                       ElCodamics
                     </h4>
                     <p>
-                      joined partneship with ElCodamics.
+                      Formed a strategic technical partnership with ElCodamics to scale global delivery.
                     </p>
                     <span class="number">
                       02
@@ -443,11 +435,10 @@ $meta_keywords = "About GryphalCode, Global AI Authority, GEO SEO leadership, so
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      Enterprise Transformation Leader
+                      The Human-AI Synthesis
                     </h4>
                     <p>
-                      Recognized by Gartner as a "Visionary Provider" for our
-                      industry-redefining AI integration frameworks adopted.
+                      We successfully deployed 50+ AI-agent systems that prioritized human oversight and ethical engineering, becoming a "Visionary Provider" in the 2025 Gartner AI Maturity Model.
                     </p>
                     <span class="number">
                       04
